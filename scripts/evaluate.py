@@ -111,7 +111,8 @@ def metrics(records, dets_by_file, thr, family=None):
     red = {"redaction_recall": c_hit / NG if NG else None,
            "redaction_precision": (c_n - c_fa) / c_n if c_n else None,
            "redaction_frames_fully_covered": c_frames / pos_frames if pos_frames else None,
-           "redaction_false_alarm_frame_rate": c_neg_fa / neg_frames if neg_frames else None}
+           "redaction_false_alarm_frame_rate": c_neg_fa / neg_frames if neg_frames else None,
+           "redaction_boxes": c_n}
     return {**red, "thr": thr, "recall": TP / NG if NG else None, "precision": TP / (TP + FP) if TP + FP else None,
             "tp": TP, "fp": FP, "faces": NG, "frames_fully_covered": covered / pos_frames if pos_frames else None,
             "pos_frames": pos_frames, "neg_frames": neg_frames,

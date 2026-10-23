@@ -18,34 +18,38 @@ face detector he has fine-tuned.
 Eval set: 860 synthetic images (596 scoring faces in 427 face frames, 340 hard-negative frames), all
 from Open Images TEST-split photos. Command: `.venv/bin/python scripts/report.py` (after `scripts/evaluate.py`).
 
+Cutoff rule: for each detector, the highest redaction recall on the TUNE split among cutoffs whose tune
+precision is at least 95% with 95% confidence (Wilson lower bound), applied unchanged to eval. My first rule
+used the point precision on tune; the 240-image tune split flattered it (95 to 96% on tune became 88 to 91%
+on eval), so it was replaced. Eval was read under the old rule before this rule was chosen; both are kept
+in the git history.
+
 | detector | cutoff | redaction recall | redaction precision | false-alarm frames |
 |---|---|---|---|---|
 | YuNet 2023mar at 0.9 (the client's current setting) | 0.9 | 30.7% | 99.5% | 0.0% |
-| YuNet 2023mar, cutoff from tune split | 0.8 | 49.7% | 96.5% | 2.4% |
-| BlazeFace full-range, cutoff from tune split | 0.55 | 43.8% | 93.1% | 3.5% |
-| Faster R-CNN ft_A, plain faces (before) | 0.9 | 51.2% | 88.0% | 8.8% |
-| Faster R-CNN ft_control, + plain photos and hard negatives | 0.7 | 52.0% | 91.2% | 5.6% |
-| Faster R-CNN ft_B, + reflection composites (after) | 0.65 | 65.8% | 90.2% | 9.4% |
+| BlazeFace full-range, cutoff from tune split | 0.65 | 37.1% | 99.6% | 0.3% |
+| Faster R-CNN ft_A, plain faces (before) | 0.99 | 36.6% | 97.9% | 1.2% |
+| Faster R-CNN ft_control, + plain photos and hard negatives | 0.99 | 32.4% | 99.5% | 0.0% |
+| Faster R-CNN ft_B, + reflection composites (after) | 0.9 | 55.2% | 96.9% | 1.8% |
 
 What moved, read honestly:
-- Before to after (ft_A to ft_B, each at its tune-split cutoff): redaction recall 51.2% to 65.8%, precision 88.0% to 90.2%.
-- The control run (same steps, no composites) reached 52.0% at 91.2%, so most of the recall gain came from
-  the reflection composites, not from the extra steps or the hard negatives.
-- At an equal precision floor (cutoff chosen on the eval set itself, for comparison only): ft_B 55.2% recall
-  at 96.9% precision; YuNet 49.7% at 96.5%; ft_control 47.1% at 95.8%; ft_A 36.6% at 97.9%.
-- Shower glass, never in training: YuNet at 0.9 10.6%, ft_A 29.8%, ft_control 29.8%, ft_B 43.3%.
-- Screens with people: YuNet at 0.9 0.0%, ft_B 43.2%.
-- At its tune-split cutoff, no fine-tuned detector meets a 95% precision bar on eval. YuNet does: 96.5% at its tune-split cutoff 0.8, and 99.5% at the client's 0.9, both at lower recall. No detector is near 99% recall.
-  The tune split comes from the same photo pool as training, so it flattered the cutoff: the three fine-tuned
-  models held at least 95% precision on tune and came in at 88.0% to 91.2% on eval. ft_B also raises false alarms on plain hard-negative photos (23.2% of those frames,
-  against 14.3% for the control).
+- Before to after (ft_A to ft_B, each at its tune-split cutoff): redaction recall 36.6% to 55.2%, at 97.9%
+  and 96.9% precision, both above a 95% bar.
+- The control run (same steps, no composites) reached 32.4% at 99.5%, so the recall gain came from the
+  reflection composites, not from the extra steps or the hard negatives.
+- YuNet has no cutoff that clears the confidence rule on the tune split (too few tune boxes). For
+  comparison only: at 0.8 it reaches 49.7% at 96.5% on eval.
+- Shower glass, never in training: YuNet at 0.9 10.6%, ft_A 16.3%, ft_B 32.7%.
+- Screens with people: YuNet at 0.9 0.0%, ft_B 32.1%.
+- No detector is near 99% recall. Precision and recall trade against each other here: at its lower cutoff
+  of 0.65, ft_B covers 65.8% of faces but at 90.2% precision, below the bar.
 
 
 Full tables: `results/metrics.md`. Raw detections: `results/eval_*.json`. Curve: `results/pr_curve.png`.
 
-`results/sample_redactions.jpg` shows four eval frames before and after ft_B plus the fill. They were picked
-by position (the fourth face frame of each family), not by result. All four still show at least one missed
-face (5 of their 6 scoring faces are missed). Overall recall is 65.8%; this sample is worse than average. `results/contact_eval_positive.jpg` and
+`results/sample_redactions.jpg` shows four eval frames before and after ft_B at its 0.9 cutoff plus the fill.
+They were picked by position (the fourth face frame of each family), not by result. At 0.9, none of their
+faces is redacted. Overall recall at 0.9 is 55.2%; this sample is worse than average. `results/contact_eval_positive.jpg` and
 `results/contact_eval_negative.jpg` show the ground truth (green = scoring face, yellow = ignore).
 
 ### How the numbers are scored

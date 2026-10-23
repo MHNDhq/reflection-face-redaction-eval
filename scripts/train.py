@@ -46,6 +46,7 @@ def main():
     ap.add_argument("--stage", required=True, choices=["A", "B", "control"])
     ap.add_argument("--steps", type=int, default=None)
     ap.add_argument("--bs", type=int, default=8)
+    ap.add_argument("--tag", default="", help="suffix for the saved weights and log, e.g. _long")
     a = ap.parse_args()
     random.seed(0)
     torch.manual_seed(0)
@@ -90,10 +91,10 @@ def main():
                    "elapsed_s": round(time.time() - t0, 1)}
             log.append(rec)
             print(json.dumps(rec), flush=True)
-    torch.save(model.state_dict(), ROOT / "models" / f"ft_{a.stage}.pt")
+    torch.save(model.state_dict(), ROOT / "models" / f"ft_{a.stage}{a.tag}.pt")
     json.dump({"stage": a.stage, "steps": steps, "batch": a.bs, "lr": lr, "n_items": len(items),
                "train_seconds": round(time.time() - t0, 1), "log": log},
-              open(ROOT / "models" / f"ft_{a.stage}_trainlog.json", "w"), indent=1)
+              open(ROOT / "models" / f"ft_{a.stage}{a.tag}_trainlog.json", "w"), indent=1)
 
 
 if __name__ == "__main__":
