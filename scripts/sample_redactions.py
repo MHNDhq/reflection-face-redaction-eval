@@ -13,6 +13,8 @@ ROOT = Path(__file__).resolve().parents[1]
 ann = json.load(open(ROOT / "data" / "eval" / "annotations.json"))["images"]
 dets = json.load(open(ROOT / "results" / "eval_ft_B.json"))
 cut = json.load(open(ROOT / "results" / "metrics.json"))["detectors"]["ft_B"]["cutoff_from_tune"]
+if cut is None:
+    raise SystemExit("ft_B has no cutoff that meets the rule; no sample sheet")
 pick = []
 for fam in ["mirror", "appliance", "shower", "screen"]:
     pick += [r for r in ann if r["family"] == fam and r["label"] == "positive"][3:4]

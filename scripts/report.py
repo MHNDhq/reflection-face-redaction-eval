@@ -1,7 +1,8 @@
 """Build results/metrics.json, results/metrics.md and results/pr_curve.png from saved detections.
 
 Cutoffs are chosen on the TUNE set (validation-split sources, never trained on) as the highest
-redaction recall whose redaction precision is >= 0.95, then applied unchanged to the EVAL set.
+redaction recall among cutoffs where the lower end of the two-sided 95% confidence interval (Wilson) for tune precision is at least 95%,
+then applied unchanged to the EVAL set. A detector with no such cutoff gets no deployable row.
 YuNet is also reported at 0.9, the client's current setting.
 
 Usage: .venv/bin/python scripts/report.py
@@ -45,8 +46,8 @@ def _wilson_lb(p, n, z=1.96):
 
 
 def pick_cutoff(recs, dets):
-    """Highest redaction recall on TUNE among cutoffs whose tune precision is at least 95% with 95%
-    confidence (Wilson lower bound >= 0.95). The first rule (point precision >= 95% on the 240-image
+    """Highest redaction recall on TUNE among cutoffs where the lower end of the two-sided 95% Wilson
+    interval for tune precision is >= 0.95 (z = 1.96, so 97.5% one-sided). The first rule (point precision >= 95% on the 240-image
     tune split) over-fit that small split: 95-96% on tune became 88-91% on eval. Returns None when no
     cutoff clears the bound, so the report never shows a fallback as a rule choice."""
     best = None
@@ -71,9 +72,9 @@ def main():
             print("missing", name)
             continue
         cut = pick_cutoff(tu, dt)
-        used = cut if cut is not None else max(GRID)   # shown as "none cleared the bound", never as a rule choice
-        row = {"label": label, "cutoff_from_tune": cut, "cutoff_used": used, "overall": metrics(ev, de, used),
-               "by_family": {f: metrics(ev, de, used, family=f) for f in FAMS}}
+        row = {"label": label, "cutoff_from_tune": cut,
+               "overall": metrics(ev, de, cut) if cut is not None else None,
+               "by_family": {f: metrics(ev, de, cut, family=f) for f in FAMS} if cut is not None else None}
         if name == "yunet":
             row["at_0.9"] = {"overall": metrics(ev, de, 0.9),
                              "by_family": {f: metrics(ev, de, 0.9, family=f) for f in FAMS}}
@@ -108,16 +109,17 @@ def main():
 
     lines = ["# Results on the SYNTHETIC eval set (not the client's footage)", "",
              f"Eval: {len(ev)} composite images (test-split sources). Tune: {len(tu)} images (validation-split sources held out of training). "
-             "Cutoff per detector = highest redaction recall on TUNE among cutoffs whose tune precision is >= 95% with 95% confidence "
-             "(Wilson lower bound), applied unchanged to EVAL. The first rule (point precision >= 95% on tune) over-fit the small tune "
-             "split and is replaced; eval was read under the old rule before this one was chosen.", "",
+             "Cutoff per detector = highest redaction recall on TUNE among cutoffs where the lower end of the two-sided 95% Wilson "
+             "interval for tune precision is >= 95%, applied unchanged to EVAL. This rule and the finer cutoff grid were chosen "
+             "AFTER eval had been read under the first rule (point precision >= 95% on tune), which over-fit the small tune split.", "",
              "| detector | cutoff | redaction recall | redaction precision | frames fully covered | false-alarm frames (negatives) | recall IoU0.5 | precision IoU0.5 |",
              "|---|---|---|---|---|---|---|---|"]
     for name, row in out["detectors"].items():
-        cl = row["cutoff_from_tune"] if row["cutoff_from_tune"] is not None else f"{row['cutoff_used']} (no cutoff cleared the bound)"
-        rows = [(row["label"], cl, row["overall"])]
+        rows = [(row["label"], row["cutoff_from_tune"], row["overall"])] if row["overall"] else []
         if "at_0.9" in row:
             rows.insert(0, (row["label"] + " at 0.9 (client setting)", 0.9, row["at_0.9"]["overall"]))
+        if not row["overall"]:
+            lines.append(f"| {row['label']} | no cutoff met the rule | n/a | n/a | n/a | n/a | n/a | n/a |")
         for lab, c, m in rows:
             lines.append(f"| {lab} | {c} | {pct(m['redaction_recall'])} | {pct(m['redaction_precision'])} | "
                          f"{pct(m['redaction_frames_fully_covered'])} | {pct(m['redaction_false_alarm_frame_rate'])} | "
@@ -132,11 +134,13 @@ def main():
     for name, row in out["detectors"].items():
         if "at_0.9" in row:
             lines.append(f"| {row['label']} at 0.9 | " + " | ".join(pct(row['at_0.9']['by_family'][f]['redaction_recall']) for f in FAMS) + " |")
-        lines.append(f"| {row['label']} at {row['cutoff_used']} | " + " | ".join(pct(row['by_family'][f]['redaction_recall']) for f in FAMS) + " |")
+        if row["by_family"]:
+            lines.append(f"| {row['label']} at {row['cutoff_from_tune']} | " + " | ".join(pct(row['by_family'][f]['redaction_recall']) for f in FAMS) + " |")
     lines += ["", "## False-alarm frames on hard negatives by family", "",
               "| detector | " + " | ".join(FAMS) + " |", "|---" * (len(FAMS) + 1) + "|"]
     for name, row in out["detectors"].items():
-        lines.append(f"| {row['label']} at {row['cutoff_used']} | " + " | ".join(pct(row['by_family'][f]['redaction_false_alarm_frame_rate']) for f in FAMS) + " |")
+        if row["by_family"]:
+            lines.append(f"| {row['label']} at {row['cutoff_from_tune']} | " + " | ".join(pct(row['by_family'][f]['redaction_false_alarm_frame_rate']) for f in FAMS) + " |")
     (ROOT / "results" / "metrics.md").write_text("\n".join(lines) + "\n")
     print("\n".join(lines))
 

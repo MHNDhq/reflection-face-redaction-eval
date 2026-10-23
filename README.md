@@ -18,11 +18,13 @@ face detector he has fine-tuned.
 Eval set: 860 synthetic images (596 scoring faces in 427 face frames, 340 hard-negative frames), all
 from Open Images TEST-split photos. Command: `.venv/bin/python scripts/report.py` (after `scripts/evaluate.py`).
 
-Cutoff rule: for each detector, the highest redaction recall on the TUNE split among cutoffs whose tune
-precision is at least 95% with 95% confidence (Wilson lower bound), applied unchanged to eval. My first rule
-used the point precision on tune; the 240-image tune split flattered it (95 to 96% on tune became 88 to 91%
-on eval), so it was replaced. Eval was read under the old rule before this rule was chosen; both are kept
-in the git history.
+Cutoff rule: for each detector, the highest redaction recall on the TUNE split among cutoffs where the
+lower end of the two-sided 95% confidence interval (Wilson) for tune precision is at least 95%, applied
+unchanged to eval. My first rule used the point precision on tune; the 240-image tune split flattered it
+(95 to 96% on tune became 88 to 91% on eval). This rule, and a finer cutoff grid, were chosen AFTER eval
+had been read under the first rule, so treat the result as a second look, not a clean hold-out. It is also
+fragile: ft_B's lower bound is 95.5% at 0.9 and 94.9% at 0.85, so one tune box decides between 55% and
+about 60% recall. A larger tune split is the real fix.
 
 | detector | cutoff | redaction recall | redaction precision | false-alarm frames |
 |---|---|---|---|---|
@@ -35,10 +37,11 @@ in the git history.
 What moved, read honestly:
 - Before to after (ft_A to ft_B, each at its tune-split cutoff): redaction recall 36.6% to 55.2%, at 97.9%
   and 96.9% precision, both above a 95% bar.
-- The control run (same steps, no composites) reached 32.4% at 99.5%, so the recall gain came from the
-  reflection composites, not from the extra steps or the hard negatives.
-- YuNet has no cutoff that clears the confidence rule on the tune split (too few tune boxes). For
-  comparison only: at 0.8 it reaches 49.7% at 96.5% on eval.
+- At matched precision (about 96%, cutoffs chosen on eval, comparison only): ft_A 40.8%, ft_control 47.1%,
+  ft_B 55.2%. So about 8 of the 14 points came with the reflection composites; about 6 came without them
+  (extra steps and hard negatives).
+- YuNet has no cutoff that meets the rule on the tune split: it is 61 of 61 correct at 0.9 on tune, and
+  61 boxes is too few for the bound. For comparison only: at 0.8 it reaches 49.7% at 96.5% on eval.
 - Shower glass, never in training: YuNet at 0.9 10.6%, ft_A 16.3%, ft_B 32.7%.
 - Screens with people: YuNet at 0.9 0.0%, ft_B 32.1%.
 - No detector is near 99% recall. Precision and recall trade against each other here: at its lower cutoff
@@ -62,8 +65,8 @@ faces is redacted. Overall recall at 0.9 is 55.2%; this sample is worse than ave
 - False-alarm frames: share of hard-negative frames (no real face) with at least one false alarm.
 - Strict recall and precision at IoU >= 0.5 are reported too, for comparison with detector papers.
 - Faces narrower than 16 px or less than 60% visible are "ignore" regions: neither a hit nor a miss.
-- Cutoffs: each detector's cutoff is the highest redaction recall with redaction precision >= 95% on the
-  TUNE split, then applied unchanged to EVAL. YuNet is also reported at 0.9.
+- Cutoffs: see the cutoff rule above (a confidence bound on tune precision, chosen after a first look at
+  eval). YuNet is also reported at 0.9.
 
 ## The data
 
@@ -162,7 +165,7 @@ See `LICENCES.md` for the audit with source URLs. Short version:
 - Open Images face boxes are drawn by people but can miss small faces; a detector that finds an unboxed
   face is scored as a false alarm.
 - One training seed, one run per stage. Differences of a few points are within run-to-run noise that was not measured.
-- The cutoff rule (95% precision on tune) is a choice; the client's own cutoff would come from their
+- The cutoff rule is a choice made after a first look at eval; the client's own cutoff would come from their
   answer key's hold-out, not from this set.
 - "Mirror" backgrounds in Open Images include car mirrors; they are not all domestic.
 
