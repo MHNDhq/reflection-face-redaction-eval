@@ -246,13 +246,17 @@ def main():
         r = build("validation", ROOT / "data" / "tune2", FAMILIES_TRAIN, 3, seed=505, subset=t2)
         print("tune2", len(r))
         return 0
-    # the original split ignores the tune2 pool, so train/tune/eval rebuild exactly as before
-    val = src[(src.split == "validation") & src.role.isin(["face", "negative"]) & (pool != "tune2")].ImageID.tolist()
+    # the original split uses ONLY the original pool (pool == ""), so train/tune/eval rebuild exactly as
+    # before however many later pools sources.csv holds (review 2026-10-24: a "!= tune2" filter let
+    # eval2/eval3/tune3/train_hn photos leak into a rebuilt eval, tune and train)
+    orig = pool == ""
+    val = src[(src.split == "validation") & src.role.isin(["face", "negative"]) & orig].ImageID.tolist()
+    eval_ids = set(src[(src.split == "test") & src.role.isin(["face", "negative"]) & orig].ImageID)
     rng = np.random.default_rng(7)
     rng.shuffle(val)
     tune = set(val[: len(val) // 10])
     train = set(val[len(val) // 10:])
-    r = build("test", ROOT / "data" / "eval", FAMILIES_ALL, 2, seed=101)
+    r = build("test", ROOT / "data" / "eval", FAMILIES_ALL, 2, seed=101, subset=eval_ids)
     print("eval", len(r))
     r = build("validation", ROOT / "data" / "tune", FAMILIES_TRAIN, 2, seed=202, subset=tune)
     print("tune", len(r))

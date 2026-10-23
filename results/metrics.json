@@ -1,7 +1,7 @@
 {
  "note": "SYNTHETIC eval set (Open Images CC BY 2.0 composites); not the client's footage.",
  "eval_images": 860,
- "tune_images": 240,
+ "tune_images": 2550,
  "detectors": {
   "yunet": {
    "label": "YuNet 2023mar (OpenCV)",

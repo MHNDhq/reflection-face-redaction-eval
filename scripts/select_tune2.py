@@ -72,6 +72,8 @@ def main():
         src0["pool"] = ""
     pd.concat([src0, add], ignore_index=True).to_csv(src_path, index=False)
     pd.concat([fb0, fb], ignore_index=True).to_csv(fb_path, index=False)
+    if len(neg) < n_neg or len(face_pick) < n_face:
+        print(f"SHORTFALL: asked {n_face} faces / {n_neg} negatives, got {len(face_pick)} / {len(neg)} (candidate pool ran out)")
     print(f"tune2: {len(face_pick)} face images ({len(fb)} face boxes), {len(neg)} negatives; "
           f"{len(face_ids)} eligible face images were unused")
 

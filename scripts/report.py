@@ -1,8 +1,9 @@
 """Build results/metrics.json, results/metrics.md and results/pr_curve.png from saved detections.
 
-Cutoffs are chosen on the TUNE set (validation-split sources, never trained on) as the highest
-redaction recall among cutoffs where the lower end of the two-sided 95% confidence interval (Wilson) for tune precision is at least 95%,
-then applied unchanged to the EVAL set. A detector with no such cutoff gets no deployable row.
+Cutoffs are chosen on the TUNE sets (tune + tune2 + tune3; validation-split sources, never trained on)
+as the highest redaction recall among cutoffs whose tune precision has a cluster-bootstrap 5th
+percentile >= 0.95 (see pick_cutoff), then applied unchanged to the eval set given by --eval
+(eval, eval2 or eval3). A detector with no such cutoff gets no deployable row.
 YuNet is also reported at 0.9, the client's current setting.
 
 Usage: .venv/bin/python scripts/report.py
@@ -10,7 +11,6 @@ Usage: .venv/bin/python scripts/report.py
 import json
 
 import numpy as np
-import math
 import sys
 from pathlib import Path
 
@@ -72,7 +72,7 @@ def boot_precision_q(arr, n=BOOT_N, q=BOOT_Q, seed=BOOT_SEED):
 
 def pick_cutoff(recs, dets):
     """PRE-REGISTERED 2026-10-23, committed before any detector was run on tune2 and before eval was
-    re-read: the cutoff with the highest redaction recall on TUNE (tune + tune2) among cutoffs whose
+    re-read: the cutoff with the highest redaction recall on TUNE (tune + tune2; tune3 joined in round 3) among cutoffs whose
     tune precision has a cluster-bootstrap 5th percentile >= 0.95 (one-sided 95%). History: rule 1
     (point precision on the 240-image tune split) over-fit it; rule 2 (per-box Wilson bound) was chosen
     after a first look at eval and treated clustered boxes as independent. Returns None when no cutoff
@@ -97,14 +97,13 @@ def main():
     t3p = ROOT / "data" / "tune3" / "annotations.json"
     tu2 += json.load(open(t3p))["images"] if t3p.exists() else []   # round 3: matched no-face share
     out = {"note": "SYNTHETIC eval set (Open Images CC BY 2.0 composites); not the client's footage.",
-           "eval_images": len(ev), "tune_images": len(tu), "detectors": {}}
+           "eval_images": len(ev), "tune_images": len(tu) + len(tu2), "detectors": {}}
     plt.figure(figsize=(7, 5))
     for name, label in DETS:
         de, dt, dt2 = load(EVAL, name), load("tune", name), load("tune2", name)
         dt3 = load("tune3", name) if t3p.exists() else {}
-        if tu2 and (dt2 is None or dt3 is None):
-            print("missing tune2/tune3 detections for", name)
-            continue
+        if tu2 and (dt2 is None or (t3p.exists() and dt3 is None)):
+            raise SystemExit(f"missing tune2/tune3 detections for {name}: run scripts/evaluate.py on every tune set first")
         if dt is not None and dt2:
             dt = {**dt, **dt2, **(dt3 or {})}
         if de is None or dt is None:
@@ -147,10 +146,10 @@ def main():
         return "n/a" if v is None else f"{100 * v:.1f}%"
 
     lines = [f"# Results on the SYNTHETIC {EVAL} set (not the client's footage)", "",
-             f"{EVAL}: {len(ev)} composite images (test-split sources). Tune: {len(tu)} images (validation-split sources held out of training). "
-             f"Cutoff per detector = highest redaction recall on TUNE ({len(tu) + len(tu2)} images: tune + tune2) among cutoffs whose tune "
+             f"{EVAL}: {len(ev)} composite images (test-split sources). "
+             f"Cutoff per detector = highest redaction recall on TUNE ({len(tu) + len(tu2)} images: tune + tune2 + tune3) among cutoffs whose tune "
              "precision has a cluster-bootstrap 5th percentile >= 95% (resampling source photos, 1,000 draws, one-sided 95%), "
-             "applied unchanged to EVAL. Pre-registered before tune2 detections or a new eval read; see README for the two earlier rules.", "",
+             "applied unchanged to this eval set. Read history per eval set: README > How it got here.", "",
              "| detector | cutoff | redaction recall | redaction precision | frames fully covered | false-alarm frames (negatives) | recall IoU0.5 | precision IoU0.5 |",
              "|---|---|---|---|---|---|---|---|"]
     for name, row in out["detectors"].items():

@@ -39,6 +39,7 @@ for s in tune tune2 tune3 eval eval2 eval3; do
       ckpt:models/ft_control.pt ckpt:models/ft_B.pt ckpt:models/ft_B_long.pt ckpt:models/ft_HN.pt ckpt:models/ft_HN2.pt --thr 0.5
 done
 for s in eval eval2 eval3; do $PY scripts/report.py --eval $s; done   # -> results/metrics*.md, .json, pr_curve*.png
+$PY scripts/intervals.py               # -> results/intervals.json (model choices, eval3 intervals)
 $PY scripts/blur_vs_fill.py            # -> results/blur_vs_fill.json
 $PY scripts/sample_redactions.py       # -> results/sample_redactions.jpg
 $PY scripts/contact_sheet.py eval positive 3 && $PY scripts/contact_sheet.py eval negative 3

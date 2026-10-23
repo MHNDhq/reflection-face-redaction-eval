@@ -19,26 +19,31 @@ eval3: 1,120 synthetic composites from Open Images TEST-split photos never used 
 260 hard negatives incl. 48 sculptures, 160 new backgrounds; 46% no-face frames). Every cutoff was picked
 on the tune sets (2,550 images) by the rule committed before this read: highest tune recall among cutoffs
 whose tune precision has a cluster-bootstrap 5th percentile of at least 95%. The "after" model was also
-chosen on tune. Confidence intervals: 95%, bootstrap over source photos.
+chosen on tune. Confidence intervals: 95%, the wider of a bootstrap over source photos and one over
+background photos (`scripts/intervals.py` -> `results/intervals.json`).
 
 | detector | cutoff | redaction recall | redaction precision | false-alarm frames |
 |---|---|---|---|---|
 | YuNet 2023mar at 0.9 (the client's current setting) | 0.9 | 26.1% | 99.0% | 0.4% |
 | YuNet 2023mar, cutoff from tune | 0.8 | 45.9% (41.1 to 50.5) | 95.7% (92.5 to 98.1) | 1.7% |
-| Faster R-CNN ft_A, plain faces (before) | 0.94 | 43.8% (39.4 to 48.3) | 96.5% (94.4 to 98.2) | 1.5% |
+| Faster R-CNN ft_A, plain faces (before) | 0.94 | 43.8% (39.4 to 48.3) | 96.5% (94.3 to 98.3) | 1.5% |
 | Faster R-CNN ft_control, + plain photos and hard negatives | 0.75 | 47.4% | 94.5% | 1.3% |
-| Faster R-CNN ft_HN2, + reflection composites + hard negatives (after) | 0.6 | 65.1% (60.6 to 69.8) | 95.4% (93.6 to 97.1) | 2.3% |
+| Faster R-CNN ft_HN2, + reflection composites + hard negatives (after) | 0.6 | 65.1% (60.6 to 69.8) | 95.4% (93.5 to 97.1) | 2.3% |
 
 Read honestly:
 - On this clean read the fine-tuned model clears a 95% precision bar at its tune-picked cutoff, and covers
   about 19 points more faces than YuNet with its own tuned cutoff, at about the same precision. The
-  precision interval (93.6 to 97.1%) includes values below 95%, so "at the bar", not "safely above it".
+  precision interval (93.5 to 97.1%) includes values below 95%, so "at the bar", not "safely above it".
 - Not robust yet: the SAME model and cutoff give 94.1% precision on eval2 and 89.6% on the original eval
   set, which has more verified hard negatives (82 sculptures, 80 toys). Those two sets were read before
   this model existed (eval three times, eval2 once), so they are reported, not used to choose anything.
 - Shower glass, never in training: YuNet at 0.9 0.7%, ft_A 18.5%, ft_HN2 26.7%. Screens with people:
   YuNet at 0.9 0.0%, ft_HN2 60.2%.
 - One training seed per stage; run-to-run noise is not measured.
+- Tune composites reuse the training BACKGROUND photos (eval2 and eval3 do not), so tune precision runs
+  optimistic and the cutoffs it picks lean low. eval3 itself has its own backgrounds, so its read is fair.
+- The tune-side bootstrap resamples source photos only; backgrounds are shared across those clusters, so
+  the rule's bound is somewhat too generous.
 - No detector is near 99% recall.
 
 `results/sample_redactions.jpg` shows four eval3 frames, picked by position (the fourth face frame of each
@@ -92,8 +97,8 @@ and no sculptures; eval has 40%. Round 3, written before any detector runs on th
 Round 3 read (eval2, once): ft_HN, chosen on tune, 68.0% recall at 93.7% precision, 1.3 points under 95%;
 the false alarms concentrate on mirror-backed no-face frames (13.7% of them). Round 4, written before
 training ft_HN2 and before any detector runs on eval3:
-- train_hn2: the 179 training-only validation negatives (data/train_hn) re-composited 6 times each on
-  mirror and appliance backgrounds mostly (1,074 images). Validation negatives are otherwise used up.
+- train_hn2: the 179 training-only validation negatives (data/train_hn) re-composited 6 times each with
+  mostly mirror and appliance EFFECTS (1,074 images; the background photo is drawn at random, as everywhere). Validation negatives are otherwise used up.
 - ft_HN2: ft_A + plain + reflection composites + train_hn + train_hn2, 2,000 steps.
 - eval3: a FOURTH, fresh test-split set (1,120 composites: 300 face photos, 260 negatives incl. 48
   sculptures, 160 new backgrounds; 46% no-face frames). Same negative rule as eval2.
@@ -129,7 +134,7 @@ training ft_HN2 and before any detector runs on eval3:
   `data/sources.csv`): tune2 and tune3 (validation, tune only), train_hn (validation, training only),
   eval2 and eval3 (test, with their own backgrounds). No photo is in two pools.
 - Backgrounds: fridge, microwave, oven, mirror, shower, bath and sink photos with no person boxes. Any
-  background where YuNet or BlazeFace fired at 0.5 was dropped (45 of 339). Detectors never filtered the
+  background where YuNet or BlazeFace fired at 0.5 was dropped (85 of 659 across all pools). Detectors never filtered the
   hard negatives, so the hard ones stayed in.
 - Composite families (`scripts/composite.py`): mirror (flipped, dimmed, sheen, frame); appliance door
   (flipped, 25 to 60% opacity over a dark panel, tint, blur, optional microwave mesh); shower glass
@@ -150,7 +155,7 @@ training ft_HN2 and before any detector runs on eval3:
   gap between B and the control is what the reflection composites added; the gap between A and the
   control is what the hard negatives and extra steps added.
 - B_long: stage B for 1,500 steps. HN: B data + train_hn hard negatives, 1,500 steps. HN2 (the reported
-  "after"): HN data + train_hn2 (the same negatives re-composited on mirror and appliance backgrounds),
+  "after"): HN data + train_hn2 (the same negatives re-composited with mostly mirror and appliance effects),
   2,000 steps. Each was chosen against the previous one on tune only.
 - Training logs with loss, steps and seconds: `models/ft_*_trainlog.json`.
 - The fine-tuned weight files (`models/ft_*.pt`) are NOT in this repo; they are available on request. The reason is

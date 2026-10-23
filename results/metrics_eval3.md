@@ -1,6 +1,6 @@
 # Results on the SYNTHETIC eval3 set (not the client's footage)
 
-eval3: 1120 composite images (test-split sources). Tune: 240 images (validation-split sources held out of training). Cutoff per detector = highest redaction recall on TUNE (2550 images: tune + tune2) among cutoffs whose tune precision has a cluster-bootstrap 5th percentile >= 95% (resampling source photos, 1,000 draws, one-sided 95%), applied unchanged to EVAL. Pre-registered before tune2 detections or a new eval read; see README for the two earlier rules.
+eval3: 1120 composite images (test-split sources). Cutoff per detector = highest redaction recall on TUNE (2550 images: tune + tune2 + tune3) among cutoffs whose tune precision has a cluster-bootstrap 5th percentile >= 95% (resampling source photos, 1,000 draws, one-sided 95%), applied unchanged to this eval set. Read history per eval set: README > How it got here.
 
 | detector | cutoff | redaction recall | redaction precision | frames fully covered | false-alarm frames (negatives) | recall IoU0.5 | precision IoU0.5 |
 |---|---|---|---|---|---|---|---|
