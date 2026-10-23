@@ -35,8 +35,9 @@ Read honestly:
   about 19 points more faces than YuNet with its own tuned cutoff, at about the same precision. The
   precision interval (93.5 to 97.1%) includes values below 95%, so "at the bar", not "safely above it".
 - Not robust yet: the SAME model and cutoff give 94.1% precision on eval2 and 89.6% on the original eval
-  set, which has more verified hard negatives (82 sculptures, 80 toys). Those two sets were read before
-  this model existed (eval three times, eval2 once), so they are reported, not used to choose anything.
+  set, which has more verified hard negatives (82 sculptures, 80 toys). eval was read three times before
+  this model existed and chose nothing for it. eval2's false alarms (mirror-backed no-face frames) DID shape
+  train_hn2, so its 94.1% is optimistic, not an independent check.
 - Shower glass, never in training: YuNet at 0.9 0.7%, ft_A 18.5%, ft_HN2 26.7%. Screens with people:
   YuNet at 0.9 0.0%, ft_HN2 60.2%.
 - One training seed per stage; run-to-run noise is not measured.
@@ -188,7 +189,7 @@ Measured on an Apple M5 (10-core GPU, 24 GB) with `.venv/bin/python scripts/thro
 
 | step | input | frames per second |
 |---|---|---|
-| ft_B Faster R-CNN, MPS GPU, batch 8 (same architecture as ft_HN2) | 960x540 | 28.2 |
+| ft_B Faster R-CNN, MPS GPU, batch 8 (same architecture as ft_HN2; ft_HN2 itself not timed) | 960x540 | 28.2 |
 | ft_B Faster R-CNN, MPS GPU, batch 8 | 1920x1080 (the model resizes to 960x540 inside) | 18.8 |
 | YuNet, CPU (OpenCV) | 960x540 | 155.9 |
 | YuNet, CPU (OpenCV) | 1920x1080 | 19.7 |

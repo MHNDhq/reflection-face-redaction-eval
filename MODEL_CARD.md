@@ -1,4 +1,4 @@
-# Model card: ft_B (reflection-tuned face detector), with ft_A and ft_control
+# Model card: ft_HN2 (reflection- and hard-negative-tuned face detector), with ft_A, ft_control, ft_B, ft_B_long, ft_HN
 
 The weight files are not published by default (see README). This card describes the models `./reproduce.sh` trains.
 
@@ -11,6 +11,8 @@ SYNTHETIC-DATA EXPERIMENT. Not validated on real head-mounted footage. Not for p
 - Initialised from torchvision COCO weights (`FasterRCNN_MobileNet_V3_Large_FPN_Weights.COCO_V1`).
 - ft_A: fine-tuned on plain Open Images face photos. ft_B: ft_A fine-tuned on reflection composites, plain
   photos and hard negatives. ft_control: ft_A fine-tuned on plain photos and hard negatives only.
+- ft_B_long: ft_B's data, 1,500 steps. ft_HN: + train_hn hard negatives. ft_HN2 (reported "after"): + train_hn2
+  (the same negatives re-composited with mostly mirror and appliance effects), 2,000 steps.
 - Training settings and logs: `models/ft_*_trainlog.json` (SGD, momentum 0.9, weight decay 1e-4, batch 8,
   cosine schedule, horizontal flip and brightness jitter). One seed per stage.
 - Hardware: Apple M5 (10-core GPU, 24 GB), PyTorch MPS backend.
@@ -34,7 +36,10 @@ SYNTHETIC-DATA EXPERIMENT. Not validated on real head-mounted footage. Not for p
 
 ## Results
 
-See `README.md` and `results/metrics.md`. Numbers are on synthetic composites.
+Headline (README > Result): on eval3, a fresh pre-registered set read once, ft_HN2 at its tune-picked cutoff 0.6
+covers 65.1% of faces at 95.4% precision (bootstrap range 93.5 to 97.1%). The same cutoff gives 94.1% on
+eval2 (whose false alarms shaped train_hn2, so optimistic) and 89.6% on the original eval set. Tables:
+`results/metrics_eval3.md`, `results/metrics_eval2.md`, `results/metrics.md`. Synthetic composites only.
 
 ## Licence of the weights
 
