@@ -115,7 +115,7 @@ YuNet still found 75 after a light Gaussian blur (sigma 3), 39 after an 8-pixel 
 - Time: every box found at frame t is also applied from t-8 to t+8, and a face found at t and again at
   t+g (g up to 30, so up to 29 missed frames, overlapping boxes) is bridged with interpolated boxes. Tested: a hit at frame 100
   keeps 92 to 108 filled; hits at 100 and 125 keep 100 to 125 filled; a 29-frame miss is bridged and a
-  30-frame miss is not; a jittered box at any frame between the hits does not cancel the bridge.
+  30-frame miss is not; a jittered box between the hits does not cancel the bridge (tested at every offset and for coverage).
 
 ## Throughput and cost
 
@@ -172,7 +172,7 @@ Every number above was measured under these rules. They are listed so you can we
 - The `ignore` column that `select_sources.py` writes for very small faces is not read by `composite.py`.
 - `download_sources.py` does not retry a throttled download, so one image can go missing and shift the training draws.
 
-Fixed in the same review: a box between two hits no longer cancels the gap bridge (a jittered box at t+1, then at t+2, used to leave mid-gap frames unredacted). Each hit now bridges to the farthest overlapping hit within 30 frames, near-copies are dropped, and the test covers every offset plus the 29-bridged / 30-not boundary. The cost: some over-redaction when a face moves non-linearly during a gap. `expand()` now clamps all four box edges into the frame (a box fully off-frame used to fill a band of the frame; no stored detection was off-frame, so no metric changed), and training and inference pick MPS, then CUDA, then CPU.
+Fixed in the same review: a box between two hits no longer cancels the gap bridge (a jittered box at t+1, then at t+2, used to leave mid-gap frames unredacted). Each hit now bridges to every overlapping hit within 30 frames, and a frame gets an interpolated box only when no original detection there touches the span of the two hits. Nothing is merged or dropped, so the redacted area can only grow. Tests check face-pixel coverage (a non-linear 3-hit track, jitter at t+2) and the 29-bridged / 30-not boundary. Cost: a dense track gains no boxes, but hits every 6th frame give up to 14 overlapping bridge boxes on a gap frame, so some over-redaction. Limit: another face inside that span on a missed frame stops the fill there. `plan()` is a tested library function; no script in this repo runs it over a video yet. `expand()` now clamps all four box edges into the frame (a box fully off-frame used to fill a band of the frame; no stored detection was off-frame, so no metric changed), and training and inference pick MPS, then CUDA, then CPU.
 
 ## Reproduce
 

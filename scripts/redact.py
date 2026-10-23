@@ -33,36 +33,35 @@ def _iou(a, b):
     return i / u if u > 0 else 0.0
 
 
-def _dedupe(boxes, thr=0.9):
-    """Drop boxes that are near-copies (IoU >= thr) of one already kept."""
-    kept = []
-    for b in boxes:
-        if all(_iou(b, k) < thr for k in kept):
-            kept.append(b)
-    return kept
+def _meets(a, b):
+    return min(a[2], b[2]) > max(a[0], b[0]) and min(a[3], b[3]) > max(a[1], b[1])
 
 
 def interpolate_gaps(dets, max_gap=30, min_iou=0.1):
-    """dets: list (per frame) of boxes. Each box at frame t is bridged to the FARTHEST box at t+g
+    """dets: list (per frame) of boxes. Each box at frame t is bridged to EVERY box at t+g
     (1<g<=max_gap) that overlaps it (IoU >= min_iou), with linearly interpolated boxes in between.
-    Boxes in between never cancel a bridge: a jittered or neighbouring box after a hit used to stop
-    it and left mid-gap frames unredacted (review 2026-10-23, at t+1 and again at t+2). Near-copies
-    are then dropped per frame. An extra interpolated box only adds redaction, and recall is the
-    safety requirement; the cost is some over-redaction when a face moves non-linearly."""
+    An interpolated box is added to frame t+k only if no ORIGINAL detection there intersects the
+    hull of the two hits (the box spanning both): a frame where the face was seen keeps its own box,
+    and only true gaps are filled. Known limit: another face inside that hull on a missed frame stops
+    the fill for that frame.
+    Boxes in between never cancel a bridge (review 2026-10-23: a jittered box at t+1, then t+2,
+    used to leave mid-gap frames unredacted), and nothing is merged or dropped, so the redacted
+    area can only grow. The cost is some over-redaction when a face moves non-linearly."""
     out = [list(d) for d in dets]
     n = len(dets)
     for t in range(n):
         for a in dets[t]:
-            for g in range(min(max_gap, n - 1 - t), 1, -1):
-                cand = [b for b in dets[t + g] if _iou(a, b) >= min_iou]
-                if not cand:
-                    continue
-                b = max(cand, key=lambda c: _iou(a, c))
-                for k in range(1, g):
-                    f = k / g
-                    out[t + k].append(tuple(a[i] * (1 - f) + b[i] * f for i in range(4)))
-                break
-    return [_dedupe(fr) for fr in out]
+            for g in range(2, min(max_gap, n - 1 - t) + 1):
+                for b in dets[t + g]:
+                    if _iou(a, b) < min_iou:
+                        continue
+                    hull = (min(a[0], b[0]), min(a[1], b[1]), max(a[2], b[2]), max(a[3], b[3]))
+                    for k in range(1, g):
+                        if any(_meets(hull, c) for c in dets[t + k]):
+                            continue
+                        f = k / g
+                        out[t + k].append(tuple(a[i] * (1 - f) + b[i] * f for i in range(4)))
+    return out
 
 
 def pad(dets, before=8, after=8):

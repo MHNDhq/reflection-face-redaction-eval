@@ -96,6 +96,19 @@ for kk in range(1, 25):
         break
 else:
     check("jitter at any offset t+1..t+24 does not cancel the bridge", True)
+# Coverage, not just "a box exists": the true face position must be fully inside the redaction.
+def _cov(pl, f, face):
+    m = R.redaction_mask((H, W, 3), pl[f])
+    x0, y0, x1, y1 = face
+    return float(m[y0:y1, x0:x1].mean())
+dn = [[] for _ in range(200)]; dn[100] = [(0, 10, 40, 50)]; dn[120] = [(32, 10, 72, 50)]; dn[128] = [(0, 10, 40, 50)]
+pn = R.plan(dn, 8, 8, 30)
+check("non-linear 3-hit track: true face fully covered at frames 109..111", all(_cov(pn, f, (int(round(1.6 * (f - 100))), 10, int(round(1.6 * (f - 100))) + 40, 50)) == 1.0 for f in range(109, 112)))
+dj2 = [[] for _ in range(200)]; dj2[100] = [(10, 10, 50, 50)]; dj2[102] = [(40, 10, 80, 50)]; dj2[125] = [(0, 10, 40, 50)]
+pj2 = R.plan(dj2, 8, 8, 30)
+check("jitter at t+2: true face fully covered at frames 111..116", all(_cov(pj2, f, (int(10 - 10 * (f - 100) / 25), 10, int(10 - 10 * (f - 100) / 25) + 40, 50)) == 1.0 for f in range(111, 117)))
+dd = [[(10 + i, 10, 50 + i, 50)] for i in range(100)]
+check("dense track gains no interpolated boxes", max(len(x) for x in R.interpolate_gaps(dd)) == 1)
 failed = [n for n, c in results if not c]
 print(f"{len(results) - len(failed)}/{len(results)} passed")
 sys.exit(1 if failed else 0)
