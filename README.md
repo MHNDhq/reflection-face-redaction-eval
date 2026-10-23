@@ -13,6 +13,17 @@ faces (toys, dolls, sculptures, cartoon prints, packaging, screens without peopl
 Built in October 2026 by Muhannad Ahmad for an application to a face-redaction trial. It's the first
 face detector he has fine-tuned.
 
+## Pre-registration (2026-10-23T18:22Z, committed before the step it governs)
+
+Written before any detector was run on tune2 and before eval was read again:
+- Tune set: tune (240 images) + tune2 (1,560 composites from 520 new validation-split photos, none used
+  in training, tune or eval; `scripts/select_tune2.py`, `scripts/composite.py --tune2`).
+- Cutoff rule: highest redaction recall on tune + tune2 among grid cutoffs whose tune precision has a
+  cluster-bootstrap 5th percentile of at least 95% (resampling source photos, 1,000 draws, seed 20261024).
+- Grid: unchanged from the previous commit.
+- Model: ft_B (500 steps) vs ft_B_long (1,500 steps, same data): the one with the higher tune recall at
+  its own rule cutoff is reported as "after". Eval is read once, after that choice.
+
 ## What was measured
 
 Eval set: 860 synthetic images (596 scoring faces in 427 face frames, 340 hard-negative frames), all

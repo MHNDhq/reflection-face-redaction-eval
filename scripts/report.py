@@ -8,6 +8,8 @@ YuNet is also reported at 0.9, the client's current setting.
 Usage: .venv/bin/python scripts/report.py
 """
 import json
+
+import numpy as np
 import math
 import sys
 from pathlib import Path
@@ -35,43 +37,71 @@ def load(set_name, name):
     return json.load(open(p)) if p.exists() else None
 
 
-def _wilson_lb(p, n, z=1.96):
-    """Lower end of the 95% Wilson interval for a proportion p measured on n boxes."""
-    if not n:
+BOOT_N, BOOT_SEED, BOOT_Q = 1000, 20261024, 0.05
+
+
+def _per_cluster(recs, dets, thr):
+    """content_id -> [kept boxes, false alarms, faces, faces covered] at cutoff thr."""
+    from evaluate import coverage_image
+    out = {}
+    for r in recs:
+        cov, fa, nk = coverage_image(dets[r["file"]], r["boxes"], r["ignore"], thr)
+        c = out.setdefault(r.get("content_id", r["file"]), [0, 0, 0, 0])
+        c[0] += nk; c[1] += fa; c[2] += len(cov); c[3] += sum(cov)
+    return np.array(list(out.values()), dtype=float)
+
+
+def boot_precision_q(arr, n=BOOT_N, q=BOOT_Q, seed=BOOT_SEED):
+    """One-sided lower bound: the q-quantile of tune precision over a bootstrap that resamples SOURCE
+    PHOTOS (content_id), so the repeated composites of one photo count once (review 2026-10-23: boxes
+    cluster by photo and background, so a per-box interval was too generous)."""
+    if not len(arr) or arr[:, 0].sum() == 0:
         return 0.0
-    d = 1 + z * z / n
-    c = p + z * z / (2 * n)
-    s = z * math.sqrt(p * (1 - p) / n + z * z / (4 * n * n))
-    return (c - s) / d
+    rng = np.random.default_rng(seed)
+    idx = rng.integers(0, len(arr), size=(n, len(arr)))
+    kept, fa = arr[idx, 0].sum(1), arr[idx, 1].sum(1)
+    prec = np.where(kept > 0, (kept - fa) / np.maximum(kept, 1), 1.0)
+    return float(np.quantile(prec, q))
 
 
 def pick_cutoff(recs, dets):
-    """Highest redaction recall on TUNE among cutoffs where the lower end of the two-sided 95% Wilson
-    interval for tune precision is >= 0.95 (z = 1.96, so 97.5% one-sided). The first rule (point precision >= 95% on the 240-image
-    tune split) over-fit that small split: 95-96% on tune became 88-91% on eval. Returns None when no
-    cutoff clears the bound, so the report never shows a fallback as a rule choice."""
+    """PRE-REGISTERED 2026-10-23, committed before any detector was run on tune2 and before eval was
+    re-read: the cutoff with the highest redaction recall on TUNE (tune + tune2) among cutoffs whose
+    tune precision has a cluster-bootstrap 5th percentile >= 0.95 (one-sided 95%). History: rule 1
+    (point precision on the 240-image tune split) over-fit it; rule 2 (per-box Wilson bound) was chosen
+    after a first look at eval and treated clustered boxes as independent. Returns None when no cutoff
+    qualifies, and the report then shows no deployable row."""
     best = None
     for t in GRID:
-        m = metrics(recs, dets, t)
-        p, n = m["redaction_precision"], m.get("redaction_boxes")
-        if p is not None and _wilson_lb(p, n) >= 0.95:
-            if best is None or m["redaction_recall"] > best[1]:
-                best = (t, m["redaction_recall"])
+        arr = _per_cluster(recs, dets, t)
+        if not len(arr) or arr[:, 0].sum() == 0:
+            continue
+        if boot_precision_q(arr) >= 0.95:
+            rec = arr[:, 3].sum() / max(1, arr[:, 2].sum())
+            if best is None or rec > best[1]:
+                best = (t, rec)
     return best[0] if best else None
 
 
 def main():
     ev = json.load(open(ROOT / "data" / "eval" / "annotations.json"))["images"]
     tu = json.load(open(ROOT / "data" / "tune" / "annotations.json"))["images"]
+    t2p = ROOT / "data" / "tune2" / "annotations.json"
+    tu2 = json.load(open(t2p))["images"] if t2p.exists() else []
     out = {"note": "SYNTHETIC eval set (Open Images CC BY 2.0 composites); not the client's footage.",
            "eval_images": len(ev), "tune_images": len(tu), "detectors": {}}
     plt.figure(figsize=(7, 5))
     for name, label in DETS:
-        de, dt = load("eval", name), load("tune", name)
+        de, dt, dt2 = load("eval", name), load("tune", name), load("tune2", name)
+        if tu2 and dt2 is None:
+            print("missing tune2 detections for", name)
+            continue
+        if dt is not None and dt2:
+            dt = {**dt, **dt2}
         if de is None or dt is None:
             print("missing", name)
             continue
-        cut = pick_cutoff(tu, dt)
+        cut = pick_cutoff(tu + tu2, dt)
         row = {"label": label, "cutoff_from_tune": cut,
                "overall": metrics(ev, de, cut) if cut is not None else None,
                "by_family": {f: metrics(ev, de, cut, family=f) for f in FAMS} if cut is not None else None}
@@ -109,9 +139,9 @@ def main():
 
     lines = ["# Results on the SYNTHETIC eval set (not the client's footage)", "",
              f"Eval: {len(ev)} composite images (test-split sources). Tune: {len(tu)} images (validation-split sources held out of training). "
-             "Cutoff per detector = highest redaction recall on TUNE among cutoffs where the lower end of the two-sided 95% Wilson "
-             "interval for tune precision is >= 95%, applied unchanged to EVAL. This rule and the finer cutoff grid were chosen "
-             "AFTER eval had been read under the first rule (point precision >= 95% on tune), which over-fit the small tune split.", "",
+             f"Cutoff per detector = highest redaction recall on TUNE ({len(tu) + len(tu2)} images: tune + tune2) among cutoffs whose tune "
+             "precision has a cluster-bootstrap 5th percentile >= 95% (resampling source photos, 1,000 draws, one-sided 95%), "
+             "applied unchanged to EVAL. Pre-registered before tune2 detections or a new eval read; see README for the two earlier rules.", "",
              "| detector | cutoff | redaction recall | redaction precision | frames fully covered | false-alarm frames (negatives) | recall IoU0.5 | precision IoU0.5 |",
              "|---|---|---|---|---|---|---|---|"]
     for name, row in out["detectors"].items():

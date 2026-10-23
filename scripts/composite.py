@@ -222,7 +222,15 @@ def build(split, out_dir, families, per_source, seed, subset=None, jpeg_q=85):
 
 def main():
     src = pd.read_csv(ROOT / "data" / "sources.csv")
-    val = src[(src.split == "validation") & src.role.isin(["face", "negative"])].ImageID.tolist()
+    pool = src["pool"].fillna("") if "pool" in src.columns else pd.Series([""] * len(src), index=src.index)
+    if "--tune2" in sys.argv:
+        # Second, larger tune set from the disjoint pool added by select_tune2.py (2026-10-23).
+        t2 = set(src[(pool == "tune2") & src.role.isin(["face", "negative"])].ImageID)
+        r = build("validation", ROOT / "data" / "tune2", FAMILIES_TRAIN, 3, seed=505, subset=t2)
+        print("tune2", len(r))
+        return 0
+    # the original split ignores the tune2 pool, so train/tune/eval rebuild exactly as before
+    val = src[(src.split == "validation") & src.role.isin(["face", "negative"]) & (pool != "tune2")].ImageID.tolist()
     rng = np.random.default_rng(7)
     rng.shuffle(val)
     tune = set(val[: len(val) // 10])
