@@ -1,0 +1,125 @@
+"""Build results/metrics.json, results/metrics.md and results/pr_curve.png from saved detections.
+
+Cutoffs are chosen on the TUNE set (validation-split sources, never trained on) as the highest
+redaction recall whose redaction precision is >= 0.95, then applied unchanged to the EVAL set.
+YuNet is also reported at 0.9, the client's current setting.
+
+Usage: .venv/bin/python scripts/report.py
+"""
+import json
+import sys
+from pathlib import Path
+
+import matplotlib
+matplotlib.use("Agg")
+import matplotlib.pyplot as plt  # noqa: E402
+
+sys.path.insert(0, str(Path(__file__).parent))
+from evaluate import metrics  # noqa: E402
+
+ROOT = Path(__file__).resolve().parents[1]
+DETS = [("yunet", "YuNet 2023mar (OpenCV)"), ("blazeface_short", "BlazeFace short-range"),
+        ("blazeface_full", "BlazeFace full-range"), ("ft_A", "Faster R-CNN, plain faces (before)"),
+        ("ft_control", "Faster R-CNN, control: +plain & negatives"),
+        ("ft_B", "Faster R-CNN, +reflection composites (after)")]
+GRID = [round(0.05 * i, 2) for i in range(1, 20)] + [0.97, 0.99]
+FAMS = ["mirror", "appliance", "shower", "photo", "screen", "plain"]
+KEYS = ["redaction_recall", "redaction_precision", "redaction_frames_fully_covered",
+        "redaction_false_alarm_frame_rate", "recall", "precision"]
+
+
+def load(set_name, name):
+    p = ROOT / "results" / f"{set_name}_{name}.json"
+    return json.load(open(p)) if p.exists() else None
+
+
+def pick_cutoff(recs, dets):
+    best = None
+    for t in GRID:
+        m = metrics(recs, dets, t)
+        if m["redaction_precision"] is not None and m["redaction_precision"] >= 0.95:
+            if best is None or m["redaction_recall"] > best[1]:
+                best = (t, m["redaction_recall"])
+    return best[0] if best else max(GRID)
+
+
+def main():
+    ev = json.load(open(ROOT / "data" / "eval" / "annotations.json"))["images"]
+    tu = json.load(open(ROOT / "data" / "tune" / "annotations.json"))["images"]
+    out = {"note": "SYNTHETIC eval set (Open Images CC BY 2.0 composites); not the client's footage.",
+           "eval_images": len(ev), "tune_images": len(tu), "detectors": {}}
+    plt.figure(figsize=(7, 5))
+    for name, label in DETS:
+        de, dt = load("eval", name), load("tune", name)
+        if de is None or dt is None:
+            print("missing", name)
+            continue
+        cut = pick_cutoff(tu, dt)
+        row = {"label": label, "cutoff_from_tune": cut, "overall": metrics(ev, de, cut),
+               "by_family": {f: metrics(ev, de, cut, family=f) for f in FAMS}}
+        if name == "yunet":
+            row["at_0.9"] = {"overall": metrics(ev, de, 0.9),
+                             "by_family": {f: metrics(ev, de, 0.9, family=f) for f in FAMS}}
+        curve = [metrics(ev, de, t) for t in GRID]
+        ok = [(c["redaction_recall"], t, c) for t, c in zip(GRID, curve)
+              if c["redaction_precision"] is not None and c["redaction_precision"] >= 0.95]
+        if ok:
+            r_, t_, c_ = max(ok, key=lambda x: x[0])
+            row["eval_oracle_at_95_precision"] = {"thr": t_, "redaction_recall": r_,
+                                                  "redaction_precision": c_["redaction_precision"],
+                                                  "note": "cutoff chosen ON EVAL; comparison only, not deployable"}
+        row["curve"] = [{"thr": t, "redaction_recall": c["redaction_recall"],
+                         "redaction_precision": c["redaction_precision"]} for t, c in zip(GRID, curve)]
+        out["detectors"][name] = row
+        xs = [c["redaction_recall"] for c in curve]
+        ys = [c["redaction_precision"] if c["redaction_precision"] is not None else 1.0 for c in curve]
+        plt.plot(xs, ys, marker=".", label=label)
+    plt.axhline(0.95, color="grey", lw=0.8, ls="--")
+    plt.axvline(0.99, color="grey", lw=0.8, ls=":")
+    plt.xlabel("redaction recall (faces >=70% covered)")
+    plt.ylabel("redaction precision")
+    plt.title("SYNTHETIC reflection eval set (not real footage)", fontsize=10)
+    plt.xlim(0, 1)
+    plt.ylim(0, 1.02)
+    plt.legend(fontsize=7, loc="lower left")
+    plt.tight_layout()
+    plt.savefig(ROOT / "results" / "pr_curve.png", dpi=130)
+    json.dump(out, open(ROOT / "results" / "metrics.json", "w"), indent=1)
+
+    def pct(v):
+        return "n/a" if v is None else f"{100 * v:.1f}%"
+
+    lines = ["# Results on the SYNTHETIC eval set (not the client's footage)", "",
+             f"Eval: {len(ev)} composite images (test-split sources). Tune: {len(tu)} images (validation-split sources held out of training). "
+             "Cutoff per detector = highest redaction recall with redaction precision >= 95% on TUNE, applied unchanged to EVAL.", "",
+             "| detector | cutoff | redaction recall | redaction precision | frames fully covered | false-alarm frames (negatives) | recall IoU0.5 | precision IoU0.5 |",
+             "|---|---|---|---|---|---|---|---|"]
+    for name, row in out["detectors"].items():
+        rows = [(row["label"], row["cutoff_from_tune"], row["overall"])]
+        if "at_0.9" in row:
+            rows.insert(0, (row["label"] + " at 0.9 (client setting)", 0.9, row["at_0.9"]["overall"]))
+        for lab, c, m in rows:
+            lines.append(f"| {lab} | {c} | {pct(m['redaction_recall'])} | {pct(m['redaction_precision'])} | "
+                         f"{pct(m['redaction_frames_fully_covered'])} | {pct(m['redaction_false_alarm_frame_rate'])} | "
+                         f"{pct(m['recall'])} | {pct(m['precision'])} |")
+    lines += ["", "## Comparison at equal precision (cutoff chosen on EVAL itself; for comparison only, not a deployable number)", "",
+              "| detector | cutoff | redaction recall | redaction precision |", "|---|---|---|---|"]
+    for name, row in out["detectors"].items():
+        o = row.get("eval_oracle_at_95_precision")
+        lines.append(f"| {row['label']} | {o['thr'] if o else 'none'} | {pct(o['redaction_recall']) if o else 'never reaches 95%'} | {pct(o['redaction_precision']) if o else ''} |")
+    lines += ["", "## Redaction recall by family (shower = held out of training)", "",
+              "| detector | " + " | ".join(FAMS) + " |", "|---" * (len(FAMS) + 1) + "|"]
+    for name, row in out["detectors"].items():
+        if "at_0.9" in row:
+            lines.append(f"| {row['label']} at 0.9 | " + " | ".join(pct(row['at_0.9']['by_family'][f]['redaction_recall']) for f in FAMS) + " |")
+        lines.append(f"| {row['label']} at {row['cutoff_from_tune']} | " + " | ".join(pct(row['by_family'][f]['redaction_recall']) for f in FAMS) + " |")
+    lines += ["", "## False-alarm frames on hard negatives by family", "",
+              "| detector | " + " | ".join(FAMS) + " |", "|---" * (len(FAMS) + 1) + "|"]
+    for name, row in out["detectors"].items():
+        lines.append(f"| {row['label']} at {row['cutoff_from_tune']} | " + " | ".join(pct(row['by_family'][f]['redaction_false_alarm_frame_rate']) for f in FAMS) + " |")
+    (ROOT / "results" / "metrics.md").write_text("\n".join(lines) + "\n")
+    print("\n".join(lines))
+
+
+if __name__ == "__main__":
+    main()

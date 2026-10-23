@@ -1,0 +1,6847 @@
+{
+ "note": "SYNTHETIC composites of Open Images CC BY 2.0 photos; not real head-mounted footage.",
+ "split": "validation",
+ "families": [
+  "mirror",
+  "appliance",
+  "photo",
+  "screen",
+  "plain"
+ ],
+ "seed": 202,
+ "images": [
+  {
+   "file": "validation_6c9c687eae7da796_0_mirror.jpg",
+   "family": "mirror",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "6c9c687eae7da796",
+   "background_id": "d60e1c25e87d8b45",
+   "boxes": [
+    [
+     249.3,
+     202.2,
+     317.7,
+     254.0
+    ]
+   ],
+   "ignore": [],
+   "meta": {
+    "family": "mirror",
+    "gain": 0.69,
+    "alpha": 0.85,
+    "panel": [
+     151,
+     2,
+     673,
+     532
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_6c9c687eae7da796_1_appliance.jpg",
+   "family": "appliance",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "6c9c687eae7da796",
+   "background_id": "36a94f02266d3105",
+   "boxes": [
+    [
+     256.3,
+     206.2,
+     324.7,
+     258.0
+    ]
+   ],
+   "ignore": [],
+   "meta": {
+    "family": "appliance",
+    "alpha": 0.44,
+    "panel": [
+     138,
+     6,
+     700,
+     536
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_6482443cb7e34d1f_0_appliance.jpg",
+   "family": "appliance",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "6482443cb7e34d1f",
+   "background_id": "daded832e3ae26b5",
+   "boxes": [
+    [
+     472.1,
+     298.0,
+     496.9,
+     324.1
+    ],
+    [
+     229.9,
+     216.8,
+     344.3,
+     347.4
+    ],
+    [
+     123.3,
+     339.7,
+     222.8,
+     416.6
+    ]
+   ],
+   "ignore": [
+    [
+     330.9,
+     286.7,
+     430.5,
+     394.0
+    ],
+    [
+     140.2,
+     252.1,
+     151.5,
+     266.2
+    ]
+   ],
+   "meta": {
+    "family": "appliance",
+    "alpha": 0.43,
+    "occluder": [
+     295,
+     303,
+     456,
+     395
+    ],
+    "panel": [
+     84,
+     197,
+     510,
+     536
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_6482443cb7e34d1f_1_photo.jpg",
+   "family": "photo",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "6482443cb7e34d1f",
+   "background_id": "e6ec25328efef10a",
+   "boxes": [
+    [
+     161.7,
+     334.5,
+     237.8,
+     416.5
+    ],
+    [
+     227.5,
+     281.1,
+     314.9,
+     380.9
+    ],
+    [
+     320.3,
+     375.0,
+     396.4,
+     433.8
+    ]
+   ],
+   "ignore": [
+    [
+     374.8,
+     308.1,
+     383.5,
+     318.9
+    ]
+   ],
+   "meta": {
+    "family": "photo",
+    "occluder": [
+     172,
+     410,
+     238,
+     484
+    ],
+    "panel": [
+     140,
+     266,
+     386,
+     525
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_e97daed7472324ea_0_photo.jpg",
+   "family": "photo",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "e97daed7472324ea",
+   "background_id": "4416c2f5a9b33f21",
+   "boxes": [
+    [
+     394.7,
+     86.6,
+     473.8,
+     170.8
+    ]
+   ],
+   "ignore": [],
+   "meta": {
+    "family": "photo",
+    "panel": [
+     338,
+     86,
+     670,
+     343
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_e97daed7472324ea_1_screen.jpg",
+   "family": "screen",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "e97daed7472324ea",
+   "background_id": "d60e1c25e87d8b45",
+   "boxes": [
+    [
+     648.8,
+     99.4,
+     702.3,
+     156.4
+    ]
+   ],
+   "ignore": [],
+   "meta": {
+    "family": "screen",
+    "panel": [
+     596,
+     99,
+     849,
+     273
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_a3541a75c35d92cc_0_screen.jpg",
+   "family": "screen",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "a3541a75c35d92cc",
+   "background_id": "eada86bb7ee98792",
+   "boxes": [
+    [
+     581.3,
+     300.2,
+     597.7,
+     320.2
+    ]
+   ],
+   "ignore": [],
+   "meta": {
+    "family": "screen",
+    "panel": [
+     510,
+     287,
+     727,
+     438
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_a3541a75c35d92cc_1_plain.jpg",
+   "family": "plain",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "a3541a75c35d92cc",
+   "background_id": "",
+   "boxes": [
+    [
+     571.8,
+     0,
+     644.6,
+     82.9
+    ]
+   ],
+   "ignore": [],
+   "meta": {
+    "family": "plain"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_9db652b99ba0d220_0_plain.jpg",
+   "family": "plain",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "9db652b99ba0d220",
+   "background_id": "",
+   "boxes": [
+    [
+     328.5,
+     139.5,
+     562.5,
+     409.5
+    ],
+    [
+     147.0,
+     244.5,
+     327.0,
+     430.5
+    ]
+   ],
+   "ignore": [],
+   "meta": {
+    "family": "plain"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_9db652b99ba0d220_1_mirror.jpg",
+   "family": "mirror",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "9db652b99ba0d220",
+   "background_id": "6e701bae6041a830",
+   "boxes": [
+    [
+     476.1,
+     174.9,
+     648.4,
+     373.7
+    ],
+    [
+     342.5,
+     252.2,
+     475.0,
+     389.1
+    ]
+   ],
+   "ignore": [],
+   "meta": {
+    "family": "mirror",
+    "gain": 0.92,
+    "alpha": 0.83,
+    "occluder": [
+     612,
+     261,
+     842,
+     522
+    ],
+    "panel": [
+     270,
+     6,
+     905,
+     536
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_066571234281ca95_0_mirror.jpg",
+   "family": "mirror",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "066571234281ca95",
+   "background_id": "805d2f6bfb4f5cba",
+   "boxes": [
+    [
+     712.3,
+     127.2,
+     771.6,
+     197.3
+    ],
+    [
+     449.0,
+     129.6,
+     515.4,
+     197.3
+    ],
+    [
+     236.7,
+     153.4,
+     281.7,
+     222.3
+    ]
+   ],
+   "ignore": [],
+   "meta": {
+    "family": "mirror",
+    "gain": 0.99,
+    "alpha": 0.87,
+    "panel": [
+     186,
+     6,
+     854,
+     536
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_066571234281ca95_1_appliance.jpg",
+   "family": "appliance",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "066571234281ca95",
+   "background_id": "298f427e2a08b44e",
+   "boxes": [
+    [
+     706.7,
+     188.1,
+     757.6,
+     248.2
+    ],
+    [
+     480.6,
+     190.1,
+     537.6,
+     248.2
+    ],
+    [
+     298.3,
+     210.5,
+     337.0,
+     269.7
+    ]
+   ],
+   "ignore": [],
+   "meta": {
+    "family": "appliance",
+    "alpha": 0.52,
+    "panel": [
+     276,
+     84,
+     807,
+     539
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_2d7aeb9c4b50704f_0_appliance.jpg",
+   "family": "appliance",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "2d7aeb9c4b50704f",
+   "background_id": "1d0caf874fcada77",
+   "boxes": [
+    [
+     273.7,
+     247.8,
+     574.3,
+     487.9
+    ]
+   ],
+   "ignore": [],
+   "meta": {
+    "family": "appliance",
+    "alpha": 0.34,
+    "panel": [
+     144,
+     82,
+     605,
+     534
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_2d7aeb9c4b50704f_1_photo.jpg",
+   "family": "photo",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "2d7aeb9c4b50704f",
+   "background_id": "9a6c111db3384eab",
+   "boxes": [
+    [
+     636.3,
+     254.8,
+     854.1,
+     428.8
+    ]
+   ],
+   "ignore": [],
+   "meta": {
+    "family": "photo",
+    "occluder": [
+     825,
+     258,
+     883,
+     386
+    ],
+    "panel": [
+     614,
+     79,
+     948,
+     518
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_2317fb15bcd3ce85_0_photo.jpg",
+   "family": "photo",
+   "label": "positive_ignore_only",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "2317fb15bcd3ce85",
+   "background_id": "fcecb8614f1b8c70",
+   "boxes": [],
+   "ignore": [
+    [
+     681.0,
+     0,
+     906.0,
+     374.4
+    ]
+   ],
+   "meta": {
+    "family": "photo",
+    "occluder": [
+     767,
+     132,
+     865,
+     242
+    ],
+    "panel": [
+     596,
+     62,
+     906,
+     276
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_2317fb15bcd3ce85_1_screen.jpg",
+   "family": "screen",
+   "label": "positive_ignore_only",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "2317fb15bcd3ce85",
+   "background_id": "31fc1e21076e496a",
+   "boxes": [],
+   "ignore": [
+    [
+     70.7,
+     245.9,
+     234.0,
+     537.4
+    ]
+   ],
+   "meta": {
+    "family": "screen",
+    "panel": [
+     9,
+     305,
+     234,
+     472
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_6623159697bec1a5_0_screen.jpg",
+   "family": "screen",
+   "label": "positive_ignore_only",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "6623159697bec1a5",
+   "background_id": "9ccf76a5da825189",
+   "boxes": [],
+   "ignore": [
+    [
+     400.5,
+     322.4,
+     452.6,
+     388.8
+    ]
+   ],
+   "meta": {
+    "family": "screen",
+    "occluder": [
+     376,
+     357,
+     466,
+     432
+    ],
+    "panel": [
+     292,
+     273,
+     584,
+     453
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_6623159697bec1a5_1_plain.jpg",
+   "family": "plain",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "6623159697bec1a5",
+   "background_id": "",
+   "boxes": [
+    [
+     356.8,
+     135.6,
+     528.1,
+     353.7
+    ]
+   ],
+   "ignore": [],
+   "meta": {
+    "family": "plain"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_a50590804f2c3cb9_0_plain.jpg",
+   "family": "plain",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "a50590804f2c3cb9",
+   "background_id": "",
+   "boxes": [
+    [
+     409.9,
+     0,
+     728.5,
+     436.2
+    ]
+   ],
+   "ignore": [],
+   "meta": {
+    "family": "plain"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_a50590804f2c3cb9_1_mirror.jpg",
+   "family": "mirror",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "a50590804f2c3cb9",
+   "background_id": "1773ef49f38531a9",
+   "boxes": [
+    [
+     154.2,
+     93.3,
+     361.0,
+     378.5
+    ]
+   ],
+   "ignore": [],
+   "meta": {
+    "family": "mirror",
+    "gain": 0.97,
+    "alpha": 0.92,
+    "panel": [
+     4,
+     6,
+     627,
+     536
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_a8d7f65b1f6c2b76_0_mirror.jpg",
+   "family": "mirror",
+   "label": "positive_ignore_only",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "a8d7f65b1f6c2b76",
+   "background_id": "a668c83b783da350",
+   "boxes": [],
+   "ignore": [
+    [
+     607.9,
+     0,
+     679.0,
+     44.6
+    ]
+   ],
+   "meta": {
+    "family": "mirror",
+    "gain": 0.96,
+    "alpha": 0.91,
+    "panel": [
+     396,
+     28,
+     930,
+     533
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_a8d7f65b1f6c2b76_1_appliance.jpg",
+   "family": "appliance",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "a8d7f65b1f6c2b76",
+   "background_id": "df754b5d85cef4f2",
+   "boxes": [
+    [
+     617.5,
+     13.0,
+     671.7,
+     93.2
+    ]
+   ],
+   "ignore": [],
+   "meta": {
+    "family": "appliance",
+    "alpha": 0.51,
+    "panel": [
+     456,
+     8,
+     863,
+     538
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_7346721d1818fba2_0_appliance.jpg",
+   "family": "appliance",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "7346721d1818fba2",
+   "background_id": "56afb0cb25e9579b",
+   "boxes": [
+    [
+     317.1,
+     119.1,
+     607.3,
+     493.4
+    ]
+   ],
+   "ignore": [],
+   "meta": {
+    "family": "appliance",
+    "alpha": 0.52,
+    "panel": [
+     220,
+     0,
+     724,
+     481
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_7346721d1818fba2_1_photo.jpg",
+   "family": "photo",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "7346721d1818fba2",
+   "background_id": "eada86bb7ee98792",
+   "boxes": [
+    [
+     661.5,
+     153.3,
+     817.0,
+     353.8
+    ]
+   ],
+   "ignore": [],
+   "meta": {
+    "family": "photo",
+    "panel": [
+     599,
+     79,
+     869,
+     357
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_35e2ec3e4f2e2243_0_photo.jpg",
+   "family": "photo",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "35e2ec3e4f2e2243",
+   "background_id": "fbdf5daeb9cc7bdd",
+   "boxes": [
+    [
+     151.7,
+     232.4,
+     219.4,
+     290.3
+    ]
+   ],
+   "ignore": [],
+   "meta": {
+    "family": "photo",
+    "occluder": [
+     303,
+     289,
+     402,
+     437
+    ],
+    "panel": [
+     65,
+     173,
+     430,
+     525
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_35e2ec3e4f2e2243_1_screen.jpg",
+   "family": "screen",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "35e2ec3e4f2e2243",
+   "background_id": "b126d892cf849c7b",
+   "boxes": [
+    [
+     187.6,
+     330.6,
+     238.7,
+     374.4
+    ]
+   ],
+   "ignore": [],
+   "meta": {
+    "family": "screen",
+    "occluder": [
+     200,
+     445,
+     249,
+     490
+    ],
+    "panel": [
+     122,
+     340,
+     398,
+     498
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_f24d1bab9b70c34e_0_screen.jpg",
+   "family": "screen",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "f24d1bab9b70c34e",
+   "background_id": "cfa5389b9eeba8f1",
+   "boxes": [
+    [
+     610.2,
+     325.2,
+     716.5,
+     435.9
+    ]
+   ],
+   "ignore": [],
+   "meta": {
+    "family": "screen",
+    "panel": [
+     502,
+     248,
+     863,
+     515
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_f24d1bab9b70c34e_1_plain.jpg",
+   "family": "plain",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "f24d1bab9b70c34e",
+   "background_id": "",
+   "boxes": [
+    [
+     389.7,
+     119.8,
+     672.3,
+     414.0
+    ]
+   ],
+   "ignore": [],
+   "meta": {
+    "family": "plain"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_ff28e5848bf27472_0_plain.jpg",
+   "family": "plain",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "ff28e5848bf27472",
+   "background_id": "",
+   "boxes": [
+    [
+     534.0,
+     0,
+     957.0,
+     540
+    ]
+   ],
+   "ignore": [],
+   "meta": {
+    "family": "plain"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_ff28e5848bf27472_1_mirror.jpg",
+   "family": "mirror",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "ff28e5848bf27472",
+   "background_id": "de21797f6d073a92",
+   "boxes": [
+    [
+     414.4,
+     0,
+     676.1,
+     430.6
+    ]
+   ],
+   "ignore": [],
+   "meta": {
+    "family": "mirror",
+    "gain": 0.74,
+    "alpha": 0.87,
+    "panel": [
+     84,
+     3,
+     678,
+     414
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_2c217318b424591d_0_mirror.jpg",
+   "family": "mirror",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "2c217318b424591d",
+   "background_id": "e3a41aa21875053e",
+   "boxes": [
+    [
+     462.2,
+     183.8,
+     570.0,
+     314.5
+    ]
+   ],
+   "ignore": [],
+   "meta": {
+    "family": "mirror",
+    "gain": 0.8,
+    "alpha": 0.83,
+    "panel": [
+     216,
+     90,
+     630,
+     446
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_2c217318b424591d_1_appliance.jpg",
+   "family": "appliance",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "2c217318b424591d",
+   "background_id": "e3de278bad0e47e1",
+   "boxes": [
+    [
+     382.5,
+     216.0,
+     500.9,
+     359.5
+    ]
+   ],
+   "ignore": [],
+   "meta": {
+    "family": "appliance",
+    "alpha": 0.58,
+    "occluder": [
+     103,
+     120,
+     263,
+     294
+    ],
+    "panel": [
+     38,
+     113,
+     641,
+     504
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_8e823edbec198781_0_appliance.jpg",
+   "family": "appliance",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "8e823edbec198781",
+   "background_id": "0af4ba8fd2a7e628",
+   "boxes": [
+    [
+     464.0,
+     188.0,
+     546.0,
+     295.5
+    ]
+   ],
+   "ignore": [],
+   "meta": {
+    "family": "appliance",
+    "alpha": 0.58,
+    "panel": [
+     217,
+     4,
+     926,
+     534
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_8e823edbec198781_1_photo.jpg",
+   "family": "photo",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "8e823edbec198781",
+   "background_id": "82ed3a2de7df67a8",
+   "boxes": [
+    [
+     739.2,
+     137.5,
+     782.9,
+     194.7
+    ]
+   ],
+   "ignore": [],
+   "meta": {
+    "family": "photo",
+    "panel": [
+     590,
+     39,
+     860,
+     322
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_148c25d2f620d40f_0_photo.jpg",
+   "family": "photo",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "148c25d2f620d40f",
+   "background_id": "2c74cdf45c4c6bd7",
+   "boxes": [
+    [
+     236.6,
+     148.2,
+     282.4,
+     224.6
+    ],
+    [
+     312.3,
+     93.3,
+     386.1,
+     189.8
+    ]
+   ],
+   "ignore": [],
+   "meta": {
+    "family": "photo",
+    "panel": [
+     168,
+     42,
+     458,
+     318
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_148c25d2f620d40f_1_screen.jpg",
+   "family": "screen",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "148c25d2f620d40f",
+   "background_id": "faa0453ecfeb8ade",
+   "boxes": [
+    [
+     608.3,
+     225.3,
+     645.9,
+     288.0
+    ],
+    [
+     670.5,
+     180.1,
+     731.2,
+     259.4
+    ]
+   ],
+   "ignore": [],
+   "meta": {
+    "family": "screen",
+    "panel": [
+     501,
+     149,
+     841,
+     353
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_1876ff97a1af1590_0_screen.jpg",
+   "family": "screen",
+   "label": "positive_ignore_only",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "1876ff97a1af1590",
+   "background_id": "058e15fa186f01f2",
+   "boxes": [],
+   "ignore": [
+    [
+     589.8,
+     487.5,
+     605.4,
+     502.7
+    ],
+    [
+     660.4,
+     376.8,
+     671.3,
+     388.5
+    ],
+    [
+     679.8,
+     367.8,
+     691.7,
+     380.4
+    ]
+   ],
+   "meta": {
+    "family": "screen",
+    "occluder": [
+     643,
+     377,
+     683,
+     465
+    ],
+    "panel": [
+     552,
+     364,
+     759,
+     513
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_1876ff97a1af1590_1_plain.jpg",
+   "family": "plain",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "1876ff97a1af1590",
+   "background_id": "",
+   "boxes": [
+    [
+     175.5,
+     496.5,
+     247.5,
+     540
+    ],
+    [
+     432.0,
+     45.0,
+     490.5,
+     108.0
+    ],
+    [
+     502.5,
+     0,
+     553.5,
+     37.5
+    ]
+   ],
+   "ignore": [],
+   "meta": {
+    "family": "plain"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_75ed7924c47f984d_0_plain.jpg",
+   "family": "plain",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "75ed7924c47f984d",
+   "background_id": "",
+   "boxes": [
+    [
+     317.1,
+     131.4,
+     786.7,
+     540
+    ],
+    [
+     97.0,
+     173.0,
+     213.1,
+     339.3
+    ]
+   ],
+   "ignore": [],
+   "meta": {
+    "family": "plain"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_75ed7924c47f984d_1_mirror.jpg",
+   "family": "mirror",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "75ed7924c47f984d",
+   "background_id": "778b048754c0bb2e",
+   "boxes": [
+    [
+     445.1,
+     190.5,
+     704.3,
+     482.3
+    ],
+    [
+     323.6,
+     213.4,
+     387.7,
+     305.3
+    ]
+   ],
+   "ignore": [],
+   "meta": {
+    "family": "mirror",
+    "gain": 0.95,
+    "alpha": 0.86,
+    "panel": [
+     308,
+     2,
+     763,
+     532
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_d42d89a05bd27236_0_mirror.jpg",
+   "family": "mirror",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "d42d89a05bd27236",
+   "background_id": "2305e785c4e0bf51",
+   "boxes": [
+    [
+     561.1,
+     169.8,
+     595.4,
+     212.7
+    ],
+    [
+     149.5,
+     85.6,
+     178.1,
+     165.6
+    ]
+   ],
+   "ignore": [
+    [
+     268.1,
+     0,
+     436.8,
+     114.1
+    ]
+   ],
+   "meta": {
+    "family": "mirror",
+    "gain": 0.61,
+    "alpha": 0.96,
+    "panel": [
+     8,
+     6,
+     654,
+     536
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_d42d89a05bd27236_1_appliance.jpg",
+   "family": "appliance",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "d42d89a05bd27236",
+   "background_id": "1c638bccdd166c99",
+   "boxes": [
+    [
+     622.4,
+     185.1,
+     642.2,
+     209.8
+    ],
+    [
+     453.2,
+     26.7,
+     550.6,
+     152.9
+    ],
+    [
+     384.7,
+     136.4,
+     401.2,
+     182.6
+    ]
+   ],
+   "ignore": [],
+   "meta": {
+    "family": "appliance",
+    "alpha": 0.35,
+    "panel": [
+     303,
+     39,
+     676,
+     447
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_fd9ddaaed288ee16_0_appliance.jpg",
+   "family": "appliance",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "fd9ddaaed288ee16",
+   "background_id": "d69771a6f3fdfddc",
+   "boxes": [
+    [
+     645.3,
+     51.0,
+     691.0,
+     110.7
+    ]
+   ],
+   "ignore": [
+    [
+     551.4,
+     0,
+     654.2,
+     24.4
+    ]
+   ],
+   "meta": {
+    "family": "appliance",
+    "alpha": 0.25,
+    "occluder": [
+     687,
+     228,
+     923,
+     374
+    ],
+    "panel": [
+     318,
+     3,
+     927,
+     533
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_fd9ddaaed288ee16_1_photo.jpg",
+   "family": "photo",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "fd9ddaaed288ee16",
+   "background_id": "9d7cb855ed6b711d",
+   "boxes": [
+    [
+     474.5,
+     212.3,
+     494.2,
+     238.0
+    ],
+    [
+     490.4,
+     151.2,
+     534.6,
+     200.9
+    ]
+   ],
+   "ignore": [],
+   "meta": {
+    "family": "photo",
+    "panel": [
+     373,
+     145,
+     635,
+     465
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_a4d5f8ad014e1c22_0_photo.jpg",
+   "family": "photo",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "a4d5f8ad014e1c22",
+   "background_id": "e28339ea57d1e17c",
+   "boxes": [
+    [
+     519.4,
+     45.9,
+     570.1,
+     121.0
+    ]
+   ],
+   "ignore": [],
+   "meta": {
+    "family": "photo",
+    "occluder": [
+     542,
+     310,
+     647,
+     414
+    ],
+    "panel": [
+     423,
+     13,
+     761,
+     418
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_a4d5f8ad014e1c22_1_screen.jpg",
+   "family": "screen",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "a4d5f8ad014e1c22",
+   "background_id": "2f0a18a409d5a769",
+   "boxes": [
+    [
+     261.2,
+     123.0,
+     289.0,
+     164.2
+    ]
+   ],
+   "ignore": [],
+   "meta": {
+    "family": "screen",
+    "occluder": [
+     223,
+     172,
+     269,
+     244
+    ],
+    "panel": [
+     153,
+     111,
+     449,
+     321
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_2ba320ff150ad757_0_screen.jpg",
+   "family": "screen",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "2ba320ff150ad757",
+   "background_id": "2f146af17de4b933",
+   "boxes": [
+    [
+     482.8,
+     399.8,
+     580.2,
+     480.6
+    ]
+   ],
+   "ignore": [],
+   "meta": {
+    "family": "screen",
+    "panel": [
+     410,
+     350,
+     685,
+     505
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_2ba320ff150ad757_1_plain.jpg",
+   "family": "plain",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "2ba320ff150ad757",
+   "background_id": "",
+   "boxes": [
+    [
+     254.0,
+     174.0,
+     594.0,
+     456.0
+    ]
+   ],
+   "ignore": [],
+   "meta": {
+    "family": "plain"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_62035dceb3350954_0_plain.jpg",
+   "family": "plain",
+   "label": "positive_ignore_only",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "62035dceb3350954",
+   "background_id": "",
+   "boxes": [],
+   "ignore": [
+    [
+     379.1,
+     0,
+     666.5,
+     234.8
+    ]
+   ],
+   "meta": {
+    "family": "plain"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_62035dceb3350954_1_mirror.jpg",
+   "family": "mirror",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "62035dceb3350954",
+   "background_id": "feb70e5c996fcb5e",
+   "boxes": [
+    [
+     262.0,
+     28.7,
+     420.7,
+     250.1
+    ]
+   ],
+   "ignore": [],
+   "meta": {
+    "family": "mirror",
+    "gain": 0.81,
+    "alpha": 0.84,
+    "occluder": [
+     385,
+     83,
+     526,
+     199
+    ],
+    "panel": [
+     100,
+     34,
+     630,
+     504
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_51690d45da8e1144_0_mirror.jpg",
+   "family": "mirror",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "51690d45da8e1144",
+   "background_id": "d0a6df63ac479c52",
+   "boxes": [
+    [
+     347.0,
+     0,
+     875.0,
+     486.9
+    ]
+   ],
+   "ignore": [],
+   "meta": {
+    "family": "mirror",
+    "gain": 0.99,
+    "alpha": 0.96,
+    "panel": [
+     240,
+     1,
+     875,
+     531
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_51690d45da8e1144_1_appliance.jpg",
+   "family": "appliance",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "51690d45da8e1144",
+   "background_id": "2372334720d26b08",
+   "boxes": [
+    [
+     411.4,
+     0,
+     798.0,
+     425.8
+    ]
+   ],
+   "ignore": [],
+   "meta": {
+    "family": "appliance",
+    "alpha": 0.45,
+    "panel": [
+     333,
+     19,
+     798,
+     509
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_9b0f6ca39df9c9de_0_appliance.jpg",
+   "family": "appliance",
+   "label": "positive_ignore_only",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "9b0f6ca39df9c9de",
+   "background_id": "3a3eb81e3118c59f",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "appliance",
+    "alpha": 0.48,
+    "occluder": [
+     692,
+     73,
+     878,
+     361
+    ],
+    "panel": [
+     304,
+     1,
+     935,
+     484
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_9b0f6ca39df9c9de_1_photo.jpg",
+   "family": "photo",
+   "label": "positive_ignore_only",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "9b0f6ca39df9c9de",
+   "background_id": "cd727c5e0d2cfc1b",
+   "boxes": [],
+   "ignore": [
+    [
+     494.8,
+     47.5,
+     568.7,
+     139.8
+    ]
+   ],
+   "meta": {
+    "family": "photo",
+    "occluder": [
+     443,
+     126,
+     584,
+     322
+    ],
+    "panel": [
+     340,
+     93,
+     713,
+     529
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_0c1dcf65f36ef52a_0_photo.jpg",
+   "family": "photo",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "0c1dcf65f36ef52a",
+   "background_id": "2c74cdf45c4c6bd7",
+   "boxes": [
+    [
+     207.3,
+     90.8,
+     276.2,
+     192.4
+    ]
+   ],
+   "ignore": [],
+   "meta": {
+    "family": "photo",
+    "panel": [
+     105,
+     73,
+     356,
+     244
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_0c1dcf65f36ef52a_1_screen.jpg",
+   "family": "screen",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "0c1dcf65f36ef52a",
+   "background_id": "2c74cdf45c4c6bd7",
+   "boxes": [
+    [
+     123.0,
+     262.1,
+     189.1,
+     359.5
+    ]
+   ],
+   "ignore": [],
+   "meta": {
+    "family": "screen",
+    "panel": [
+     31,
+     245,
+     260,
+     409
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_c2491bc19783921a_0_screen.jpg",
+   "family": "screen",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "c2491bc19783921a",
+   "background_id": "e6ec25328efef10a",
+   "boxes": [
+    [
+     582.3,
+     119.1,
+     638.3,
+     192.5
+    ]
+   ],
+   "ignore": [],
+   "meta": {
+    "family": "screen",
+    "panel": [
+     457,
+     100,
+     672,
+     235
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_c2491bc19783921a_1_plain.jpg",
+   "family": "plain",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "c2491bc19783921a",
+   "background_id": "",
+   "boxes": [
+    [
+     559.4,
+     52.5,
+     809.6,
+     380.4
+    ]
+   ],
+   "ignore": [],
+   "meta": {
+    "family": "plain"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_539f0588f01b36a8_0_plain.jpg",
+   "family": "plain",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "539f0588f01b36a8",
+   "background_id": "",
+   "boxes": [
+    [
+     243.0,
+     163.5,
+     732.0,
+     540
+    ]
+   ],
+   "ignore": [],
+   "meta": {
+    "family": "plain"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_539f0588f01b36a8_1_mirror.jpg",
+   "family": "mirror",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "539f0588f01b36a8",
+   "background_id": "1d0caf874fcada77",
+   "boxes": [
+    [
+     140.2,
+     195.6,
+     500.1,
+     539.0
+    ]
+   ],
+   "ignore": [],
+   "meta": {
+    "family": "mirror",
+    "gain": 0.71,
+    "alpha": 0.85,
+    "occluder": [
+     237,
+     60,
+     365,
+     313
+    ],
+    "panel": [
+     6,
+     9,
+     646,
+     539
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_00fd93edd4717826_0_mirror.jpg",
+   "family": "mirror",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "00fd93edd4717826",
+   "background_id": "c493c72d8eb2faa9",
+   "boxes": [
+    [
+     27.1,
+     155.3,
+     434.8,
+     540
+    ]
+   ],
+   "ignore": [],
+   "meta": {
+    "family": "mirror",
+    "gain": 0.57,
+    "alpha": 0.9,
+    "panel": [
+     14,
+     8,
+     607,
+     538
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_00fd93edd4717826_1_appliance.jpg",
+   "family": "appliance",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "00fd93edd4717826",
+   "background_id": "eada86bb7ee98792",
+   "boxes": [
+    [
+     298.6,
+     181.0,
+     657.4,
+     540
+    ]
+   ],
+   "ignore": [],
+   "meta": {
+    "family": "appliance",
+    "alpha": 0.31,
+    "panel": [
+     287,
+     35,
+     809,
+     533
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_90ed9047aac9d579_0_appliance.jpg",
+   "family": "appliance",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "90ed9047aac9d579",
+   "background_id": "3d76574f1dec8b0a",
+   "boxes": [
+    [
+     353.7,
+     129.5,
+     443.9,
+     253.8
+    ],
+    [
+     8.5,
+     177.1,
+     89.9,
+     272.2
+    ]
+   ],
+   "ignore": [],
+   "meta": {
+    "family": "appliance",
+    "alpha": 0.57,
+    "panel": [
+     29,
+     46,
+     428,
+     514
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_90ed9047aac9d579_1_photo.jpg",
+   "family": "photo",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "90ed9047aac9d579",
+   "background_id": "680742e474d75e29",
+   "boxes": [
+    [
+     177.4,
+     147.8,
+     248.5,
+     245.8
+    ],
+    [
+     456.5,
+     185.4,
+     520.7,
+     260.4
+    ]
+   ],
+   "ignore": [],
+   "meta": {
+    "family": "photo",
+    "occluder": [
+     230,
+     88,
+     331,
+     229
+    ],
+    "panel": [
+     181,
+     82,
+     513,
+     451
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_7f5b7fdcb0dba4a3_0_photo.jpg",
+   "family": "photo",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "7f5b7fdcb0dba4a3",
+   "background_id": "cd15bd46c87a957c",
+   "boxes": [
+    [
+     203.3,
+     86.6,
+     275.2,
+     283.6
+    ]
+   ],
+   "ignore": [],
+   "meta": {
+    "family": "photo",
+    "panel": [
+     27,
+     81,
+     314,
+     345
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_7f5b7fdcb0dba4a3_1_screen.jpg",
+   "family": "screen",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "7f5b7fdcb0dba4a3",
+   "background_id": "3067441dbc504455",
+   "boxes": [
+    [
+     559.2,
+     0,
+     658.4,
+     263.5
+    ]
+   ],
+   "ignore": [],
+   "meta": {
+    "family": "screen",
+    "occluder": [
+     482,
+     123,
+     610,
+     215
+    ],
+    "panel": [
+     316,
+     35,
+     712,
+     295
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_d199144d2c868f25_0_screen.jpg",
+   "family": "screen",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "d199144d2c868f25",
+   "background_id": "e28339ea57d1e17c",
+   "boxes": [
+    [
+     427.9,
+     285.0,
+     488.3,
+     350.0
+    ]
+   ],
+   "ignore": [],
+   "meta": {
+    "family": "screen",
+    "panel": [
+     257,
+     254,
+     604,
+     462
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_d199144d2c868f25_1_plain.jpg",
+   "family": "plain",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "d199144d2c868f25",
+   "background_id": "",
+   "boxes": [
+    [
+     472.9,
+     66.2,
+     640.0,
+     246.1
+    ]
+   ],
+   "ignore": [],
+   "meta": {
+    "family": "plain"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_a4381ef4bde37c0b_0_plain.jpg",
+   "family": "plain",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "a4381ef4bde37c0b",
+   "background_id": "",
+   "boxes": [
+    [
+     363.9,
+     0,
+     672.3,
+     320.3
+    ]
+   ],
+   "ignore": [],
+   "meta": {
+    "family": "plain"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_a4381ef4bde37c0b_1_mirror.jpg",
+   "family": "mirror",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "a4381ef4bde37c0b",
+   "background_id": "d69771a6f3fdfddc",
+   "boxes": [
+    [
+     553.1,
+     119.7,
+     694.8,
+     307.6
+    ]
+   ],
+   "ignore": [],
+   "meta": {
+    "family": "mirror",
+    "gain": 0.8,
+    "alpha": 0.82,
+    "panel": [
+     442,
+     64,
+     841,
+     505
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_d1a995e53123f606_0_mirror.jpg",
+   "family": "mirror",
+   "label": "positive_ignore_only",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "d1a995e53123f606",
+   "background_id": "ad00dc935b78097a",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "mirror",
+    "gain": 0.58,
+    "alpha": 0.97,
+    "occluder": [
+     104,
+     91,
+     261,
+     203
+    ],
+    "panel": [
+     5,
+     77,
+     406,
+     402
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_d1a995e53123f606_1_appliance.jpg",
+   "family": "appliance",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "d1a995e53123f606",
+   "background_id": "ad6262759600009f",
+   "boxes": [
+    [
+     330.1,
+     128.6,
+     407.9,
+     209.8
+    ]
+   ],
+   "ignore": [],
+   "meta": {
+    "family": "appliance",
+    "alpha": 0.41,
+    "panel": [
+     201,
+     13,
+     605,
+     521
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_350b868bda8dd8b9_0_appliance.jpg",
+   "family": "appliance",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "350b868bda8dd8b9",
+   "background_id": "9bea36757c0e50c4",
+   "boxes": [
+    [
+     296.9,
+     125.4,
+     532.0,
+     477.1
+    ]
+   ],
+   "ignore": [],
+   "meta": {
+    "family": "appliance",
+    "alpha": 0.41,
+    "panel": [
+     121,
+     100,
+     787,
+     527
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_350b868bda8dd8b9_1_photo.jpg",
+   "family": "photo",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "350b868bda8dd8b9",
+   "background_id": "a668c83b783da350",
+   "boxes": [
+    [
+     329.7,
+     266.7,
+     451.2,
+     448.4
+    ]
+   ],
+   "ignore": [],
+   "meta": {
+    "family": "photo",
+    "occluder": [
+     348,
+     311,
+     405,
+     377
+    ],
+    "panel": [
+     206,
+     235,
+     533,
+     493
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_9ffd5125659cfc5b_0_photo.jpg",
+   "family": "photo",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "9ffd5125659cfc5b",
+   "background_id": "05a18d04f2f02d4b",
+   "boxes": [
+    [
+     323.5,
+     19.1,
+     671.0,
+     504.3
+    ]
+   ],
+   "ignore": [],
+   "meta": {
+    "family": "photo",
+    "panel": [
+     292,
+     8,
+     677,
+     538
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_9ffd5125659cfc5b_1_screen.jpg",
+   "family": "screen",
+   "label": "positive_ignore_only",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "9ffd5125659cfc5b",
+   "background_id": "fcfbd8e754fea64f",
+   "boxes": [],
+   "ignore": [
+    [
+     228.4,
+     206.8,
+     419.7,
+     474.0
+    ]
+   ],
+   "meta": {
+    "family": "screen",
+    "panel": [
+     211,
+     280,
+     423,
+     414
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_bece0e2cba1fcd33_0_screen.jpg",
+   "family": "screen",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "bece0e2cba1fcd33",
+   "background_id": "b655ede651e45487",
+   "boxes": [
+    [
+     283.7,
+     0,
+     535.0,
+     226.7
+    ]
+   ],
+   "ignore": [],
+   "meta": {
+    "family": "screen",
+    "occluder": [
+     407,
+     81,
+     507,
+     134
+    ],
+    "panel": [
+     247,
+     8,
+     570,
+     239
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_bece0e2cba1fcd33_1_plain.jpg",
+   "family": "plain",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "bece0e2cba1fcd33",
+   "background_id": "",
+   "boxes": [
+    [
+     104.0,
+     0,
+     850.8,
+     540
+    ]
+   ],
+   "ignore": [],
+   "meta": {
+    "family": "plain"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_5109720f0b14681a_0_plain.jpg",
+   "family": "plain",
+   "label": "positive_ignore_only",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "5109720f0b14681a",
+   "background_id": "",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "plain"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_5109720f0b14681a_1_mirror.jpg",
+   "family": "mirror",
+   "label": "positive_ignore_only",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "5109720f0b14681a",
+   "background_id": "05042cfa44abe4f6",
+   "boxes": [],
+   "ignore": [
+    [
+     485.7,
+     0,
+     581.8,
+     75.4
+    ]
+   ],
+   "meta": {
+    "family": "mirror",
+    "gain": 0.72,
+    "alpha": 0.92,
+    "panel": [
+     291,
+     2,
+     848,
+     532
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_05c6fc62d2980f50_0_mirror.jpg",
+   "family": "mirror",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "05c6fc62d2980f50",
+   "background_id": "9a6c111db3384eab",
+   "boxes": [
+    [
+     212.0,
+     125.0,
+     555.0,
+     540
+    ]
+   ],
+   "ignore": [],
+   "meta": {
+    "family": "mirror",
+    "gain": 0.92,
+    "alpha": 0.96,
+    "occluder": [
+     291,
+     245,
+     399,
+     424
+    ],
+    "panel": [
+     96,
+     67,
+     666,
+     496
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_05c6fc62d2980f50_1_appliance.jpg",
+   "family": "appliance",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "05c6fc62d2980f50",
+   "background_id": "31fc1e21076e496a",
+   "boxes": [
+    [
+     411.9,
+     123.6,
+     727.8,
+     540
+    ]
+   ],
+   "ignore": [],
+   "meta": {
+    "family": "appliance",
+    "alpha": 0.25,
+    "panel": [
+     305,
+     2,
+     830,
+     532
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_98a3114321ddd6e1_0_appliance.jpg",
+   "family": "appliance",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "98a3114321ddd6e1",
+   "background_id": "72629128427cf83c",
+   "boxes": [
+    [
+     373.3,
+     103.0,
+     946.0,
+     485.0
+    ]
+   ],
+   "ignore": [],
+   "meta": {
+    "family": "appliance",
+    "alpha": 0.47,
+    "panel": [
+     429,
+     103,
+     891,
+     485
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_98a3114321ddd6e1_1_photo.jpg",
+   "family": "photo",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "98a3114321ddd6e1",
+   "background_id": "154bb12ff0554141",
+   "boxes": [
+    [
+     518.0,
+     166.0,
+     883.8,
+     410.0
+    ]
+   ],
+   "ignore": [],
+   "meta": {
+    "family": "photo",
+    "occluder": [
+     615,
+     185,
+     670,
+     300
+    ],
+    "panel": [
+     555,
+     166,
+     846,
+     410
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_9b4f18da45243907_0_photo.jpg",
+   "family": "photo",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "9b4f18da45243907",
+   "background_id": "8558b8939a61623a",
+   "boxes": [
+    [
+     329.8,
+     181.9,
+     384.3,
+     253.5
+    ],
+    [
+     423.2,
+     252.0,
+     499.5,
+     336.1
+    ],
+    [
+     549.3,
+     274.5,
+     631.1,
+     371.1
+    ]
+   ],
+   "ignore": [],
+   "meta": {
+    "family": "photo",
+    "panel": [
+     317,
+     111,
+     714,
+     463
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_9b4f18da45243907_1_screen.jpg",
+   "family": "screen",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "9b4f18da45243907",
+   "background_id": "6c5d18cf5e6d36d6",
+   "boxes": [
+    [
+     507.0,
+     248.6,
+     541.2,
+     293.7
+    ],
+    [
+     565.7,
+     292.7,
+     613.7,
+     345.6
+    ],
+    [
+     645.1,
+     306.9,
+     696.5,
+     367.6
+    ]
+   ],
+   "ignore": [],
+   "meta": {
+    "family": "screen",
+    "occluder": [
+     575,
+     324,
+     664,
+     372
+    ],
+    "panel": [
+     458,
+     213,
+     790,
+     416
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_1cbf13ac0cb7030d_0_screen.jpg",
+   "family": "screen",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "1cbf13ac0cb7030d",
+   "background_id": "217b95a71cb220f8",
+   "boxes": [
+    [
+     332.8,
+     19.1,
+     423.3,
+     150.9
+    ]
+   ],
+   "ignore": [],
+   "meta": {
+    "family": "screen",
+    "occluder": [
+     539,
+     139,
+     629,
+     237
+    ],
+    "panel": [
+     326,
+     19,
+     688,
+     289
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_1cbf13ac0cb7030d_1_plain.jpg",
+   "family": "plain",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "1cbf13ac0cb7030d",
+   "background_id": "",
+   "boxes": [
+    [
+     702.0,
+     0,
+     942.0,
+     262.5
+    ]
+   ],
+   "ignore": [],
+   "meta": {
+    "family": "plain"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_e408619cbefb92b1_0_plain.jpg",
+   "family": "plain",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "e408619cbefb92b1",
+   "background_id": "",
+   "boxes": [
+    [
+     306.8,
+     133.2,
+     617.8,
+     434.1
+    ]
+   ],
+   "ignore": [],
+   "meta": {
+    "family": "plain"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_e408619cbefb92b1_1_mirror.jpg",
+   "family": "mirror",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "e408619cbefb92b1",
+   "background_id": "b5e7183b6a5abe6c",
+   "boxes": [
+    [
+     368.7,
+     157.3,
+     627.0,
+     407.0
+    ]
+   ],
+   "ignore": [],
+   "meta": {
+    "family": "mirror",
+    "gain": 0.7,
+    "alpha": 0.96,
+    "panel": [
+     202,
+     6,
+     823,
+     536
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_30716426b54535e7_0_mirror.jpg",
+   "family": "mirror",
+   "label": "positive_ignore_only",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "30716426b54535e7",
+   "background_id": "9ccf76a5da825189",
+   "boxes": [],
+   "ignore": [
+    [
+     102.2,
+     23.4,
+     419.2,
+     425.5
+    ]
+   ],
+   "meta": {
+    "family": "mirror",
+    "gain": 0.9,
+    "alpha": 0.96,
+    "occluder": [
+     224,
+     203,
+     360,
+     349
+    ],
+    "panel": [
+     93,
+     135,
+     614,
+     475
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_30716426b54535e7_1_appliance.jpg",
+   "family": "appliance",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "30716426b54535e7",
+   "background_id": "cfa5389b9eeba8f1",
+   "boxes": [
+    [
+     311.5,
+     0,
+     705.1,
+     483.2
+    ]
+   ],
+   "ignore": [],
+   "meta": {
+    "family": "appliance",
+    "alpha": 0.47,
+    "panel": [
+     300,
+     136,
+     947,
+     530
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_e823885c5fe5400a_0_appliance.jpg",
+   "family": "appliance",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "e823885c5fe5400a",
+   "background_id": "123933088352eb12",
+   "boxes": [
+    [
+     721.5,
+     176.3,
+     874.7,
+     327.4
+    ]
+   ],
+   "ignore": [],
+   "meta": {
+    "family": "appliance",
+    "alpha": 0.58,
+    "panel": [
+     425,
+     3,
+     897,
+     533
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_e823885c5fe5400a_1_photo.jpg",
+   "family": "photo",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "e823885c5fe5400a",
+   "background_id": "3ecead421079f9fd",
+   "boxes": [
+    [
+     289.7,
+     156.4,
+     349.3,
+     215.1
+    ]
+   ],
+   "ignore": [],
+   "meta": {
+    "family": "photo",
+    "panel": [
+     262,
+     89,
+     484,
+     295
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_5f8d08c1a5f555a2_0_photo.jpg",
+   "family": "photo",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "5f8d08c1a5f555a2",
+   "background_id": "1c638bccdd166c99",
+   "boxes": [
+    [
+     242.0,
+     354.0,
+     285.5,
+     382.1
+    ],
+    [
+     250.6,
+     303.6,
+     287.2,
+     325.9
+    ],
+    [
+     280.4,
+     278.9,
+     298.1,
+     287.5
+    ]
+   ],
+   "ignore": [],
+   "meta": {
+    "family": "photo",
+    "panel": [
+     161,
+     244,
+     384,
+     519
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_5f8d08c1a5f555a2_1_screen.jpg",
+   "family": "screen",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "5f8d08c1a5f555a2",
+   "background_id": "789cc0283c0e18af",
+   "boxes": [
+    [
+     332.9,
+     386.3,
+     363.9,
+     406.3
+    ],
+    [
+     339.0,
+     350.4,
+     365.1,
+     366.3
+    ]
+   ],
+   "ignore": [
+    [
+     360.2,
+     332.9,
+     372.9,
+     339.0
+    ]
+   ],
+   "meta": {
+    "family": "screen",
+    "panel": [
+     224,
+     312,
+     485,
+     499
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_206684f0aa5dcc01_0_screen.jpg",
+   "family": "screen",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "206684f0aa5dcc01",
+   "background_id": "e3a41aa21875053e",
+   "boxes": [
+    [
+     394.1,
+     256.2,
+     557.3,
+     397.0
+    ],
+    [
+     459.5,
+     256.2,
+     555.5,
+     353.5
+    ]
+   ],
+   "ignore": [],
+   "meta": {
+    "family": "screen",
+    "panel": [
+     312,
+     154,
+     704,
+     430
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_206684f0aa5dcc01_1_plain.jpg",
+   "family": "plain",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "206684f0aa5dcc01",
+   "background_id": "",
+   "boxes": [
+    [
+     217.4,
+     187.1,
+     594.4,
+     512.2
+    ],
+    [
+     368.5,
+     187.1,
+     590.1,
+     411.8
+    ]
+   ],
+   "ignore": [],
+   "meta": {
+    "family": "plain"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_275ee90d19001fdd_0_plain.jpg",
+   "family": "plain",
+   "label": "positive_ignore_only",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "275ee90d19001fdd",
+   "background_id": "",
+   "boxes": [],
+   "ignore": [
+    [
+     102.0,
+     0,
+     960,
+     540
+    ]
+   ],
+   "meta": {
+    "family": "plain"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_275ee90d19001fdd_1_mirror.jpg",
+   "family": "mirror",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "275ee90d19001fdd",
+   "background_id": "1074868d9da05783",
+   "boxes": [
+    [
+     185.0,
+     0,
+     655.1,
+     511.7
+    ]
+   ],
+   "ignore": [],
+   "meta": {
+    "family": "mirror",
+    "gain": 0.81,
+    "alpha": 0.91,
+    "occluder": [
+     323,
+     88,
+     481,
+     376
+    ],
+    "panel": [
+     185,
+     6,
+     711,
+     536
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_e78ad0b53262039f_0_mirror.jpg",
+   "family": "mirror",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "e78ad0b53262039f",
+   "background_id": "066a928c92d07120",
+   "boxes": [
+    [
+     705.9,
+     93.5,
+     920.6,
+     359.1
+    ],
+    [
+     273.0,
+     52.0,
+     549.4,
+     446.8
+    ]
+   ],
+   "ignore": [],
+   "meta": {
+    "family": "mirror",
+    "gain": 0.69,
+    "alpha": 0.84,
+    "panel": [
+     289,
+     1,
+     948,
+     531
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_e78ad0b53262039f_1_appliance.jpg",
+   "family": "appliance",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "e78ad0b53262039f",
+   "background_id": "eada86bb7ee98792",
+   "boxes": [
+    [
+     604.9,
+     97.5,
+     819.6,
+     363.1
+    ],
+    [
+     172.0,
+     56.0,
+     448.4,
+     450.8
+    ]
+   ],
+   "ignore": [],
+   "meta": {
+    "family": "appliance",
+    "alpha": 0.53,
+    "panel": [
+     271,
+     5,
+     764,
+     535
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_30aa53f05602d3ec_0_appliance.jpg",
+   "family": "appliance",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "30aa53f05602d3ec",
+   "background_id": "de21797f6d073a92",
+   "boxes": [
+    [
+     375.2,
+     141.2,
+     507.2,
+     297.8
+    ],
+    [
+     226.4,
+     116.6,
+     375.8,
+     318.8
+    ]
+   ],
+   "ignore": [],
+   "meta": {
+    "family": "appliance",
+    "alpha": 0.36,
+    "panel": [
+     167,
+     97,
+     551,
+     363
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_30aa53f05602d3ec_1_photo.jpg",
+   "family": "photo",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "30aa53f05602d3ec",
+   "background_id": "1074868d9da05783",
+   "boxes": [
+    [
+     36.8,
+     100.3,
+     205.0,
+     299.9
+    ],
+    [
+     204.3,
+     69.0,
+     394.6,
+     326.7
+    ]
+   ],
+   "ignore": [],
+   "meta": {
+    "family": "photo",
+    "occluder": [
+     188,
+     203,
+     273,
+     284
+    ],
+    "panel": [
+     82,
+     30,
+     368,
+     397
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_ad27f262745301a2_0_photo.jpg",
+   "family": "photo",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "ad27f262745301a2",
+   "background_id": "b5bfc85ebf0c0da5",
+   "boxes": [
+    [
+     335.8,
+     122.2,
+     419.1,
+     220.3
+    ],
+    [
+     376.4,
+     49.0,
+     431.6,
+     101.0
+    ]
+   ],
+   "ignore": [],
+   "meta": {
+    "family": "photo",
+    "panel": [
+     242,
+     43,
+     533,
+     268
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_ad27f262745301a2_1_screen.jpg",
+   "family": "screen",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "ad27f262745301a2",
+   "background_id": "3e420574e8ca0ea6",
+   "boxes": [
+    [
+     716.5,
+     95.9,
+     774.2,
+     163.9
+    ],
+    [
+     744.6,
+     45.1,
+     782.9,
+     81.2
+    ]
+   ],
+   "ignore": [],
+   "meta": {
+    "family": "screen",
+    "panel": [
+     615,
+     41,
+     890,
+     197
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_c4e149d593d12ae7_0_screen.jpg",
+   "family": "screen",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "c4e149d593d12ae7",
+   "background_id": "3692c7b2c4697ed9",
+   "boxes": [
+    [
+     115.9,
+     306.4,
+     148.9,
+     344.0
+    ]
+   ],
+   "ignore": [],
+   "meta": {
+    "family": "screen",
+    "panel": [
+     3,
+     296,
+     323,
+     478
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_c4e149d593d12ae7_1_plain.jpg",
+   "family": "plain",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "c4e149d593d12ae7",
+   "background_id": "",
+   "boxes": [
+    [
+     338.8,
+     28.2,
+     437.6,
+     141.1
+    ]
+   ],
+   "ignore": [],
+   "meta": {
+    "family": "plain"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_a174d75a4f2d3aa2_0_plain.jpg",
+   "family": "plain",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "a174d75a4f2d3aa2",
+   "background_id": "",
+   "boxes": [
+    [
+     441.9,
+     28.7,
+     724.2,
+     411.8
+    ]
+   ],
+   "ignore": [],
+   "meta": {
+    "family": "plain"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_a174d75a4f2d3aa2_1_mirror.jpg",
+   "family": "mirror",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "a174d75a4f2d3aa2",
+   "background_id": "0e2868759e7a615c",
+   "boxes": [
+    [
+     310.8,
+     112.4,
+     523.0,
+     400.2
+    ]
+   ],
+   "ignore": [],
+   "meta": {
+    "family": "mirror",
+    "gain": 0.65,
+    "alpha": 0.84,
+    "panel": [
+     243,
+     54,
+     747,
+     533
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_b874aca0add96832_0_mirror.jpg",
+   "family": "mirror",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "b874aca0add96832",
+   "background_id": "72629128427cf83c",
+   "boxes": [
+    [
+     144.6,
+     0,
+     581.6,
+     521.3
+    ]
+   ],
+   "ignore": [],
+   "meta": {
+    "family": "mirror",
+    "gain": 0.67,
+    "alpha": 0.83,
+    "occluder": [
+     169,
+     197,
+     305,
+     302
+    ],
+    "panel": [
+     114,
+     87,
+     630,
+     527
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_b874aca0add96832_1_appliance.jpg",
+   "family": "appliance",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "b874aca0add96832",
+   "background_id": "f7f4da25a4927cdd",
+   "boxes": [
+    [
+     331.0,
+     0,
+     787.5,
+     498.3
+    ]
+   ],
+   "ignore": [],
+   "meta": {
+    "family": "appliance",
+    "alpha": 0.26,
+    "panel": [
+     299,
+     9,
+     838,
+     539
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_4b399e84b6285ebd_0_appliance.jpg",
+   "family": "appliance",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "4b399e84b6285ebd",
+   "background_id": "fa04ae54a6903d5c",
+   "boxes": [
+    [
+     196.9,
+     85.4,
+     401.7,
+     415.5
+    ]
+   ],
+   "ignore": [],
+   "meta": {
+    "family": "appliance",
+    "alpha": 0.48,
+    "panel": [
+     94,
+     21,
+     488,
+     484
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_4b399e84b6285ebd_1_photo.jpg",
+   "family": "photo",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "4b399e84b6285ebd",
+   "background_id": "46168164054d505e",
+   "boxes": [
+    [
+     192.0,
+     121.9,
+     312.7,
+     316.6
+    ]
+   ],
+   "ignore": [],
+   "meta": {
+    "family": "photo",
+    "panel": [
+     125,
+     84,
+     389,
+     357
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_232299e70b9fe949_0_photo.jpg",
+   "family": "photo",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "232299e70b9fe949",
+   "background_id": "2523ac25dfbfa2f8",
+   "boxes": [
+    [
+     358.2,
+     72.7,
+     413.1,
+     114.7
+    ]
+   ],
+   "ignore": [],
+   "meta": {
+    "family": "photo",
+    "panel": [
+     275,
+     37,
+     640,
+     535
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_232299e70b9fe949_1_screen.jpg",
+   "family": "screen",
+   "label": "positive_ignore_only",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "232299e70b9fe949",
+   "background_id": "92b801786d58976e",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "screen",
+    "panel": [
+     577,
+     17,
+     893,
+     247
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_62c4e7ee53c87c4b_0_screen.jpg",
+   "family": "screen",
+   "label": "positive_ignore_only",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "62c4e7ee53c87c4b",
+   "background_id": "a527d5cb19600ada",
+   "boxes": [],
+   "ignore": [
+    [
+     723.7,
+     75.7,
+     885.6,
+     291.1
+    ]
+   ],
+   "meta": {
+    "family": "screen",
+    "occluder": [
+     712,
+     196,
+     779,
+     280
+    ],
+    "panel": [
+     614,
+     159,
+     929,
+     389
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_62c4e7ee53c87c4b_1_plain.jpg",
+   "family": "plain",
+   "label": "positive_ignore_only",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "62c4e7ee53c87c4b",
+   "background_id": "",
+   "boxes": [],
+   "ignore": [
+    [
+     132.3,
+     0,
+     625.8,
+     320.5
+    ]
+   ],
+   "meta": {
+    "family": "plain"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_d098e2d14564bc4b_0_plain.jpg",
+   "family": "plain",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "d098e2d14564bc4b",
+   "background_id": "",
+   "boxes": [
+    [
+     258.0,
+     0,
+     702.0,
+     440.0
+    ]
+   ],
+   "ignore": [],
+   "meta": {
+    "family": "plain"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_d098e2d14564bc4b_1_mirror.jpg",
+   "family": "mirror",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "d098e2d14564bc4b",
+   "background_id": "0b730c49ccf74eae",
+   "boxes": [
+    [
+     474.6,
+     36.6,
+     742.4,
+     369.5
+    ]
+   ],
+   "ignore": [],
+   "meta": {
+    "family": "mirror",
+    "gain": 0.57,
+    "alpha": 0.83,
+    "occluder": [
+     561,
+     44,
+     668,
+     210
+    ],
+    "panel": [
+     319,
+     2,
+     898,
+     532
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_703f91707007c0bc_0_mirror.jpg",
+   "family": "mirror",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "703f91707007c0bc",
+   "background_id": "df754b5d85cef4f2",
+   "boxes": [
+    [
+     140.4,
+     168.9,
+     203.2,
+     242.8
+    ]
+   ],
+   "ignore": [],
+   "meta": {
+    "family": "mirror",
+    "gain": 0.94,
+    "alpha": 0.83,
+    "panel": [
+     7,
+     39,
+     446,
+     311
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_703f91707007c0bc_1_appliance.jpg",
+   "family": "appliance",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "703f91707007c0bc",
+   "background_id": "d60e1c25e87d8b45",
+   "boxes": [
+    [
+     236.8,
+     256.3,
+     350.5,
+     389.9
+    ]
+   ],
+   "ignore": [],
+   "meta": {
+    "family": "appliance",
+    "alpha": 0.42,
+    "panel": [
+     60,
+     3,
+     725,
+     533
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_44525445d18bc4e9_0_appliance.jpg",
+   "family": "appliance",
+   "label": "positive_ignore_only",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "44525445d18bc4e9",
+   "background_id": "6142a6f0fdcaf904",
+   "boxes": [],
+   "ignore": [
+    [
+     452.7,
+     0,
+     644.3,
+     92.5
+    ]
+   ],
+   "meta": {
+    "family": "appliance",
+    "alpha": 0.35,
+    "panel": [
+     188,
+     78,
+     849,
+     524
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_44525445d18bc4e9_1_photo.jpg",
+   "family": "photo",
+   "label": "positive_ignore_only",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "44525445d18bc4e9",
+   "background_id": "c49f4937d73bee74",
+   "boxes": [],
+   "ignore": [
+    [
+     345.0,
+     29.6,
+     415.1,
+     101.9
+    ]
+   ],
+   "meta": {
+    "family": "photo",
+    "panel": [
+     270,
+     80,
+     512,
+     277
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_be62c3e27c986ec2_0_photo.jpg",
+   "family": "photo",
+   "label": "positive_ignore_only",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "be62c3e27c986ec2",
+   "background_id": "7c0c494fd483b835",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "photo",
+    "panel": [
+     542,
+     121,
+     872,
+     499
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_be62c3e27c986ec2_1_screen.jpg",
+   "family": "screen",
+   "label": "positive_ignore_only",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "be62c3e27c986ec2",
+   "background_id": "298f427e2a08b44e",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "screen",
+    "panel": [
+     251,
+     330,
+     509,
+     516
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_7a29fb36410efcc4_0_screen.jpg",
+   "family": "screen",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "7a29fb36410efcc4",
+   "background_id": "0faf733d08b38efa",
+   "boxes": [
+    [
+     301.7,
+     255.2,
+     342.7,
+     296.6
+    ]
+   ],
+   "ignore": [],
+   "meta": {
+    "family": "screen",
+    "occluder": [
+     354,
+     399,
+     402,
+     455
+    ],
+    "panel": [
+     159,
+     229,
+     475,
+     464
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_7a29fb36410efcc4_1_plain.jpg",
+   "family": "plain",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "7a29fb36410efcc4",
+   "background_id": "",
+   "boxes": [
+    [
+     402.0,
+     0,
+     526.5,
+     118.5
+    ]
+   ],
+   "ignore": [],
+   "meta": {
+    "family": "plain"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_83f3f5f1b4864969_0_plain.jpg",
+   "family": "plain",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "83f3f5f1b4864969",
+   "background_id": "",
+   "boxes": [
+    [
+     375.2,
+     346.7,
+     497.0,
+     516.6
+    ],
+    [
+     380.9,
+     196.5,
+     485.7,
+     284.3
+    ]
+   ],
+   "ignore": [],
+   "meta": {
+    "family": "plain"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_83f3f5f1b4864969_1_mirror.jpg",
+   "family": "mirror",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "83f3f5f1b4864969",
+   "background_id": "182c1f2bfa4b4280",
+   "boxes": [
+    [
+     515.6,
+     335.3,
+     616.4,
+     476.0
+    ],
+    [
+     525.0,
+     211.0,
+     611.7,
+     283.7
+    ]
+   ],
+   "ignore": [],
+   "meta": {
+    "family": "mirror",
+    "gain": 0.72,
+    "alpha": 0.8,
+    "occluder": [
+     315,
+     133,
+     404,
+     444
+    ],
+    "panel": [
+     248,
+     7,
+     811,
+     537
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_c9f002927ee6638d_0_mirror.jpg",
+   "family": "mirror",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "c9f002927ee6638d",
+   "background_id": "1c638bccdd166c99",
+   "boxes": [
+    [
+     596.3,
+     34.6,
+     722.1,
+     158.1
+    ]
+   ],
+   "ignore": [],
+   "meta": {
+    "family": "mirror",
+    "gain": 0.57,
+    "alpha": 0.89,
+    "panel": [
+     411,
+     0,
+     928,
+     530
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_c9f002927ee6638d_1_appliance.jpg",
+   "family": "appliance",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "c9f002927ee6638d",
+   "background_id": "b10730442db3217a",
+   "boxes": [
+    [
+     404.3,
+     0.4,
+     553.3,
+     146.6
+    ]
+   ],
+   "ignore": [],
+   "meta": {
+    "family": "appliance",
+    "alpha": 0.33,
+    "panel": [
+     185,
+     9,
+     797,
+     539
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_291e9c3df3a9ffb5_0_appliance.jpg",
+   "family": "appliance",
+   "label": "positive_ignore_only",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "291e9c3df3a9ffb5",
+   "background_id": "0e2868759e7a615c",
+   "boxes": [],
+   "ignore": [
+    [
+     108.7,
+     83.8,
+     323.4,
+     227.0
+    ]
+   ],
+   "meta": {
+    "family": "appliance",
+    "alpha": 0.32,
+    "occluder": [
+     408,
+     203,
+     586,
+     456
+    ],
+    "panel": [
+     202,
+     3,
+     762,
+     533
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_291e9c3df3a9ffb5_1_photo.jpg",
+   "family": "photo",
+   "label": "positive_ignore_only",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "291e9c3df3a9ffb5",
+   "background_id": "6de33e549210af97",
+   "boxes": [],
+   "ignore": [
+    [
+     441.5,
+     81.7,
+     592.2,
+     182.2
+    ]
+   ],
+   "meta": {
+    "family": "photo",
+    "panel": [
+     177,
+     25,
+     482,
+     397
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_1f033af8fc7682e6_0_photo.jpg",
+   "family": "photo",
+   "label": "positive_ignore_only",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "1f033af8fc7682e6",
+   "background_id": "92b801786d58976e",
+   "boxes": [],
+   "ignore": [
+    [
+     509.0,
+     0,
+     607.0,
+     96.6
+    ]
+   ],
+   "meta": {
+    "family": "photo",
+    "panel": [
+     392,
+     21,
+     686,
+     266
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_1f033af8fc7682e6_1_screen.jpg",
+   "family": "screen",
+   "label": "positive_ignore_only",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "1f033af8fc7682e6",
+   "background_id": "489076e07c213206",
+   "boxes": [],
+   "ignore": [
+    [
+     363.3,
+     216.0,
+     475.0,
+     371.6
+    ]
+   ],
+   "meta": {
+    "family": "screen",
+    "panel": [
+     230,
+     330,
+     565,
+     521
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_bbd2e08c20477210_0_screen.jpg",
+   "family": "screen",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "bbd2e08c20477210",
+   "background_id": "123933088352eb12",
+   "boxes": [
+    [
+     459.2,
+     225.8,
+     482.8,
+     258.6
+    ]
+   ],
+   "ignore": [],
+   "meta": {
+    "family": "screen",
+    "panel": [
+     363,
+     220,
+     565,
+     341
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_bbd2e08c20477210_1_plain.jpg",
+   "family": "plain",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "bbd2e08c20477210",
+   "background_id": "",
+   "boxes": [
+    [
+     390.8,
+     10.9,
+     502.7,
+     166.7
+    ]
+   ],
+   "ignore": [],
+   "meta": {
+    "family": "plain"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_58939ba30e3a8de8_0_plain.jpg",
+   "family": "plain",
+   "label": "positive_ignore_only",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "58939ba30e3a8de8",
+   "background_id": "",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "plain"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_58939ba30e3a8de8_1_mirror.jpg",
+   "family": "mirror",
+   "label": "positive_ignore_only",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "58939ba30e3a8de8",
+   "background_id": "feb70e5c996fcb5e",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "mirror",
+    "gain": 0.71,
+    "alpha": 0.9,
+    "occluder": [
+     614,
+     242,
+     818,
+     480
+    ],
+    "panel": [
+     185,
+     55,
+     886,
+     499
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_aedf3c30585d028e_0_mirror.jpg",
+   "family": "mirror",
+   "label": "positive_ignore_only",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "aedf3c30585d028e",
+   "background_id": "0b6227bb06345402",
+   "boxes": [],
+   "ignore": [
+    [
+     287.5,
+     110.8,
+     401.3,
+     203.6
+    ]
+   ],
+   "meta": {
+    "family": "mirror",
+    "gain": 0.59,
+    "alpha": 0.83,
+    "occluder": [
+     167,
+     34,
+     345,
+     318
+    ],
+    "panel": [
+     96,
+     5,
+     797,
+     535
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_aedf3c30585d028e_1_appliance.jpg",
+   "family": "appliance",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "aedf3c30585d028e",
+   "background_id": "56afb0cb25e9579b",
+   "boxes": [
+    [
+     364.5,
+     113.8,
+     478.3,
+     206.6
+    ]
+   ],
+   "ignore": [],
+   "meta": {
+    "family": "appliance",
+    "alpha": 0.27,
+    "panel": [
+     194,
+     8,
+     854,
+     538
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_479c894da7cb8439_0_appliance.jpg",
+   "family": "appliance",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "479c894da7cb8439",
+   "background_id": "cee8149e2f125ded",
+   "boxes": [
+    [
+     499.8,
+     282.7,
+     539.5,
+     333.1
+    ]
+   ],
+   "ignore": [],
+   "meta": {
+    "family": "appliance",
+    "alpha": 0.36,
+    "panel": [
+     339,
+     199,
+     723,
+     441
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_479c894da7cb8439_1_photo.jpg",
+   "family": "photo",
+   "label": "positive_ignore_only",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "479c894da7cb8439",
+   "background_id": "96657f71a20cac23",
+   "boxes": [],
+   "ignore": [
+    [
+     171.6,
+     195.8,
+     225.3,
+     264.2
+    ]
+   ],
+   "meta": {
+    "family": "photo",
+    "occluder": [
+     162,
+     118,
+     267,
+     256
+    ],
+    "panel": [
+     1,
+     73,
+     364,
+     420
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_362bdfbc0fdaa76f_0_photo.jpg",
+   "family": "photo",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "362bdfbc0fdaa76f",
+   "background_id": "e07312c926231410",
+   "boxes": [
+    [
+     458.4,
+     131.6,
+     557.7,
+     279.4
+    ],
+    [
+     573.3,
+     135.7,
+     662.0,
+     244.9
+    ],
+    [
+     665.3,
+     148.9,
+     739.1,
+     247.4
+    ]
+   ],
+   "ignore": [],
+   "meta": {
+    "family": "photo",
+    "panel": [
+     418,
+     52,
+     771,
+     446
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_362bdfbc0fdaa76f_1_screen.jpg",
+   "family": "screen",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "362bdfbc0fdaa76f",
+   "background_id": "5063ad3b52a8e931",
+   "boxes": [
+    [
+     146.5,
+     346.2,
+     212.8,
+     444.9
+    ],
+    [
+     223.2,
+     348.9,
+     282.5,
+     421.9
+    ],
+    [
+     284.7,
+     357.7,
+     334.0,
+     423.5
+    ]
+   ],
+   "ignore": [],
+   "meta": {
+    "family": "screen",
+    "panel": [
+     62,
+     327,
+     413,
+     521
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_4d3906acbe18e8c1_0_screen.jpg",
+   "family": "screen",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "4d3906acbe18e8c1",
+   "background_id": "11dcac4ca5923a58",
+   "boxes": [
+    [
+     120.2,
+     198.5,
+     234.1,
+     352.6
+    ]
+   ],
+   "ignore": [],
+   "meta": {
+    "family": "screen",
+    "panel": [
+     53,
+     195,
+     317,
+     361
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_4d3906acbe18e8c1_1_plain.jpg",
+   "family": "plain",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "4d3906acbe18e8c1",
+   "background_id": "",
+   "boxes": [
+    [
+     244.2,
+     0,
+     658.4,
+     540
+    ]
+   ],
+   "ignore": [],
+   "meta": {
+    "family": "plain"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_3f2cc085cfc23975_0_plain.jpg",
+   "family": "plain",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "3f2cc085cfc23975",
+   "background_id": "",
+   "boxes": [
+    [
+     48.1,
+     176.7,
+     141.6,
+     248.9
+    ],
+    [
+     281.8,
+     264.5,
+     361.1,
+     349.5
+    ]
+   ],
+   "ignore": [],
+   "meta": {
+    "family": "plain"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_3f2cc085cfc23975_1_mirror.jpg",
+   "family": "mirror",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "3f2cc085cfc23975",
+   "background_id": "3dd40beb8e7f03b9",
+   "boxes": [
+    [
+     636.3,
+     215.0,
+     704.7,
+     267.9
+    ],
+    [
+     475.5,
+     279.3,
+     533.6,
+     341.6
+    ]
+   ],
+   "ignore": [],
+   "meta": {
+    "family": "mirror",
+    "gain": 0.94,
+    "alpha": 0.85,
+    "panel": [
+     59,
+     49,
+     718,
+     518
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_31d8491aa40b6acb_0_mirror.jpg",
+   "family": "mirror",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "31d8491aa40b6acb",
+   "background_id": "a10ea74b5eb3c47d",
+   "boxes": [
+    [
+     330.7,
+     236.5,
+     500.1,
+     457.3
+    ]
+   ],
+   "ignore": [],
+   "meta": {
+    "family": "mirror",
+    "gain": 0.66,
+    "alpha": 0.94,
+    "panel": [
+     46,
+     3,
+     678,
+     533
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_31d8491aa40b6acb_1_appliance.jpg",
+   "family": "appliance",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "31d8491aa40b6acb",
+   "background_id": "2f0a18a409d5a769",
+   "boxes": [
+    [
+     462.7,
+     250.3,
+     586.2,
+     411.3
+    ]
+   ],
+   "ignore": [],
+   "meta": {
+    "family": "appliance",
+    "alpha": 0.28,
+    "occluder": [
+     414,
+     55,
+     514,
+     313
+    ],
+    "panel": [
+     255,
+     8,
+     716,
+     538
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_5d3c2f6c07cce7d0_0_appliance.jpg",
+   "family": "appliance",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "5d3c2f6c07cce7d0",
+   "background_id": "31fc1e21076e496a",
+   "boxes": [
+    [
+     437.0,
+     87.8,
+     516.9,
+     188.3
+    ]
+   ],
+   "ignore": [],
+   "meta": {
+    "family": "appliance",
+    "alpha": 0.38,
+    "panel": [
+     282,
+     7,
+     733,
+     481
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_5d3c2f6c07cce7d0_1_photo.jpg",
+   "family": "photo",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "5d3c2f6c07cce7d0",
+   "background_id": "8558b8939a61623a",
+   "boxes": [
+    [
+     707.7,
+     65.3,
+     756.8,
+     127.0
+    ]
+   ],
+   "ignore": [],
+   "meta": {
+    "family": "photo",
+    "panel": [
+     575,
+     20,
+     852,
+     302
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_be3586c0a509c84f_0_photo.jpg",
+   "family": "photo",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "be3586c0a509c84f",
+   "background_id": "3a511ef0f68cc438",
+   "boxes": [
+    [
+     366.0,
+     48.0,
+     774.9,
+     387.0
+    ]
+   ],
+   "ignore": [],
+   "meta": {
+    "family": "photo",
+    "occluder": [
+     603,
+     216,
+     682,
+     291
+    ],
+    "panel": [
+     417,
+     48,
+     767,
+     387
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_be3586c0a509c84f_1_screen.jpg",
+   "family": "screen",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "be3586c0a509c84f",
+   "background_id": "8622a0fa4101915c",
+   "boxes": [
+    [
+     532.0,
+     329.0,
+     729.2,
+     492.5
+    ]
+   ],
+   "ignore": [],
+   "meta": {
+    "family": "screen",
+    "panel": [
+     532,
+     336,
+     750,
+     485
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_dcec9ac7a3f19b9a_0_screen.jpg",
+   "family": "screen",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "dcec9ac7a3f19b9a",
+   "background_id": "e28339ea57d1e17c",
+   "boxes": [
+    [
+     606.8,
+     320.9,
+     697.0,
+     433.9
+    ],
+    [
+     703.1,
+     258.9,
+     785.9,
+     397.1
+    ],
+    [
+     774.9,
+     308.0,
+     888.4,
+     433.3
+    ]
+   ],
+   "ignore": [],
+   "meta": {
+    "family": "screen",
+    "panel": [
+     559,
+     223,
+     954,
+     513
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_dcec9ac7a3f19b9a_1_plain.jpg",
+   "family": "plain",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "dcec9ac7a3f19b9a",
+   "background_id": "",
+   "boxes": [
+    [
+     624.6,
+     155.4,
+     843.7,
+     430.1
+    ],
+    [
+     408.4,
+     4.6,
+     609.7,
+     340.5
+    ],
+    [
+     159.5,
+     124.0,
+     435.3,
+     428.6
+    ]
+   ],
+   "ignore": [],
+   "meta": {
+    "family": "plain"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_8b289d8e51ef28d8_0_plain.jpg",
+   "family": "plain",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "8b289d8e51ef28d8",
+   "background_id": "",
+   "boxes": [
+    [
+     1.5,
+     0,
+     960,
+     540
+    ],
+    [
+     516.0,
+     57.0,
+     574.5,
+     114.0
+    ]
+   ],
+   "ignore": [],
+   "meta": {
+    "family": "plain"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_8b289d8e51ef28d8_1_mirror.jpg",
+   "family": "mirror",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "8b289d8e51ef28d8",
+   "background_id": "2f0a18a409d5a769",
+   "boxes": [
+    [
+     475.8,
+     71.0,
+     960,
+     442.2
+    ],
+    [
+     741.6,
+     147.0,
+     771.8,
+     176.4
+    ]
+   ],
+   "ignore": [],
+   "meta": {
+    "family": "mirror",
+    "gain": 0.74,
+    "alpha": 0.85,
+    "panel": [
+     516,
+     71,
+     930,
+     443
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_dca4384cbb60e052_0_mirror.jpg",
+   "family": "mirror",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "dca4384cbb60e052",
+   "background_id": "154bb12ff0554141",
+   "boxes": [
+    [
+     274.6,
+     32.4,
+     430.0,
+     259.8
+    ]
+   ],
+   "ignore": [],
+   "meta": {
+    "family": "mirror",
+    "gain": 0.9,
+    "alpha": 0.95,
+    "panel": [
+     55,
+     3,
+     659,
+     533
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_dca4384cbb60e052_1_appliance.jpg",
+   "family": "appliance",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "dca4384cbb60e052",
+   "background_id": "63704d1bbcd07d02",
+   "boxes": [
+    [
+     380.2,
+     0,
+     557.1,
+     256.9
+    ]
+   ],
+   "ignore": [],
+   "meta": {
+    "family": "appliance",
+    "alpha": 0.54,
+    "occluder": [
+     197,
+     96,
+     344,
+     339
+    ],
+    "panel": [
+     130,
+     1,
+     818,
+     531
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_c54d4b664c668468_0_appliance.jpg",
+   "family": "appliance",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "c54d4b664c668468",
+   "background_id": "e3de278bad0e47e1",
+   "boxes": [
+    [
+     256.6,
+     219.7,
+     300.8,
+     255.4
+    ]
+   ],
+   "ignore": [],
+   "meta": {
+    "family": "appliance",
+    "alpha": 0.28,
+    "panel": [
+     67,
+     136,
+     538,
+     453
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_c54d4b664c668468_1_photo.jpg",
+   "family": "photo",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "c54d4b664c668468",
+   "background_id": "1d7929b66a611ea8",
+   "boxes": [
+    [
+     235.9,
+     215.8,
+     273.6,
+     246.2
+    ]
+   ],
+   "ignore": [],
+   "meta": {
+    "family": "photo",
+    "panel": [
+     62,
+     79,
+     407,
+     480
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_db1bfaf839f38f22_0_photo.jpg",
+   "family": "photo",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "db1bfaf839f38f22",
+   "background_id": "b10730442db3217a",
+   "boxes": [
+    [
+     422.0,
+     127.6,
+     657.7,
+     409.9
+    ]
+   ],
+   "ignore": [],
+   "meta": {
+    "family": "photo",
+    "occluder": [
+     390,
+     81,
+     467,
+     351
+    ],
+    "panel": [
+     357,
+     22,
+     719,
+     481
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_db1bfaf839f38f22_1_screen.jpg",
+   "family": "screen",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "db1bfaf839f38f22",
+   "background_id": "3d76574f1dec8b0a",
+   "boxes": [
+    [
+     621.1,
+     167.8,
+     774.6,
+     351.6
+    ]
+   ],
+   "ignore": [],
+   "meta": {
+    "family": "screen",
+    "panel": [
+     498,
+     100,
+     895,
+     397
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_8b4994bcc36f6f47_0_screen.jpg",
+   "family": "screen",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "8b4994bcc36f6f47",
+   "background_id": "8622a0fa4101915c",
+   "boxes": [
+    [
+     453.6,
+     192.7,
+     632.3,
+     429.1
+    ]
+   ],
+   "ignore": [],
+   "meta": {
+    "family": "screen",
+    "panel": [
+     344,
+     226,
+     697,
+     482
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_8b4994bcc36f6f47_1_plain.jpg",
+   "family": "plain",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "8b4994bcc36f6f47",
+   "background_id": "",
+   "boxes": [
+    [
+     176.0,
+     0,
+     662.0,
+     473.3
+    ]
+   ],
+   "ignore": [],
+   "meta": {
+    "family": "plain"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_f95720addcc4372d_0_plain.jpg",
+   "family": "plain",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "f95720addcc4372d",
+   "background_id": "",
+   "boxes": [
+    [
+     373.4,
+     36.5,
+     771.5,
+     540
+    ]
+   ],
+   "ignore": [],
+   "meta": {
+    "family": "plain"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_f95720addcc4372d_1_mirror.jpg",
+   "family": "mirror",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "f95720addcc4372d",
+   "background_id": "066a928c92d07120",
+   "boxes": [
+    [
+     268.5,
+     118.6,
+     522.6,
+     496.7
+    ]
+   ],
+   "ignore": [],
+   "meta": {
+    "family": "mirror",
+    "gain": 0.79,
+    "alpha": 0.91,
+    "panel": [
+     30,
+     2,
+     643,
+     532
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_9887413a9acd1762_0_mirror.jpg",
+   "family": "mirror",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "9887413a9acd1762",
+   "background_id": "778b048754c0bb2e",
+   "boxes": [
+    [
+     351.2,
+     0,
+     491.9,
+     138.8
+    ]
+   ],
+   "ignore": [],
+   "meta": {
+    "family": "mirror",
+    "gain": 0.98,
+    "alpha": 0.96,
+    "panel": [
+     95,
+     8,
+     695,
+     538
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_9887413a9acd1762_1_appliance.jpg",
+   "family": "appliance",
+   "label": "positive_ignore_only",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "9887413a9acd1762",
+   "background_id": "6de33e549210af97",
+   "boxes": [],
+   "ignore": [
+    [
+     324.9,
+     0,
+     469.8,
+     133.2
+    ]
+   ],
+   "meta": {
+    "family": "appliance",
+    "alpha": 0.51,
+    "occluder": [
+     427,
+     45,
+     647,
+     353
+    ],
+    "panel": [
+     61,
+     6,
+     679,
+     536
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_b6ebb2fdb29dc778_0_appliance.jpg",
+   "family": "appliance",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "b6ebb2fdb29dc778",
+   "background_id": "3a511ef0f68cc438",
+   "boxes": [
+    [
+     495.6,
+     100.2,
+     572.9,
+     216.1
+    ],
+    [
+     445.9,
+     80.3,
+     506.7,
+     209.5
+    ]
+   ],
+   "ignore": [],
+   "meta": {
+    "family": "appliance",
+    "alpha": 0.26,
+    "panel": [
+     136,
+     3,
+     835,
+     533
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_b6ebb2fdb29dc778_1_photo.jpg",
+   "family": "photo",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "b6ebb2fdb29dc778",
+   "background_id": "05042cfa44abe4f6",
+   "boxes": [
+    [
+     603.0,
+     374.1,
+     630.2,
+     414.8
+    ],
+    [
+     626.3,
+     367.1,
+     647.6,
+     412.5
+    ]
+   ],
+   "ignore": [],
+   "meta": {
+    "family": "photo",
+    "panel": [
+     520,
+     340,
+     747,
+     526
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_d8ef516f368a1770_0_photo.jpg",
+   "family": "photo",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "d8ef516f368a1770",
+   "background_id": "e0c2d59bb6da3905",
+   "boxes": [
+    [
+     86.3,
+     178.5,
+     258.3,
+     421.5
+    ]
+   ],
+   "ignore": [],
+   "meta": {
+    "family": "photo",
+    "panel": [
+     27,
+     24,
+     410,
+     536
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_d8ef516f368a1770_1_screen.jpg",
+   "family": "screen",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "d8ef516f368a1770",
+   "background_id": "2f0a18a409d5a769",
+   "boxes": [
+    [
+     334.9,
+     288.1,
+     433.3,
+     427.0
+    ]
+   ],
+   "ignore": [],
+   "meta": {
+    "family": "screen",
+    "panel": [
+     301,
+     280,
+     520,
+     411
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_f2c79b0b80d5b8fa_0_screen.jpg",
+   "family": "screen",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "f2c79b0b80d5b8fa",
+   "background_id": "42fdbf5f7c05f39d",
+   "boxes": [
+    [
+     396.3,
+     271.5,
+     430.1,
+     319.1
+    ]
+   ],
+   "ignore": [],
+   "meta": {
+    "family": "screen",
+    "occluder": [
+     300,
+     296,
+     402,
+     389
+    ],
+    "panel": [
+     212,
+     234,
+     550,
+     468
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_f2c79b0b80d5b8fa_1_plain.jpg",
+   "family": "plain",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "f2c79b0b80d5b8fa",
+   "background_id": "",
+   "boxes": [
+    [
+     276.0,
+     123.0,
+     384.0,
+     238.5
+    ],
+    [
+     523.5,
+     45.0,
+     619.5,
+     180.0
+    ]
+   ],
+   "ignore": [],
+   "meta": {
+    "family": "plain"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_a0399106b71f0614_0_plain.jpg",
+   "family": "plain",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "a0399106b71f0614",
+   "background_id": "",
+   "boxes": [
+    [
+     623.0,
+     114.3,
+     720.7,
+     195.1
+    ]
+   ],
+   "ignore": [],
+   "meta": {
+    "family": "plain"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_a0399106b71f0614_1_mirror.jpg",
+   "family": "mirror",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "a0399106b71f0614",
+   "background_id": "2523ac25dfbfa2f8",
+   "boxes": [
+    [
+     164.5,
+     140.0,
+     245.3,
+     206.9
+    ]
+   ],
+   "ignore": [],
+   "meta": {
+    "family": "mirror",
+    "gain": 0.88,
+    "alpha": 0.81,
+    "occluder": [
+     489,
+     47,
+     610,
+     283
+    ],
+    "panel": [
+     59,
+     4,
+     669,
+     534
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_e495c6c3db68a68f_0_mirror.jpg",
+   "family": "mirror",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "e495c6c3db68a68f",
+   "background_id": "2f146af17de4b933",
+   "boxes": [
+    [
+     543.0,
+     0,
+     931.0,
+     401.9
+    ]
+   ],
+   "ignore": [],
+   "meta": {
+    "family": "mirror",
+    "gain": 0.71,
+    "alpha": 0.88,
+    "panel": [
+     543,
+     55,
+     931,
+     411
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_e495c6c3db68a68f_1_appliance.jpg",
+   "family": "appliance",
+   "label": "positive",
+   "source_role": "face",
+   "source_category": "",
+   "content_id": "e495c6c3db68a68f",
+   "background_id": "04f2044207c1bff1",
+   "boxes": [
+    [
+     12.0,
+     0,
+     620.0,
+     536.6
+    ]
+   ],
+   "ignore": [],
+   "meta": {
+    "family": "appliance",
+    "alpha": 0.48,
+    "occluder": [
+     109,
+     59,
+     277,
+     261
+    ],
+    "panel": [
+     12,
+     7,
+     620,
+     537
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_d4419e0c1a5015d3_0_appliance.jpg",
+   "family": "appliance",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "toy",
+   "content_id": "d4419e0c1a5015d3",
+   "background_id": "b10730442db3217a",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "appliance",
+    "alpha": 0.3,
+    "panel": [
+     274,
+     43,
+     802,
+     430
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_d4419e0c1a5015d3_1_photo.jpg",
+   "family": "photo",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "toy",
+   "content_id": "d4419e0c1a5015d3",
+   "background_id": "6be310892c84cd63",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "photo",
+    "occluder": [
+     50,
+     375,
+     118,
+     455
+    ],
+    "panel": [
+     14,
+     204,
+     252,
+     505
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_f172a83198d21d73_0_photo.jpg",
+   "family": "photo",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "poster",
+   "content_id": "f172a83198d21d73",
+   "background_id": "dd524cdb2e8652cf",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "photo",
+    "occluder": [
+     326,
+     113,
+     398,
+     209
+    ],
+    "panel": [
+     171,
+     81,
+     418,
+     409
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_f172a83198d21d73_1_screen.jpg",
+   "family": "screen",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "poster",
+   "content_id": "f172a83198d21d73",
+   "background_id": "778b048754c0bb2e",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "screen",
+    "panel": [
+     580,
+     350,
+     773,
+     491
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_85ba13e27afd9b4b_0_screen.jpg",
+   "family": "screen",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "toy",
+   "content_id": "85ba13e27afd9b4b",
+   "background_id": "988faa053516acfe",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "screen",
+    "occluder": [
+     83,
+     130,
+     182,
+     202
+    ],
+    "panel": [
+     79,
+     7,
+     460,
+     234
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_85ba13e27afd9b4b_1_plain.jpg",
+   "family": "plain",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "toy",
+   "content_id": "85ba13e27afd9b4b",
+   "background_id": "",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "plain"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_d63ab599cc1846b7_0_plain.jpg",
+   "family": "plain",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "sculpture",
+   "content_id": "d63ab599cc1846b7",
+   "background_id": "",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "plain"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_d63ab599cc1846b7_1_mirror.jpg",
+   "family": "mirror",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "sculpture",
+   "content_id": "d63ab599cc1846b7",
+   "background_id": "701eaffd38f3bdcf",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "mirror",
+    "gain": 0.63,
+    "alpha": 0.89,
+    "panel": [
+     142,
+     66,
+     793,
+     533
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_a6fa8e3e2db8b5e7_0_mirror.jpg",
+   "family": "mirror",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "sculpture",
+   "content_id": "a6fa8e3e2db8b5e7",
+   "background_id": "3a02fdeb0bc94965",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "mirror",
+    "gain": 0.72,
+    "alpha": 0.94,
+    "panel": [
+     335,
+     108,
+     708,
+     429
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_a6fa8e3e2db8b5e7_1_appliance.jpg",
+   "family": "appliance",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "sculpture",
+   "content_id": "a6fa8e3e2db8b5e7",
+   "background_id": "1074868d9da05783",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "appliance",
+    "alpha": 0.6,
+    "occluder": [
+     269,
+     175,
+     402,
+     288
+    ],
+    "panel": [
+     213,
+     11,
+     643,
+     429
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_6b2f8618fcd83c05_0_appliance.jpg",
+   "family": "appliance",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "teddy_bear",
+   "content_id": "6b2f8618fcd83c05",
+   "background_id": "8558b8939a61623a",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "appliance",
+    "alpha": 0.44,
+    "panel": [
+     345,
+     6,
+     871,
+     536
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_6b2f8618fcd83c05_1_photo.jpg",
+   "family": "photo",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "teddy_bear",
+   "content_id": "6b2f8618fcd83c05",
+   "background_id": "0b6227bb06345402",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "photo",
+    "panel": [
+     429,
+     50,
+     762,
+     326
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_1635d54a13b958e7_0_photo.jpg",
+   "family": "photo",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "toy",
+   "content_id": "1635d54a13b958e7",
+   "background_id": "7994409a0c97cfd1",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "photo",
+    "occluder": [
+     603,
+     61,
+     717,
+     197
+    ],
+    "panel": [
+     444,
+     47,
+     757,
+     281
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_1635d54a13b958e7_1_screen.jpg",
+   "family": "screen",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "toy",
+   "content_id": "1635d54a13b958e7",
+   "background_id": "1d0caf874fcada77",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "screen",
+    "panel": [
+     425,
+     246,
+     797,
+     492
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_8d0b1e22cc02c96a_0_screen.jpg",
+   "family": "screen",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "screen",
+   "content_id": "8d0b1e22cc02c96a",
+   "background_id": "e3a41aa21875053e",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "screen",
+    "occluder": [
+     290,
+     318,
+     345,
+     372
+    ],
+    "panel": [
+     130,
+     205,
+     459,
+     399
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_8d0b1e22cc02c96a_1_plain.jpg",
+   "family": "plain",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "screen",
+   "content_id": "8d0b1e22cc02c96a",
+   "background_id": "",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "plain"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_1475595c386a37bc_0_plain.jpg",
+   "family": "plain",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "sculpture",
+   "content_id": "1475595c386a37bc",
+   "background_id": "",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "plain"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_1475595c386a37bc_1_mirror.jpg",
+   "family": "mirror",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "sculpture",
+   "content_id": "1475595c386a37bc",
+   "background_id": "36a94f02266d3105",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "mirror",
+    "gain": 0.79,
+    "alpha": 0.81,
+    "panel": [
+     244,
+     7,
+     863,
+     537
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_bf5ff63466f323a6_0_mirror.jpg",
+   "family": "mirror",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "toy",
+   "content_id": "bf5ff63466f323a6",
+   "background_id": "0e2868759e7a615c",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "mirror",
+    "gain": 0.91,
+    "alpha": 0.97,
+    "panel": [
+     5,
+     7,
+     588,
+     537
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_bf5ff63466f323a6_1_appliance.jpg",
+   "family": "appliance",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "toy",
+   "content_id": "bf5ff63466f323a6",
+   "background_id": "42fdbf5f7c05f39d",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "appliance",
+    "alpha": 0.39,
+    "panel": [
+     7,
+     33,
+     621,
+     482
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_00cd12b9ee1905a7_0_appliance.jpg",
+   "family": "appliance",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "toy",
+   "content_id": "00cd12b9ee1905a7",
+   "background_id": "72629128427cf83c",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "appliance",
+    "alpha": 0.51,
+    "panel": [
+     133,
+     2,
+     582,
+     532
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_00cd12b9ee1905a7_1_photo.jpg",
+   "family": "photo",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "toy",
+   "content_id": "00cd12b9ee1905a7",
+   "background_id": "b5bfc85ebf0c0da5",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "photo",
+    "panel": [
+     43,
+     221,
+     262,
+     421
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_17135174fbbf3301_0_photo.jpg",
+   "family": "photo",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "17135174fbbf3301",
+   "background_id": "e0c2d59bb6da3905",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "photo",
+    "panel": [
+     153,
+     123,
+     529,
+     537
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_17135174fbbf3301_1_screen.jpg",
+   "family": "screen",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "17135174fbbf3301",
+   "background_id": "df754b5d85cef4f2",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "screen",
+    "panel": [
+     396,
+     13,
+     700,
+     186
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_64169d255fb97579_0_screen.jpg",
+   "family": "screen",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "sculpture",
+   "content_id": "64169d255fb97579",
+   "background_id": "3a3eb81e3118c59f",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "screen",
+    "panel": [
+     524,
+     155,
+     721,
+     298
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_64169d255fb97579_1_plain.jpg",
+   "family": "plain",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "sculpture",
+   "content_id": "64169d255fb97579",
+   "background_id": "",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "plain"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_96e15e02e22f27b5_0_plain.jpg",
+   "family": "plain",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "poster",
+   "content_id": "96e15e02e22f27b5",
+   "background_id": "",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "plain"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_96e15e02e22f27b5_1_mirror.jpg",
+   "family": "mirror",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "poster",
+   "content_id": "96e15e02e22f27b5",
+   "background_id": "0b6227bb06345402",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "mirror",
+    "gain": 0.64,
+    "alpha": 0.87,
+    "panel": [
+     152,
+     8,
+     704,
+     538
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_38275ed6fbf455ee_0_mirror.jpg",
+   "family": "mirror",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "sculpture",
+   "content_id": "38275ed6fbf455ee",
+   "background_id": "3ecead421079f9fd",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "mirror",
+    "gain": 0.69,
+    "alpha": 0.87,
+    "panel": [
+     112,
+     5,
+     814,
+     535
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_38275ed6fbf455ee_1_appliance.jpg",
+   "family": "appliance",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "sculpture",
+   "content_id": "38275ed6fbf455ee",
+   "background_id": "92b801786d58976e",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "appliance",
+    "alpha": 0.35,
+    "panel": [
+     60,
+     4,
+     574,
+     534
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_7201baca749f301f_0_appliance.jpg",
+   "family": "appliance",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "7201baca749f301f",
+   "background_id": "cd15bd46c87a957c",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "appliance",
+    "alpha": 0.46,
+    "panel": [
+     110,
+     28,
+     584,
+     527
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_7201baca749f301f_1_photo.jpg",
+   "family": "photo",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "7201baca749f301f",
+   "background_id": "d9032b832491e0f3",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "photo",
+    "panel": [
+     90,
+     84,
+     458,
+     442
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_e66dd024287b0fba_0_photo.jpg",
+   "family": "photo",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "poster",
+   "content_id": "e66dd024287b0fba",
+   "background_id": "7c0c494fd483b835",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "photo",
+    "panel": [
+     455,
+     112,
+     679,
+     377
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_e66dd024287b0fba_1_screen.jpg",
+   "family": "screen",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "poster",
+   "content_id": "e66dd024287b0fba",
+   "background_id": "6be310892c84cd63",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "screen",
+    "panel": [
+     248,
+     263,
+     587,
+     485
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_405c5aa475390e50_0_screen.jpg",
+   "family": "screen",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "405c5aa475390e50",
+   "background_id": "3dd40beb8e7f03b9",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "screen",
+    "occluder": [
+     404,
+     34,
+     549,
+     183
+    ],
+    "panel": [
+     179,
+     24,
+     562,
+     277
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_405c5aa475390e50_1_plain.jpg",
+   "family": "plain",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "405c5aa475390e50",
+   "background_id": "",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "plain"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_f5f77d3a50ea6e21_0_plain.jpg",
+   "family": "plain",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "screen",
+   "content_id": "f5f77d3a50ea6e21",
+   "background_id": "",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "plain"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_f5f77d3a50ea6e21_1_mirror.jpg",
+   "family": "mirror",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "screen",
+   "content_id": "f5f77d3a50ea6e21",
+   "background_id": "eab5e7e2423dfed3",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "mirror",
+    "gain": 0.95,
+    "alpha": 0.92,
+    "occluder": [
+     171,
+     184,
+     276,
+     391
+    ],
+    "panel": [
+     165,
+     20,
+     807,
+     482
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_3563374a50b9f548_0_mirror.jpg",
+   "family": "mirror",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "toy",
+   "content_id": "3563374a50b9f548",
+   "background_id": "92b801786d58976e",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "mirror",
+    "gain": 0.56,
+    "alpha": 0.95,
+    "panel": [
+     30,
+     4,
+     524,
+     534
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_3563374a50b9f548_1_appliance.jpg",
+   "family": "appliance",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "toy",
+   "content_id": "3563374a50b9f548",
+   "background_id": "e07312c926231410",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "appliance",
+    "alpha": 0.37,
+    "panel": [
+     98,
+     3,
+     660,
+     533
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_433d5b5fc6135bdd_0_appliance.jpg",
+   "family": "appliance",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "toy",
+   "content_id": "433d5b5fc6135bdd",
+   "background_id": "9d7e12b5a528f92a",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "appliance",
+    "alpha": 0.48,
+    "panel": [
+     384,
+     70,
+     885,
+     521
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_433d5b5fc6135bdd_1_photo.jpg",
+   "family": "photo",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "toy",
+   "content_id": "433d5b5fc6135bdd",
+   "background_id": "3e420574e8ca0ea6",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "photo",
+    "panel": [
+     84,
+     3,
+     316,
+     213
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_875a8143a53f6e9d_0_photo.jpg",
+   "family": "photo",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "poster",
+   "content_id": "875a8143a53f6e9d",
+   "background_id": "1d7929b66a611ea8",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "photo",
+    "panel": [
+     709,
+     123,
+     928,
+     396
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_875a8143a53f6e9d_1_screen.jpg",
+   "family": "screen",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "poster",
+   "content_id": "875a8143a53f6e9d",
+   "background_id": "2523ac25dfbfa2f8",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "screen",
+    "panel": [
+     468,
+     15,
+     811,
+     207
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_4693570803310851_0_screen.jpg",
+   "family": "screen",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "sculpture",
+   "content_id": "4693570803310851",
+   "background_id": "10fb73ee47a33a83",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "screen",
+    "panel": [
+     271,
+     40,
+     567,
+     260
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_4693570803310851_1_plain.jpg",
+   "family": "plain",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "sculpture",
+   "content_id": "4693570803310851",
+   "background_id": "",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "plain"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_ad1122c797ffc06e_0_plain.jpg",
+   "family": "plain",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "ad1122c797ffc06e",
+   "background_id": "",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "plain"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_ad1122c797ffc06e_1_mirror.jpg",
+   "family": "mirror",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "ad1122c797ffc06e",
+   "background_id": "f2938a1f2aacff10",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "mirror",
+    "gain": 0.72,
+    "alpha": 0.93,
+    "panel": [
+     102,
+     43,
+     472,
+     538
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_910796da8a49348e_0_mirror.jpg",
+   "family": "mirror",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "910796da8a49348e",
+   "background_id": "0b730c49ccf74eae",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "mirror",
+    "gain": 0.88,
+    "alpha": 0.86,
+    "occluder": [
+     329,
+     223,
+     396,
+     506
+    ],
+    "panel": [
+     86,
+     5,
+     507,
+     535
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_910796da8a49348e_1_appliance.jpg",
+   "family": "appliance",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "910796da8a49348e",
+   "background_id": "e07312c926231410",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "appliance",
+    "alpha": 0.46,
+    "occluder": [
+     315,
+     65,
+     449,
+     231
+    ],
+    "panel": [
+     216,
+     57,
+     885,
+     517
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_3d2580d59f499cce_0_appliance.jpg",
+   "family": "appliance",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "screen",
+   "content_id": "3d2580d59f499cce",
+   "background_id": "10fb73ee47a33a83",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "appliance",
+    "alpha": 0.42,
+    "panel": [
+     282,
+     1,
+     831,
+     531
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_3d2580d59f499cce_1_photo.jpg",
+   "family": "photo",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "screen",
+   "content_id": "3d2580d59f499cce",
+   "background_id": "63704d1bbcd07d02",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "photo",
+    "panel": [
+     422,
+     155,
+     708,
+     516
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_b6a2b7acf6bd781c_0_photo.jpg",
+   "family": "photo",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "screen",
+   "content_id": "b6a2b7acf6bd781c",
+   "background_id": "cd727c5e0d2cfc1b",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "photo",
+    "occluder": [
+     390,
+     329,
+     518,
+     412
+    ],
+    "panel": [
+     277,
+     140,
+     599,
+     421
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_b6a2b7acf6bd781c_1_screen.jpg",
+   "family": "screen",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "screen",
+   "content_id": "b6a2b7acf6bd781c",
+   "background_id": "e3de278bad0e47e1",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "screen",
+    "panel": [
+     543,
+     174,
+     845,
+     355
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_de2cc2501157a173_0_screen.jpg",
+   "family": "screen",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "screen",
+   "content_id": "de2cc2501157a173",
+   "background_id": "2f0a18a409d5a769",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "screen",
+    "panel": [
+     505,
+     248,
+     850,
+     466
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_de2cc2501157a173_1_plain.jpg",
+   "family": "plain",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "screen",
+   "content_id": "de2cc2501157a173",
+   "background_id": "",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "plain"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_cdfd56443a589a37_0_plain.jpg",
+   "family": "plain",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "toy",
+   "content_id": "cdfd56443a589a37",
+   "background_id": "",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "plain"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_cdfd56443a589a37_1_mirror.jpg",
+   "family": "mirror",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "toy",
+   "content_id": "cdfd56443a589a37",
+   "background_id": "3692c7b2c4697ed9",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "mirror",
+    "gain": 0.8,
+    "alpha": 0.89,
+    "panel": [
+     444,
+     110,
+     924,
+     436
+    ]
+   },
+   "synthetic": true
+  }
+ ]
+}

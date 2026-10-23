@@ -1,0 +1,16 @@
+{
+ "faces_tested": 78,
+ "still_detected_after": {
+  "blur_light": 75,
+  "blur_heavy": 2,
+  "pixelate_8": 39,
+  "fill": 0
+ },
+ "rate": {
+  "blur_light": 0.962,
+  "blur_heavy": 0.026,
+  "pixelate_8": 0.5,
+  "fill": 0.0
+ },
+ "note": "SYNTHETIC eval set, plain family; YuNet at 0.5, re-detection counted at IoU >= 0.3"
+}

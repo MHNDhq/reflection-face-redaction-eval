@@ -1,0 +1,70 @@
+{
+ "machine": "macOS-27.0.1-arm64-arm-64bit",
+ "cpu_threads_cv2": 10,
+ "runs": [
+  {
+   "det": "yunet_2023mar (CPU, OpenCV)",
+   "size": [
+    960,
+    540
+   ],
+   "fps": 155.92
+  },
+  {
+   "det": "blazeface_full (CPU, MediaPipe)",
+   "size": [
+    960,
+    540
+   ],
+   "fps": 660.11
+  },
+  {
+   "det": "ft_B Faster R-CNN MobileNetV3 (MPS GPU, batch 8)",
+   "size": [
+    960,
+    540
+   ],
+   "fps": 28.23
+  },
+  {
+   "det": "yunet_2023mar (CPU, OpenCV)",
+   "size": [
+    1920,
+    1080
+   ],
+   "fps": 19.74
+  },
+  {
+   "det": "blazeface_full (CPU, MediaPipe)",
+   "size": [
+    1920,
+    1080
+   ],
+   "fps": 525.49
+  },
+  {
+   "det": "ft_B Faster R-CNN MobileNetV3 (MPS GPU, batch 8)",
+   "size": [
+    1920,
+    1080
+   ],
+   "fps": 18.8
+  },
+  {
+   "det": "ffmpeg HEVC 4K decode VideoToolbox",
+   "size": [
+    3840,
+    2160
+   ],
+   "fps": 159.85
+  },
+  {
+   "det": "ffmpeg HEVC 4K decode software",
+   "size": [
+    3840,
+    2160
+   ],
+   "fps": 251.2
+  }
+ ]
+}
