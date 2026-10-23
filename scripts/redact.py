@@ -33,19 +33,27 @@ def _iou(a, b):
     return i / u if u > 0 else 0.0
 
 
+def _dedupe(boxes, thr=0.9):
+    """Drop boxes that are near-copies (IoU >= thr) of one already kept."""
+    kept = []
+    for b in boxes:
+        if all(_iou(b, k) < thr for k in kept):
+            kept.append(b)
+    return kept
+
+
 def interpolate_gaps(dets, max_gap=30, min_iou=0.1):
-    """dets: list (per frame) of boxes. Where a box at frame t and a box at t+g (1<g<=max_gap) overlap
-    (IoU >= min_iou), add linearly interpolated boxes for the frames in between. Boxes in between do
-    NOT cancel the bridge: a jittered or neighbouring box at t+1 used to stop it and left mid-gap frames
-    unredacted (review 2026-10-23). An extra interpolated box only adds redaction, and recall is the
-    safety requirement."""
+    """dets: list (per frame) of boxes. Each box at frame t is bridged to the FARTHEST box at t+g
+    (1<g<=max_gap) that overlaps it (IoU >= min_iou), with linearly interpolated boxes in between.
+    Boxes in between never cancel a bridge: a jittered or neighbouring box after a hit used to stop
+    it and left mid-gap frames unredacted (review 2026-10-23, at t+1 and again at t+2). Near-copies
+    are then dropped per frame. An extra interpolated box only adds redaction, and recall is the
+    safety requirement; the cost is some over-redaction when a face moves non-linearly."""
     out = [list(d) for d in dets]
     n = len(dets)
     for t in range(n):
         for a in dets[t]:
-            for g in range(2, max_gap + 1):
-                if t + g >= n:
-                    break
+            for g in range(min(max_gap, n - 1 - t), 1, -1):
                 cand = [b for b in dets[t + g] if _iou(a, b) >= min_iou]
                 if not cand:
                     continue
@@ -54,7 +62,7 @@ def interpolate_gaps(dets, max_gap=30, min_iou=0.1):
                     f = k / g
                     out[t + k].append(tuple(a[i] * (1 - f) + b[i] * f for i in range(4)))
                 break
-    return out
+    return [_dedupe(fr) for fr in out]
 
 
 def pad(dets, before=8, after=8):

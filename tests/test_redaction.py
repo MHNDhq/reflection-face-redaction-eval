@@ -73,7 +73,6 @@ ok = all(np.array_equal(d[~R.redaction_mask(d.shape, b)], s[~R.redaction_mask(d.
          for d, s, b in zip(dec, src, bx))
 check("FFV1 decode: outside boxes equals SOURCE byte for byte", ok)
 
-failed = [n for n, c in results if not c]
 # Gap boundary: a 29-frame miss is bridged, a 30-frame miss is not (pad 8 covers only the edges).
 def _filled(pl, f):
     return len(pl[f]) > 0
@@ -88,5 +87,15 @@ dj = [[] for _ in range(200)]; dj[100] = [(10, 10, 50, 50)]; dj[101] = [(40, 10,
 pj = R.plan(dj, 8, 8, 30)
 check("jittered t+1 box does not cancel the bridge (frames 102..124 filled)", all(_filled(pj, f) for f in range(102, 125)))
 
+# Jitter at EVERY offset between the two hits must not cancel the bridge.
+for kk in range(1, 25):
+    dk = [[] for _ in range(200)]; dk[100] = [(10, 10, 50, 50)]; dk[100 + kk] = [(40, 10, 80, 50)]; dk[125] = [(0, 10, 40, 50)]
+    pk = R.plan(dk, 8, 8, 30)
+    if not all(pk[f] for f in range(101, 125)):
+        check(f"jitter at t+{kk} does not cancel the bridge", False)
+        break
+else:
+    check("jitter at any offset t+1..t+24 does not cancel the bridge", True)
+failed = [n for n, c in results if not c]
 print(f"{len(results) - len(failed)}/{len(results)} passed")
 sys.exit(1 if failed else 0)
