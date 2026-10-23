@@ -35,7 +35,8 @@ Read honestly:
   about 19 points more faces than YuNet with its own tuned cutoff, at about the same precision. The
   precision interval (93.5 to 97.1%) includes values below 95%, so "at the bar", not "safely above it".
 - Not robust yet: the SAME model and cutoff give 94.1% precision on eval2 and 89.6% on the original eval
-  set, which has more verified hard negatives (82 sculptures, 80 toys). eval was read three times before
+  set, whose hard negatives all carry a human-verified "no face" label (eval2 and eval3 negatives only
+  need no person box or label). eval was read three times before
   this model existed and chose nothing for it. eval2's false alarms (mirror-backed no-face frames) DID shape
   train_hn2, so its 94.1% is optimistic, not an independent check.
 - Shower glass, never in training: YuNet at 0.9 0.7%, ft_A 18.5%, ft_HN2 26.7%. Screens with people:
