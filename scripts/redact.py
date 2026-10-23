@@ -33,12 +33,19 @@ def _iou(a, b):
     return i / u if u > 0 else 0.0
 
 
-def interpolate_gaps(dets, max_gap=30, min_iou=0.1, same_iou=0.5):
+def _contains(outer, inner, tol=0.5):
+    # tol absorbs float rounding in the interpolation (an equal box must count as contained); half a
+    # pixel is far below the 25% redaction margin, so no visible coverage is lost.
+    return (outer[0] <= inner[0] + tol and outer[1] <= inner[1] + tol
+            and outer[2] >= inner[2] - tol and outer[3] >= inner[3] - tol)
+
+
+def interpolate_gaps(dets, max_gap=30, min_iou=0.1):
     """dets: list (per frame) of boxes. Each box at frame t is bridged to EVERY box at t+g
     (1<g<=max_gap) that overlaps it (IoU >= min_iou), with linearly interpolated boxes in between.
-    An interpolated box is skipped on frame t+k only when an ORIGINAL detection there matches it
-    (IoU >= same_iou); a neighbouring face, a small false positive or a jittered box never cancels
-    it (review 2026-10-23: touching the span of the two hits was too weak a reason to skip).
+    An interpolated box is skipped on frame t+k only when an ORIGINAL detection there fully contains
+    it, so skipping never loses coverage; a neighbouring face, a small false positive or a jittered
+    box never cancels it (review 2026-10-23: touching the span, then IoU >= 0.5, were too weak).
     Boxes in between never cancel a bridge (review 2026-10-23: a jittered box at t+1, then t+2,
     used to leave mid-gap frames unredacted), and nothing is merged or dropped, so the redacted
     area can only grow. The cost is some over-redaction when a face moves non-linearly."""
@@ -53,9 +60,10 @@ def interpolate_gaps(dets, max_gap=30, min_iou=0.1, same_iou=0.5):
                     for k in range(1, g):
                         f = k / g
                         box = tuple(a[i] * (1 - f) + b[i] * f for i in range(4))
-                        if not any(_iou(box, c) >= same_iou for c in dets[t + k]):
+                        if not any(_contains(c, box) for c in dets[t + k]):
                             out[t + k].append(box)
-    return out
+    # Exact copies from overlapping pairs add no area; drop them (order kept).
+    return [list(dict.fromkeys(fr)) for fr in out]
 
 
 def pad(dets, before=8, after=8):
@@ -65,7 +73,7 @@ def pad(dets, before=8, after=8):
     for t, boxes in enumerate(dets):
         for k in range(max(0, t - before), min(n, t + after + 1)):
             out[k].extend(boxes)
-    return out
+    return [list(dict.fromkeys(fr)) for fr in out]   # exact copies add no area
 
 
 def redact(frame, boxes, margin=0.25, fill=FILL):
