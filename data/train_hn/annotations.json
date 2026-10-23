@@ -1,0 +1,7818 @@
+{
+ "note": "SYNTHETIC composites of Open Images CC BY 2.0 photos; not real head-mounted footage.",
+ "split": "validation",
+ "families": [
+  "mirror",
+  "appliance",
+  "photo",
+  "screen",
+  "plain"
+ ],
+ "seed": 808,
+ "images": [
+  {
+   "file": "validation_2a3ab4239291c1f8_0_mirror.jpg",
+   "family": "mirror",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "2a3ab4239291c1f8",
+   "background_id": "182c1f2bfa4b4280",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "mirror",
+    "gain": 0.66,
+    "alpha": 0.89,
+    "occluder": [
+     286,
+     112,
+     405,
+     258
+    ],
+    "panel": [
+     201,
+     2,
+     691,
+     532
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_2a3ab4239291c1f8_1_appliance.jpg",
+   "family": "appliance",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "2a3ab4239291c1f8",
+   "background_id": "82ed3a2de7df67a8",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "appliance",
+    "alpha": 0.3,
+    "panel": [
+     206,
+     9,
+     723,
+     539
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_f3b046e9144b39e9_0_appliance.jpg",
+   "family": "appliance",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "screen",
+   "content_id": "f3b046e9144b39e9",
+   "background_id": "daded832e3ae26b5",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "appliance",
+    "alpha": 0.55,
+    "panel": [
+     350,
+     12,
+     906,
+     534
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_f3b046e9144b39e9_1_photo.jpg",
+   "family": "photo",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "screen",
+   "content_id": "f3b046e9144b39e9",
+   "background_id": "faa0453ecfeb8ade",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "photo",
+    "panel": [
+     398,
+     231,
+     770,
+     520
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_192fa0805cf9156b_0_photo.jpg",
+   "family": "photo",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "toy",
+   "content_id": "192fa0805cf9156b",
+   "background_id": "84bf84d27ec18be6",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "photo",
+    "occluder": [
+     465,
+     165,
+     549,
+     311
+    ],
+    "panel": [
+     406,
+     113,
+     665,
+     397
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_192fa0805cf9156b_1_screen.jpg",
+   "family": "screen",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "toy",
+   "content_id": "192fa0805cf9156b",
+   "background_id": "36a94f02266d3105",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "screen",
+    "panel": [
+     207,
+     37,
+     429,
+     179
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_487815c82c579830_0_screen.jpg",
+   "family": "screen",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "487815c82c579830",
+   "background_id": "9a6c111db3384eab",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "screen",
+    "occluder": [
+     147,
+     122,
+     248,
+     246
+    ],
+    "panel": [
+     38,
+     27,
+     425,
+     255
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_487815c82c579830_1_plain.jpg",
+   "family": "plain",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "487815c82c579830",
+   "background_id": "",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "plain"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_e3f2995cf9135eaa_0_plain.jpg",
+   "family": "plain",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "screen",
+   "content_id": "e3f2995cf9135eaa",
+   "background_id": "",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "plain"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_e3f2995cf9135eaa_1_mirror.jpg",
+   "family": "mirror",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "screen",
+   "content_id": "e3f2995cf9135eaa",
+   "background_id": "460475ca9d34e13e",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "mirror",
+    "gain": 0.72,
+    "alpha": 0.86,
+    "occluder": [
+     118,
+     170,
+     335,
+     483
+    ],
+    "panel": [
+     39,
+     3,
+     668,
+     533
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_bd8497bf937e435b_0_mirror.jpg",
+   "family": "mirror",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "toy",
+   "content_id": "bd8497bf937e435b",
+   "background_id": "cabbf79c0a4e40e6",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "mirror",
+    "gain": 0.84,
+    "alpha": 0.97,
+    "panel": [
+     235,
+     7,
+     871,
+     537
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_bd8497bf937e435b_1_appliance.jpg",
+   "family": "appliance",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "toy",
+   "content_id": "bd8497bf937e435b",
+   "background_id": "6e701bae6041a830",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "appliance",
+    "alpha": 0.39,
+    "occluder": [
+     349,
+     327,
+     431,
+     503
+    ],
+    "panel": [
+     260,
+     210,
+     665,
+     531
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_9bd3e32a2337f9bc_0_appliance.jpg",
+   "family": "appliance",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "9bd3e32a2337f9bc",
+   "background_id": "40e3252f39eee5d3",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "appliance",
+    "alpha": 0.51,
+    "panel": [
+     197,
+     96,
+     578,
+     488
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_9bd3e32a2337f9bc_1_photo.jpg",
+   "family": "photo",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "9bd3e32a2337f9bc",
+   "background_id": "b655ede651e45487",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "photo",
+    "occluder": [
+     327,
+     327,
+     427,
+     384
+    ],
+    "panel": [
+     156,
+     293,
+     431,
+     494
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_8571e8c8ba740f2c_0_photo.jpg",
+   "family": "photo",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "screen",
+   "content_id": "8571e8c8ba740f2c",
+   "background_id": "01bef5827cab386c",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "photo",
+    "panel": [
+     65,
+     24,
+     316,
+     351
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_8571e8c8ba740f2c_1_screen.jpg",
+   "family": "screen",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "screen",
+   "content_id": "8571e8c8ba740f2c",
+   "background_id": "dd524cdb2e8652cf",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "screen",
+    "panel": [
+     369,
+     94,
+     683,
+     294
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_90d897807f1416d4_0_screen.jpg",
+   "family": "screen",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "toy",
+   "content_id": "90d897807f1416d4",
+   "background_id": "2305e785c4e0bf51",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "screen",
+    "panel": [
+     378,
+     170,
+     663,
+     364
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_90d897807f1416d4_1_plain.jpg",
+   "family": "plain",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "toy",
+   "content_id": "90d897807f1416d4",
+   "background_id": "",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "plain"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_0dfd223b59953d5d_0_plain.jpg",
+   "family": "plain",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "0dfd223b59953d5d",
+   "background_id": "",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "plain"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_0dfd223b59953d5d_1_mirror.jpg",
+   "family": "mirror",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "0dfd223b59953d5d",
+   "background_id": "cd727c5e0d2cfc1b",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "mirror",
+    "gain": 0.7,
+    "alpha": 0.86,
+    "panel": [
+     108,
+     31,
+     498,
+     460
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_2ddf0daf6b0c5b54_0_mirror.jpg",
+   "family": "mirror",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "screen",
+   "content_id": "2ddf0daf6b0c5b54",
+   "background_id": "9d7cb855ed6b711d",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "mirror",
+    "gain": 0.86,
+    "alpha": 0.81,
+    "panel": [
+     133,
+     96,
+     513,
+     401
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_2ddf0daf6b0c5b54_1_appliance.jpg",
+   "family": "appliance",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "screen",
+   "content_id": "2ddf0daf6b0c5b54",
+   "background_id": "99c857cf01fc9f65",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "appliance",
+    "alpha": 0.43,
+    "panel": [
+     88,
+     1,
+     654,
+     531
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_590cd0f301b19a13_0_appliance.jpg",
+   "family": "appliance",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "toy",
+   "content_id": "590cd0f301b19a13",
+   "background_id": "2f0a18a409d5a769",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "appliance",
+    "alpha": 0.32,
+    "panel": [
+     154,
+     0,
+     872,
+     530
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_590cd0f301b19a13_1_photo.jpg",
+   "family": "photo",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "toy",
+   "content_id": "590cd0f301b19a13",
+   "background_id": "9ccf76a5da825189",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "photo",
+    "panel": [
+     326,
+     22,
+     712,
+     527
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_a17f85e33b8bbeb5_0_photo.jpg",
+   "family": "photo",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "a17f85e33b8bbeb5",
+   "background_id": "01bef5827cab386c",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "photo",
+    "occluder": [
+     392,
+     265,
+     458,
+     370
+    ],
+    "panel": [
+     324,
+     223,
+     521,
+     447
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_a17f85e33b8bbeb5_1_screen.jpg",
+   "family": "screen",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "a17f85e33b8bbeb5",
+   "background_id": "9e21c7896cb36b7a",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "screen",
+    "panel": [
+     648,
+     120,
+     917,
+     289
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_c4f39f3bd2e64016_0_screen.jpg",
+   "family": "screen",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "screen",
+   "content_id": "c4f39f3bd2e64016",
+   "background_id": "1f2dc2f1001d56d7",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "screen",
+    "occluder": [
+     371,
+     355,
+     453,
+     402
+    ],
+    "panel": [
+     258,
+     235,
+     550,
+     411
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_c4f39f3bd2e64016_1_plain.jpg",
+   "family": "plain",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "screen",
+   "content_id": "c4f39f3bd2e64016",
+   "background_id": "",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "plain"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_ce29890ef34e6411_0_plain.jpg",
+   "family": "plain",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "toy",
+   "content_id": "ce29890ef34e6411",
+   "background_id": "",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "plain"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_ce29890ef34e6411_1_mirror.jpg",
+   "family": "mirror",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "toy",
+   "content_id": "ce29890ef34e6411",
+   "background_id": "b5bfc85ebf0c0da5",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "mirror",
+    "gain": 0.78,
+    "alpha": 0.81,
+    "panel": [
+     233,
+     8,
+     859,
+     538
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_2b0d24e40261ed1a_0_mirror.jpg",
+   "family": "mirror",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "2b0d24e40261ed1a",
+   "background_id": "e3de278bad0e47e1",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "mirror",
+    "gain": 0.56,
+    "alpha": 0.94,
+    "panel": [
+     228,
+     1,
+     869,
+     531
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_2b0d24e40261ed1a_1_appliance.jpg",
+   "family": "appliance",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "2b0d24e40261ed1a",
+   "background_id": "e9461d12ce2dd2e8",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "appliance",
+    "alpha": 0.59,
+    "occluder": [
+     265,
+     56,
+     397,
+     287
+    ],
+    "panel": [
+     67,
+     5,
+     652,
+     535
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_437bf266bb77b9da_0_appliance.jpg",
+   "family": "appliance",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "screen",
+   "content_id": "437bf266bb77b9da",
+   "background_id": "96657f71a20cac23",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "appliance",
+    "alpha": 0.46,
+    "panel": [
+     57,
+     12,
+     674,
+     426
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_437bf266bb77b9da_1_photo.jpg",
+   "family": "photo",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "screen",
+   "content_id": "437bf266bb77b9da",
+   "background_id": "330946f94aa4c95a",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "photo",
+    "occluder": [
+     728,
+     203,
+     815,
+     355
+    ],
+    "panel": [
+     551,
+     162,
+     835,
+     486
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_d7dfa36949a70fa3_0_photo.jpg",
+   "family": "photo",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "toy",
+   "content_id": "d7dfa36949a70fa3",
+   "background_id": "0faf733d08b38efa",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "photo",
+    "occluder": [
+     724,
+     210,
+     791,
+     276
+    ],
+    "panel": [
+     652,
+     70,
+     850,
+     280
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_d7dfa36949a70fa3_1_screen.jpg",
+   "family": "screen",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "toy",
+   "content_id": "d7dfa36949a70fa3",
+   "background_id": "598ce21cc779ff81",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "screen",
+    "panel": [
+     49,
+     384,
+     259,
+     507
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_1b9eb52c0e2cf93c_0_screen.jpg",
+   "family": "screen",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "1b9eb52c0e2cf93c",
+   "background_id": "a10ea74b5eb3c47d",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "screen",
+    "panel": [
+     414,
+     376,
+     668,
+     526
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_1b9eb52c0e2cf93c_1_plain.jpg",
+   "family": "plain",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "1b9eb52c0e2cf93c",
+   "background_id": "",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "plain"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_71037fe3d8da73aa_0_plain.jpg",
+   "family": "plain",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "screen",
+   "content_id": "71037fe3d8da73aa",
+   "background_id": "",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "plain"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_71037fe3d8da73aa_1_mirror.jpg",
+   "family": "mirror",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "screen",
+   "content_id": "71037fe3d8da73aa",
+   "background_id": "3ecead421079f9fd",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "mirror",
+    "gain": 0.63,
+    "alpha": 0.82,
+    "panel": [
+     317,
+     60,
+     705,
+     525
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_939a0917339b7783_0_mirror.jpg",
+   "family": "mirror",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "toy",
+   "content_id": "939a0917339b7783",
+   "background_id": "0af4ba8fd2a7e628",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "mirror",
+    "gain": 0.86,
+    "alpha": 0.82,
+    "panel": [
+     34,
+     12,
+     740,
+     538
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_939a0917339b7783_1_appliance.jpg",
+   "family": "appliance",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "toy",
+   "content_id": "939a0917339b7783",
+   "background_id": "89fb4f3b001d677e",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "appliance",
+    "alpha": 0.29,
+    "occluder": [
+     584,
+     142,
+     824,
+     456
+    ],
+    "panel": [
+     182,
+     9,
+     878,
+     539
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_feac6f5ba1f5de54_0_appliance.jpg",
+   "family": "appliance",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "feac6f5ba1f5de54",
+   "background_id": "091af8d4a3c6c6f1",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "appliance",
+    "alpha": 0.31,
+    "panel": [
+     8,
+     7,
+     586,
+     519
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_feac6f5ba1f5de54_1_photo.jpg",
+   "family": "photo",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "feac6f5ba1f5de54",
+   "background_id": "bc09be39904ffee6",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "photo",
+    "panel": [
+     140,
+     57,
+     494,
+     480
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_e1cd5c924f8d337b_0_photo.jpg",
+   "family": "photo",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "screen",
+   "content_id": "e1cd5c924f8d337b",
+   "background_id": "1d0caf874fcada77",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "photo",
+    "occluder": [
+     760,
+     277,
+     792,
+     350
+    ],
+    "panel": [
+     680,
+     150,
+     874,
+     410
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_e1cd5c924f8d337b_1_screen.jpg",
+   "family": "screen",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "screen",
+   "content_id": "e1cd5c924f8d337b",
+   "background_id": "36a94f02266d3105",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "screen",
+    "panel": [
+     42,
+     164,
+     372,
+     375
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_5d4273d59c7941d4_0_screen.jpg",
+   "family": "screen",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "toy",
+   "content_id": "5d4273d59c7941d4",
+   "background_id": "e7d31d4d5be667ff",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "screen",
+    "panel": [
+     320,
+     335,
+     556,
+     467
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_5d4273d59c7941d4_1_plain.jpg",
+   "family": "plain",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "toy",
+   "content_id": "5d4273d59c7941d4",
+   "background_id": "",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "plain"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_a5dc9b8e19130d1e_0_plain.jpg",
+   "family": "plain",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "a5dc9b8e19130d1e",
+   "background_id": "",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "plain"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_a5dc9b8e19130d1e_1_mirror.jpg",
+   "family": "mirror",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "a5dc9b8e19130d1e",
+   "background_id": "330946f94aa4c95a",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "mirror",
+    "gain": 0.7,
+    "alpha": 0.92,
+    "panel": [
+     210,
+     3,
+     871,
+     533
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_16bb316c7c76b5a5_0_mirror.jpg",
+   "family": "mirror",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "screen",
+   "content_id": "16bb316c7c76b5a5",
+   "background_id": "42fdbf5f7c05f39d",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "mirror",
+    "gain": 0.75,
+    "alpha": 0.88,
+    "panel": [
+     86,
+     8,
+     559,
+     535
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_16bb316c7c76b5a5_1_appliance.jpg",
+   "family": "appliance",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "screen",
+   "content_id": "16bb316c7c76b5a5",
+   "background_id": "e671284913c2cb97",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "appliance",
+    "alpha": 0.33,
+    "panel": [
+     408,
+     34,
+     865,
+     437
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_16afa69948a220ff_0_appliance.jpg",
+   "family": "appliance",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "toy",
+   "content_id": "16afa69948a220ff",
+   "background_id": "789cc0283c0e18af",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "appliance",
+    "alpha": 0.51,
+    "panel": [
+     290,
+     7,
+     942,
+     537
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_16afa69948a220ff_1_photo.jpg",
+   "family": "photo",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "toy",
+   "content_id": "16afa69948a220ff",
+   "background_id": "6c5d18cf5e6d36d6",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "photo",
+    "occluder": [
+     415,
+     335,
+     523,
+     386
+    ],
+    "panel": [
+     335,
+     186,
+     680,
+     430
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_1c15b52782e87852_0_photo.jpg",
+   "family": "photo",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "1c15b52782e87852",
+   "background_id": "40e3252f39eee5d3",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "photo",
+    "panel": [
+     349,
+     311,
+     543,
+     446
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_1c15b52782e87852_1_screen.jpg",
+   "family": "screen",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "1c15b52782e87852",
+   "background_id": "04f2044207c1bff1",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "screen",
+    "panel": [
+     526,
+     139,
+     831,
+     359
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_808a6b0e7b762db5_0_screen.jpg",
+   "family": "screen",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "screen",
+   "content_id": "808a6b0e7b762db5",
+   "background_id": "e3de278bad0e47e1",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "screen",
+    "occluder": [
+     573,
+     40,
+     636,
+     126
+    ],
+    "panel": [
+     371,
+     13,
+     705,
+     255
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_808a6b0e7b762db5_1_plain.jpg",
+   "family": "plain",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "screen",
+   "content_id": "808a6b0e7b762db5",
+   "background_id": "",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "plain"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_55a946f827fdf34e_0_plain.jpg",
+   "family": "plain",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "toy",
+   "content_id": "55a946f827fdf34e",
+   "background_id": "",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "plain"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_55a946f827fdf34e_1_mirror.jpg",
+   "family": "mirror",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "toy",
+   "content_id": "55a946f827fdf34e",
+   "background_id": "7b0b451bfaddaeb4",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "mirror",
+    "gain": 0.88,
+    "alpha": 0.92,
+    "occluder": [
+     431,
+     259,
+     601,
+     359
+    ],
+    "panel": [
+     324,
+     110,
+     752,
+     533
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_3244bcda9de87cdf_0_mirror.jpg",
+   "family": "mirror",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "3244bcda9de87cdf",
+   "background_id": "330946f94aa4c95a",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "mirror",
+    "gain": 0.95,
+    "alpha": 0.81,
+    "panel": [
+     197,
+     24,
+     593,
+     536
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_3244bcda9de87cdf_1_appliance.jpg",
+   "family": "appliance",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "3244bcda9de87cdf",
+   "background_id": "7c2825a3d8e0ed29",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "appliance",
+    "alpha": 0.37,
+    "panel": [
+     151,
+     3,
+     727,
+     533
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_f6b18f69ec5b4f5c_0_appliance.jpg",
+   "family": "appliance",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "screen",
+   "content_id": "f6b18f69ec5b4f5c",
+   "background_id": "cabbf79c0a4e40e6",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "appliance",
+    "alpha": 0.29,
+    "occluder": [
+     283,
+     3,
+     509,
+     292
+    ],
+    "panel": [
+     281,
+     3,
+     951,
+     533
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_f6b18f69ec5b4f5c_1_photo.jpg",
+   "family": "photo",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "screen",
+   "content_id": "f6b18f69ec5b4f5c",
+   "background_id": "7994409a0c97cfd1",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "photo",
+    "panel": [
+     205,
+     128,
+     521,
+     447
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_235cb15a2a113356_0_photo.jpg",
+   "family": "photo",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "toy",
+   "content_id": "235cb15a2a113356",
+   "background_id": "2372334720d26b08",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "photo",
+    "panel": [
+     8,
+     246,
+     324,
+     528
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_235cb15a2a113356_1_screen.jpg",
+   "family": "screen",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "toy",
+   "content_id": "235cb15a2a113356",
+   "background_id": "b655ede651e45487",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "screen",
+    "occluder": [
+     427,
+     299,
+     553,
+     400
+    ],
+    "panel": [
+     334,
+     215,
+     654,
+     418
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_5563f792d702bdbd_0_screen.jpg",
+   "family": "screen",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "5563f792d702bdbd",
+   "background_id": "6be310892c84cd63",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "screen",
+    "panel": [
+     99,
+     96,
+     480,
+     335
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_5563f792d702bdbd_1_plain.jpg",
+   "family": "plain",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "5563f792d702bdbd",
+   "background_id": "",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "plain"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_8545bd276f287ca7_0_plain.jpg",
+   "family": "plain",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "screen",
+   "content_id": "8545bd276f287ca7",
+   "background_id": "",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "plain"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_8545bd276f287ca7_1_mirror.jpg",
+   "family": "mirror",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "screen",
+   "content_id": "8545bd276f287ca7",
+   "background_id": "ddd3f96ff7f0bc78",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "mirror",
+    "gain": 0.71,
+    "alpha": 0.81,
+    "panel": [
+     152,
+     1,
+     633,
+     531
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_2b1c5b2872317180_0_mirror.jpg",
+   "family": "mirror",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "toy",
+   "content_id": "2b1c5b2872317180",
+   "background_id": "cabbf79c0a4e40e6",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "mirror",
+    "gain": 0.63,
+    "alpha": 0.96,
+    "panel": [
+     100,
+     174,
+     539,
+     449
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_2b1c5b2872317180_1_appliance.jpg",
+   "family": "appliance",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "toy",
+   "content_id": "2b1c5b2872317180",
+   "background_id": "2ebea253f54ba55f",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "appliance",
+    "alpha": 0.36,
+    "occluder": [
+     563,
+     121,
+     672,
+     286
+    ],
+    "panel": [
+     362,
+     1,
+     867,
+     531
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_7d19c6655ae82c10_0_appliance.jpg",
+   "family": "appliance",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "7d19c6655ae82c10",
+   "background_id": "63704d1bbcd07d02",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "appliance",
+    "alpha": 0.42,
+    "panel": [
+     416,
+     18,
+     896,
+     539
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_7d19c6655ae82c10_1_photo.jpg",
+   "family": "photo",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "7d19c6655ae82c10",
+   "background_id": "daded832e3ae26b5",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "photo",
+    "panel": [
+     45,
+     30,
+     433,
+     415
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_dab2223483fd7b34_0_photo.jpg",
+   "family": "photo",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "screen",
+   "content_id": "dab2223483fd7b34",
+   "background_id": "10c183f776fe5e73",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "photo",
+    "panel": [
+     80,
+     86,
+     368,
+     370
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_dab2223483fd7b34_1_screen.jpg",
+   "family": "screen",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "screen",
+   "content_id": "dab2223483fd7b34",
+   "background_id": "091af8d4a3c6c6f1",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "screen",
+    "panel": [
+     117,
+     236,
+     381,
+     409
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_353e81020dca55f9_0_screen.jpg",
+   "family": "screen",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "toy",
+   "content_id": "353e81020dca55f9",
+   "background_id": "8622a0fa4101915c",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "screen",
+    "occluder": [
+     636,
+     275,
+     784,
+     340
+    ],
+    "panel": [
+     534,
+     170,
+     908,
+     409
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_353e81020dca55f9_1_plain.jpg",
+   "family": "plain",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "toy",
+   "content_id": "353e81020dca55f9",
+   "background_id": "",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "plain"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_92a0a6e90840355f_0_plain.jpg",
+   "family": "plain",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "92a0a6e90840355f",
+   "background_id": "",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "plain"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_92a0a6e90840355f_1_mirror.jpg",
+   "family": "mirror",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "92a0a6e90840355f",
+   "background_id": "d9032b832491e0f3",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "mirror",
+    "gain": 0.94,
+    "alpha": 0.87,
+    "panel": [
+     291,
+     121,
+     684,
+     512
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_695b4fc14d56e32c_0_mirror.jpg",
+   "family": "mirror",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "screen",
+   "content_id": "695b4fc14d56e32c",
+   "background_id": "feb70e5c996fcb5e",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "mirror",
+    "gain": 0.75,
+    "alpha": 0.85,
+    "panel": [
+     28,
+     19,
+     503,
+     532
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_695b4fc14d56e32c_1_appliance.jpg",
+   "family": "appliance",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "screen",
+   "content_id": "695b4fc14d56e32c",
+   "background_id": "b655ede651e45487",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "appliance",
+    "alpha": 0.49,
+    "occluder": [
+     393,
+     225,
+     585,
+     403
+    ],
+    "panel": [
+     187,
+     7,
+     698,
+     493
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_2a509a3520ada9ca_0_appliance.jpg",
+   "family": "appliance",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "toy",
+   "content_id": "2a509a3520ada9ca",
+   "background_id": "35022be993e3b5b9",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "appliance",
+    "alpha": 0.59,
+    "occluder": [
+     197,
+     368,
+     266,
+     473
+    ],
+    "panel": [
+     73,
+     23,
+     452,
+     481
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_2a509a3520ada9ca_1_photo.jpg",
+   "family": "photo",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "toy",
+   "content_id": "2a509a3520ada9ca",
+   "background_id": "0b730c49ccf74eae",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "photo",
+    "occluder": [
+     482,
+     249,
+     598,
+     419
+    ],
+    "panel": [
+     289,
+     89,
+     665,
+     528
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_f98beae5cec807d2_0_photo.jpg",
+   "family": "photo",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "f98beae5cec807d2",
+   "background_id": "eccb080e57b2aac5",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "photo",
+    "panel": [
+     369,
+     73,
+     752,
+     429
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_f98beae5cec807d2_1_screen.jpg",
+   "family": "screen",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "f98beae5cec807d2",
+   "background_id": "36a94f02266d3105",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "screen",
+    "panel": [
+     15,
+     268,
+     364,
+     482
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_86760f63da399e07_0_screen.jpg",
+   "family": "screen",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "screen",
+   "content_id": "86760f63da399e07",
+   "background_id": "154bb12ff0554141",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "screen",
+    "panel": [
+     297,
+     316,
+     593,
+     490
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_86760f63da399e07_1_plain.jpg",
+   "family": "plain",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "screen",
+   "content_id": "86760f63da399e07",
+   "background_id": "",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "plain"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_3c07152a9369e615_0_plain.jpg",
+   "family": "plain",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "toy",
+   "content_id": "3c07152a9369e615",
+   "background_id": "",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "plain"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_3c07152a9369e615_1_mirror.jpg",
+   "family": "mirror",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "toy",
+   "content_id": "3c07152a9369e615",
+   "background_id": "7c0c494fd483b835",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "mirror",
+    "gain": 0.83,
+    "alpha": 0.92,
+    "panel": [
+     192,
+     42,
+     679,
+     376
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_a119ed96a3eb26da_0_mirror.jpg",
+   "family": "mirror",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "a119ed96a3eb26da",
+   "background_id": "5063ad3b52a8e931",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "mirror",
+    "gain": 0.6,
+    "alpha": 0.97,
+    "panel": [
+     90,
+     5,
+     679,
+     517
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_a119ed96a3eb26da_1_appliance.jpg",
+   "family": "appliance",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "a119ed96a3eb26da",
+   "background_id": "05042cfa44abe4f6",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "appliance",
+    "alpha": 0.43,
+    "panel": [
+     48,
+     26,
+     614,
+     485
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_8deb491ab16fe49b_0_appliance.jpg",
+   "family": "appliance",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "screen",
+   "content_id": "8deb491ab16fe49b",
+   "background_id": "3a02fdeb0bc94965",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "appliance",
+    "alpha": 0.33,
+    "occluder": [
+     483,
+     15,
+     591,
+     262
+    ],
+    "panel": [
+     414,
+     0,
+     894,
+     530
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_8deb491ab16fe49b_1_photo.jpg",
+   "family": "photo",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "screen",
+   "content_id": "8deb491ab16fe49b",
+   "background_id": "6de33e549210af97",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "photo",
+    "occluder": [
+     607,
+     133,
+     674,
+     282
+    ],
+    "panel": [
+     405,
+     31,
+     763,
+     344
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_4ec5f7faf7ae7ea7_0_photo.jpg",
+   "family": "photo",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "toy",
+   "content_id": "4ec5f7faf7ae7ea7",
+   "background_id": "4d50416ae9b368c1",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "photo",
+    "panel": [
+     12,
+     80,
+     354,
+     513
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_4ec5f7faf7ae7ea7_1_screen.jpg",
+   "family": "screen",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "toy",
+   "content_id": "4ec5f7faf7ae7ea7",
+   "background_id": "489076e07c213206",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "screen",
+    "panel": [
+     212,
+     227,
+     570,
+     469
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_7d56049eb3de444a_0_screen.jpg",
+   "family": "screen",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "7d56049eb3de444a",
+   "background_id": "ddd3f96ff7f0bc78",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "screen",
+    "occluder": [
+     317,
+     277,
+     392,
+     357
+    ],
+    "panel": [
+     220,
+     234,
+     448,
+     393
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_7d56049eb3de444a_1_plain.jpg",
+   "family": "plain",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "7d56049eb3de444a",
+   "background_id": "",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "plain"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_8dfbdde8cf560c2e_0_plain.jpg",
+   "family": "plain",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "screen",
+   "content_id": "8dfbdde8cf560c2e",
+   "background_id": "",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "plain"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_8dfbdde8cf560c2e_1_mirror.jpg",
+   "family": "mirror",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "screen",
+   "content_id": "8dfbdde8cf560c2e",
+   "background_id": "6be310892c84cd63",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "mirror",
+    "gain": 0.59,
+    "alpha": 0.96,
+    "panel": [
+     38,
+     4,
+     661,
+     534
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_8f35e22d91721bdb_0_mirror.jpg",
+   "family": "mirror",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "toy",
+   "content_id": "8f35e22d91721bdb",
+   "background_id": "fcfbd8e754fea64f",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "mirror",
+    "gain": 0.97,
+    "alpha": 0.89,
+    "occluder": [
+     621,
+     223,
+     700,
+     321
+    ],
+    "panel": [
+     338,
+     73,
+     763,
+     506
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_8f35e22d91721bdb_1_appliance.jpg",
+   "family": "appliance",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "toy",
+   "content_id": "8f35e22d91721bdb",
+   "background_id": "9ccf76a5da825189",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "appliance",
+    "alpha": 0.3,
+    "panel": [
+     408,
+     72,
+     891,
+     530
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_6d4e234692694cd4_0_appliance.jpg",
+   "family": "appliance",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "6d4e234692694cd4",
+   "background_id": "f2938a1f2aacff10",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "appliance",
+    "alpha": 0.46,
+    "panel": [
+     414,
+     198,
+     858,
+     530
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_6d4e234692694cd4_1_photo.jpg",
+   "family": "photo",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "6d4e234692694cd4",
+   "background_id": "5063ad3b52a8e931",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "photo",
+    "panel": [
+     299,
+     212,
+     672,
+     484
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_d38e1365450ab89e_0_photo.jpg",
+   "family": "photo",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "screen",
+   "content_id": "d38e1365450ab89e",
+   "background_id": "d69771a6f3fdfddc",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "photo",
+    "occluder": [
+     197,
+     369,
+     274,
+     513
+    ],
+    "panel": [
+     182,
+     291,
+     517,
+     535
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_d38e1365450ab89e_1_screen.jpg",
+   "family": "screen",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "screen",
+   "content_id": "d38e1365450ab89e",
+   "background_id": "2372334720d26b08",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "screen",
+    "panel": [
+     276,
+     34,
+     499,
+     171
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_4cd52cb06515fc96_0_screen.jpg",
+   "family": "screen",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "toy",
+   "content_id": "4cd52cb06515fc96",
+   "background_id": "091af8d4a3c6c6f1",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "screen",
+    "occluder": [
+     49,
+     401,
+     95,
+     464
+    ],
+    "panel": [
+     34,
+     387,
+     236,
+     512
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_4cd52cb06515fc96_1_plain.jpg",
+   "family": "plain",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "toy",
+   "content_id": "4cd52cb06515fc96",
+   "background_id": "",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "plain"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_a1119d540ba829e4_0_plain.jpg",
+   "family": "plain",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "a1119d540ba829e4",
+   "background_id": "",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "plain"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_a1119d540ba829e4_1_mirror.jpg",
+   "family": "mirror",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "a1119d540ba829e4",
+   "background_id": "6de33e549210af97",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "mirror",
+    "gain": 0.67,
+    "alpha": 0.96,
+    "panel": [
+     173,
+     5,
+     772,
+     535
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_4342a7037ea1bdea_0_mirror.jpg",
+   "family": "mirror",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "screen",
+   "content_id": "4342a7037ea1bdea",
+   "background_id": "cfa5389b9eeba8f1",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "mirror",
+    "gain": 0.79,
+    "alpha": 0.87,
+    "panel": [
+     296,
+     9,
+     855,
+     539
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_4342a7037ea1bdea_1_appliance.jpg",
+   "family": "appliance",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "screen",
+   "content_id": "4342a7037ea1bdea",
+   "background_id": "c90603701b0371a9",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "appliance",
+    "alpha": 0.54,
+    "occluder": [
+     428,
+     255,
+     558,
+     393
+    ],
+    "panel": [
+     319,
+     93,
+     759,
+     508
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_29614732b9d68b94_0_appliance.jpg",
+   "family": "appliance",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "toy",
+   "content_id": "29614732b9d68b94",
+   "background_id": "182c1f2bfa4b4280",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "appliance",
+    "alpha": 0.29,
+    "panel": [
+     263,
+     4,
+     915,
+     534
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_29614732b9d68b94_1_photo.jpg",
+   "family": "photo",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "toy",
+   "content_id": "29614732b9d68b94",
+   "background_id": "bb7f9beb82b87b1b",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "photo",
+    "panel": [
+     205,
+     17,
+     594,
+     431
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_90d070d5cbc8dd9a_0_photo.jpg",
+   "family": "photo",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "90d070d5cbc8dd9a",
+   "background_id": "bb7f9beb82b87b1b",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "photo",
+    "occluder": [
+     108,
+     126,
+     250,
+     302
+    ],
+    "panel": [
+     96,
+     96,
+     478,
+     429
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_90d070d5cbc8dd9a_1_screen.jpg",
+   "family": "screen",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "90d070d5cbc8dd9a",
+   "background_id": "2523ac25dfbfa2f8",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "screen",
+    "panel": [
+     339,
+     61,
+     690,
+     313
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_0421a6e230527185_0_screen.jpg",
+   "family": "screen",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "screen",
+   "content_id": "0421a6e230527185",
+   "background_id": "489076e07c213206",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "screen",
+    "panel": [
+     176,
+     132,
+     408,
+     287
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_0421a6e230527185_1_plain.jpg",
+   "family": "plain",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "screen",
+   "content_id": "0421a6e230527185",
+   "background_id": "",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "plain"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_809f3447c2dde0b2_0_plain.jpg",
+   "family": "plain",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "toy",
+   "content_id": "809f3447c2dde0b2",
+   "background_id": "",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "plain"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_809f3447c2dde0b2_1_mirror.jpg",
+   "family": "mirror",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "toy",
+   "content_id": "809f3447c2dde0b2",
+   "background_id": "c493c72d8eb2faa9",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "mirror",
+    "gain": 0.65,
+    "alpha": 0.92,
+    "occluder": [
+     235,
+     109,
+     385,
+     332
+    ],
+    "panel": [
+     53,
+     60,
+     513,
+     531
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_7a9c003d88a84d8b_0_mirror.jpg",
+   "family": "mirror",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "7a9c003d88a84d8b",
+   "background_id": "1d0caf874fcada77",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "mirror",
+    "gain": 0.75,
+    "alpha": 0.81,
+    "panel": [
+     85,
+     7,
+     632,
+     537
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_7a9c003d88a84d8b_1_appliance.jpg",
+   "family": "appliance",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "7a9c003d88a84d8b",
+   "background_id": "e0c2d59bb6da3905",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "appliance",
+    "alpha": 0.45,
+    "panel": [
+     114,
+     0,
+     805,
+     530
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_5185966a8046f472_0_appliance.jpg",
+   "family": "appliance",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "screen",
+   "content_id": "5185966a8046f472",
+   "background_id": "249f37fe659d30e9",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "appliance",
+    "alpha": 0.54,
+    "panel": [
+     121,
+     2,
+     765,
+     532
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_5185966a8046f472_1_photo.jpg",
+   "family": "photo",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "screen",
+   "content_id": "5185966a8046f472",
+   "background_id": "b655ede651e45487",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "photo",
+    "panel": [
+     435,
+     102,
+     781,
+     521
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_87dfc734bb6b4dd2_0_photo.jpg",
+   "family": "photo",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "toy",
+   "content_id": "87dfc734bb6b4dd2",
+   "background_id": "faa0453ecfeb8ade",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "photo",
+    "panel": [
+     467,
+     173,
+     690,
+     348
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_87dfc734bb6b4dd2_1_screen.jpg",
+   "family": "screen",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "toy",
+   "content_id": "87dfc734bb6b4dd2",
+   "background_id": "789cc0283c0e18af",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "screen",
+    "panel": [
+     274,
+     303,
+     524,
+     482
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_fd21435721d28b95_0_screen.jpg",
+   "family": "screen",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "fd21435721d28b95",
+   "background_id": "2f0a18a409d5a769",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "screen",
+    "panel": [
+     371,
+     77,
+     706,
+     262
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_fd21435721d28b95_1_plain.jpg",
+   "family": "plain",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "fd21435721d28b95",
+   "background_id": "",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "plain"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_b2539ea9783fdf47_0_plain.jpg",
+   "family": "plain",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "screen",
+   "content_id": "b2539ea9783fdf47",
+   "background_id": "",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "plain"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_b2539ea9783fdf47_1_mirror.jpg",
+   "family": "mirror",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "screen",
+   "content_id": "b2539ea9783fdf47",
+   "background_id": "489076e07c213206",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "mirror",
+    "gain": 0.83,
+    "alpha": 0.89,
+    "panel": [
+     262,
+     50,
+     830,
+     479
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_560df95288a192ac_0_mirror.jpg",
+   "family": "mirror",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "560df95288a192ac",
+   "background_id": "04b5017f1384f197",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "mirror",
+    "gain": 0.93,
+    "alpha": 0.81,
+    "panel": [
+     501,
+     46,
+     901,
+     471
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_560df95288a192ac_1_appliance.jpg",
+   "family": "appliance",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "560df95288a192ac",
+   "background_id": "0e2868759e7a615c",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "appliance",
+    "alpha": 0.59,
+    "panel": [
+     219,
+     1,
+     912,
+     531
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_71899c2ad913de39_0_appliance.jpg",
+   "family": "appliance",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "screen",
+   "content_id": "71899c2ad913de39",
+   "background_id": "faa0453ecfeb8ade",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "appliance",
+    "alpha": 0.48,
+    "panel": [
+     320,
+     0,
+     891,
+     530
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_71899c2ad913de39_1_photo.jpg",
+   "family": "photo",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "screen",
+   "content_id": "71899c2ad913de39",
+   "background_id": "1f2dc2f1001d56d7",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "photo",
+    "panel": [
+     181,
+     277,
+     476,
+     487
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_6f9b7183f5e009f3_0_photo.jpg",
+   "family": "photo",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "6f9b7183f5e009f3",
+   "background_id": "8622a0fa4101915c",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "photo",
+    "occluder": [
+     487,
+     324,
+     541,
+     431
+    ],
+    "panel": [
+     382,
+     252,
+     593,
+     483
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_6f9b7183f5e009f3_1_screen.jpg",
+   "family": "screen",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "6f9b7183f5e009f3",
+   "background_id": "9d7e12b5a528f92a",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "screen",
+    "occluder": [
+     550,
+     297,
+     625,
+     393
+    ],
+    "panel": [
+     402,
+     294,
+     673,
+     457
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_1bf773db87da415a_0_screen.jpg",
+   "family": "screen",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "screen",
+   "content_id": "1bf773db87da415a",
+   "background_id": "01bef5827cab386c",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "screen",
+    "panel": [
+     577,
+     320,
+     902,
+     525
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_1bf773db87da415a_1_plain.jpg",
+   "family": "plain",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "screen",
+   "content_id": "1bf773db87da415a",
+   "background_id": "",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "plain"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_c4e1dfa2575bfd4e_0_plain.jpg",
+   "family": "plain",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "c4e1dfa2575bfd4e",
+   "background_id": "",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "plain"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_c4e1dfa2575bfd4e_1_mirror.jpg",
+   "family": "mirror",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "c4e1dfa2575bfd4e",
+   "background_id": "cd15bd46c87a957c",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "mirror",
+    "gain": 0.9,
+    "alpha": 0.81,
+    "occluder": [
+     430,
+     206,
+     676,
+     452
+    ],
+    "panel": [
+     175,
+     4,
+     848,
+     534
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_6e2ea48a2474adf1_0_mirror.jpg",
+   "family": "mirror",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "screen",
+   "content_id": "6e2ea48a2474adf1",
+   "background_id": "784bba5f12ee7c35",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "mirror",
+    "gain": 0.62,
+    "alpha": 0.9,
+    "occluder": [
+     93,
+     65,
+     280,
+     261
+    ],
+    "panel": [
+     40,
+     64,
+     697,
+     495
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_6e2ea48a2474adf1_1_appliance.jpg",
+   "family": "appliance",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "screen",
+   "content_id": "6e2ea48a2474adf1",
+   "background_id": "598ce21cc779ff81",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "appliance",
+    "alpha": 0.46,
+    "panel": [
+     360,
+     79,
+     779,
+     380
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_da923c37ba25ba5e_0_appliance.jpg",
+   "family": "appliance",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "da923c37ba25ba5e",
+   "background_id": "b126d892cf849c7b",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "appliance",
+    "alpha": 0.57,
+    "occluder": [
+     225,
+     205,
+     304,
+     300
+    ],
+    "panel": [
+     158,
+     68,
+     529,
+     480
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_da923c37ba25ba5e_1_photo.jpg",
+   "family": "photo",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "da923c37ba25ba5e",
+   "background_id": "1c638bccdd166c99",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "photo",
+    "occluder": [
+     713,
+     273,
+     830,
+     377
+    ],
+    "panel": [
+     582,
+     194,
+     913,
+     503
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_2dc6e65820bf79f3_0_photo.jpg",
+   "family": "photo",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "screen",
+   "content_id": "2dc6e65820bf79f3",
+   "background_id": "1074868d9da05783",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "photo",
+    "panel": [
+     330,
+     4,
+     706,
+     468
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_2dc6e65820bf79f3_1_screen.jpg",
+   "family": "screen",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "screen",
+   "content_id": "2dc6e65820bf79f3",
+   "background_id": "3a511ef0f68cc438",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "screen",
+    "panel": [
+     18,
+     99,
+     375,
+     341
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_5643295d00f5db3e_0_screen.jpg",
+   "family": "screen",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "5643295d00f5db3e",
+   "background_id": "fa04ae54a6903d5c",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "screen",
+    "panel": [
+     359,
+     85,
+     655,
+     281
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_5643295d00f5db3e_1_plain.jpg",
+   "family": "plain",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "5643295d00f5db3e",
+   "background_id": "",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "plain"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_c55c4cc3caf27f42_0_plain.jpg",
+   "family": "plain",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "screen",
+   "content_id": "c55c4cc3caf27f42",
+   "background_id": "",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "plain"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_c55c4cc3caf27f42_1_mirror.jpg",
+   "family": "mirror",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "screen",
+   "content_id": "c55c4cc3caf27f42",
+   "background_id": "92b801786d58976e",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "mirror",
+    "gain": 0.6,
+    "alpha": 0.93,
+    "panel": [
+     277,
+     1,
+     901,
+     531
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_d973420311b00730_0_mirror.jpg",
+   "family": "mirror",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "d973420311b00730",
+   "background_id": "36a94f02266d3105",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "mirror",
+    "gain": 0.77,
+    "alpha": 0.96,
+    "occluder": [
+     243,
+     350,
+     355,
+     476
+    ],
+    "panel": [
+     124,
+     7,
+     819,
+     537
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_d973420311b00730_1_appliance.jpg",
+   "family": "appliance",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "d973420311b00730",
+   "background_id": "36a94f02266d3105",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "appliance",
+    "alpha": 0.56,
+    "panel": [
+     122,
+     2,
+     815,
+     532
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_21b65b2f5e02521c_0_appliance.jpg",
+   "family": "appliance",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "screen",
+   "content_id": "21b65b2f5e02521c",
+   "background_id": "460475ca9d34e13e",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "appliance",
+    "alpha": 0.45,
+    "panel": [
+     328,
+     65,
+     755,
+     359
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_21b65b2f5e02521c_1_photo.jpg",
+   "family": "photo",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "screen",
+   "content_id": "21b65b2f5e02521c",
+   "background_id": "ddd3f96ff7f0bc78",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "photo",
+    "panel": [
+     498,
+     7,
+     877,
+     512
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_3fbf29980226b63b_0_photo.jpg",
+   "family": "photo",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "3fbf29980226b63b",
+   "background_id": "fcecb8614f1b8c70",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "photo",
+    "panel": [
+     292,
+     213,
+     503,
+     470
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_3fbf29980226b63b_1_screen.jpg",
+   "family": "screen",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "3fbf29980226b63b",
+   "background_id": "2523ac25dfbfa2f8",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "screen",
+    "panel": [
+     740,
+     283,
+     946,
+     432
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_9171fd8fb07bda5f_0_screen.jpg",
+   "family": "screen",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "9171fd8fb07bda5f",
+   "background_id": "b5e7183b6a5abe6c",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "screen",
+    "occluder": [
+     277,
+     325,
+     381,
+     428
+    ],
+    "panel": [
+     67,
+     294,
+     383,
+     521
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_9171fd8fb07bda5f_1_plain.jpg",
+   "family": "plain",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "9171fd8fb07bda5f",
+   "background_id": "",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "plain"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_e8788a121e93ff6b_0_plain.jpg",
+   "family": "plain",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "e8788a121e93ff6b",
+   "background_id": "",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "plain"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_e8788a121e93ff6b_1_mirror.jpg",
+   "family": "mirror",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "e8788a121e93ff6b",
+   "background_id": "d96609dcb5d94621",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "mirror",
+    "gain": 0.78,
+    "alpha": 0.86,
+    "panel": [
+     30,
+     5,
+     586,
+     535
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_23a4a86fcab629c5_0_mirror.jpg",
+   "family": "mirror",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "23a4a86fcab629c5",
+   "background_id": "1773ef49f38531a9",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "mirror",
+    "gain": 0.66,
+    "alpha": 0.82,
+    "panel": [
+     280,
+     83,
+     647,
+     500
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_23a4a86fcab629c5_1_appliance.jpg",
+   "family": "appliance",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "23a4a86fcab629c5",
+   "background_id": "a527d5cb19600ada",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "appliance",
+    "alpha": 0.26,
+    "panel": [
+     127,
+     4,
+     731,
+     534
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_d2b7d260be862a06_0_appliance.jpg",
+   "family": "appliance",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "d2b7d260be862a06",
+   "background_id": "3ecead421079f9fd",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "appliance",
+    "alpha": 0.47,
+    "panel": [
+     50,
+     6,
+     545,
+     536
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_d2b7d260be862a06_1_photo.jpg",
+   "family": "photo",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "d2b7d260be862a06",
+   "background_id": "2f146af17de4b933",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "photo",
+    "occluder": [
+     529,
+     200,
+     623,
+     330
+    ],
+    "panel": [
+     430,
+     21,
+     698,
+     380
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_8d81d47ee4e11fd0_0_photo.jpg",
+   "family": "photo",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "8d81d47ee4e11fd0",
+   "background_id": "82ed3a2de7df67a8",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "photo",
+    "panel": [
+     455,
+     236,
+     782,
+     500
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_8d81d47ee4e11fd0_1_screen.jpg",
+   "family": "screen",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "8d81d47ee4e11fd0",
+   "background_id": "b7beabfc7d3356dd",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "screen",
+    "panel": [
+     191,
+     62,
+     409,
+     211
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_3d203d69d6211265_0_screen.jpg",
+   "family": "screen",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "3d203d69d6211265",
+   "background_id": "0477154c66e5ddcb",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "screen",
+    "panel": [
+     259,
+     293,
+     455,
+     418
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_3d203d69d6211265_1_plain.jpg",
+   "family": "plain",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "3d203d69d6211265",
+   "background_id": "",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "plain"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_0d24b635e58e9dc0_0_plain.jpg",
+   "family": "plain",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "0d24b635e58e9dc0",
+   "background_id": "",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "plain"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_0d24b635e58e9dc0_1_mirror.jpg",
+   "family": "mirror",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "0d24b635e58e9dc0",
+   "background_id": "2c74cdf45c4c6bd7",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "mirror",
+    "gain": 0.61,
+    "alpha": 0.86,
+    "panel": [
+     241,
+     102,
+     672,
+     416
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_25275432b3ec6f9b_0_mirror.jpg",
+   "family": "mirror",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "25275432b3ec6f9b",
+   "background_id": "05a18d04f2f02d4b",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "mirror",
+    "gain": 0.67,
+    "alpha": 0.94,
+    "panel": [
+     444,
+     39,
+     901,
+     510
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_25275432b3ec6f9b_1_appliance.jpg",
+   "family": "appliance",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "25275432b3ec6f9b",
+   "background_id": "cd727c5e0d2cfc1b",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "appliance",
+    "alpha": 0.59,
+    "occluder": [
+     201,
+     267,
+     285,
+     343
+    ],
+    "panel": [
+     88,
+     195,
+     506,
+     445
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_f6a8acf606ef61eb_0_appliance.jpg",
+   "family": "appliance",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "f6a8acf606ef61eb",
+   "background_id": "c90603701b0371a9",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "appliance",
+    "alpha": 0.43,
+    "panel": [
+     47,
+     5,
+     498,
+     534
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_f6a8acf606ef61eb_1_photo.jpg",
+   "family": "photo",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "f6a8acf606ef61eb",
+   "background_id": "e07312c926231410",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "photo",
+    "panel": [
+     574,
+     266,
+     785,
+     420
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_c48d437ab7f78af1_0_photo.jpg",
+   "family": "photo",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "c48d437ab7f78af1",
+   "background_id": "298f427e2a08b44e",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "photo",
+    "panel": [
+     265,
+     9,
+     625,
+     385
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_c48d437ab7f78af1_1_screen.jpg",
+   "family": "screen",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "c48d437ab7f78af1",
+   "background_id": "faa0453ecfeb8ade",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "screen",
+    "panel": [
+     352,
+     213,
+     656,
+     400
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_ef703c8abfaca9b8_0_screen.jpg",
+   "family": "screen",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "ef703c8abfaca9b8",
+   "background_id": "98fc5678bc6a942b",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "screen",
+    "panel": [
+     572,
+     280,
+     842,
+     444
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_ef703c8abfaca9b8_1_plain.jpg",
+   "family": "plain",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "ef703c8abfaca9b8",
+   "background_id": "",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "plain"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_6b314080cc535053_0_plain.jpg",
+   "family": "plain",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "6b314080cc535053",
+   "background_id": "",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "plain"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_6b314080cc535053_1_mirror.jpg",
+   "family": "mirror",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "6b314080cc535053",
+   "background_id": "7994409a0c97cfd1",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "mirror",
+    "gain": 0.64,
+    "alpha": 0.81,
+    "occluder": [
+     395,
+     241,
+     489,
+     500
+    ],
+    "panel": [
+     122,
+     0,
+     744,
+     530
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_7b7fdcfc6d020391_0_mirror.jpg",
+   "family": "mirror",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "7b7fdcfc6d020391",
+   "background_id": "1773ef49f38531a9",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "mirror",
+    "gain": 0.66,
+    "alpha": 0.89,
+    "panel": [
+     240,
+     1,
+     924,
+     531
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_7b7fdcfc6d020391_1_appliance.jpg",
+   "family": "appliance",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "7b7fdcfc6d020391",
+   "background_id": "b126d892cf849c7b",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "appliance",
+    "alpha": 0.41,
+    "panel": [
+     252,
+     7,
+     850,
+     537
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_e4a150b69036c6c8_0_appliance.jpg",
+   "family": "appliance",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "e4a150b69036c6c8",
+   "background_id": "9d7e12b5a528f92a",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "appliance",
+    "alpha": 0.28,
+    "panel": [
+     215,
+     9,
+     720,
+     539
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_e4a150b69036c6c8_1_photo.jpg",
+   "family": "photo",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "e4a150b69036c6c8",
+   "background_id": "489076e07c213206",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "photo",
+    "panel": [
+     313,
+     109,
+     601,
+     459
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_5d6db82b8eeb448f_0_photo.jpg",
+   "family": "photo",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "5d6db82b8eeb448f",
+   "background_id": "fcecb8614f1b8c70",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "photo",
+    "panel": [
+     556,
+     50,
+     801,
+     275
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_5d6db82b8eeb448f_1_screen.jpg",
+   "family": "screen",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "5d6db82b8eeb448f",
+   "background_id": "9e21c7896cb36b7a",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "screen",
+    "panel": [
+     111,
+     113,
+     336,
+     246
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_10fd5df6c15ddcad_0_screen.jpg",
+   "family": "screen",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "10fd5df6c15ddcad",
+   "background_id": "3a3eb81e3118c59f",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "screen",
+    "panel": [
+     671,
+     180,
+     881,
+     319
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_10fd5df6c15ddcad_1_plain.jpg",
+   "family": "plain",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "10fd5df6c15ddcad",
+   "background_id": "",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "plain"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_1d1afe76705ba499_0_plain.jpg",
+   "family": "plain",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "1d1afe76705ba499",
+   "background_id": "",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "plain"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_1d1afe76705ba499_1_mirror.jpg",
+   "family": "mirror",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "1d1afe76705ba499",
+   "background_id": "f7f4da25a4927cdd",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "mirror",
+    "gain": 0.66,
+    "alpha": 0.84,
+    "panel": [
+     52,
+     10,
+     611,
+     499
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_ecfb579ec3a5a181_0_mirror.jpg",
+   "family": "mirror",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "ecfb579ec3a5a181",
+   "background_id": "04f2044207c1bff1",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "mirror",
+    "gain": 0.69,
+    "alpha": 0.83,
+    "panel": [
+     76,
+     1,
+     654,
+     531
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_ecfb579ec3a5a181_1_appliance.jpg",
+   "family": "appliance",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "ecfb579ec3a5a181",
+   "background_id": "df754b5d85cef4f2",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "appliance",
+    "alpha": 0.56,
+    "panel": [
+     209,
+     6,
+     871,
+     536
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_96ef5a46d5ffaba5_0_appliance.jpg",
+   "family": "appliance",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "96ef5a46d5ffaba5",
+   "background_id": "1d0caf874fcada77",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "appliance",
+    "alpha": 0.56,
+    "occluder": [
+     233,
+     287,
+     415,
+     434
+    ],
+    "panel": [
+     26,
+     8,
+     657,
+     538
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_96ef5a46d5ffaba5_1_photo.jpg",
+   "family": "photo",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "96ef5a46d5ffaba5",
+   "background_id": "3067441dbc504455",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "photo",
+    "panel": [
+     407,
+     342,
+     623,
+     484
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_9ebb007efd52d095_0_photo.jpg",
+   "family": "photo",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "9ebb007efd52d095",
+   "background_id": "784bba5f12ee7c35",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "photo",
+    "occluder": [
+     548,
+     72,
+     605,
+     317
+    ],
+    "panel": [
+     539,
+     6,
+     892,
+     476
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_9ebb007efd52d095_1_screen.jpg",
+   "family": "screen",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "9ebb007efd52d095",
+   "background_id": "42fdbf5f7c05f39d",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "screen",
+    "panel": [
+     214,
+     339,
+     554,
+     539
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_c914001730777e42_0_screen.jpg",
+   "family": "screen",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "c914001730777e42",
+   "background_id": "99c857cf01fc9f65",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "screen",
+    "panel": [
+     710,
+     171,
+     915,
+     315
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_c914001730777e42_1_plain.jpg",
+   "family": "plain",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "c914001730777e42",
+   "background_id": "",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "plain"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_872600300b252ee3_0_plain.jpg",
+   "family": "plain",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "872600300b252ee3",
+   "background_id": "",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "plain"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_872600300b252ee3_1_mirror.jpg",
+   "family": "mirror",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "872600300b252ee3",
+   "background_id": "249f37fe659d30e9",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "mirror",
+    "gain": 0.71,
+    "alpha": 0.85,
+    "occluder": [
+     297,
+     233,
+     535,
+     412
+    ],
+    "panel": [
+     110,
+     8,
+     714,
+     538
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_a362901a8fd28363_0_mirror.jpg",
+   "family": "mirror",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "a362901a8fd28363",
+   "background_id": "10c183f776fe5e73",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "mirror",
+    "gain": 0.99,
+    "alpha": 0.86,
+    "panel": [
+     249,
+     8,
+     935,
+     538
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_a362901a8fd28363_1_appliance.jpg",
+   "family": "appliance",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "a362901a8fd28363",
+   "background_id": "e3de278bad0e47e1",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "appliance",
+    "alpha": 0.58,
+    "panel": [
+     382,
+     91,
+     902,
+     515
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_792df257e39f4750_0_appliance.jpg",
+   "family": "appliance",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "792df257e39f4750",
+   "background_id": "3067441dbc504455",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "appliance",
+    "alpha": 0.42,
+    "panel": [
+     377,
+     1,
+     797,
+     342
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_792df257e39f4750_1_photo.jpg",
+   "family": "photo",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "792df257e39f4750",
+   "background_id": "1f2dc2f1001d56d7",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "photo",
+    "occluder": [
+     655,
+     277,
+     691,
+     342
+    ],
+    "panel": [
+     495,
+     209,
+     717,
+     404
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_ea1f6d8b3ad4a5dd_0_photo.jpg",
+   "family": "photo",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "ea1f6d8b3ad4a5dd",
+   "background_id": "1773ef49f38531a9",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "photo",
+    "panel": [
+     654,
+     0,
+     928,
+     230
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_ea1f6d8b3ad4a5dd_1_screen.jpg",
+   "family": "screen",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "ea1f6d8b3ad4a5dd",
+   "background_id": "7c0c494fd483b835",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "screen",
+    "panel": [
+     291,
+     75,
+     504,
+     208
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_6ad3d3e6690da1c8_0_screen.jpg",
+   "family": "screen",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "6ad3d3e6690da1c8",
+   "background_id": "7994409a0c97cfd1",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "screen",
+    "occluder": [
+     834,
+     68,
+     927,
+     109
+    ],
+    "panel": [
+     664,
+     52,
+     950,
+     236
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_6ad3d3e6690da1c8_1_plain.jpg",
+   "family": "plain",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "6ad3d3e6690da1c8",
+   "background_id": "",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "plain"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_ac8deac7d6702443_0_plain.jpg",
+   "family": "plain",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "ac8deac7d6702443",
+   "background_id": "",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "plain"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_ac8deac7d6702443_1_mirror.jpg",
+   "family": "mirror",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "ac8deac7d6702443",
+   "background_id": "d0a6df63ac479c52",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "mirror",
+    "gain": 0.84,
+    "alpha": 0.93,
+    "occluder": [
+     533,
+     261,
+     646,
+     393
+    ],
+    "panel": [
+     501,
+     124,
+     915,
+     530
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_ea37bb8ce97f36d2_0_mirror.jpg",
+   "family": "mirror",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "ea37bb8ce97f36d2",
+   "background_id": "3a511ef0f68cc438",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "mirror",
+    "gain": 0.79,
+    "alpha": 0.89,
+    "occluder": [
+     526,
+     144,
+     613,
+     355
+    ],
+    "panel": [
+     485,
+     65,
+     941,
+     443
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_ea37bb8ce97f36d2_1_appliance.jpg",
+   "family": "appliance",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "ea37bb8ce97f36d2",
+   "background_id": "6e701bae6041a830",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "appliance",
+    "alpha": 0.26,
+    "panel": [
+     108,
+     9,
+     549,
+     539
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_77153a3efa75f4a4_0_appliance.jpg",
+   "family": "appliance",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "77153a3efa75f4a4",
+   "background_id": "e7d31d4d5be667ff",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "appliance",
+    "alpha": 0.39,
+    "panel": [
+     196,
+     7,
+     758,
+     537
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_77153a3efa75f4a4_1_photo.jpg",
+   "family": "photo",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "77153a3efa75f4a4",
+   "background_id": "0b730c49ccf74eae",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "photo",
+    "panel": [
+     568,
+     66,
+     943,
+     503
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_049720d842de2d3e_0_photo.jpg",
+   "family": "photo",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "049720d842de2d3e",
+   "background_id": "dd524cdb2e8652cf",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "photo",
+    "panel": [
+     614,
+     88,
+     954,
+     394
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_049720d842de2d3e_1_screen.jpg",
+   "family": "screen",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "049720d842de2d3e",
+   "background_id": "84bf84d27ec18be6",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "screen",
+    "occluder": [
+     452,
+     416,
+     497,
+     453
+    ],
+    "panel": [
+     440,
+     314,
+     692,
+     454
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_e6728c1380bd50fb_0_screen.jpg",
+   "family": "screen",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "e6728c1380bd50fb",
+   "background_id": "988faa053516acfe",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "screen",
+    "panel": [
+     625,
+     152,
+     837,
+     306
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_e6728c1380bd50fb_1_plain.jpg",
+   "family": "plain",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "e6728c1380bd50fb",
+   "background_id": "",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "plain"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_d93f755cf12d6e3d_0_plain.jpg",
+   "family": "plain",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "d93f755cf12d6e3d",
+   "background_id": "",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "plain"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_d93f755cf12d6e3d_1_mirror.jpg",
+   "family": "mirror",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "d93f755cf12d6e3d",
+   "background_id": "d96609dcb5d94621",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "mirror",
+    "gain": 0.6,
+    "alpha": 0.95,
+    "panel": [
+     192,
+     1,
+     775,
+     531
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_34a492cbd64e7740_0_mirror.jpg",
+   "family": "mirror",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "34a492cbd64e7740",
+   "background_id": "0e2868759e7a615c",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "mirror",
+    "gain": 0.6,
+    "alpha": 0.82,
+    "occluder": [
+     575,
+     249,
+     741,
+     389
+    ],
+    "panel": [
+     379,
+     104,
+     805,
+     496
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_34a492cbd64e7740_1_appliance.jpg",
+   "family": "appliance",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "34a492cbd64e7740",
+   "background_id": "4d50416ae9b368c1",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "appliance",
+    "alpha": 0.3,
+    "panel": [
+     409,
+     3,
+     877,
+     496
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_4b1d8b33030b1706_0_appliance.jpg",
+   "family": "appliance",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "4b1d8b33030b1706",
+   "background_id": "6de33e549210af97",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "appliance",
+    "alpha": 0.28,
+    "panel": [
+     161,
+     124,
+     606,
+     529
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_4b1d8b33030b1706_1_photo.jpg",
+   "family": "photo",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "4b1d8b33030b1706",
+   "background_id": "5b0a470ee1672296",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "photo",
+    "panel": [
+     79,
+     127,
+     342,
+     489
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_874f0a9275b8ed9b_0_photo.jpg",
+   "family": "photo",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "874f0a9275b8ed9b",
+   "background_id": "10c183f776fe5e73",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "photo",
+    "panel": [
+     386,
+     62,
+     635,
+     408
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_874f0a9275b8ed9b_1_screen.jpg",
+   "family": "screen",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "874f0a9275b8ed9b",
+   "background_id": "e3a41aa21875053e",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "screen",
+    "panel": [
+     476,
+     83,
+     821,
+     341
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_07f328166c0ebbf7_0_screen.jpg",
+   "family": "screen",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "07f328166c0ebbf7",
+   "background_id": "ad00dc935b78097a",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "screen",
+    "panel": [
+     53,
+     34,
+     398,
+     242
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_07f328166c0ebbf7_1_plain.jpg",
+   "family": "plain",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "07f328166c0ebbf7",
+   "background_id": "",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "plain"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_04d9284ebdc41aeb_0_plain.jpg",
+   "family": "plain",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "04d9284ebdc41aeb",
+   "background_id": "",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "plain"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_04d9284ebdc41aeb_1_mirror.jpg",
+   "family": "mirror",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "04d9284ebdc41aeb",
+   "background_id": "3d76574f1dec8b0a",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "mirror",
+    "gain": 0.69,
+    "alpha": 0.88,
+    "panel": [
+     151,
+     51,
+     751,
+     455
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_a2364c31de73114d_0_mirror.jpg",
+   "family": "mirror",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "a2364c31de73114d",
+   "background_id": "89fb4f3b001d677e",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "mirror",
+    "gain": 0.67,
+    "alpha": 0.96,
+    "panel": [
+     88,
+     15,
+     805,
+     506
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_a2364c31de73114d_1_appliance.jpg",
+   "family": "appliance",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "a2364c31de73114d",
+   "background_id": "249f37fe659d30e9",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "appliance",
+    "alpha": 0.58,
+    "occluder": [
+     600,
+     107,
+     692,
+     288
+    ],
+    "panel": [
+     205,
+     47,
+     718,
+     519
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_90f57dad1ca73137_0_appliance.jpg",
+   "family": "appliance",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "90f57dad1ca73137",
+   "background_id": "2372334720d26b08",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "appliance",
+    "alpha": 0.4,
+    "occluder": [
+     736,
+     120,
+     873,
+     343
+    ],
+    "panel": [
+     543,
+     0,
+     912,
+     417
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_90f57dad1ca73137_1_photo.jpg",
+   "family": "photo",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "90f57dad1ca73137",
+   "background_id": "2372334720d26b08",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "photo",
+    "occluder": [
+     405,
+     73,
+     503,
+     257
+    ],
+    "panel": [
+     254,
+     33,
+     620,
+     378
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_30a3c8d8c648be4f_0_photo.jpg",
+   "family": "photo",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "30a3c8d8c648be4f",
+   "background_id": "f2938a1f2aacff10",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "photo",
+    "panel": [
+     569,
+     320,
+     806,
+     528
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_30a3c8d8c648be4f_1_screen.jpg",
+   "family": "screen",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "30a3c8d8c648be4f",
+   "background_id": "96657f71a20cac23",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "screen",
+    "occluder": [
+     503,
+     178,
+     562,
+     262
+    ],
+    "panel": [
+     366,
+     131,
+     588,
+     276
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_98e6698057654eff_0_screen.jpg",
+   "family": "screen",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "98e6698057654eff",
+   "background_id": "92b801786d58976e",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "screen",
+    "panel": [
+     607,
+     76,
+     902,
+     266
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_98e6698057654eff_1_plain.jpg",
+   "family": "plain",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "98e6698057654eff",
+   "background_id": "",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "plain"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_04e310af546ec9d0_0_plain.jpg",
+   "family": "plain",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "04e310af546ec9d0",
+   "background_id": "",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "plain"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_04e310af546ec9d0_1_mirror.jpg",
+   "family": "mirror",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "04e310af546ec9d0",
+   "background_id": "13959d4be0ed2e5e",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "mirror",
+    "gain": 0.82,
+    "alpha": 0.96,
+    "panel": [
+     220,
+     6,
+     728,
+     536
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_8eba4019d7c399e1_0_mirror.jpg",
+   "family": "mirror",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "8eba4019d7c399e1",
+   "background_id": "778b048754c0bb2e",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "mirror",
+    "gain": 0.96,
+    "alpha": 0.83,
+    "occluder": [
+     84,
+     166,
+     163,
+     339
+    ],
+    "panel": [
+     74,
+     165,
+     479,
+     539
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_8eba4019d7c399e1_1_appliance.jpg",
+   "family": "appliance",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "8eba4019d7c399e1",
+   "background_id": "10fb73ee47a33a83",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "appliance",
+    "alpha": 0.28,
+    "panel": [
+     156,
+     96,
+     640,
+     513
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_450d4ffc19548f56_0_appliance.jpg",
+   "family": "appliance",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "450d4ffc19548f56",
+   "background_id": "feb70e5c996fcb5e",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "appliance",
+    "alpha": 0.56,
+    "panel": [
+     212,
+     175,
+     617,
+     531
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_450d4ffc19548f56_1_photo.jpg",
+   "family": "photo",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "450d4ffc19548f56",
+   "background_id": "e3de278bad0e47e1",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "photo",
+    "occluder": [
+     242,
+     154,
+     312,
+     270
+    ],
+    "panel": [
+     192,
+     48,
+     460,
+     271
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_41252915ac13a574_0_photo.jpg",
+   "family": "photo",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "41252915ac13a574",
+   "background_id": "0faf733d08b38efa",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "photo",
+    "panel": [
+     103,
+     86,
+     404,
+     489
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_41252915ac13a574_1_screen.jpg",
+   "family": "screen",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "41252915ac13a574",
+   "background_id": "42fdbf5f7c05f39d",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "screen",
+    "panel": [
+     20,
+     171,
+     320,
+     369
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_b02e39b35c91975a_0_screen.jpg",
+   "family": "screen",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "b02e39b35c91975a",
+   "background_id": "9d7e12b5a528f92a",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "screen",
+    "panel": [
+     703,
+     63,
+     922,
+     196
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_b02e39b35c91975a_1_plain.jpg",
+   "family": "plain",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "b02e39b35c91975a",
+   "background_id": "",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "plain"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_2db0a13fe42bd957_0_plain.jpg",
+   "family": "plain",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "2db0a13fe42bd957",
+   "background_id": "",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "plain"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_2db0a13fe42bd957_1_mirror.jpg",
+   "family": "mirror",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "2db0a13fe42bd957",
+   "background_id": "c1e50af415b8cee3",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "mirror",
+    "gain": 0.59,
+    "alpha": 0.9,
+    "panel": [
+     233,
+     8,
+     899,
+     538
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_1f6886454432c317_0_mirror.jpg",
+   "family": "mirror",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "1f6886454432c317",
+   "background_id": "1c638bccdd166c99",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "mirror",
+    "gain": 0.88,
+    "alpha": 0.9,
+    "panel": [
+     135,
+     7,
+     662,
+     537
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_1f6886454432c317_1_appliance.jpg",
+   "family": "appliance",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "1f6886454432c317",
+   "background_id": "11dcac4ca5923a58",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "appliance",
+    "alpha": 0.55,
+    "panel": [
+     201,
+     2,
+     744,
+     532
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_7e2afdc21926bd14_0_appliance.jpg",
+   "family": "appliance",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "7e2afdc21926bd14",
+   "background_id": "784bba5f12ee7c35",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "appliance",
+    "alpha": 0.5,
+    "occluder": [
+     401,
+     72,
+     493,
+     168
+    ],
+    "panel": [
+     197,
+     62,
+     760,
+     510
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_7e2afdc21926bd14_1_photo.jpg",
+   "family": "photo",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "7e2afdc21926bd14",
+   "background_id": "40e3252f39eee5d3",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "photo",
+    "panel": [
+     352,
+     52,
+     589,
+     263
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_7a18cc3a0bb314fe_0_photo.jpg",
+   "family": "photo",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "7a18cc3a0bb314fe",
+   "background_id": "11dcac4ca5923a58",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "photo",
+    "panel": [
+     365,
+     197,
+     696,
+     512
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_7a18cc3a0bb314fe_1_screen.jpg",
+   "family": "screen",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "7a18cc3a0bb314fe",
+   "background_id": "fbdf5daeb9cc7bdd",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "screen",
+    "panel": [
+     433,
+     13,
+     785,
+     250
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_8de100c463f4620d_0_screen.jpg",
+   "family": "screen",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "8de100c463f4620d",
+   "background_id": "eab5e7e2423dfed3",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "screen",
+    "panel": [
+     601,
+     329,
+     808,
+     483
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_8de100c463f4620d_1_plain.jpg",
+   "family": "plain",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "8de100c463f4620d",
+   "background_id": "",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "plain"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_3f68d660d5fd07e5_0_plain.jpg",
+   "family": "plain",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "3f68d660d5fd07e5",
+   "background_id": "",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "plain"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_3f68d660d5fd07e5_1_mirror.jpg",
+   "family": "mirror",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "3f68d660d5fd07e5",
+   "background_id": "d0a6df63ac479c52",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "mirror",
+    "gain": 0.76,
+    "alpha": 0.91,
+    "panel": [
+     371,
+     66,
+     902,
+     534
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_5d243c8b853294f6_0_mirror.jpg",
+   "family": "mirror",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "5d243c8b853294f6",
+   "background_id": "9d7cb855ed6b711d",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "mirror",
+    "gain": 0.7,
+    "alpha": 0.93,
+    "panel": [
+     141,
+     3,
+     783,
+     533
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_5d243c8b853294f6_1_appliance.jpg",
+   "family": "appliance",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "5d243c8b853294f6",
+   "background_id": "fa04ae54a6903d5c",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "appliance",
+    "alpha": 0.45,
+    "panel": [
+     92,
+     0,
+     631,
+     530
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_8cf6f25f08e058f0_0_appliance.jpg",
+   "family": "appliance",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "8cf6f25f08e058f0",
+   "background_id": "fcfbd8e754fea64f",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "appliance",
+    "alpha": 0.31,
+    "occluder": [
+     496,
+     194,
+     565,
+     347
+    ],
+    "panel": [
+     337,
+     1,
+     767,
+     531
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_8cf6f25f08e058f0_1_photo.jpg",
+   "family": "photo",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "8cf6f25f08e058f0",
+   "background_id": "217b95a71cb220f8",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "photo",
+    "panel": [
+     433,
+     69,
+     683,
+     265
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_67f7a5369c6846af_0_photo.jpg",
+   "family": "photo",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "67f7a5369c6846af",
+   "background_id": "cee8149e2f125ded",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "photo",
+    "occluder": [
+     281,
+     211,
+     392,
+     373
+    ],
+    "panel": [
+     19,
+     22,
+     418,
+     479
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_67f7a5369c6846af_1_screen.jpg",
+   "family": "screen",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "67f7a5369c6846af",
+   "background_id": "7b0b451bfaddaeb4",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "screen",
+    "panel": [
+     317,
+     105,
+     536,
+     231
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_739f06c22d1f1edb_0_screen.jpg",
+   "family": "screen",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "739f06c22d1f1edb",
+   "background_id": "e3847c796a5943b4",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "screen",
+    "panel": [
+     136,
+     126,
+     455,
+     326
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_739f06c22d1f1edb_1_plain.jpg",
+   "family": "plain",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "739f06c22d1f1edb",
+   "background_id": "",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "plain"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_78be3cbbf29825e7_0_plain.jpg",
+   "family": "plain",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "78be3cbbf29825e7",
+   "background_id": "",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "plain"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_78be3cbbf29825e7_1_mirror.jpg",
+   "family": "mirror",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "78be3cbbf29825e7",
+   "background_id": "46168164054d505e",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "mirror",
+    "gain": 1.0,
+    "alpha": 0.83,
+    "panel": [
+     249,
+     150,
+     868,
+     525
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_cea38a4de93855f4_0_mirror.jpg",
+   "family": "mirror",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "cea38a4de93855f4",
+   "background_id": "b655ede651e45487",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "mirror",
+    "gain": 0.88,
+    "alpha": 0.8,
+    "occluder": [
+     592,
+     324,
+     720,
+     416
+    ],
+    "panel": [
+     369,
+     243,
+     782,
+     531
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_cea38a4de93855f4_1_appliance.jpg",
+   "family": "appliance",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "cea38a4de93855f4",
+   "background_id": "3ecead421079f9fd",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "appliance",
+    "alpha": 0.55,
+    "panel": [
+     296,
+     7,
+     924,
+     537
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_189a9911f39e9afd_0_appliance.jpg",
+   "family": "appliance",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "189a9911f39e9afd",
+   "background_id": "89fb4f3b001d677e",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "appliance",
+    "alpha": 0.37,
+    "panel": [
+     278,
+     43,
+     822,
+     534
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_189a9911f39e9afd_1_photo.jpg",
+   "family": "photo",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "189a9911f39e9afd",
+   "background_id": "b10730442db3217a",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "photo",
+    "panel": [
+     404,
+     135,
+     690,
+     351
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_f32c09e16027b9be_0_photo.jpg",
+   "family": "photo",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "f32c09e16027b9be",
+   "background_id": "92b801786d58976e",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "photo",
+    "occluder": [
+     842,
+     390,
+     889,
+     494
+    ],
+    "panel": [
+     666,
+     310,
+     917,
+     524
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_f32c09e16027b9be_1_screen.jpg",
+   "family": "screen",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "f32c09e16027b9be",
+   "background_id": "ddd3f96ff7f0bc78",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "screen",
+    "panel": [
+     363,
+     63,
+     581,
+     223
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_002b0dc60b1068a9_0_screen.jpg",
+   "family": "screen",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "002b0dc60b1068a9",
+   "background_id": "56afb0cb25e9579b",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "screen",
+    "panel": [
+     333,
+     192,
+     723,
+     479
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_002b0dc60b1068a9_1_plain.jpg",
+   "family": "plain",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "002b0dc60b1068a9",
+   "background_id": "",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "plain"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_676b3350d3fb8061_0_plain.jpg",
+   "family": "plain",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "676b3350d3fb8061",
+   "background_id": "",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "plain"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_676b3350d3fb8061_1_mirror.jpg",
+   "family": "mirror",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "676b3350d3fb8061",
+   "background_id": "6c5d18cf5e6d36d6",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "mirror",
+    "gain": 0.58,
+    "alpha": 0.9,
+    "panel": [
+     132,
+     2,
+     716,
+     532
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_392c3c9f706c5bb5_0_mirror.jpg",
+   "family": "mirror",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "392c3c9f706c5bb5",
+   "background_id": "298f427e2a08b44e",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "mirror",
+    "gain": 0.93,
+    "alpha": 0.82,
+    "panel": [
+     50,
+     9,
+     762,
+     539
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_392c3c9f706c5bb5_1_appliance.jpg",
+   "family": "appliance",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "392c3c9f706c5bb5",
+   "background_id": "778b048754c0bb2e",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "appliance",
+    "alpha": 0.27,
+    "occluder": [
+     218,
+     136,
+     335,
+     271
+    ],
+    "panel": [
+     73,
+     1,
+     746,
+     531
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_7313ab9a917e81a6_0_appliance.jpg",
+   "family": "appliance",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "7313ab9a917e81a6",
+   "background_id": "05a18d04f2f02d4b",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "appliance",
+    "alpha": 0.59,
+    "occluder": [
+     244,
+     221,
+     475,
+     367
+    ],
+    "panel": [
+     239,
+     13,
+     947,
+     539
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_7313ab9a917e81a6_1_photo.jpg",
+   "family": "photo",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "7313ab9a917e81a6",
+   "background_id": "c493c72d8eb2faa9",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "photo",
+    "panel": [
+     143,
+     37,
+     524,
+     514
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_96da9f2fb6c80b5d_0_photo.jpg",
+   "family": "photo",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "96da9f2fb6c80b5d",
+   "background_id": "c90603701b0371a9",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "photo",
+    "panel": [
+     241,
+     254,
+     440,
+     459
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_96da9f2fb6c80b5d_1_screen.jpg",
+   "family": "screen",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "96da9f2fb6c80b5d",
+   "background_id": "123933088352eb12",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "screen",
+    "occluder": [
+     602,
+     134,
+     658,
+     185
+    ],
+    "panel": [
+     586,
+     44,
+     786,
+     189
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_47b56f870752e1c2_0_screen.jpg",
+   "family": "screen",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "47b56f870752e1c2",
+   "background_id": "c32bcf75b004e27d",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "screen",
+    "panel": [
+     464,
+     359,
+     696,
+     524
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_47b56f870752e1c2_1_plain.jpg",
+   "family": "plain",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "47b56f870752e1c2",
+   "background_id": "",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "plain"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_16374cbdb62f53de_0_plain.jpg",
+   "family": "plain",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "16374cbdb62f53de",
+   "background_id": "",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "plain"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_16374cbdb62f53de_1_mirror.jpg",
+   "family": "mirror",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "16374cbdb62f53de",
+   "background_id": "2523ac25dfbfa2f8",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "mirror",
+    "gain": 0.67,
+    "alpha": 0.85,
+    "panel": [
+     493,
+     6,
+     933,
+     536
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_34ca3219d7b67f16_0_mirror.jpg",
+   "family": "mirror",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "34ca3219d7b67f16",
+   "background_id": "72629128427cf83c",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "mirror",
+    "gain": 0.92,
+    "alpha": 0.92,
+    "panel": [
+     99,
+     1,
+     792,
+     531
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_34ca3219d7b67f16_1_appliance.jpg",
+   "family": "appliance",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "34ca3219d7b67f16",
+   "background_id": "14f3007674b36f65",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "appliance",
+    "alpha": 0.48,
+    "panel": [
+     267,
+     252,
+     651,
+     507
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_7ff76c84761e761e_0_appliance.jpg",
+   "family": "appliance",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "7ff76c84761e761e",
+   "background_id": "0b6227bb06345402",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "appliance",
+    "alpha": 0.48,
+    "panel": [
+     301,
+     5,
+     939,
+     535
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_7ff76c84761e761e_1_photo.jpg",
+   "family": "photo",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "7ff76c84761e761e",
+   "background_id": "9e21c7896cb36b7a",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "photo",
+    "panel": [
+     536,
+     130,
+     785,
+     416
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_300deb052677b547_0_photo.jpg",
+   "family": "photo",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "300deb052677b547",
+   "background_id": "e3de278bad0e47e1",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "photo",
+    "occluder": [
+     485,
+     168,
+     551,
+     271
+    ],
+    "panel": [
+     437,
+     41,
+     670,
+     350
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_300deb052677b547_1_screen.jpg",
+   "family": "screen",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "300deb052677b547",
+   "background_id": "ba87b8458e637186",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "screen",
+    "panel": [
+     420,
+     115,
+     767,
+     316
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_49e6a10cc09950c8_0_screen.jpg",
+   "family": "screen",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "49e6a10cc09950c8",
+   "background_id": "ddd3f96ff7f0bc78",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "screen",
+    "panel": [
+     371,
+     107,
+     628,
+     279
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_49e6a10cc09950c8_1_plain.jpg",
+   "family": "plain",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "49e6a10cc09950c8",
+   "background_id": "",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "plain"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_483cda6a77505e11_0_plain.jpg",
+   "family": "plain",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "483cda6a77505e11",
+   "background_id": "",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "plain"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_483cda6a77505e11_1_mirror.jpg",
+   "family": "mirror",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "483cda6a77505e11",
+   "background_id": "7c0c494fd483b835",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "mirror",
+    "gain": 0.79,
+    "alpha": 0.9,
+    "occluder": [
+     271,
+     390,
+     434,
+     502
+    ],
+    "panel": [
+     252,
+     61,
+     678,
+     529
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_8f95db78de372fd4_0_mirror.jpg",
+   "family": "mirror",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "8f95db78de372fd4",
+   "background_id": "e3de278bad0e47e1",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "mirror",
+    "gain": 0.68,
+    "alpha": 0.87,
+    "panel": [
+     65,
+     1,
+     690,
+     531
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_8f95db78de372fd4_1_appliance.jpg",
+   "family": "appliance",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "8f95db78de372fd4",
+   "background_id": "a76997fbc61f22ec",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "appliance",
+    "alpha": 0.28,
+    "occluder": [
+     70,
+     49,
+     205,
+     182
+    ],
+    "panel": [
+     19,
+     35,
+     453,
+     530
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_6c6bab990f122299_0_appliance.jpg",
+   "family": "appliance",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "6c6bab990f122299",
+   "background_id": "01bef5827cab386c",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "appliance",
+    "alpha": 0.52,
+    "occluder": [
+     334,
+     280,
+     451,
+     381
+    ],
+    "panel": [
+     157,
+     22,
+     536,
+     406
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_6c6bab990f122299_1_photo.jpg",
+   "family": "photo",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "6c6bab990f122299",
+   "background_id": "3d76574f1dec8b0a",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "photo",
+    "panel": [
+     190,
+     60,
+     519,
+     483
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_26d71e58792aa12c_0_photo.jpg",
+   "family": "photo",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "26d71e58792aa12c",
+   "background_id": "56afb0cb25e9579b",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "photo",
+    "panel": [
+     574,
+     228,
+     847,
+     521
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_26d71e58792aa12c_1_screen.jpg",
+   "family": "screen",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "26d71e58792aa12c",
+   "background_id": "eab5e7e2423dfed3",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "screen",
+    "occluder": [
+     743,
+     356,
+     822,
+     449
+    ],
+    "panel": [
+     572,
+     324,
+     934,
+     525
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_9537230ddc548aab_0_screen.jpg",
+   "family": "screen",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "9537230ddc548aab",
+   "background_id": "a10ea74b5eb3c47d",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "screen",
+    "panel": [
+     189,
+     331,
+     451,
+     506
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_9537230ddc548aab_1_plain.jpg",
+   "family": "plain",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "9537230ddc548aab",
+   "background_id": "",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "plain"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_a211016f402b956b_0_plain.jpg",
+   "family": "plain",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "a211016f402b956b",
+   "background_id": "",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "plain"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_a211016f402b956b_1_mirror.jpg",
+   "family": "mirror",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "a211016f402b956b",
+   "background_id": "058e15fa186f01f2",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "mirror",
+    "gain": 0.85,
+    "alpha": 0.91,
+    "panel": [
+     0,
+     100,
+     635,
+     520
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_cbd965c5f654426e_0_mirror.jpg",
+   "family": "mirror",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "cbd965c5f654426e",
+   "background_id": "96657f71a20cac23",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "mirror",
+    "gain": 0.78,
+    "alpha": 0.82,
+    "panel": [
+     215,
+     4,
+     896,
+     534
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_cbd965c5f654426e_1_appliance.jpg",
+   "family": "appliance",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "cbd965c5f654426e",
+   "background_id": "10fb73ee47a33a83",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "appliance",
+    "alpha": 0.32,
+    "panel": [
+     369,
+     1,
+     858,
+     531
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_58b50dce36e63205_0_appliance.jpg",
+   "family": "appliance",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "58b50dce36e63205",
+   "background_id": "4d50416ae9b368c1",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "appliance",
+    "alpha": 0.58,
+    "occluder": [
+     308,
+     168,
+     443,
+     417
+    ],
+    "panel": [
+     236,
+     6,
+     874,
+     536
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_58b50dce36e63205_1_photo.jpg",
+   "family": "photo",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "58b50dce36e63205",
+   "background_id": "c32bcf75b004e27d",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "photo",
+    "panel": [
+     407,
+     234,
+     712,
+     507
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_0de5621ed7b01e19_0_photo.jpg",
+   "family": "photo",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "0de5621ed7b01e19",
+   "background_id": "0b730c49ccf74eae",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "photo",
+    "occluder": [
+     617,
+     141,
+     667,
+     255
+    ],
+    "panel": [
+     412,
+     41,
+     721,
+     265
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_0de5621ed7b01e19_1_screen.jpg",
+   "family": "screen",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "0de5621ed7b01e19",
+   "background_id": "fcecb8614f1b8c70",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "screen",
+    "panel": [
+     588,
+     311,
+     909,
+     539
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_24766458a9f83849_0_screen.jpg",
+   "family": "screen",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "24766458a9f83849",
+   "background_id": "b10730442db3217a",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "screen",
+    "occluder": [
+     399,
+     216,
+     488,
+     335
+    ],
+    "panel": [
+     344,
+     83,
+     732,
+     371
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_24766458a9f83849_1_plain.jpg",
+   "family": "plain",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "24766458a9f83849",
+   "background_id": "",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "plain"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_c7ad17166b7fe32a_0_plain.jpg",
+   "family": "plain",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "c7ad17166b7fe32a",
+   "background_id": "",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "plain"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_c7ad17166b7fe32a_1_mirror.jpg",
+   "family": "mirror",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "c7ad17166b7fe32a",
+   "background_id": "a10ea74b5eb3c47d",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "mirror",
+    "gain": 0.91,
+    "alpha": 0.95,
+    "panel": [
+     321,
+     33,
+     845,
+     531
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_77331226852edc80_0_mirror.jpg",
+   "family": "mirror",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "77331226852edc80",
+   "background_id": "f2938a1f2aacff10",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "mirror",
+    "gain": 0.88,
+    "alpha": 0.81,
+    "panel": [
+     10,
+     8,
+     533,
+     538
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_77331226852edc80_1_appliance.jpg",
+   "family": "appliance",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "77331226852edc80",
+   "background_id": "feb70e5c996fcb5e",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "appliance",
+    "alpha": 0.5,
+    "occluder": [
+     342,
+     100,
+     534,
+     332
+    ],
+    "panel": [
+     108,
+     26,
+     607,
+     432
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_7191f2afdfccea20_0_appliance.jpg",
+   "family": "appliance",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "7191f2afdfccea20",
+   "background_id": "2f146af17de4b933",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "appliance",
+    "alpha": 0.35,
+    "panel": [
+     25,
+     7,
+     588,
+     537
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_7191f2afdfccea20_1_photo.jpg",
+   "family": "photo",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "7191f2afdfccea20",
+   "background_id": "63704d1bbcd07d02",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "photo",
+    "occluder": [
+     177,
+     180,
+     249,
+     315
+    ],
+    "panel": [
+     167,
+     16,
+     479,
+     390
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_f5b09fbe99e13691_0_photo.jpg",
+   "family": "photo",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "f5b09fbe99e13691",
+   "background_id": "789cc0283c0e18af",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "photo",
+    "panel": [
+     365,
+     207,
+     711,
+     467
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_f5b09fbe99e13691_1_screen.jpg",
+   "family": "screen",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "f5b09fbe99e13691",
+   "background_id": "3dd40beb8e7f03b9",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "screen",
+    "panel": [
+     416,
+     167,
+     798,
+     424
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_df6dd70f7cc1aee6_0_screen.jpg",
+   "family": "screen",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "df6dd70f7cc1aee6",
+   "background_id": "805d2f6bfb4f5cba",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "screen",
+    "panel": [
+     562,
+     265,
+     823,
+     451
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_df6dd70f7cc1aee6_1_plain.jpg",
+   "family": "plain",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "df6dd70f7cc1aee6",
+   "background_id": "",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "plain"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_cd4e964d17223b05_0_plain.jpg",
+   "family": "plain",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "cd4e964d17223b05",
+   "background_id": "",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "plain"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_cd4e964d17223b05_1_mirror.jpg",
+   "family": "mirror",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "cd4e964d17223b05",
+   "background_id": "217b95a71cb220f8",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "mirror",
+    "gain": 0.88,
+    "alpha": 0.96,
+    "occluder": [
+     578,
+     138,
+     731,
+     448
+    ],
+    "panel": [
+     226,
+     9,
+     806,
+     539
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_b465df5c6ae982bf_0_mirror.jpg",
+   "family": "mirror",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "b465df5c6ae982bf",
+   "background_id": "3a02fdeb0bc94965",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "mirror",
+    "gain": 0.78,
+    "alpha": 0.8,
+    "panel": [
+     6,
+     9,
+     654,
+     539
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_b465df5c6ae982bf_1_appliance.jpg",
+   "family": "appliance",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "b465df5c6ae982bf",
+   "background_id": "e3847c796a5943b4",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "appliance",
+    "alpha": 0.29,
+    "panel": [
+     113,
+     0,
+     795,
+     530
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_b63ab07c3423d7f9_0_appliance.jpg",
+   "family": "appliance",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "b63ab07c3423d7f9",
+   "background_id": "feb70e5c996fcb5e",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "appliance",
+    "alpha": 0.44,
+    "panel": [
+     106,
+     134,
+     697,
+     535
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_b63ab07c3423d7f9_1_photo.jpg",
+   "family": "photo",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "b63ab07c3423d7f9",
+   "background_id": "b5bfc85ebf0c0da5",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "photo",
+    "panel": [
+     465,
+     290,
+     720,
+     518
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_966d44c47effc043_0_photo.jpg",
+   "family": "photo",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "966d44c47effc043",
+   "background_id": "805d2f6bfb4f5cba",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "photo",
+    "occluder": [
+     219,
+     328,
+     302,
+     399
+    ],
+    "panel": [
+     130,
+     214,
+     343,
+     423
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_966d44c47effc043_1_screen.jpg",
+   "family": "screen",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "966d44c47effc043",
+   "background_id": "182c1f2bfa4b4280",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "screen",
+    "occluder": [
+     492,
+     170,
+     575,
+     229
+    ],
+    "panel": [
+     408,
+     126,
+     693,
+     286
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_2ca98d21a076b2ce_0_screen.jpg",
+   "family": "screen",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "2ca98d21a076b2ce",
+   "background_id": "faa0453ecfeb8ade",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "screen",
+    "panel": [
+     154,
+     43,
+     460,
+     254
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_2ca98d21a076b2ce_1_plain.jpg",
+   "family": "plain",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "2ca98d21a076b2ce",
+   "background_id": "",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "plain"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_6be461921a2b69f1_0_plain.jpg",
+   "family": "plain",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "6be461921a2b69f1",
+   "background_id": "",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "plain"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_6be461921a2b69f1_1_mirror.jpg",
+   "family": "mirror",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "6be461921a2b69f1",
+   "background_id": "3a02fdeb0bc94965",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "mirror",
+    "gain": 0.99,
+    "alpha": 0.85,
+    "panel": [
+     13,
+     22,
+     707,
+     508
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_2e402ae4b2addb7e_0_mirror.jpg",
+   "family": "mirror",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "2e402ae4b2addb7e",
+   "background_id": "ddd3f96ff7f0bc78",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "mirror",
+    "gain": 0.97,
+    "alpha": 0.94,
+    "panel": [
+     215,
+     4,
+     925,
+     534
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_2e402ae4b2addb7e_1_appliance.jpg",
+   "family": "appliance",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "2e402ae4b2addb7e",
+   "background_id": "7c2825a3d8e0ed29",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "appliance",
+    "alpha": 0.55,
+    "occluder": [
+     697,
+     226,
+     798,
+     323
+    ],
+    "panel": [
+     412,
+     23,
+     825,
+     403
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_3d93458d9b114321_0_appliance.jpg",
+   "family": "appliance",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "3d93458d9b114321",
+   "background_id": "b126d892cf849c7b",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "appliance",
+    "alpha": 0.42,
+    "panel": [
+     331,
+     89,
+     875,
+     415
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_3d93458d9b114321_1_photo.jpg",
+   "family": "photo",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "3d93458d9b114321",
+   "background_id": "3e5b15d6fbdb70d2",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "photo",
+    "occluder": [
+     657,
+     256,
+     689,
+     353
+    ],
+    "panel": [
+     554,
+     178,
+     759,
+     454
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_f1f7ff1db85041ce_0_photo.jpg",
+   "family": "photo",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "f1f7ff1db85041ce",
+   "background_id": "10c183f776fe5e73",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "photo",
+    "panel": [
+     170,
+     59,
+     564,
+     508
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_f1f7ff1db85041ce_1_screen.jpg",
+   "family": "screen",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "f1f7ff1db85041ce",
+   "background_id": "2f0a18a409d5a769",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "screen",
+    "panel": [
+     375,
+     38,
+     585,
+     184
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_bf7648f1cec9338a_0_screen.jpg",
+   "family": "screen",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "bf7648f1cec9338a",
+   "background_id": "e3de278bad0e47e1",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "screen",
+    "panel": [
+     238,
+     262,
+     571,
+     482
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_bf7648f1cec9338a_1_plain.jpg",
+   "family": "plain",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "bf7648f1cec9338a",
+   "background_id": "",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "plain"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_53397678dd980397_0_plain.jpg",
+   "family": "plain",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "53397678dd980397",
+   "background_id": "",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "plain"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_53397678dd980397_1_mirror.jpg",
+   "family": "mirror",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "53397678dd980397",
+   "background_id": "daded832e3ae26b5",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "mirror",
+    "gain": 0.88,
+    "alpha": 0.93,
+    "panel": [
+     471,
+     4,
+     885,
+     534
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_85dd59ff7cf36d1b_0_mirror.jpg",
+   "family": "mirror",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "85dd59ff7cf36d1b",
+   "background_id": "e3847c796a5943b4",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "mirror",
+    "gain": 0.9,
+    "alpha": 0.89,
+    "panel": [
+     59,
+     1,
+     664,
+     531
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_85dd59ff7cf36d1b_1_appliance.jpg",
+   "family": "appliance",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "85dd59ff7cf36d1b",
+   "background_id": "9a6c111db3384eab",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "appliance",
+    "alpha": 0.6,
+    "panel": [
+     267,
+     8,
+     663,
+     425
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_4c95834d778cf9b8_0_appliance.jpg",
+   "family": "appliance",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "4c95834d778cf9b8",
+   "background_id": "dd524cdb2e8652cf",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "appliance",
+    "alpha": 0.27,
+    "panel": [
+     379,
+     33,
+     931,
+     433
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_4c95834d778cf9b8_1_photo.jpg",
+   "family": "photo",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "4c95834d778cf9b8",
+   "background_id": "1074868d9da05783",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "photo",
+    "occluder": [
+     165,
+     177,
+     211,
+     277
+    ],
+    "panel": [
+     7,
+     163,
+     246,
+     401
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_5821c61e6ec9d67a_0_photo.jpg",
+   "family": "photo",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "5821c61e6ec9d67a",
+   "background_id": "249f37fe659d30e9",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "photo",
+    "panel": [
+     109,
+     96,
+     354,
+     424
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_5821c61e6ec9d67a_1_screen.jpg",
+   "family": "screen",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "5821c61e6ec9d67a",
+   "background_id": "13959d4be0ed2e5e",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "screen",
+    "panel": [
+     256,
+     126,
+     546,
+     323
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_aad6abdc01ef06e3_0_screen.jpg",
+   "family": "screen",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "aad6abdc01ef06e3",
+   "background_id": "cabbf79c0a4e40e6",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "screen",
+    "occluder": [
+     839,
+     336,
+     922,
+     431
+    ],
+    "panel": [
+     617,
+     319,
+     930,
+     529
+    ]
+   },
+   "synthetic": true
+  },
+  {
+   "file": "validation_aad6abdc01ef06e3_1_plain.jpg",
+   "family": "plain",
+   "label": "negative",
+   "source_role": "negative",
+   "source_category": "packaging",
+   "content_id": "aad6abdc01ef06e3",
+   "background_id": "",
+   "boxes": [],
+   "ignore": [],
+   "meta": {
+    "family": "plain"
+   },
+   "synthetic": true
+  }
+ ]
+}

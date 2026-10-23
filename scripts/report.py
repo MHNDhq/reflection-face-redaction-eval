@@ -26,7 +26,8 @@ DETS = [("yunet", "YuNet 2023mar (OpenCV)"), ("blazeface_short", "BlazeFace shor
         ("blazeface_full", "BlazeFace full-range"), ("ft_A", "Faster R-CNN, plain faces (before)"),
         ("ft_control", "Faster R-CNN, control: +plain & negatives"),
         ("ft_B", "Faster R-CNN, +reflection composites (500 steps)"),
-        ("ft_B_long", "Faster R-CNN, +reflection composites, 1,500 steps (after; chosen on tune)")]
+        ("ft_B_long", "Faster R-CNN, +reflection composites, 1,500 steps"),
+        ("ft_B_hn", "Faster R-CNN, +reflection composites + hard negatives, 1,500 steps")]
 GRID = sorted(set([round(0.05 * i, 2) for i in range(1, 20)] + [0.92, 0.94, 0.96, 0.97, 0.98, 0.99]))
 FAMS = ["mirror", "appliance", "shower", "photo", "screen", "plain"]
 KEYS = ["redaction_recall", "redaction_precision", "redaction_frames_fully_covered",
@@ -39,6 +40,9 @@ def load(set_name, name):
 
 
 BOOT_N, BOOT_SEED, BOOT_Q = 1000, 20261024, 0.05
+# --eval eval2 reports on the fresh round-3 set (results/metrics_eval2.*); default is the original eval set
+EVAL = sys.argv[sys.argv.index("--eval") + 1] if "--eval" in sys.argv else "eval"
+SUFFIX = "" if EVAL == "eval" else f"_{EVAL}"
 
 
 def _per_cluster(recs, dets, thr):
@@ -85,20 +89,23 @@ def pick_cutoff(recs, dets):
 
 
 def main():
-    ev = json.load(open(ROOT / "data" / "eval" / "annotations.json"))["images"]
+    ev = json.load(open(ROOT / "data" / EVAL / "annotations.json"))["images"]
     tu = json.load(open(ROOT / "data" / "tune" / "annotations.json"))["images"]
     t2p = ROOT / "data" / "tune2" / "annotations.json"
     tu2 = json.load(open(t2p))["images"] if t2p.exists() else []
+    t3p = ROOT / "data" / "tune3" / "annotations.json"
+    tu2 += json.load(open(t3p))["images"] if t3p.exists() else []   # round 3: matched no-face share
     out = {"note": "SYNTHETIC eval set (Open Images CC BY 2.0 composites); not the client's footage.",
            "eval_images": len(ev), "tune_images": len(tu), "detectors": {}}
     plt.figure(figsize=(7, 5))
     for name, label in DETS:
-        de, dt, dt2 = load("eval", name), load("tune", name), load("tune2", name)
-        if tu2 and dt2 is None:
-            print("missing tune2 detections for", name)
+        de, dt, dt2 = load(EVAL, name), load("tune", name), load("tune2", name)
+        dt3 = load("tune3", name) if t3p.exists() else {}
+        if tu2 and (dt2 is None or dt3 is None):
+            print("missing tune2/tune3 detections for", name)
             continue
         if dt is not None and dt2:
-            dt = {**dt, **dt2}
+            dt = {**dt, **dt2, **(dt3 or {})}
         if de is None or dt is None:
             print("missing", name)
             continue
@@ -132,14 +139,14 @@ def main():
     plt.ylim(0, 1.02)
     plt.legend(fontsize=7, loc="lower left")
     plt.tight_layout()
-    plt.savefig(ROOT / "results" / "pr_curve.png", dpi=130)
-    json.dump(out, open(ROOT / "results" / "metrics.json", "w"), indent=1)
+    plt.savefig(ROOT / "results" / f"pr_curve{SUFFIX}.png", dpi=130)
+    json.dump(out, open(ROOT / "results" / f"metrics{SUFFIX}.json", "w"), indent=1)
 
     def pct(v):
         return "n/a" if v is None else f"{100 * v:.1f}%"
 
-    lines = ["# Results on the SYNTHETIC eval set (not the client's footage)", "",
-             f"Eval: {len(ev)} composite images (test-split sources). Tune: {len(tu)} images (validation-split sources held out of training). "
+    lines = [f"# Results on the SYNTHETIC {EVAL} set (not the client's footage)", "",
+             f"{EVAL}: {len(ev)} composite images (test-split sources). Tune: {len(tu)} images (validation-split sources held out of training). "
              f"Cutoff per detector = highest redaction recall on TUNE ({len(tu) + len(tu2)} images: tune + tune2) among cutoffs whose tune "
              "precision has a cluster-bootstrap 5th percentile >= 95% (resampling source photos, 1,000 draws, one-sided 95%), "
              "applied unchanged to EVAL. Pre-registered before tune2 detections or a new eval read; see README for the two earlier rules.", "",
@@ -172,7 +179,7 @@ def main():
     for name, row in out["detectors"].items():
         if row["by_family"]:
             lines.append(f"| {row['label']} at {row['cutoff_from_tune']} | " + " | ".join(pct(row['by_family'][f]['redaction_false_alarm_frame_rate']) for f in FAMS) + " |")
-    (ROOT / "results" / "metrics.md").write_text("\n".join(lines) + "\n")
+    (ROOT / "results" / f"metrics{SUFFIX}.md").write_text("\n".join(lines) + "\n")
     print("\n".join(lines))
 
 

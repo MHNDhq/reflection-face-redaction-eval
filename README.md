@@ -24,6 +24,23 @@ Written before any detector was run on tune2 and before eval was read again:
 - Model: ft_B (500 steps) vs ft_B_long (1,500 steps, same data): the one with the higher tune recall at
   its own rule cutoff is reported as "after". Eval is read once, after that choice.
 
+## Pre-registration, round 3 (2026-10-23T19:31Z, committed before the step it governs)
+
+Round 2 read: ft_B_long, chosen on tune, gave 71.6% recall at 87.6% precision on eval, below 95%.
+Cause found on tune and eval composition, not on detector output: tune + tune2 had 6.5% no-face frames
+and no sculptures; eval has 40%. Round 3, written before any detector runs on the new sets:
+- eval2: a FRESH test-split set (1,040 composites: 300 face photos, 220 negatives in 8 categories incl.
+  sculptures, 160 new backgrounds; 42% no-face frames). Negatives need only "no person box or label",
+  not the verified label (the test split ran out of those); an unlabeled face there counts as a false
+  alarm, so this errs toward LOWER precision. The original eval set has now been read three times and is
+  reported for continuity only.
+- tune3: 250 new validation negatives (750 composites). Tune = tune + tune2 + tune3 = 2,550 images, 34%
+  no-face frames.
+- ft_B_hn: ft_A + plain + reflection composites + 179 new validation hard negatives (data/train_hn),
+  1,500 steps, disjoint from tune3 and eval2.
+- Rule and grid: unchanged (cluster-bootstrap 5th percentile of tune precision >= 95%).
+- Model: ft_B_long vs ft_B_hn, the higher tune recall at its rule cutoff is "after". eval2 is read once.
+
 ## What was measured
 
 Eval set: 860 synthetic images (596 scoring faces in 427 face frames, 340 hard-negative frames), all
