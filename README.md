@@ -1,6 +1,6 @@
 # reflection-face-redaction-eval
 
-Intended public repo name: `reflection-face-redaction-eval` (not yet published).
+Public repo: https://github.com/MHNDhq/reflection-face-redaction-eval
 
 A small, checkable experiment for one failure class in first-person video redaction: faces seen in
 mirrors, appliance doors, shower glass, photos and screens, next to face-like things that are not
@@ -35,7 +35,7 @@ What moved, read honestly:
   at 96.9% precision; YuNet 49.7% at 96.5%; ft_control 47.1% at 95.8%; ft_A 36.6% at 97.9%.
 - Shower glass, never in training: YuNet at 0.9 10.6%, ft_A 29.8%, ft_control 29.8%, ft_B 43.3%.
 - Screens with people: YuNet at 0.9 0.0%, ft_B 43.2%.
-- No detector here meets a 95% precision bar on eval at its tune-split cutoff, and none is near 99% recall.
+- At its tune-split cutoff, no fine-tuned detector meets a 95% precision bar on eval; YuNet does (99.5% at 0.9, 96.5% at 0.8) at lower recall. No detector is near 99% recall.
   The tune split comes from the same photo pool as training, so it flattered the cutoff: the three fine-tuned
   models held at least 95% precision on tune and came in at 88.0% to 91.2% on eval. ft_B also raises false alarms on plain hard-negative photos (23.2% of those frames,
   against 14.3% for the control).
@@ -135,7 +135,8 @@ Cost per video-hour, as an ESTIMATE (confidence: low):
 - One video-hour at 30 fps is 108,000 frames. ft_B at 28.2 fps needs about 1.06 hours of M5 GPU time per video-hour.
 - Lambda's on-demand price for one NVIDIA A10 was $1.29 per GPU-hour (read from lambda.ai/pricing on 2026-10-23).
   If an A10 ran this model only as fast as the M5, the detector would cost about $1.37 per video-hour. That
-  speed was NOT measured on an A10; a real benchmark on the target GPU replaces this line.
+  speed was NOT measured on an A10; a real benchmark on the target GPU replaces this line. At 1920x1080 input
+  (18.8 fps, resized to 960x540 inside), the same estimate is about $2.06 per video-hour.
 - Decode is not the bottleneck on this machine: 4K HEVC decoded at 160 to 251 fps on a test pattern. Real
   GoPro footage will decode slower than a test pattern; that was not measured.
 - Running the detector on every second frame and relying on the +/-8 frame padding would halve detector
@@ -172,7 +173,7 @@ Every number above was measured under these rules. They are listed so you can we
 - The `ignore` column that `select_sources.py` writes for very small faces is not read by `composite.py`.
 - `download_sources.py` does not retry a throttled download, so one image can go missing and shift the training draws.
 
-Fixed in the same review: a box between two hits no longer cancels the gap bridge (a jittered box at t+1, then at t+2, used to leave mid-gap frames unredacted). Each hit now bridges to every overlapping hit within 30 frames, and a frame gets an interpolated box only when no original detection there touches the span of the two hits. Nothing is merged or dropped, so the redacted area can only grow. Tests check face-pixel coverage (a non-linear 3-hit track, jitter at t+2) and the 29-bridged / 30-not boundary. Cost: a dense track gains no boxes, but hits every 6th frame give up to 14 overlapping bridge boxes on a gap frame, so some over-redaction. Limit: another face inside that span on a missed frame stops the fill there. `plan()` is a tested library function; no script in this repo runs it over a video yet. `expand()` now clamps all four box edges into the frame (a box fully off-frame used to fill a band of the frame; no stored detection was off-frame, so no metric changed), and training and inference pick MPS, then CUDA, then CPU.
+Fixed in the same review: a box between two hits no longer cancels the gap bridge (a jittered box at t+1, then at t+2, used to leave mid-gap frames unredacted). Each hit now bridges to every overlapping hit within 30 frames; an interpolated box is skipped only where an original detection on that frame matches it (IoU 0.5 or more), so a neighbouring face, a small false positive or a jittered box never cancels it. Nothing is merged or dropped, so the redacted area can only grow. Tests check face-pixel coverage with no padding: jitter at every offset, a second face beside the gap, and a non-linear 3-hit track. Cost, measured (max boxes on one frame, after padding): static face seen on every frame 17; every 3rd frame 665; every 2nd frame 1,088; a face moving on a sine path every frame 2,852. `interpolate_gaps` on 10 faces over 600 frames takes 6.75 s in pure Python. This favours privacy over speed and gives some over-redaction on moving faces; a track linker is the trial-grade replacement. `plan()` is a tested library function; no script in this repo runs it over a video yet. `expand()` now clamps all four box edges into the frame (a box fully off-frame used to fill a band of the frame; no stored detection was off-frame, so no metric changed), and training and inference pick MPS, then CUDA, then CPU.
 
 ## Reproduce
 

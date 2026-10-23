@@ -109,6 +109,24 @@ pj2 = R.plan(dj2, 8, 8, 30)
 check("jitter at t+2: true face fully covered at frames 111..116", all(_cov(pj2, f, (int(10 - 10 * (f - 100) / 25), 10, int(10 - 10 * (f - 100) / 25) + 40, 50)) == 1.0 for f in range(111, 117)))
 dd = [[(10 + i, 10, 50 + i, 50)] for i in range(100)]
 check("dense track gains no interpolated boxes", max(len(x) for x in R.interpolate_gaps(dd)) == 1)
+# Privacy-first rule, measured on the cases review round 6 named.
+def _face(f, x_at):  # true face box at frame f from a position function
+    x = int(round(x_at(f))); return (x, 10, x + 40, 50)
+dB = [[(60, 10, 100, 50)] for _ in range(200)]
+dB[100] = [(10, 10, 50, 50), (60, 10, 100, 50)]; dB[125] = [(25, 10, 65, 50), (60, 10, 100, 50)]
+pB = R.plan(dB, 8, 8, 30)
+check("second face beside the gap does not cancel the bridge (face A fully covered 101..124)",
+      all(_cov(pB, f, _face(f, lambda f: 10 + 15 * (f - 100) / 25)) == 1.0 for f in range(101, 125)))
+ok = True
+for kk in range(1, 25):
+    dk = [[] for _ in range(200)]; dk[100] = [(10, 10, 50, 50)]; dk[100 + kk] = [(40, 10, 80, 50)]; dk[125] = [(0, 10, 40, 50)]
+    pk = R.plan(dk, 0, 0, 30)
+    ok = ok and all(_cov(pk, f, _face(f, lambda f: 10 - 10 * (f - 100) / 25)) == 1.0 for f in range(101, 125))
+check("jitter at every offset t+1..t+24, no padding: true face fully covered on every gap frame", ok)
+pn0 = R.plan(dn, 0, 0, 30)
+check("non-linear 3-hit, no padding: face covered on the 100-120 and 120-128 segments",
+      all(_cov(pn0, f, _face(f, lambda f: 1.6 * (f - 100))) == 1.0 for f in range(101, 120))
+      and all(_cov(pn0, f, _face(f, lambda f: 32 - 4 * (f - 120))) == 1.0 for f in range(121, 128)))
 failed = [n for n, c in results if not c]
 print(f"{len(results) - len(failed)}/{len(results)} passed")
 sys.exit(1 if failed else 0)

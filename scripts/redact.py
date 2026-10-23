@@ -33,17 +33,12 @@ def _iou(a, b):
     return i / u if u > 0 else 0.0
 
 
-def _meets(a, b):
-    return min(a[2], b[2]) > max(a[0], b[0]) and min(a[3], b[3]) > max(a[1], b[1])
-
-
-def interpolate_gaps(dets, max_gap=30, min_iou=0.1):
+def interpolate_gaps(dets, max_gap=30, min_iou=0.1, same_iou=0.5):
     """dets: list (per frame) of boxes. Each box at frame t is bridged to EVERY box at t+g
     (1<g<=max_gap) that overlaps it (IoU >= min_iou), with linearly interpolated boxes in between.
-    An interpolated box is added to frame t+k only if no ORIGINAL detection there intersects the
-    hull of the two hits (the box spanning both): a frame where the face was seen keeps its own box,
-    and only true gaps are filled. Known limit: another face inside that hull on a missed frame stops
-    the fill for that frame.
+    An interpolated box is skipped on frame t+k only when an ORIGINAL detection there matches it
+    (IoU >= same_iou); a neighbouring face, a small false positive or a jittered box never cancels
+    it (review 2026-10-23: touching the span of the two hits was too weak a reason to skip).
     Boxes in between never cancel a bridge (review 2026-10-23: a jittered box at t+1, then t+2,
     used to leave mid-gap frames unredacted), and nothing is merged or dropped, so the redacted
     area can only grow. The cost is some over-redaction when a face moves non-linearly."""
@@ -55,12 +50,11 @@ def interpolate_gaps(dets, max_gap=30, min_iou=0.1):
                 for b in dets[t + g]:
                     if _iou(a, b) < min_iou:
                         continue
-                    hull = (min(a[0], b[0]), min(a[1], b[1]), max(a[2], b[2]), max(a[3], b[3]))
                     for k in range(1, g):
-                        if any(_meets(hull, c) for c in dets[t + k]):
-                            continue
                         f = k / g
-                        out[t + k].append(tuple(a[i] * (1 - f) + b[i] * f for i in range(4)))
+                        box = tuple(a[i] * (1 - f) + b[i] * f for i in range(4))
+                        if not any(_iou(box, c) >= same_iou for c in dets[t + k]):
+                            out[t + k].append(box)
     return out
 
 
