@@ -22,13 +22,12 @@ def check(name, cond):
 # 1. Pixels outside the boxes are byte-identical to the source; pixels inside are the fill colour.
 frame = rng.integers(0, 256, (H, W, 3), dtype=np.uint8)
 boxes = [(100.3, 50.7, 180.2, 150.9), (700, 300, 760, 380), (940, 520, 990, 560)]  # last one clipped at the edge
+src_copy = frame.copy()  # snapshot BEFORE the first redact(), so in-place writes are caught
 out = R.redact(frame, boxes)
 mask = R.redaction_mask(frame.shape, boxes)
 check("outside boxes byte-identical", np.array_equal(out[~mask], frame[~mask]))
 check("inside boxes all fill colour", np.all(out[mask] == np.array(R.FILL, np.uint8)))
 check("source frame not mutated", not np.shares_memory(out, frame))
-src_copy = frame.copy()
-_ = R.redact(frame, boxes)
 check("source frame bytes unchanged after redact", np.array_equal(frame, src_copy))
 # Oracle independent of expand(): a box fully off-frame must change zero pixels.
 off = R.redact(frame, [(-60, 10, -20, 50), (1000, 600, 1100, 700)])

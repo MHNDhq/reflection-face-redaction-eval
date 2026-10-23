@@ -47,7 +47,7 @@ def main():
         ck = ROOT / "models" / "ft_B.pt"
         if ck.exists():
             f = D.FRCNN(ck)
-            out["runs"].append({"det": "ft_B Faster R-CNN MobileNetV3 (MPS GPU, batch 8)", "size": size,
+            out["runs"].append({"det": f"ft_B Faster R-CNN MobileNetV3 ({str(f.dev).upper()}, batch 8)", "size": size,
                                 "fps": round(bench(f.batch, arrs, batch=8), 2)})
             print(out["runs"][-1], flush=True)
     # 4K HEVC decode speed: synthetic 10 s 3840x2160 30 fps HEVC clip, hardware decode via VideoToolbox.
