@@ -229,10 +229,14 @@ def main():
     if "--pool" in sys.argv:
         # Round 3 pools (README > Pre-registration, round 3). --pool NAME builds data/NAME from that pool.
         name = sys.argv[sys.argv.index("--pool") + 1]
-        spec = {"eval2": ("test", FAMILIES_ALL, 2, 606, "eval2"),
-                "tune3": ("validation", FAMILIES_TRAIN, 3, 707, ""),
-                "train_hn": ("validation", FAMILIES_TRAIN, 2, 808, "")}[name]
-        ids = set(src[(pool == name) & src.role.isin(["face", "negative"])].ImageID)
+        # name: (split, families, per_source, seed, background pool, content pool)
+        spec = {"eval2": ("test", FAMILIES_ALL, 2, 606, "eval2", "eval2"),
+                "tune3": ("validation", FAMILIES_TRAIN, 3, 707, "", "tune3"),
+                "train_hn": ("validation", FAMILIES_TRAIN, 2, 808, "", "train_hn"),
+                # round 4: the same training-only negatives again, mirror- and appliance-weighted
+                "train_hn2": ("validation", ["mirror", "mirror", "appliance", "appliance", "photo", "screen"], 6, 909, "", "train_hn"),
+                "eval3": ("test", FAMILIES_ALL, 2, 1010, "eval3", "eval3")}[name]
+        ids = set(src[(pool == spec[5]) & src.role.isin(["face", "negative"])].ImageID)
         r = build(spec[0], ROOT / "data" / name, spec[1], spec[2], seed=spec[3], subset=ids, bg_pool=spec[4])
         print(name, len(r))
         return 0

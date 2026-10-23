@@ -3597,3 +3597,723 @@ bf7648f1cec9338a,validation,negative,packaging,https://www.flickr.com/photos/145
 4c95834d778cf9b8,validation,negative,packaging,https://www.flickr.com/photos/estrelas/2952047425,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/estrelas/,eu -,0.0,train_hn
 5821c61e6ec9d67a,validation,negative,packaging,https://www.flickr.com/photos/andy-li/4376286940,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/andy-li/,Andy Li,0.0,train_hn
 aad6abdc01ef06e3,validation,negative,packaging,https://www.flickr.com/photos/seanfx/6399877317,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/seanfx/,Sean McMenemy,0.0,train_hn
+f872d1e6f4866269,test,face,,https://www.flickr.com/photos/the_hookups/2509616870,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/the_hookups/,Edward Lund,,eval3
+3ba0d18cc645c204,test,face,,https://www.flickr.com/photos/jennifrog/3064533439,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/jennifrog/,Jenny Mealing,0.0,eval3
+7c491914da740d33,test,face,,https://www.flickr.com/photos/31558493@N00/3841920399,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/31558493@N00/,kris,,eval3
+6a7e45b9a0f262cb,test,face,,https://www.flickr.com/photos/kevinpoh/4027343846,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/kevinpoh/,Kevin Poh,0.0,eval3
+78e64a720f9de726,test,face,,https://www.flickr.com/photos/ccordova/3489853465,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/ccordova/,Christian Córdova,0.0,eval3
+19da2d7a2501293a,test,face,,https://www.flickr.com/photos/dana-k/7243614930,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/dana-k/,DanaK~WaterPenny,0.0,eval3
+581446527115ac4c,test,face,,https://www.flickr.com/photos/angloteuton/2926984719,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/angloteuton/,Angloteuton,0.0,eval3
+18de450352573a28,test,face,,https://www.flickr.com/photos/jbrazito/6793597262,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/jbrazito/,JBrazito,,eval3
+b2557b0060c207a4,test,face,,https://www.flickr.com/photos/emilianohorcada/3962544190,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/emilianohorcada/,Emiliano Horcada,0.0,eval3
+d6ab736b38c8bbac,test,face,,https://www.flickr.com/photos/mario_carvajal/4604478498,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/mario_carvajal/,Mario Carvajal,0.0,eval3
+e7a2cc845a38ade5,test,face,,https://www.flickr.com/photos/42019233@N00/366497171,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/42019233@N00/,Khazna Khalil,0.0,eval3
+581a3c12c7197672,test,face,,https://www.flickr.com/photos/shstrng/15806448792,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/shstrng/,John  Jewell,0.0,eval3
+99bfdfe00b8cb1a0,test,face,,https://www.flickr.com/photos/35039238@N04/3844102517/,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/35039238@N04/,Kirstin Thomas,0.0,eval3
+2a335109596eab80,test,face,,https://www.flickr.com/photos/midiman/2337043820,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/midiman/,midiman,0.0,eval3
+61104c6ff5025840,test,face,,https://www.flickr.com/photos/jamiecat/9656223160,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/jamiecat/,Jamiecat *,0.0,eval3
+a79145e5d3f67ac2,test,face,,https://www.flickr.com/photos/73542590@N00/8638073552,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/73542590@N00/,Jeremy Weate,,eval3
+49c039b1c283d065,test,face,,https://www.flickr.com/photos/inisahaini/3045453587,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/inisahaini/,Sahaini Ahmad Safian,0.0,eval3
+c4632f9cca42c9ea,test,face,,https://www.flickr.com/photos/marcogomes/2883366486,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/marcogomes/,Marco Gomes,0.0,eval3
+3501ec8b411cddd5,test,face,,https://www.flickr.com/photos/tamworthboroughcouncil/14364527885,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/tamworthboroughcouncil/,Tamworth Council,0.0,eval3
+924dd9345127aa3a,test,face,,https://www.flickr.com/photos/sis/54502404,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/sis/,Jackie,0.0,eval3
+b727cd399d71adba,test,face,,https://www.flickr.com/photos/sison/384375494,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/sison/,psison,0.0,eval3
+b0398cfb4513821d,test,face,,https://www.flickr.com/photos/florencia123/4063151534,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/florencia123/,Flo&#x27;s shots 4 me,0.0,eval3
+d7ddc983d6a38635,test,face,,https://www.flickr.com/photos/istolethetv/4185656467,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/istolethetv/,istolethetv,0.0,eval3
+a915c5ac08fa3427,test,face,,https://www.flickr.com/photos/cityofop/7639153862/,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/cityofop/,City of Overland Park,,eval3
+ef48644e009c27dd,test,face,,https://www.flickr.com/photos/girlguidesofcan/8270474692,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/girlguidesofcan/,Girl Guides of Canada,0.0,eval3
+f53f89717f18f5cd,test,face,,https://www.flickr.com/photos/afkgamer/2296943954,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/afkgamer/,Foton AFKGamer,,eval3
+34c5f2eb32067746,test,face,,https://www.flickr.com/photos/elqomri/15445602367,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/elqomri/,Rachid EL QOMRI,0.0,eval3
+4f531e31d5baa125,test,face,,https://www.flickr.com/photos/niaid/20894096852,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/niaid/,NIAID,0.0,eval3
+6600f199bc8901a0,test,face,,https://www.flickr.com/photos/bosstweed/1028296811,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/bosstweed/,Boss Tweed,0.0,eval3
+08d225a7d7608f22,test,face,,https://www.flickr.com/photos/lesjameshumor/2931598945,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/lesjameshumor/,Les James,0.0,eval3
+122a532ea63d7fae,test,face,,https://www.flickr.com/photos/timbalogh/4944362754,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/timbalogh/,Timothy Balogh,0.0,eval3
+c27fb24f6e783629,test,face,,https://www.flickr.com/photos/lucorreia/15799150813,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/lucorreia/,Luci Correia,0.0,eval3
+11a4c1e7c453c7d3,test,face,,https://www.flickr.com/photos/febs/442738058,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/febs/,febs,0.0,eval3
+f6f29f42092d3e3d,test,face,,https://www.flickr.com/photos/ufv/16471596513,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/ufv/,University of the Fraser Valley,0.0,eval3
+e82cb1cb39f8b6f6,test,face,,https://www.flickr.com/photos/128695443@N07/16015004240,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/128695443@N07/,Star Tsao,0.0,eval3
+9c38a9a33ae01238,test,face,,https://www.flickr.com/photos/amyselleck/16451030365,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/amyselleck/,Amy Selleck,0.0,eval3
+149dc282cdc2552d,test,face,,https://www.flickr.com/photos/rogefer/219649680,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/rogefer/,Rog,,eval3
+e92aa131df79d35a,test,face,,https://www.flickr.com/photos/bitshaker/839861552/,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/bitshaker/,Joe,0.0,eval3
+8a5c0c88f150bbbe,test,face,,https://www.flickr.com/photos/clark/55364905,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/clark/,Clark Gregor,0.0,eval3
+3f6c4b1460d0a9ba,test,face,,https://www.flickr.com/photos/moniquewingard/15877909691,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/moniquewingard/,Monique Wingard,0.0,eval3
+f561f396d339f248,test,face,,https://www.flickr.com/photos/glennclose/9788151523,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/glennclose/,Glenn Close News,0.0,eval3
+62a540c71e585ff6,test,face,,https://www.flickr.com/photos/atkinson000/6814468422,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/atkinson000/,Brandon Atkinson,0.0,eval3
+6e69790a76a99a53,test,face,,https://www.flickr.com/photos/vadimlavrusik/3618022079,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/vadimlavrusik/,Vadim Lavrusik,,eval3
+d5c2b7dcb7c4b00a,test,face,,https://www.flickr.com/photos/polentafria/4706188717,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/polentafria/,Ana Maria Dacol,0.0,eval3
+6fecb14618cecba6,test,face,,https://www.flickr.com/photos/davidchief/3937480966,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/davidchief/,David Martyn Hunt,0.0,eval3
+74373c3f097fab97,test,face,,https://www.flickr.com/photos/lennartt/8675334383,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/lennartt/,Lennart Tange,0.0,eval3
+580308b950c6d0eb,test,face,,https://www.flickr.com/photos/neogabox/3969921829,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/neogabox/,Gabriel S. Delgado C.,0.0,eval3
+df6ef705ef356231,test,face,,https://www.flickr.com/photos/o5com/5824425017,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/o5com/,o5com,,eval3
+917a0ee50293cca0,test,face,,https://www.flickr.com/photos/louisephotography/1106732943,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/louisephotography/,Louise McLaren,,eval3
+7ca8fb57107d5c65,test,face,,https://www.flickr.com/photos/evoljennifer/6005074601,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/evoljennifer/,Jen B,0.0,eval3
+d6f07ebe795b4c9f,test,face,,https://www.flickr.com/photos/mseckington/2451059732,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/mseckington/,Melinda Seckington,0.0,eval3
+4a57cf2098c55913,test,face,,https://www.flickr.com/photos/nojofoto/8328932947,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/nojofoto/,Jose A. Perez,0.0,eval3
+0183cf2e08e5e56a,test,face,,https://www.flickr.com/photos/moto_club4ag/11097541966,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/moto_club4ag/,Moto &quot;Club4AG&quot; Miwa,0.0,eval3
+8536b5c4f98a3927,test,face,,https://www.flickr.com/photos/jorge-11/2450800427,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/jorge-11/,George M. Groutas,0.0,eval3
+ab94af1d1817c909,test,face,,https://www.flickr.com/photos/ampfoto/8850151867,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/ampfoto/,Alejandro  Martinez,0.0,eval3
+215b6ef1b51fc42a,test,face,,https://www.flickr.com/photos/feriavalladolid/8615046605/,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/feriavalladolid/,Feria de Valladolid,0.0,eval3
+a244c41dc3d8e275,test,face,,https://www.flickr.com/photos/limpciano/3830108892,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/limpciano/,Luciano Consolini,,eval3
+c426c249a25bdfe3,test,face,,https://www.flickr.com/photos/105149628@N06/15931237677,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/105149628@N06/,Harry Kramer,0.0,eval3
+f3b56c8e67b8981f,test,face,,https://www.flickr.com/photos/33755808@N08/3430282456,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/33755808@N08/,yaybiscuits123,,eval3
+79e14209e24eebb9,test,face,,https://www.flickr.com/photos/soldiersmediacenter/3573385338,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/soldiersmediacenter/,The U.S. Army,0.0,eval3
+658a66416de630c1,test,face,,https://www.flickr.com/photos/mrcangrejero/9002653373,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/mrcangrejero/,Roberto Nieves,0.0,eval3
+8d9c7324496a3255,test,face,,https://www.flickr.com/photos/hdptcar/2398428299,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/hdptcar/,hdptcar,0.0,eval3
+c5e24349b62ff866,test,face,,https://www.flickr.com/photos/volekm/8508035653,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/volekm/,Michael  Volek,0.0,eval3
+175d8dfcc58f0e05,test,face,,https://www.flickr.com/photos/g_jewels/4438953213,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/g_jewels/,&quot;G&quot; jewels g is for grandma,0.0,eval3
+5aefa41142b34383,test,face,,https://www.flickr.com/photos/codeweekat/15239873710/,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/codeweekat/,codeweek austria,0.0,eval3
+7e7ce8b84f472f39,test,face,,https://www.flickr.com/photos/twak/4695267487,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/twak/,twak,0.0,eval3
+aa8eff0c3ac6046a,test,face,,https://www.flickr.com/photos/oerafrica/7425092562,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/oerafrica/,OER Africa,0.0,eval3
+b0f466af2ebe9142,test,face,,https://www.flickr.com/photos/kaverkev/8374659228,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/kaverkev/,Kevin Gallaway,0.0,eval3
+f18cb7c032d04483,test,face,,https://www.flickr.com/photos/submarin/3793491928,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/submarin/,Marin Nikolov,0.0,eval3
+7aa9f132eba66f51,test,face,,https://www.flickr.com/photos/dirkhansen/15383791266,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/dirkhansen/,SD Dirk,0.0,eval3
+376637b52e824afd,test,face,,https://www.flickr.com/photos/34517490@N00/9860109373,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/34517490@N00/,Nick,0.0,eval3
+608623a553ac1356,test,face,,https://www.flickr.com/photos/firepile/98090244/,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/firepile/,Robin Zebrowski,0.0,eval3
+efe9afe253cd4ee0,test,face,,https://www.flickr.com/photos/trotaper/6315895471,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/trotaper/,Elias Nahum Portes Ruiz,0.0,eval3
+7529447018400e31,test,face,,https://www.flickr.com/photos/christopheradams/13957808614/,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/christopheradams/,Christopher Adams,0.0,eval3
+f4c8843399d5dab8,test,face,,https://www.flickr.com/photos/lisap/304989380,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/lisap/,Lisa Padilla,0.0,eval3
+6aefc393216853f8,test,face,,https://www.flickr.com/photos/tehsfoto/15402929336,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/tehsfoto/,Tehsigo Eternamente (J Mondragon),,eval3
+addd2b526748b761,test,face,,https://www.flickr.com/photos/kirbyurner/7027309161,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/kirbyurner/,thekirbster,0.0,eval3
+153370b74aaf19e0,test,face,,https://www.flickr.com/photos/armymedicine/6121794386,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/armymedicine/,Army Medicine,0.0,eval3
+975a99fe56ba0ca1,test,face,,https://www.flickr.com/photos/ivanatm/4966914240,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/ivanatm/,ivanatman,0.0,eval3
+7455e034ec1f4a71,test,face,,https://www.flickr.com/photos/dierkschaefer/6414532161,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/dierkschaefer/,dierk schaefer,,eval3
+49b5655d76b69134,test,face,,https://www.flickr.com/photos/skyfire/2958391751,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/skyfire/,Phil Long,0.0,eval3
+68810b6bdbf381cd,test,face,,https://www.flickr.com/photos/tabor-roeder/10690066394,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/tabor-roeder/,Phil Roeder,0.0,eval3
+7ff6888b2a3f627d,test,face,,https://www.flickr.com/photos/foxypar4/415467077,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/foxypar4/,John Haslam,0.0,eval3
+5dc51b7f52e9e5fd,test,face,,https://www.flickr.com/photos/126773103@N08/15141082062,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/126773103@N08/,Akilles De Picosekunti,0.0,eval3
+f0d1d276bd97a932,test,face,,https://www.flickr.com/photos/magicrobot/4449299171,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/magicrobot/,Rick,0.0,eval3
+a7dc3926f2ff1817,test,face,,https://www.flickr.com/photos/ky_olsen/5399038158,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/ky_olsen/,Ky,,eval3
+7e2636d51ca05f34,test,face,,https://www.flickr.com/photos/blachswan/14122987489,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/blachswan/,Ed Dunens,0.0,eval3
+c0c7e2f9472a24ca,test,face,,https://www.flickr.com/photos/afgmatters/4291211797,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/afgmatters/,Afghanistan Matters,0.0,eval3
+b4cce243ea2945a2,test,face,,https://www.flickr.com/photos/mojosaurus/2520501385,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/mojosaurus/,Ishwar,,eval3
+ec2f119989cd05b2,test,face,,https://www.flickr.com/photos/nabuhunso/8329724517,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/nabuhunso/,nabuhunso,0.0,eval3
+e6a817fd29857ee4,test,face,,https://www.flickr.com/photos/cdaltorricon/168606173,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/cdaltorricon/,Club Deportivo Altorricón,0.0,eval3
+6e7522db5d41057f,test,face,,https://www.flickr.com/photos/android-a/19029049804,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/android-a/,Camila G.,,eval3
+a6dde41d9dd261db,test,face,,https://www.flickr.com/photos/heresialoira/5184732713,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/heresialoira/,Juliana Dacoregio,,eval3
+1963ebc58aaf9ea9,test,face,,https://www.flickr.com/photos/viajebolivia/6739060023/,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/viajebolivia/,Viaje a Bolivia,0.0,eval3
+95dd4d3b2aa3504d,test,face,,https://www.flickr.com/photos/radiofabrik/16032496901,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/radiofabrik/,Radiofabrik - Community Media Association Salzburg,0.0,eval3
+041fd507c93b63fc,test,face,,https://www.flickr.com/photos/jeepersmedia/11940873903,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/jeepersmedia/,Mike Mozart,0.0,eval3
+a9c3ce7702328ce9,test,face,,https://www.flickr.com/photos/8136496@N05/15085875835,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/8136496@N05/,terren in Virginia,0.0,eval3
+99ecce47b810b0f2,test,face,,https://www.flickr.com/photos/fadil/5924376,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/fadil/,Fadil Elmansour,0.0,eval3
+275c906da3ca9fac,test,face,,https://www.flickr.com/photos/thearches/8243362357,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/thearches/,TheArches,0.0,eval3
+3a3d3a3b9129120d,test,face,,https://www.flickr.com/photos/gruene-bremen/484952807,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/gruene-bremen/,gruene-bremen-neustadt,,eval3
+5da21d43cd5f05a4,test,face,,https://www.flickr.com/photos/kullez/7257983812,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/kullez/,Kullez,0.0,eval3
+094edb34d77b9e27,test,face,,https://www.flickr.com/photos/kkendall/6321632390,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/kkendall/,K. Kendall,0.0,eval3
+e0fbdcf42d4d4a0d,test,face,,https://www.flickr.com/photos/hasselbergers/8731814066,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/hasselbergers/,Lynn  Hasselberger,0.0,eval3
+a24feca817a8cf83,test,face,,https://www.flickr.com/photos/polandeze/464259512,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/polandeze/,Andrew,0.0,eval3
+c152e5380eb1b023,test,face,,https://www.flickr.com/photos/barty/16663491818,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/barty/,Barry Badcock,0.0,eval3
+287e8117b189b528,test,face,,https://www.flickr.com/photos/rotaplast/8657425535,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/rotaplast/,Rotaplast International,,eval3
+02faf16985aa399a,test,face,,https://www.flickr.com/photos/dolboeb/56016905,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/dolboeb/,Anton Nossik,,eval3
+6b5b75acfee3d823,test,face,,https://www.flickr.com/photos/65018577@N05/6011680146,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/65018577@N05/,j_10suited,0.0,eval3
+fac73742d51af0a3,test,face,,https://www.flickr.com/photos/28391140@N03/8489193231,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/28391140@N03/,ChiLam Ly,0.0,eval3
+fb34859dac9d6acc,test,face,,https://www.flickr.com/photos/info-ntfk/3952991127,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/info-ntfk/,Kommunikasjonsavdelingen NTFK,0.0,eval3
+3906f88e099fc6d6,test,face,,https://www.flickr.com/photos/johntcraig/2262889889,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/johntcraig/,rnjtc1,0.0,eval3
+919228a0d46b07f8,test,face,,https://www.flickr.com/photos/democracychronicles/15003220442,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/democracychronicles/,Democracy Chronicles,,eval3
+bfd36174b9f3e2d0,test,face,,https://www.flickr.com/photos/iandustries/8341335418,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/iandustries/,iandustries,0.0,eval3
+aa769633310bbb75,test,face,,https://www.flickr.com/photos/guyfwicke/4322094897,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/guyfwicke/,Guy F. Wicke,0.0,eval3
+6d15472c3e1cfb9a,test,face,,https://www.flickr.com/photos/glenmaclarty/5741443677,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/glenmaclarty/,Glen MacLarty,0.0,eval3
+73bc60f2db2f1e0f,test,face,,https://www.flickr.com/photos/tracyhunter/107921884,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/tracyhunter/,Tracy Hunter,0.0,eval3
+d6432abbb91df5bc,test,face,,https://www.flickr.com/photos/gracefamily/3320240495,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/gracefamily/,Peter &amp; Joyce Grace,0.0,eval3
+5b19c76f1b2c55e9,test,face,,https://www.flickr.com/photos/irinaslutsky/10008745,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/irinaslutsky/,irina slutsky,0.0,eval3
+cd40085421315cf2,test,face,,https://www.flickr.com/photos/roland/7403422886,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/roland/,Roland Tanglao,0.0,eval3
+5bc8a1ca21785819,test,face,,https://www.flickr.com/photos/jimregan/5639956537,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/jimregan/,Jim O&#x27;Regan,0.0,eval3
+c989f48e6b2e42ff,test,face,,https://www.flickr.com/photos/martakat/16089691604,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/martakat/,martakat83,0.0,eval3
+8190fcfcb5626f39,test,face,,https://www.flickr.com/photos/com_salud/8887298593,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/com_salud/,COM SALUD Agencia de comunicación,0.0,eval3
+a951ed53d33702ed,test,face,,https://www.flickr.com/photos/jessicamullen/9089286894,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/jessicamullen/,jessica mullen,0.0,eval3
+14a2b2a898f29257,test,face,,https://www.flickr.com/photos/ekigyuu/8647721179,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/ekigyuu/,Noodles and Beef,0.0,eval3
+ac29bf05cc5fceec,test,face,,https://www.flickr.com/photos/mengwong/2676517848,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/mengwong/,Meng Weng Wong,0.0,eval3
+baca4c06b4fa45db,test,face,,https://www.flickr.com/photos/chloe04/2268861117,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/chloe04/,Chloe,0.0,eval3
+b15333cf34916283,test,face,,https://www.flickr.com/photos/san_drino/5523446953,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/san_drino/,SAN_DRINO,0.0,eval3
+01c9df80cc308a8e,test,face,,https://www.flickr.com/photos/pvdanl/7581740758,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/pvdanl/,Partij van de Arbeid,0.0,eval3
+95c830b6e4afc8dc,test,face,,https://www.flickr.com/photos/veni/4607092352,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/veni/,Veni,0.0,eval3
+6d2e2055bb9a571a,test,face,,https://www.flickr.com/photos/rethwill/9614157074,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/rethwill/,Oscar  Rethwill,0.0,eval3
+21a738d92d9a5fc2,test,face,,https://www.flickr.com/photos/accdistrict/19673788189,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/accdistrict/,Austin Community College,0.0,eval3
+97435037ef0540b5,test,face,,https://www.flickr.com/photos/vermazeren/14159342595,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/vermazeren/,Arend,0.0,eval3
+66bc8b0b5351fd4c,test,face,,https://www.flickr.com/photos/tupwanders/91103449/,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/tupwanders/,tup wanders,0.0,eval3
+46c2b8444dc99ecd,test,face,,https://www.flickr.com/photos/pixietart/4507096,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/pixietart/,Jenene Chesbrough,0.0,eval3
+0812c925577193d4,test,face,,https://www.flickr.com/photos/pocius/15690746236,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/pocius/,Bryan Pocius,0.0,eval3
+84036401bb771e84,test,face,,https://www.flickr.com/photos/motsy27jonas/3838344615,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/motsy27jonas/,samborowski,,eval3
+2941623ea6aa2801,test,face,,https://www.flickr.com/photos/kstepanoff/6841251135,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/kstepanoff/,Konstantin Stepanov,0.0,eval3
+76bdf88e3e9f74d8,test,face,,https://www.flickr.com/photos/dumbledad/3394942209,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/dumbledad/,Tim Regan,0.0,eval3
+0bfa36f9dce28dd1,test,face,,https://www.flickr.com/photos/jdickert/5808467226/,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/jdickert/,ilovebutter,0.0,eval3
+322b130888136cfc,test,face,,https://www.flickr.com/photos/92547389@N06/19642577476,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/92547389@N06/,sebastien loubet,0.0,eval3
+9db81c0d930ca01a,test,face,,https://www.flickr.com/photos/tonyveloz/15862966838,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/tonyveloz/,Tony V,0.0,eval3
+9b4245b82e50c3f1,test,face,,https://www.flickr.com/photos/topgold/6185522,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/topgold/,Bernard Goldbach,0.0,eval3
+ee61e7e3c09c4abc,test,face,,https://www.flickr.com/photos/tommygunnphotography/3657274175,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/tommygunnphotography/,Thomas Beck,0.0,eval3
+44b5f7da770971e6,test,face,,https://www.flickr.com/photos/kissra/7367830708,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/kissra/,Kissra Lynnkay,,eval3
+21f28ce49c38faf9,test,face,,https://www.flickr.com/photos/rulenumberone2/15184947848,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/rulenumberone2/,rulenumberone2,0.0,eval3
+e183fe966c822cd4,test,face,,https://www.flickr.com/photos/dantaylor/154676654,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/dantaylor/,Dan Taylor-Watt,0.0,eval3
+452b3f9854d5bf30,test,face,,https://www.flickr.com/photos/calu777/1861890595,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/calu777/,Carlos Correa Loyola,0.0,eval3
+737e6bd08f691d7d,test,face,,https://www.flickr.com/photos/opie/350512039,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/opie/,theopie,0.0,eval3
+801a22eb361e3623,test,face,,https://www.flickr.com/photos/ronmacphotos/4941706006,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/ronmacphotos/,Ronnie Macdonald,0.0,eval3
+453c3ebba4fd7e36,test,face,,https://www.flickr.com/photos/gracewong/331771873,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/gracewong/,Tommy Wong,0.0,eval3
+3fa1aef1e34861da,test,face,,https://www.flickr.com/photos/armandofarelphotographer/20009959441,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/armandofarelphotographer/,Armando Farel,0.0,eval3
+2dd3af0ce5bfd890,test,face,,https://www.flickr.com/photos/greginhollywood/6255815409,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/greginhollywood/,Greg Hernandez,0.0,eval3
+77f65889d721922d,test,face,,https://www.flickr.com/photos/kitpfish/562340824,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/kitpfish/,KitAy,0.0,eval3
+8aeb175ee2f5f699,test,face,,https://www.flickr.com/photos/47368435@N08/15326864449,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/47368435@N08/,Noreen Hirschfeld,0.0,eval3
+48e6abc150f1cc76,test,face,,https://www.flickr.com/photos/clender/22115749069,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/clender/,Carl Lender,0.0,eval3
+29cd876cf426d9dc,test,face,,https://www.flickr.com/photos/aibiosolutions/8473071434/,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/aibiosolutions/,Alberta Innovates Bio Solutions,0.0,eval3
+6814535e16066c0d,test,face,,https://www.flickr.com/photos/stephen_d_luke/15422530599,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/stephen_d_luke/,Stephen Luke,0.0,eval3
+c5be3a2c67ca6cd0,test,face,,https://www.flickr.com/photos/lmdo/5449378049,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/lmdo/,Linh Do,0.0,eval3
+c87dbc8dfa7e0493,test,face,,https://www.flickr.com/photos/sundaykofax/2448055644,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/sundaykofax/,Sonya Green,,eval3
+e4037f448ebd1fbc,test,face,,https://www.flickr.com/photos/clonroadennis/5843251437/,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/clonroadennis/,Clonroad Ennis Ireland,0.0,eval3
+9b71dea6efdef5de,test,face,,https://www.flickr.com/photos/casalmaly/3472811415,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/casalmaly/,CasalMALY,0.0,eval3
+68a2511c5a01bd02,test,face,,https://www.flickr.com/photos/3peanuts/14631969083,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/3peanuts/,Three Peanuts,0.0,eval3
+3aa5042aca2cb002,test,face,,https://www.flickr.com/photos/fores_se/8651437223,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/fores_se/,FORES,0.0,eval3
+6a07611b2fa889ca,test,face,,https://www.flickr.com/photos/48048967@N07/4402981393,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/48048967@N07/,RobinExpects,0.0,eval3
+07fba7b700b8bbfa,test,face,,https://www.flickr.com/photos/horsepowerandheels/3725977533,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/horsepowerandheels/,Erica Ortiz,0.0,eval3
+536f0545861049a6,test,face,,https://www.flickr.com/photos/brettneilson/6144941256,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/brettneilson/,Brett Neilson,0.0,eval3
+80ca56c3429dbb60,test,face,,https://www.flickr.com/photos/nat507/10914693853,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/nat507/,Nathan Hughes Hamilton,,eval3
+50cbad8bc322d435,test,face,,https://www.flickr.com/photos/ektogamat/2596440470,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/ektogamat/,Anderson Mancini,0.0,eval3
+f0543478295ef1a2,test,face,,https://www.flickr.com/photos/vanillaandlaceblog/5302867818,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/vanillaandlaceblog/,Abi Porter,0.0,eval3
+ee6195b8e2f6ddf3,test,face,,https://www.flickr.com/photos/michellecsilva/16389076015,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/michellecsilva/,Michelle Silva,0.0,eval3
+fd7ca8c746d4a41e,test,face,,https://www.flickr.com/photos/neilrickards/141520893/,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/neilrickards/,Neil Rickards,0.0,eval3
+a159c5f932b1333b,test,face,,https://www.flickr.com/photos/alarzy/4338733452,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/alarzy/,Omarukai,0.0,eval3
+54388f5a5ba4310b,test,face,,https://www.flickr.com/photos/smartcities/2878912876,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/smartcities/,Smart Cities,0.0,eval3
+c8afa2284be4a88c,test,face,,https://www.flickr.com/photos/seniju/16907330102,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/seniju/,Seniju,0.0,eval3
+98c5ead16c556fa1,test,face,,https://www.flickr.com/photos/peasap/526738768,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/peasap/,peasap,0.0,eval3
+5ada7c74d1976a59,test,face,,https://www.flickr.com/photos/gesses/184772017,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/gesses/,George Esses,,eval3
+3e63c9c15af6a42d,test,face,,https://www.flickr.com/photos/wagnerinno/4837770270,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/wagnerinno/,Wagner  Innocencio Cardoso,0.0,eval3
+314563fa020840f8,test,face,,https://www.flickr.com/photos/indi/11759975,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/indi/,Indi Samarajiva,0.0,eval3
+2718a5d46dc8ece0,test,face,,https://www.flickr.com/photos/arandall/3035640232,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/arandall/,Angela Schmeidel Randall,0.0,eval3
+6816f5a103d0a745,test,face,,https://www.flickr.com/photos/desaparezca/2741130235/,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/desaparezca/,desaparezca .net,0.0,eval3
+919665847fe5736b,test,face,,https://www.flickr.com/photos/29047966@N05/18345322912,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/29047966@N05/,taz + belly,,eval3
+886c30b5d4b6a60f,test,face,,https://www.flickr.com/photos/herry/1812672475,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/herry/,Herry Lawford,,eval3
+a35a35d8648deddf,test,face,,https://www.flickr.com/photos/14113303@N07/2513819247,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/14113303@N07/,Ninoska Zamora,0.0,eval3
+18534b1fd0a0dd43,test,face,,https://www.flickr.com/photos/cbnsp/4921266758,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/cbnsp/,Milton Jung,0.0,eval3
+f20f3b42ab62a3fb,test,face,,https://www.flickr.com/photos/gogostevie/4532216962,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/gogostevie/,Stephen Harlan,0.0,eval3
+af4cb4dedc8b86fe,test,face,,https://www.flickr.com/photos/laurenmanning/1263390505,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/laurenmanning/,Lauren Manning,0.0,eval3
+adaaa63b5248b8bb,test,face,,https://www.flickr.com/photos/pesik/2987198387,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/pesik/,Eric Pesik,0.0,eval3
+02968452eb79fceb,test,face,,https://www.flickr.com/photos/7armyjmtc/20764852089,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/7armyjmtc/,7th Army  Joint Multinational Training Command,0.0,eval3
+b51a6483ce115488,test,face,,https://www.flickr.com/photos/trevorandmarjee/2961329922,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/trevorandmarjee/,Trevor Owens,0.0,eval3
+8128344b50d9b3a9,test,face,,https://www.flickr.com/photos/65018577@N05/6011682260,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/65018577@N05/,j_10suited,0.0,eval3
+21974a495e0f6bb6,test,face,,https://www.flickr.com/photos/kate_green/4656303429,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/kate_green/,kate_xo,0.0,eval3
+f0520cf6a9eaff69,test,face,,https://www.flickr.com/photos/edenpictures/19714812915,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/edenpictures/,"Eden, Janine and Jim",,eval3
+8902bdd94408407d,test,face,,https://www.flickr.com/photos/ipdegirl/7984137653,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/ipdegirl/,Jenni C,0.0,eval3
+258e9932344a5fd1,test,face,,https://www.flickr.com/photos/bravenewtraveler/2275900255,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/bravenewtraveler/,Ian MacKenzie,0.0,eval3
+9e8b038858521f95,test,face,,https://www.flickr.com/photos/72562013@N06/14007653984,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/72562013@N06/,Chris Phutully,,eval3
+45dffac623f1a4aa,test,face,,https://www.flickr.com/photos/apes_abroad/14116602351,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/apes_abroad/,Colin and Sarah Northway,0.0,eval3
+0858ec43587967bf,test,face,,https://www.flickr.com/photos/fotoblasete/8645896870,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/fotoblasete/,José Antonio Alonso,0.0,eval3
+249b08fd010a89d5,test,face,,https://www.flickr.com/photos/39045500@N08/4751895315,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/39045500@N08/,Bilwanath Chatterjee,0.0,eval3
+3399041669dbc938,test,face,,https://www.flickr.com/photos/robin1966/13652705793,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/robin1966/,Micolo J,0.0,eval3
+e8d2686237861e46,test,face,,https://www.flickr.com/photos/criticalmoss/150468195,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/criticalmoss/,Critical Moss,0.0,eval3
+5f8af20a1252358d,test,face,,https://www.flickr.com/photos/h3nr0/15501720848,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/h3nr0/,Henry Tseng,0.0,eval3
+e0f0d806c56c0456,test,face,,https://www.flickr.com/photos/apoorvaj/7663125444,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/apoorvaj/,Apoorva Jinka,0.0,eval3
+703b13b1f0db569f,test,face,,https://www.flickr.com/photos/95669013@N00/378590501,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/95669013@N00/,Ned Rust,0.0,eval3
+d8324c5681f24b8b,test,face,,https://www.flickr.com/photos/krystynana/2278592775,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/krystynana/,Cristina Ivan,,eval3
+360fc1faeddf8ea1,test,face,,https://www.flickr.com/photos/79173061@N08/18864186151,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/79173061@N08/,KNAW Koninklijke Nederlandse Akademie van Wetenschappen,0.0,eval3
+969b95fb9189bf9c,test,face,,https://www.flickr.com/photos/34517490@N00/2755000618,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/34517490@N00/,Nick,0.0,eval3
+8c7990d91edbd4a8,test,face,,https://www.flickr.com/photos/jenniferjoan/9052204089,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/jenniferjoan/,jenniferjoan,0.0,eval3
+0fe5c702f70fbd3e,test,face,,https://www.flickr.com/photos/57759968@N02/5322973169,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/57759968@N02/,Catholicus Fluminensis,,eval3
+57431f877326e5ff,test,face,,https://www.flickr.com/photos/marc_smith/3406385512,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/marc_smith/,Marc Smith,0.0,eval3
+6bcc4e606731a919,test,face,,https://www.flickr.com/photos/ardyiii/749079932,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/ardyiii/,Arden,,eval3
+a5d3553c96dd5bf3,test,face,,https://www.flickr.com/photos/marinomiculan/6319987498,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/marinomiculan/,Marino Miculan,0.0,eval3
+a35eca92fd19a4c1,test,face,,https://www.flickr.com/photos/artfulblogger/3427094481,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/artfulblogger/,artfulblogger,,eval3
+1ed92eb88aa1de0f,test,face,,https://www.flickr.com/photos/budawood/7087002997,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/budawood/,budawood,0.0,eval3
+5fc55b8ccbbfe4ba,test,face,,https://www.flickr.com/photos/erin_costa/6270627379,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/erin_costa/,Erin Costa,0.0,eval3
+2c5b611f3a46d978,test,face,,https://www.flickr.com/photos/uwekrella/20607994144,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/uwekrella/,Uwe Krella,,eval3
+069edc3e4a3de81d,test,face,,https://www.flickr.com/photos/97810305@N08/9577892004,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/97810305@N08/,j_cadmus,,eval3
+55decf157c858e57,test,face,,https://www.flickr.com/photos/lifeofpei/172416871,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/lifeofpei/,gniliep,0.0,eval3
+2df9cabac275846b,test,face,,https://www.flickr.com/photos/millermz/9120654035,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/millermz/,Michael Miller,0.0,eval3
+045a1143c52f9690,test,face,,https://www.flickr.com/photos/mediodescocido/16993176358,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/mediodescocido/,MEDIODESCOCIDO,0.0,eval3
+74ca13767167e6d1,test,face,,https://www.flickr.com/photos/65537394@N06/7074841337,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/65537394@N06/,ToddAndre,0.0,eval3
+f2e2506e165a69a3,test,face,,https://www.flickr.com/photos/jimanddi/5861023688,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/jimanddi/,James Rosie,,eval3
+1610a4214ecb8e8d,test,face,,https://www.flickr.com/photos/minicooper93402/8051751679/,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/minicooper93402/,devra,0.0,eval3
+e2628445509a15fa,test,face,,https://www.flickr.com/photos/sharadaprasad/9411447169,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/sharadaprasad/,Sharada Prasad CS,0.0,eval3
+4526441f335c313a,test,face,,https://www.flickr.com/photos/orsorama/190887777,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/orsorama/,Franco Dal Molin,0.0,eval3
+4ee8581f57984ebc,test,face,,https://www.flickr.com/photos/dajoka2/15422665432,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/dajoka2/,Daquon Williams,0.0,eval3
+b8131a9c01241eba,test,face,,https://www.flickr.com/photos/twistednerve/7049321557,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/twistednerve/,TwistedNerve,0.0,eval3
+1d427f709b2f5e21,test,face,,https://www.flickr.com/photos/davidrosenphotography/14348393770,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/davidrosenphotography/,David Rosen,0.0,eval3
+9998341cd25a917d,test,face,,https://www.flickr.com/photos/foqus/3780601433,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/foqus/,Marco,0.0,eval3
+25ff747e52dbb90b,test,face,,https://www.flickr.com/photos/yto/4403063251,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/yto/,Tatsuo Yamashita,0.0,eval3
+dbc0680fa656c823,test,face,,https://www.flickr.com/photos/allaction/15297740112/,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/allaction/,lhourahane,0.0,eval3
+67ef4067cc9531d7,test,face,,https://www.flickr.com/photos/kurafire/8234798627,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/kurafire/,Faruk Ateş,0.0,eval3
+76ae999767821b21,test,face,,https://www.flickr.com/photos/sportfiskeakademin2012/8553335833,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/sportfiskeakademin2012/,Fiske 2012,0.0,eval3
+9bb7c3ba43000e79,test,face,,https://www.flickr.com/photos/joannadr/3774256895,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/joannadr/,Joanna D R,,eval3
+58ccc673868716e2,test,face,,https://www.flickr.com/photos/watchingyou/5008178276,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/watchingyou/,Watching You,0.0,eval3
+5b865b9e08332d79,test,face,,https://www.flickr.com/photos/tsausawest/7110953147,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/tsausawest/,Salvation Army USA West,0.0,eval3
+8f8278b8fa1ee02b,test,face,,https://www.flickr.com/photos/kaldoche/6822012975,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/kaldoche/,Thierry Draus,0.0,eval3
+6ad899899bd312be,test,face,,https://www.flickr.com/photos/slushpup/341602166,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/slushpup/,Dani Lurie,,eval3
+81d50a18676de340,test,face,,https://www.flickr.com/photos/quinet/9993514905,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/quinet/,Thomas Quine,0.0,eval3
+df438d38ff6da2cc,test,face,,https://www.flickr.com/photos/claudiogennari/3734433913,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/claudiogennari/,Claudio Gennari,0.0,eval3
+cf814b8e87760635,test,face,,https://www.flickr.com/photos/mattgosselin/5972738707,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/mattgosselin/,Matthew Gosselin,0.0,eval3
+95862bd549fbc254,test,face,,https://www.flickr.com/photos/rickmccharles/4835769426,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/rickmccharles/,Rick McCharles,,eval3
+8ab838bbf43782bb,test,face,,https://www.flickr.com/photos/aboutinform/6574057975,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/aboutinform/,Nasrullah lander,0.0,eval3
+6657cd2b34087445,test,face,,https://www.flickr.com/photos/milishor/2653562934,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/milishor/,Milishor,0.0,eval3
+6f7831f8fc471205,test,face,,https://www.flickr.com/photos/tifwarmowski/7808620,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/tifwarmowski/,tifhermon,,eval3
+190d1af3cb805f47,test,face,,https://www.flickr.com/photos/popularesvalencianos/5980855142,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/popularesvalencianos/,Partido Popular Comunitat Valenciana,0.0,eval3
+a91055125f2815b4,test,face,,https://www.flickr.com/photos/yenidem/3418510052,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/yenidem/,metin.gul,0.0,eval3
+fb5f1a135002d278,test,face,,https://www.flickr.com/photos/neeta_lind/2791172001,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/neeta_lind/,Neeta Lind,0.0,eval3
+5206f2fe01f4523f,test,face,,https://www.flickr.com/photos/lecrajane/15157541816,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/lecrajane/,lecrajane,0.0,eval3
+08f8d8b95e0e3b52,test,face,,https://www.flickr.com/photos/deervalleyhighschool/5038352124,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/deervalleyhighschool/,Photo&#x27;s By: Tiffany Silva,0.0,eval3
+59a4ddc87b52a576,test,face,,https://www.flickr.com/photos/kmikaze/3082063561,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/kmikaze/,Thiago Baldesin,0.0,eval3
+431ec17290b0f970,test,face,,https://www.flickr.com/photos/familymwr/5548057120,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/familymwr/,U.S. Army,0.0,eval3
+438a06167df517dd,test,face,,https://www.flickr.com/photos/roogi/233202597,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/roogi/,roogi,0.0,eval3
+75675fffa4feed4c,test,face,,https://www.flickr.com/photos/washingtonguard/14768916252,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/washingtonguard/,Washington National Guard,0.0,eval3
+a36ba74f6f8de249,test,face,,https://www.flickr.com/photos/dan4th/4354878410,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/dan4th/,Dan4th Nicholas,0.0,eval3
+a32957f68454585d,test,face,,https://www.flickr.com/photos/atbaker/5220192864,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/atbaker/,Adam Baker,0.0,eval3
+bfdf1e9ec172b72b,test,face,,https://www.flickr.com/photos/taymtaym/13822842874,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/taymtaym/,taymtaym,0.0,eval3
+15f8d68f9f6b72eb,test,face,,https://www.flickr.com/photos/wbrianwhite/210968739/,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/wbrianwhite/,memerot,0.0,eval3
+3b1e5f2db61ba9f6,test,face,,https://www.flickr.com/photos/wimi/2393409816,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/wimi/,winnie-t,0.0,eval3
+bb71ce29b9eb94be,test,face,,https://www.flickr.com/photos/mauro9/2203825464,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/mauro9/,mauro,0.0,eval3
+5ddabc043dfbd2ef,test,face,,https://www.flickr.com/photos/lost__in__spain/2900665058,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/lost__in__spain/,Adriano Agulló,0.0,eval3
+f285faada073493c,test,face,,https://www.flickr.com/photos/slightlyterrific/5190325707,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/slightlyterrific/,kate gabrielle,0.0,eval3
+1e40a29c3f7f5165,test,face,,https://www.flickr.com/photos/ianmccormickphotos/16106913394,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/ianmccormickphotos/,Ian McCormick,0.0,eval3
+a68791943098a5c7,test,face,,https://www.flickr.com/photos/techcamp/16183994024,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/techcamp/,TechCampGlobal,0.0,eval3
+5161f0efe9c9f131,test,face,,https://www.flickr.com/photos/baltic-development-forum/4711697751,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/baltic-development-forum/,Baltic Development Forum,0.0,eval3
+8c94cd69d1baf6db,test,face,,https://www.flickr.com/photos/colinedwards/498099207,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/colinedwards/,colinedwards99,,eval3
+12af3e2960248132,test,face,,https://www.flickr.com/photos/dplanet/7455249794,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/dplanet/,Dplanet::,0.0,eval3
+f3d1141058f2b418,test,face,,https://www.flickr.com/photos/anathea/14871047498/,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/anathea/,Anathea Utley,0.0,eval3
+51e7e535f73e2940,test,face,,https://www.flickr.com/photos/wittcogmbh/14963535631,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/wittcogmbh/,wittco.gmbh,0.0,eval3
+8a9b698d9af1fce9,test,face,,https://www.flickr.com/photos/copyrightphotography/3734026201,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/copyrightphotography/,wazimu0,0.0,eval3
+5d4c3fc8a647aab2,test,face,,https://www.flickr.com/photos/17752691@N08/1849469127,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/17752691@N08/,saicheng899,,eval3
+5cd3cb5d66c81030,test,face,,https://www.flickr.com/photos/kartikeyakaul/5145964673/,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/kartikeyakaul/,Kartikeya Kaul,0.0,eval3
+4cc562e5ce7b00a2,test,face,,https://www.flickr.com/photos/beamillion/1387765215,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/beamillion/,Bea,0.0,eval3
+4c0c57f8bd8fa47c,test,face,,https://www.flickr.com/photos/borderlys/370116440,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/borderlys/,Lisa Cyr,0.0,eval3
+7b83d7d18abf997c,test,face,,https://www.flickr.com/photos/frontierofficial/15972797701,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/frontierofficial/,Frontierofficial,0.0,eval3
+d28e65cf1318a74f,test,face,,https://www.flickr.com/photos/olibac/13997736237,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/olibac/,OliBac,0.0,eval3
+03dbf59a72874d6a,test,face,,https://www.flickr.com/photos/budawood/7843905188,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/budawood/,budawood,0.0,eval3
+4dbadd6c67565a08,test,face,,https://www.flickr.com/photos/gregandjannelle/4697068368,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/gregandjannelle/,Greg + Jannelle,0.0,eval3
+73866c52e085a495,test,face,,https://www.flickr.com/photos/usacehq/5553253839,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/usacehq/,U.S. Army Corps of Engineers,0.0,eval3
+01880029d632730e,test,face,,https://www.flickr.com/photos/61421932@N08/7208853162,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/61421932@N08/,Colby Sharp,0.0,eval3
+82f886d34b64a554,test,face,,https://www.flickr.com/photos/kpbs/8699196395,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/kpbs/,KPBS Online,0.0,eval3
+1c0f6291dea1adb6,test,face,,https://www.flickr.com/photos/mrs_dy/6471400427,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/mrs_dy/,Mrs_Dy,0.0,eval3
+742b6bb537ab5244,test,face,,https://www.flickr.com/photos/ethanbeazleyphotography/4154050767,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/ethanbeazleyphotography/,Ethan Beazley,0.0,eval3
+440b48d2c61a0d15,test,face,,https://www.flickr.com/photos/realestatezebra/15745276947,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/realestatezebra/,Daniel Rothamel,,eval3
+1cab1d240388e0ba,test,face,,https://www.flickr.com/photos/kissyface/423140573/,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/kissyface/,kissyface,,eval3
+718dd559621875f9,test,face,,https://www.flickr.com/photos/wwworks/14974813700,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/wwworks/,woodleywonderworks,,eval3
+5db57be0b5dce48f,test,face,,https://www.flickr.com/photos/jenniferpoole/4994625078,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/jenniferpoole/,Jenny Poole,0.0,eval3
+031b6acf8f2b55da,test,face,,https://www.flickr.com/photos/fadilah23/15071673457,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/fadilah23/,FadilahPH,0.0,eval3
+ee37624f7a8e3969,test,face,,https://www.flickr.com/photos/byshafiu/5216793649,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/byshafiu/,Shafiu Hussain,0.0,eval3
+9824c25b61448b1b,test,face,,https://www.flickr.com/photos/32737303@N02/13913695355,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/32737303@N02/,Domenico,,eval3
+708497c146cab004,test,face,,https://www.flickr.com/photos/naomi_king/4374667227,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/naomi_king/,Naomi King,,eval3
+6526c76679d16b90,test,face,,https://www.flickr.com/photos/calvinsmith/12889734344,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/calvinsmith/,Calvin Smith,0.0,eval3
+33ab86ac5da73e7a,test,face,,https://www.flickr.com/photos/willmx/2416746043,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/willmx/,Will Jackson,0.0,eval3
+8f78e1594c459352,test,face,,https://www.flickr.com/photos/alanant/6000543578,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/alanant/,Illusive Photography,0.0,eval3
+297953fedfe0a2c0,test,face,,https://www.flickr.com/photos/kaja_a/5771349875,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/kaja_a/,Kaja Avberšek,0.0,eval3
+b4c37b9fe4cc1286,test,face,,https://www.flickr.com/photos/regionsdemocrates2010/4364232524,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/regionsdemocrates2010/,Régions Démocrates 2010,0.0,eval3
+fe68e63b3a26ba63,test,face,,https://www.flickr.com/photos/jessicafm/268936427,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/jessicafm/,Jessica Merz,0.0,eval3
+e4a1817aed94265e,test,face,,https://www.flickr.com/photos/airvibeznigeria/7843017370,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/airvibeznigeria/,airvibeznigeria,0.0,eval3
+6d3610017d813763,test,face,,https://www.flickr.com/photos/chemist80/3999524500/,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/chemist80/,Will Noakes,0.0,eval3
+b15d70fb3ba25739,test,face,,https://www.flickr.com/photos/fima-fr/4272468214,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/fima-fr/,fimafreidine,,eval3
+258bb4bd49e63b3a,test,face,,https://www.flickr.com/photos/dairocervantes/19459880410,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/dairocervantes/,Dairo Cervantes,0.0,eval3
+29c17576656506f6,test,negative,packaging,https://www.flickr.com/photos/tessawatson/372083167,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/tessawatson/,Tess Watson,0.0,eval3
+d7186489ca2926c4,test,negative,poster,https://www.flickr.com/photos/postmemes/15821754888,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/postmemes/,Post Memes,,eval3
+f619fc8b0adafbd1,test,negative,screen,https://www.flickr.com/photos/tolbxela/5850253135,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/tolbxela/,Tolbxela,,eval3
+9bb8d68503553ffd,test,negative,sculpture,https://www.flickr.com/photos/00ucci/283777672,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/00ucci/,00Ucci,,eval3
+6f394654f824f10b,test,negative,teddy_bear,https://www.flickr.com/photos/wendellsmith/11089213874,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/wendellsmith/,Wendell Smith,0.0,eval3
+1d07be9ffd5bffbf,test,negative,toy,https://www.flickr.com/photos/loiclemeur/4685030711,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/loiclemeur/,Loic Le Meur,0.0,eval3
+48bd724301172b15,test,negative,packaging,https://www.flickr.com/photos/38462165@N05/3922393026,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/38462165@N05/,Mechatronics Guy,0.0,eval3
+08fb4e699aa1ac0e,test,negative,poster,https://www.flickr.com/photos/cubiccavepearls/523243763,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/cubiccavepearls/,cubiccavepearls,0.0,eval3
+bb582e2e13d737d9,test,negative,screen,https://www.flickr.com/photos/whitefield_d/5960693025,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/whitefield_d/,whity,0.0,eval3
+cdee156f61db0184,test,negative,sculpture,https://www.flickr.com/photos/dalbera/4489839164,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/dalbera/,Jean-Pierre Dalbéra,0.0,eval3
+6e80ea00d36021d0,test,negative,teddy_bear,https://www.flickr.com/photos/kikoz/10075026026,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/kikoz/,gildas_f,0.0,eval3
+bdfbf438d315ec7d,test,negative,toy,https://www.flickr.com/photos/86624586@N00/5945774251,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/86624586@N00/,Kevin Walsh,0.0,eval3
+d1e0e207600c1b10,test,negative,packaging,https://www.flickr.com/photos/rickmccharles/3280091182,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/rickmccharles/,Rick McCharles,,eval3
+42bc9df7efec3600,test,negative,poster,https://www.flickr.com/photos/follow777/3235467944,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/follow777/,Milan Klusacek,0.0,eval3
+e7f7da97ef95a501,test,negative,screen,https://www.flickr.com/photos/jfanaian/7543434968,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/jfanaian/,Jamal Fanaian,,eval3
+5ad085fbfea8792c,test,negative,sculpture,https://www.flickr.com/photos/jason-riedy/19403186432,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/jason-riedy/,Jason Riedy,,eval3
+026533752e10b670,test,negative,teddy_bear,https://www.flickr.com/photos/21703472@N03/2139585136,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/21703472@N03/,gheitore,0.0,eval3
+98afb7205ec01897,test,negative,toy,https://www.flickr.com/photos/draco2008/8416061269,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/draco2008/,Draco2008,0.0,eval3
+fc3f0cc59eb790db,test,negative,packaging,https://www.flickr.com/photos/claudiarahanmetan/3460175682,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/claudiarahanmetan/,claudia.rahanmetan,0.0,eval3
+2bdf5a64a3580955,test,negative,poster,https://www.flickr.com/photos/katebarton2/6914351419,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/katebarton2/,K B,0.0,eval3
+bf669cd9e3413b78,test,negative,screen,https://www.flickr.com/photos/buridan/3679460150,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/buridan/,Jeremy hunsinger,0.0,eval3
+9e898b4e49b951c0,test,negative,sculpture,https://www.flickr.com/photos/meghinm/8343156447,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/meghinm/,Meghin Moore,0.0,eval3
+db575c6f71283436,test,negative,teddy_bear,https://www.flickr.com/photos/celticsaga/4845507135,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/celticsaga/,retna karunia,0.0,eval3
+11e139518a4b10d9,test,negative,toy,https://www.flickr.com/photos/78037110@N03/20263672400,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/78037110@N03/,LANE Boys RC,0.0,eval3
+0f7b5fade6eceafa,test,negative,packaging,https://www.flickr.com/photos/crobj/6221710276,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/crobj/,Clyde Robinson,,eval3
+51609ef506494dd0,test,negative,poster,https://www.flickr.com/photos/planetwrite/8746956780,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/planetwrite/,My Name,0.0,eval3
+d498384fec4a9d96,test,negative,screen,https://www.flickr.com/photos/vaara/4850689534,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/vaara/,Jouni Koo,0.0,eval3
+540c2133f7f673d7,test,negative,sculpture,https://www.flickr.com/photos/75972766@N02/14970908782,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/75972766@N02/,Takahiro Kyono,0.0,eval3
+74a814b01fff26b7,test,negative,teddy_bear,https://www.flickr.com/photos/honou/8481276853,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/honou/,Honou,0.0,eval3
+ec1414cde8a25c4f,test,negative,toy,https://www.flickr.com/photos/jeanfrancoisbeausejour/7315875660,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/jeanfrancoisbeausejour/,jeanfrancois beausejour,,eval3
+875349078c8c6701,test,negative,packaging,https://www.flickr.com/photos/johannakoll/14378188860,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/johannakoll/,johanna kollmann,0.0,eval3
+6aca090d80ec8eac,test,negative,poster,https://www.flickr.com/photos/kid_pro_quo/172110085,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/kid_pro_quo/,Allan Ferguson,,eval3
+2c137906fce91825,test,negative,screen,https://www.flickr.com/photos/glennbatuyong/3841898570,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/glennbatuyong/,Glenn Batuyong,,eval3
+d90d33fbcbf3d8e1,test,negative,sculpture,https://www.flickr.com/photos/mcrecycles/9091020073,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/mcrecycles/,Montgomery Cty Division of Solid Waste Services,0.0,eval3
+95578da6e2dc64c6,test,negative,teddy_bear,https://www.flickr.com/photos/matanguero/2273837962,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/matanguero/,Esteban Lagarde,0.0,eval3
+79b6e3caf7162b94,test,negative,toy,https://www.flickr.com/photos/tboard/6938839045,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/tboard/,Teresa Boardman,0.0,eval3
+fc69a2b22f846f9c,test,negative,packaging,https://www.flickr.com/photos/rstinnett/607731564,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/rstinnett/,Rob Stinnett,0.0,eval3
+640d20c0ea1d0a15,test,negative,poster,https://www.flickr.com/photos/htemske/14259869458,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/htemske/,Heather Temske,0.0,eval3
+e6b61fb6a84a7162,test,negative,screen,https://www.flickr.com/photos/katielips/2154520467,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/katielips/,Katie Lips,,eval3
+1d66157c9aa12a61,test,negative,sculpture,https://www.flickr.com/photos/akneale/3560418170/,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/akneale/,A.K.Neale,0.0,eval3
+eea8f1f65a00a549,test,negative,teddy_bear,https://www.flickr.com/photos/aspaonline/15942858582,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/aspaonline/,Aspa,,eval3
+814639c41164196c,test,negative,toy,https://www.flickr.com/photos/ekstra/1130949908,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/ekstra/,Baby Eksy,,eval3
+9ce5d5beefc691a2,test,negative,packaging,https://www.flickr.com/photos/36436323@N03/8169746636,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/36436323@N03/,beckstim1,0.0,eval3
+6cfce41d97ab9eb0,test,negative,poster,https://www.flickr.com/photos/textfiles/14853871853/,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/textfiles/,Jason Scott,0.0,eval3
+c67221f10c2b742d,test,negative,screen,https://www.flickr.com/photos/richardmoross/196080418,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/richardmoross/,Richard Moross,,eval3
+9b8febb88b945cb5,test,negative,sculpture,https://www.flickr.com/photos/wentzelepsy/3477121926,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/wentzelepsy/,Larry Wentzel,0.0,eval3
+1eac9eb06a2a657f,test,negative,teddy_bear,https://www.flickr.com/photos/davidmasters/3306467394,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/davidmasters/,David Masters,0.0,eval3
+c44cef1270aefe38,test,negative,toy,https://www.flickr.com/photos/ephotion/172575104,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/ephotion/,digicla,0.0,eval3
+ff2efbd114512147,test,negative,packaging,https://www.flickr.com/photos/39908901@N06/8239985660,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/39908901@N06/,m01229,0.0,eval3
+c8bcf7cd6b8c9ab4,test,negative,poster,https://www.flickr.com/photos/bihiku/5810173004,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/bihiku/,Info Bihiku,0.0,eval3
+93cd5c03afd22538,test,negative,screen,https://www.flickr.com/photos/dougbelshaw/5215038580,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/dougbelshaw/,Doug Belshaw,0.0,eval3
+b54173f0118d0b32,test,negative,sculpture,https://www.flickr.com/photos/8372469@N08/2098442964,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/thomascuelho/,Thomas CUELHO,0.0,eval3
+1e7de1e16f594f0f,test,negative,teddy_bear,https://www.flickr.com/photos/othree/9136829434,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/othree/,othree,0.0,eval3
+b5bf4d28f1e1fa08,test,negative,toy,https://www.flickr.com/photos/21218849@N03/2705954688/,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/21218849@N03/,Samuel Mann,0.0,eval3
+3a096a39832ce47c,test,negative,packaging,https://www.flickr.com/photos/free-stock/7116950413,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/free-stock/,Emilian Robert Vicol,0.0,eval3
+b678974e5e218d08,test,negative,poster,https://www.flickr.com/photos/sterlic/20928956770,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/sterlic/,Scott Akerman,0.0,eval3
+df3cb6d83653a10b,test,negative,screen,https://www.flickr.com/photos/adspackman/4571343782,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/adspackman/,Alan_D,0.0,eval3
+cb9450c604053b71,test,negative,sculpture,https://www.flickr.com/photos/garycmartin/15330442407/,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/garycmartin/,Gary Martin,0.0,eval3
+1287d4ff638a86da,test,negative,teddy_bear,https://www.flickr.com/photos/wagnerr/674452249,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/wagnerr/,Rick Wagner,0.0,eval3
+749cc033a45c3b2f,test,negative,toy,https://www.flickr.com/photos/pazhood/2776249460,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/pazhood/,Paul Hood,0.0,eval3
+600d910af3cbb842,test,negative,packaging,https://www.flickr.com/photos/61818890@N08/6809651354,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/61818890@N08/,Newsum Antiques,0.0,eval3
+907815fedd414078,test,negative,poster,https://www.flickr.com/photos/summonedbyfells/9272941185,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/summonedbyfells/,summonedbyfells,0.0,eval3
+700ae7809d70d38e,test,negative,screen,https://www.flickr.com/photos/rfa/6058665488,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/rfa/,refeia,0.0,eval3
+8547aefe290a4153,test,negative,sculpture,https://www.flickr.com/photos/krossbow/3823065135,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/krossbow/,F Delventhal,0.0,eval3
+4bfcc0fe79547d22,test,negative,teddy_bear,https://www.flickr.com/photos/beartrax/17782648262,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/beartrax/,BenBenW,0.0,eval3
+9da74b2c32f5ef7e,test,negative,toy,https://www.flickr.com/photos/dcrummey/8443905848,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/dcrummey/,David Crummey,0.0,eval3
+940216b1ddd2ea1d,test,negative,packaging,https://www.flickr.com/photos/esharkj/9568969665,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/esharkj/,esharkj,0.0,eval3
+51534b4fba8ddec5,test,negative,poster,https://www.flickr.com/photos/washingtoncanard/11487679823/,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/washingtoncanard/,William Beutler,0.0,eval3
+f189abb0e6869b4f,test,negative,screen,https://www.flickr.com/photos/48126477@N05/14794148557,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/48126477@N05/,Matthew Pearce,0.0,eval3
+4aed7e60e6578bbd,test,negative,sculpture,https://www.flickr.com/photos/jennifrog/129166771,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/jennifrog/,Jenny Mealing,0.0,eval3
+a8057ff107441ae5,test,negative,teddy_bear,https://www.flickr.com/photos/mujitra/8417395662,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/mujitra/,MIKI Yoshihito,0.0,eval3
+1ee52b6f98396aed,test,negative,toy,https://www.flickr.com/photos/ricardoalmei/7959364892,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/ricardoalmei/,Ricardo   Almeida,0.0,eval3
+2b4539fd83dbbcc4,test,negative,packaging,https://www.flickr.com/photos/toolmantim/8085959755,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/toolmantim/,Tim Lucas,,eval3
+23ba9820989d84fb,test,negative,poster,https://www.flickr.com/photos/eekim/2562614425/,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/eekim/,Eugene Kim,0.0,eval3
+625b8fc3bc557f5b,test,negative,screen,https://www.flickr.com/photos/bjvs/15918755331,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/bjvs/,Benjamin Vander Steen,0.0,eval3
+bf1fdd2413093513,test,negative,sculpture,https://www.flickr.com/photos/italintheheart/4151404929,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/italintheheart/,Jorge Elías,0.0,eval3
+b71404ee9f8a14b5,test,negative,teddy_bear,https://www.flickr.com/photos/jasethehack/5251054704,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/jasethehack/,Jason O&#x27;Donnell,0.0,eval3
+fe27b9d409ad8622,test,negative,toy,https://www.flickr.com/photos/mjambon/5725795202,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/mjambon/,Martin Jambon,0.0,eval3
+5989fb934598c1a7,test,negative,packaging,https://www.flickr.com/photos/swisschef/8552888087,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/swisschef/,Glenn Dettwiler,0.0,eval3
+492f816b8c98227c,test,negative,poster,https://www.flickr.com/photos/ajourneyroundmyskull/4643448075,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/ajourneyroundmyskull/,Will,,eval3
+2e3b7194f1fb832e,test,negative,screen,https://www.flickr.com/photos/t-studio/3308152880,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/t-studio/,Tsutomu Kamimori,0.0,eval3
+5dc92b731d598543,test,negative,sculpture,https://www.flickr.com/photos/tscherno/5592539507,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/tscherno/,Tscherno,,eval3
+120154ca90dc6f88,test,negative,teddy_bear,https://www.flickr.com/photos/oddwick/5272291713,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/oddwick/,Todd Huffman,0.0,eval3
+f51b044b4e38cbd2,test,negative,toy,https://www.flickr.com/photos/dylan20/5662328002,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/dylan20/,Dylan Tweney,0.0,eval3
+de671cb30897fecc,test,negative,packaging,https://www.flickr.com/photos/gromgull/533184199,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/gromgull/,Gunnar Grimnes,0.0,eval3
+b297012858177d7a,test,negative,poster,https://www.flickr.com/photos/sandybrownjensen/16364940632,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/sandybrownjensen/,Sandy Brown Jensen,0.0,eval3
+2b3d8c416e65cc7e,test,negative,screen,https://www.flickr.com/photos/banky177/202511570,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/banky177/,m anima,0.0,eval3
+303a393c8855db7d,test,negative,sculpture,https://www.flickr.com/photos/34739556@N04/11632141326,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/34739556@N04/,rawdonfox,0.0,eval3
+0bc65d083d184788,test,negative,teddy_bear,https://www.flickr.com/photos/melkorcete/50594857,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/melkorcete/,Manuel Cernuda,0.0,eval3
+9652bb808244b93d,test,negative,toy,https://www.flickr.com/photos/emrank/2716412490,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/emrank/,Emran Kassim,0.0,eval3
+0913927040ab18b0,test,negative,packaging,https://www.flickr.com/photos/dbrekke/39959132,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/dbrekke/,Dennis Brekke,0.0,eval3
+da46ce8442593a97,test,negative,poster,https://www.flickr.com/photos/karen_roe/8193194839,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/karen_roe/,Karen Roe,0.0,eval3
+8bb6736b8011e1d9,test,negative,screen,https://www.flickr.com/photos/dennis/3194865359,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/dennis/,Dennis Yang,0.0,eval3
+8f126f141ccb051b,test,negative,sculpture,https://www.flickr.com/photos/peantunes/5176341568,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/peantunes/,Pedro Antunes,0.0,eval3
+24d744a67dceca2c,test,negative,teddy_bear,https://www.flickr.com/photos/geishabot/1801453504,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/geishabot/,Janine,0.0,eval3
+567c3f0a79b9fd59,test,negative,toy,https://www.flickr.com/photos/mmorgan8186/10567272316,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/mmorgan8186/,Mark Morgan,0.0,eval3
+f622fd5ee331370a,test,negative,packaging,https://www.flickr.com/photos/daveynin/15299385843/,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/daveynin/,daveynin,0.0,eval3
+23a8c5b81db0c4b6,test,negative,poster,https://www.flickr.com/photos/alainn/5168107744,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/alainn/,Alainn,0.0,eval3
+24a29f88e8c02237,test,negative,screen,https://www.flickr.com/photos/ersupalermo/5759830290,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/ersupalermo/,ersupalermo,0.0,eval3
+84d6306f32e286ae,test,negative,sculpture,https://www.flickr.com/photos/andyhay/10288903206,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/andyhay/,Andy Hay,,eval3
+f6d86a43d0c23dd8,test,negative,teddy_bear,https://www.flickr.com/photos/arte_e_manhas/3261924102,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/arte_e_manhas/,Juliana Vermelho Martins,0.0,eval3
+bfe0fe99bd7547d1,test,negative,toy,https://www.flickr.com/photos/kvinokurov/14898496192,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/kvinokurov/,Kirill Vinokurov,0.0,eval3
+f3810091b3aae3b7,test,negative,packaging,https://www.flickr.com/photos/76764873@N03/11099131276,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/76764873@N03/,italiagermaniablog,0.0,eval3
+34b26ad46f0612f4,test,negative,poster,https://www.flickr.com/photos/belvinzprints/8072827187,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/belvinzprints/,belvinzprints prints,0.0,eval3
+b47474875ff344db,test,negative,screen,https://www.flickr.com/photos/wonderlane/6835362958,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/wonderlane/,Wonderlane,,eval3
+26daf165ff814102,test,negative,sculpture,https://www.flickr.com/photos/microraptor/5989972246,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/microraptor/,Dana Sibera,0.0,eval3
+97d3f807bb89c63d,test,negative,teddy_bear,https://www.flickr.com/photos/junctions/2937652281,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/junctions/,Juan Tello,0.0,eval3
+d6e743c34a8f5d21,test,negative,toy,https://www.flickr.com/photos/70253321@N00/4792231463,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/70253321@N00/,fugzu,0.0,eval3
+773daf22026c7add,test,negative,packaging,https://www.flickr.com/photos/consumerist/2863870608/,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/consumerist/,Consumerist Dot Com,0.0,eval3
+015270b83d676de0,test,negative,poster,https://www.flickr.com/photos/sable/5444468400/,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/sable/,Mark Kerr,0.0,eval3
+f0ceec0f7b41d328,test,negative,screen,https://www.flickr.com/photos/nickhubbard/3409823085,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/nickhubbard/,Nick Hubbard,0.0,eval3
+7090d921d5a720cb,test,negative,sculpture,https://www.flickr.com/photos/interzone00/4042324357,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/interzone00/,OTTAVI Alain,0.0,eval3
+7ca0e6d2117faba8,test,negative,toy,https://www.flickr.com/photos/marktee/5369940097/,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/marktee/,Mark Turnauckas,0.0,eval3
+14e8ca73ef667098,test,negative,packaging,https://www.flickr.com/photos/egoant/13204083215,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/egoant/,Aaron,0.0,eval3
+ab59ede596e19cf3,test,negative,poster,https://www.flickr.com/photos/stjnoticias/14170726436,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/stjnoticias/,Superior Tribunal de Justiça STJ,,eval3
+04ccebb0afa5bd0f,test,negative,screen,https://www.flickr.com/photos/caban0es/5867470839,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/caban0es/,Andrés Cabanes,0.0,eval3
+6502e8470642c3b6,test,negative,sculpture,https://www.flickr.com/photos/spiegel/82358567,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/spiegel/,Spiegel,0.0,eval3
+4dc357c0ed608adf,test,negative,toy,https://www.flickr.com/photos/totobook/2444343059,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/totobook/,totobook,0.0,eval3
+da9aeca3cd9c5ce6,test,negative,packaging,https://www.flickr.com/photos/giuseppecirasino/8187064736,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/giuseppecirasino/,Giuseppe Cirasino,0.0,eval3
+aa85f85155cfb0d3,test,negative,poster,https://www.flickr.com/photos/okfn/6471163285,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/okfn/,Open Knowledge,0.0,eval3
+71be2375ebf91f90,test,negative,screen,https://www.flickr.com/photos/honou/2203610535,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/honou/,Honou,0.0,eval3
+8ae9cde6f2bc7f2b,test,negative,sculpture,https://www.flickr.com/photos/grego1402/14774295249,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/grego1402/,grego1402,0.0,eval3
+6cc502fd78954a32,test,negative,toy,https://www.flickr.com/photos/anthonycramp/459801360,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/anthonycramp/,Anthony Cramp,0.0,eval3
+22989291826bcc73,test,negative,packaging,https://www.flickr.com/photos/kankan/14901428,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/kankan/,Kanko*,0.0,eval3
+bfb93a7ac4d6c7b5,test,negative,poster,https://www.flickr.com/photos/uncorrectedproofs/4165979338,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/uncorrectedproofs/,uncorrectedproofs,0.0,eval3
+5891ff7dc2bd7f9d,test,negative,screen,https://www.flickr.com/photos/78572937@N06/9299183217,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/78572937@N06/,Stephan Schultz,0.0,eval3
+22322b52963625cc,test,negative,sculpture,https://www.flickr.com/photos/nostri-imago/3425033765,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/nostri-imago/,Cliff,0.0,eval3
+c5a4bbc1cecaab57,test,negative,toy,https://www.flickr.com/photos/lindzgraham/2286542150,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/lindzgraham/,Lindz Graham,0.0,eval3
+568d3222cb147882,test,negative,packaging,https://www.flickr.com/photos/benjaminschneider/1323928867,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/benjaminschneider/,Benjamin Schneider,0.0,eval3
+bd7f1cdd5b4457ce,test,negative,poster,https://www.flickr.com/photos/7477245@N05/5822478352,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/7477245@N05/,Luiz Fernando Reis,0.0,eval3
+306052878db85710,test,negative,screen,https://www.flickr.com/photos/vondewall/4436177314,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/vondewall/,Gustaf von Dewall,,eval3
+2ff5cbe4786a0914,test,negative,sculpture,https://www.flickr.com/photos/gildardo/11251237484,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/gildardo/,Gildardo Sánchez,,eval3
+bf081207035df684,test,negative,toy,https://www.flickr.com/photos/oerafrica/8005789327,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/oerafrica/,OER Africa,0.0,eval3
+a747f6abb8e83767,test,negative,packaging,https://www.flickr.com/photos/rstinnett/607564955,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/rstinnett/,Rob Stinnett,0.0,eval3
+dd538a507bf05351,test,negative,poster,https://www.flickr.com/photos/louisepython/15242248783,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/louisepython/,Louise Python,0.0,eval3
+c0662a5a1e729d09,test,negative,screen,https://www.flickr.com/photos/roland/39900671,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/roland/,Roland Tanglao,0.0,eval3
+3c9d3e316abcad8f,test,negative,sculpture,https://www.flickr.com/photos/53157558@N07/4930430524,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/53157558@N07/,Michael Calkins,0.0,eval3
+e53f17ec8c2aba68,test,negative,toy,https://www.flickr.com/photos/sherrysrosecottage/2444863570,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/sherrysrosecottage/,Sherry&#x27;s Rose Cottage,0.0,eval3
+fe0b1874c8706437,test,negative,packaging,https://www.flickr.com/photos/wentzelepsy/4702362532,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/wentzelepsy/,Larry Wentzel,0.0,eval3
+1192ec35ab96b895,test,negative,poster,https://www.flickr.com/photos/funkz/4046688894,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/funkz/,funkz,,eval3
+2629307fc2873a18,test,negative,screen,https://www.flickr.com/photos/46053374@N05/4625837020,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/46053374@N05/,Crystal,0.0,eval3
+a11e055d2ada5849,test,negative,sculpture,https://www.flickr.com/photos/chpaquette/3830847474,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/chpaquette/,Christopher Paquette,0.0,eval3
+2b5696ff903fa7fb,test,negative,toy,https://www.flickr.com/photos/aerowold/361454053,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/aerowold/,Jon Gunnar Wold,0.0,eval3
+4eb2de34e6b5682a,test,negative,packaging,https://www.flickr.com/photos/gillyberlin/2570796906,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/gillyberlin/,GillyBerlin,0.0,eval3
+c0a1ce431b332775,test,negative,poster,https://www.flickr.com/photos/cve4mejournal/20210255309,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/cve4mejournal/,cve4mejournal,0.0,eval3
+d0a810ec8a0f9aa9,test,negative,screen,https://www.flickr.com/photos/indi/7548964360,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/indi/,Indi Samarajiva,0.0,eval3
+30e462d0cc108872,test,negative,sculpture,https://www.flickr.com/photos/teclasorg/1091702589,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/teclasorg/,Daniel Sancho,0.0,eval3
+5035d2a808868fab,test,negative,toy,https://www.flickr.com/photos/22738816@N07/5904239167,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/22738816@N07/,Doug Coldwell,0.0,eval3
+af92106b0b4d8096,test,negative,packaging,https://www.flickr.com/photos/thebigtable/16011734617,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/thebigtable/,Pedro Reyna,0.0,eval3
+49b6b2644514be75,test,negative,poster,https://www.flickr.com/photos/vizzzual-dot-com/2431243610,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/vizzzual-dot-com/,viZZZual.com,0.0,eval3
+73aa54fe1428868e,test,negative,screen,https://www.flickr.com/photos/rcuerda29/8671416201,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/rcuerda29/,RCuerda29,0.0,eval3
+ba82a3fddf3d2c28,test,negative,sculpture,https://www.flickr.com/photos/miamism/4610661074,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/miamism/,Ines Hegedus-Garcia,0.0,eval3
+80fdda1e836af8b3,test,negative,toy,https://www.flickr.com/photos/brickset/14561502441,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/brickset/,Brickset,0.0,eval3
+e3a145bcb18b27d4,test,negative,packaging,https://www.flickr.com/photos/re-publica/4526610392/,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/re-publica/,re:publica,0.0,eval3
+34c3e83ec10267f3,test,negative,poster,https://www.flickr.com/photos/steelcityhobbies/267445643,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/steelcityhobbies/,SteelCityHobbies,0.0,eval3
+1f24427d545bd5ca,test,negative,screen,https://www.flickr.com/photos/globalx/1825416129,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/globalx/,Global X,0.0,eval3
+544ab389317547a0,test,negative,sculpture,https://www.flickr.com/photos/lachlanhardy/16033591668,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/lachlanhardy/,Lachlan Hardy,0.0,eval3
+77b8597e5178af40,test,negative,toy,https://www.flickr.com/photos/atelier-encantado/305738062,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/atelier-encantado/,•● Atelier Encantado ●•,,eval3
+44dfae836ae29116,test,negative,packaging,https://www.flickr.com/photos/matthieu/16762602688,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/matthieu/,Matthieu Guyonnet-Duluc,0.0,eval3
+da1175f0829e3afe,test,negative,poster,https://www.flickr.com/photos/grupo1construcciones/7727141286,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/grupo1construcciones/,Grupo1 Construcciones,0.0,eval3
+dca9923a8de941ad,test,negative,screen,https://www.flickr.com/photos/pvera/18271875,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/pvera/,Pedro Vera,0.0,eval3
+4b3198714b8bd03b,test,negative,sculpture,https://www.flickr.com/photos/fazen/111878900,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/fazen/,Stefano Mortellaro,0.0,eval3
+73093de9c2b55fc5,test,negative,toy,https://www.flickr.com/photos/danielneto/3872958488,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/danielneto/,Daniel Garcia Neto,0.0,eval3
+e5bee686d115b9a5,test,negative,packaging,https://www.flickr.com/photos/cogdog/3991343955,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/cogdog/,Alan Levine,0.0,eval3
+be88eae3343e8201,test,negative,poster,https://www.flickr.com/photos/23304245@N02/8261248240,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/23304245@N02/,Funny Images,0.0,eval3
+0bccf77baa84e121,test,negative,screen,https://www.flickr.com/photos/goosmurf/5318720409,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/goosmurf/,Yun Huang Yong,0.0,eval3
+e963c1ef79fd7611,test,negative,sculpture,https://www.flickr.com/photos/summonedbyfells/8712686245,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/summonedbyfells/,summonedbyfells,0.0,eval3
+ba3e7ad93e5c0d6b,test,negative,toy,https://www.flickr.com/photos/yto/13915527287,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/yto/,Tatsuo Yamashita,0.0,eval3
+d8fb37a2514a02ea,test,negative,packaging,https://www.flickr.com/photos/51618238@N05/5553358399,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/51618238@N05/,qila parfume Fragrance,0.0,eval3
+439f0eb2ecbbda68,test,negative,poster,https://www.flickr.com/photos/bradfordcoy/6307589030,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/bradfordcoy/,Brad Coy,0.0,eval3
+f9d812ddfdaef2bd,test,negative,screen,https://www.flickr.com/photos/sterlic/8193115759,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/sterlic/,Scott Akerman,0.0,eval3
+674f128da320c4df,test,negative,sculpture,https://www.flickr.com/photos/105105658@N03/20428738809,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/105105658@N03/,Rob Oo,0.0,eval3
+a65bfbec8a54b652,test,negative,toy,https://www.flickr.com/photos/billward/110276058,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/billward/,Bill Ward,0.0,eval3
+36cd8f1cdc5943aa,test,negative,packaging,https://www.flickr.com/photos/78093430@N08/14934966015,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/78093430@N08/,citrus.sunshine,,eval3
+3d17a196eb2754a3,test,negative,poster,https://www.flickr.com/photos/maleszyk/12989768093,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/maleszyk/,Bryan Maleszyk,0.0,eval3
+04cdaa5cff6efc2c,test,negative,screen,https://www.flickr.com/photos/lookcatalog/8131616957,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/lookcatalog/,lookcatalog,0.0,eval3
+a2edddb3aa60cb00,test,negative,sculpture,https://www.flickr.com/photos/ciroduran/3018148190,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/ciroduran/,Cirofono,0.0,eval3
+4a6f6fab3d4bc3f7,test,negative,toy,https://www.flickr.com/photos/littlestuffme/11075330776,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/littlestuffme/,Tina D,,eval3
+d6107c1046beb956,test,negative,packaging,https://www.flickr.com/photos/vernieman/15653539154,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/vernieman/,Vernon Chan,,eval3
+7c3227414cc9293b,test,negative,poster,https://www.flickr.com/photos/augustksphotos/4406702139/,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/augustksphotos/,August Kelm,0.0,eval3
+e8a5c11912de262e,test,negative,screen,https://www.flickr.com/photos/andersekstrom/6945082797,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/andersekstrom/,Anders Ekström,0.0,eval3
+334aa985efb58e26,test,negative,sculpture,https://www.flickr.com/photos/davefayram/4283725149,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/davefayram/,Dave Fayram,0.0,eval3
+5e27ae26953f07d8,test,negative,toy,https://www.flickr.com/photos/fuyoh/485003974,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/fuyoh/,Gobi,0.0,eval3
+9e3f2894c677e22d,test,negative,packaging,https://www.flickr.com/photos/redjoe/18791652,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/redjoe/,Joe Jones,0.0,eval3
+64f8d9aa3519ae93,test,negative,poster,https://www.flickr.com/photos/jupiter_farms/8637807986,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/jupiter_farms/,Christian Michael Witternigg,0.0,eval3
+027b5c62f38fc44e,test,negative,screen,https://www.flickr.com/photos/kwintin/3433411113,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/kwintin/,Quentin Meulepas,0.0,eval3
+871ba84250d5f4f8,test,negative,sculpture,https://www.flickr.com/photos/127380084@N03/15979796831,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/127380084@N03/,Birthe Van Der Veken,0.0,eval3
+7cf433a4e790c419,test,negative,toy,https://www.flickr.com/photos/vijay_chennupati/7716574428,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/vijay_chennupati/,vijay chennupati,,eval3
+f4ade4592b4c5d28,test,negative,packaging,https://www.flickr.com/photos/stevensnodgrass/4025502079,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/stevensnodgrass/,Steve Snodgrass,0.0,eval3
+e0355cbf53212d08,test,negative,poster,https://www.flickr.com/photos/agecombahia/3888477694,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/agecombahia/,Fotos GOVBA,0.0,eval3
+6df2808575da8d2e,test,negative,screen,https://www.flickr.com/photos/107346066@N06/11542281903,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/107346066@N06/,YaMaDesign ing,0.0,eval3
+ab210443b0959a96,test,negative,sculpture,https://www.flickr.com/photos/reibai/4689243589,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/reibai/,reibai,0.0,eval3
+524e4c93a979cfd0,test,negative,toy,https://www.flickr.com/photos/brickset/20288130785,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/brickset/,Brickset,0.0,eval3
+1261ee8a4e014368,test,negative,packaging,https://www.flickr.com/photos/leonterra/5738784199,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/leonterra/,Leon Terra,0.0,eval3
+871f558ddb94d460,test,negative,poster,https://www.flickr.com/photos/vasnic64/15036165778,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/vasnic64/,"vasse nicolas,antoine",,eval3
+0a678ff73119a4d8,test,negative,screen,https://www.flickr.com/photos/46758972@N00/14128823400,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/46758972@N00/,Michael Edson,0.0,eval3
+08a1c3bed980e927,test,negative,sculpture,https://www.flickr.com/photos/fireflythegreat/5030884986,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/fireflythegreat/,Dagny Mol,0.0,eval3
+e13e3c578a88ba5b,test,negative,toy,https://www.flickr.com/photos/9557815@N05/3197996104,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/9557815@N05/,Abi Skipp,0.0,eval3
+44b8097716302e27,test,negative,packaging,https://www.flickr.com/photos/stuttermonkey/24796445,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/stuttermonkey/,Shad Bolling,0.0,eval3
+431836f277520bdc,test,negative,poster,https://www.flickr.com/photos/epicbeer/3764458806,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/epicbeer/,epicbeer,0.0,eval3
+0836a2a0b49e3d2d,test,negative,screen,https://www.flickr.com/photos/mrgamebox/3739647697,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/mrgamebox/,Guy Drori,0.0,eval3
+56c0fd48e8ece645,test,negative,sculpture,https://www.flickr.com/photos/beaub/2589438828,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/beaub/,Beau B,0.0,eval3
+2c014390424da0b7,test,negative,toy,https://www.flickr.com/photos/kpaulus/7640621944/,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/kpaulus/,Kristine Paulus,,eval3
+26ade69b776615b9,test,negative,packaging,https://www.flickr.com/photos/kerotab/17600691816,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/kerotab/,Kristin,0.0,eval3
+08c501f7a5dce47c,test,negative,poster,https://www.flickr.com/photos/walmartmovie/19400253,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/walmartmovie/,Brave New Films,0.0,eval3
+dddc95ee2959d5be,test,negative,screen,https://www.flickr.com/photos/namho/3760629348,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/namho/,Nam-ho Park,0.0,eval3
+55ee7f8597cefb30,test,negative,sculpture,https://www.flickr.com/photos/frescotours/10591540624,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/frescotours/,Fresco Tours,,eval3
+1d8e7077fb527a1c,test,negative,toy,https://www.flickr.com/photos/openingscene/15825666010,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/openingscene/,openingscene,0.0,eval3
+ee1773c77937005b,test,negative,packaging,https://www.flickr.com/photos/stoller/5478808395,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/stoller/,Matt Stoller,0.0,eval3
+6029c7207fe706cf,test,negative,poster,https://www.flickr.com/photos/arianr/2805476864,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/arianr/,arianravan,0.0,eval3
+8395baf7e9317f0a,test,negative,screen,https://www.flickr.com/photos/restlessglobetrotter/6294297611,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/restlessglobetrotter/,Jason Rogers,0.0,eval3
+6847165997fe3d85,test,negative,sculpture,https://www.flickr.com/photos/pixel_addict/411913022,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/pixel_addict/,Pixel Addict,0.0,eval3
+0f20664ae131e062,test,negative,toy,https://www.flickr.com/photos/adactio/86433346,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/adactio/,Jeremy Keith,0.0,eval3
+1b605d0e8b4f4872,test,negative,packaging,https://www.flickr.com/photos/sheilaellen/3577835021,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/sheilaellen/,Sheila Thomson,0.0,eval3
+aa8e695b6ea356c7,test,negative,poster,https://www.flickr.com/photos/julietbanana/21523738324,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/julietbanana/,Lorena Cupcake,0.0,eval3
+04a504fe281c930e,test,negative,screen,https://www.flickr.com/photos/hyku/351968038,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/hyku/,Josh Hallett,,eval3
+92c101f5086e5a0c,test,negative,sculpture,https://www.flickr.com/photos/romantikgeist/15475173027,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/romantikgeist/,Romantikgeist,0.0,eval3
+87c1f72a37c96d78,test,negative,toy,https://www.flickr.com/photos/dok1/8051222400,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/dok1/,Don O&#x27;Brien,0.0,eval3
+710da835b42be60f,test,negative,packaging,https://www.flickr.com/photos/alexa627/5296808886,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/alexa627/,Alexa,0.0,eval3
+d09fc4afd8b63e01,test,negative,poster,https://www.flickr.com/photos/29456235@N04/4616822428,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/29456235@N04/,Charleston&#x27;s TheDigitel,0.0,eval3
+8263d4d4b94cc06f,test,negative,screen,https://www.flickr.com/photos/lead_org/16112290056,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/lead_org/,Jin  Li,0.0,eval3
+3c685db625df848c,test,negative,sculpture,https://www.flickr.com/photos/mlazarow/7985164754,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/mlazarow/,Melanie Lazarow,,eval3
+022569f0291605d1,test,negative,toy,https://www.flickr.com/photos/repoort/4436497988,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/repoort/,kreezzalee,0.0,eval3
+084b363c71a7f958,test,negative,packaging,https://www.flickr.com/photos/kalleboo/8188573307,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/kalleboo/,Karl Baron,0.0,eval3
+9201a043c244b46d,test,negative,poster,https://www.flickr.com/photos/35889705@N04/6305709848,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/35889705@N04/,Primus Inter Pares,0.0,eval3
+85c70407151b1743,test,negative,screen,https://www.flickr.com/photos/dalbera/4992291270,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/dalbera/,Jean-Pierre Dalbéra,,eval3
+d3e03966df740e7c,test,negative,sculpture,https://www.flickr.com/photos/castle_gate/10026229653,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/castle_gate/,Castle Gate,0.0,eval3
+5e688ac4f1deecdb,test,negative,toy,https://www.flickr.com/photos/jetalone/331568553,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/jetalone/,Hajime NAKANO,0.0,eval3
+f63004b1bf5b9ab4,test,negative,packaging,https://www.flickr.com/photos/clementpetit/4835356568,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/clementpetit/,Clément Petit,,eval3
+a384a72aa73e24ee,test,negative,poster,https://www.flickr.com/photos/charming_meiler/16471248185,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/charming_meiler/,charming meiler,0.0,eval3
+fedf97e1b88cb843,test,negative,screen,https://www.flickr.com/photos/christophercarfi/2493986064,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/christophercarfi/,Christopher Carfi,0.0,eval3
+91accbbf25fefec2,test,negative,sculpture,https://www.flickr.com/photos/oatsy40/8732965828,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/oatsy40/,oatsy40,0.0,eval3
+56e741d8f93e15eb,test,negative,toy,https://www.flickr.com/photos/schneeman/5361038852,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/schneeman/,Brent Schneeman,,eval3
+24cb2253ee37be83,test,negative,packaging,https://www.flickr.com/photos/c32/8649796244,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/c32/,Carlos Varela,0.0,eval3
+257c2f3dc6ece20d,test,negative,poster,https://www.flickr.com/photos/danny_warfield/1728689306,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/danny_warfield/,danny_warfield,0.0,eval3
+339cf74286b41592,test,negative,screen,https://www.flickr.com/photos/mobilyazilar/9596169559,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/mobilyazilar/,mobilyazilar,0.0,eval3
+f435cc08faa1b3db,test,negative,sculpture,https://www.flickr.com/photos/goodncrazy/7508624650,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/goodncrazy/,Carissa Rogers,0.0,eval3
+b20e6fcfeebbcfae,test,negative,toy,https://www.flickr.com/photos/ginapina/10196023603,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/ginapina/,gina pina,0.0,eval3
+0591c19dfec6a487,test,negative,packaging,https://www.flickr.com/photos/perolofforsberg/6771403075,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/perolofforsberg/,Per-Olof Forsberg,0.0,eval3
+36c3c80819f7588f,test,negative,poster,https://www.flickr.com/photos/82955120@N05/16064264536,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/82955120@N05/,Nicolas Raymond,0.0,eval3
+cabd41010f4d6815,test,negative,screen,https://www.flickr.com/photos/india_7/14165309918,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/india_7/,India7 Network,,eval3
+5f3e6e43625c4f40,test,negative,sculpture,https://www.flickr.com/photos/andresrueda/16757766141,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/andresrueda/,Andres Rueda,0.0,eval3
+1f2b7822c48e028f,test,negative,toy,https://www.flickr.com/photos/30701623@N02/4182255426,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/30701623@N02/,genevieveromier,0.0,eval3
+4fb9a269746cac56,test,negative,packaging,https://www.flickr.com/photos/27760134@N03/3815423629,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/27760134@N03/,Pete,0.0,eval3
+73c2e4cbb7bb9d4a,test,negative,poster,https://www.flickr.com/photos/acidpix/5276338613,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/acidpix/,Acid Pix,0.0,eval3
+2a7f66464242753b,test,negative,screen,https://www.flickr.com/photos/simbe/3389795020,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/simbe/,Simbe90,0.0,eval3
+3f68de6fe4efea92,test,negative,sculpture,https://www.flickr.com/photos/rickh710/2989946337,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/rickh710/,rickh710,0.0,eval3
+5ed9d7089f10cb95,test,negative,toy,https://www.flickr.com/photos/leszekleszczynski/6447975921,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/leszekleszczynski/,Leszek Leszczynski,0.0,eval3
+ba9c1491bf601461,test,negative,packaging,https://www.flickr.com/photos/averagejane/9764891975,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/averagejane/,Celeste Lindell,0.0,eval3
+17f1384c4d599d5c,test,negative,poster,https://www.flickr.com/photos/x1brett/3817398669,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/x1brett/,brett jordan,0.0,eval3
+913abb811acf7d6f,test,negative,screen,https://www.flickr.com/photos/jeanbaptistem/3719164007,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/jeanbaptistem/,JeanbaptisteM,0.0,eval3
+6f2d9108e6c94643,test,negative,sculpture,https://www.flickr.com/photos/prayitnophotography/5306175762,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/prayitnophotography/,Prayitno / Thank you for (9 millions +) views,0.0,eval3
+f5890fa678fce2dc,test,negative,toy,https://www.flickr.com/photos/dalbera/2675483950,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/dalbera/,Jean-Pierre Dalbéra,0.0,eval3
+f8423ffbae9c2bc6,test,negative,packaging,https://www.flickr.com/photos/lianza/14978098233,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/lianza/,Tom Lianza,0.0,eval3
+89f177b3ef8b6f80,test,negative,poster,https://www.flickr.com/photos/realtoractioncenter/16035771572,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/realtoractioncenter/,Realtor Action Center,0.0,eval3
+3e29f53744272bb1,test,negative,screen,https://www.flickr.com/photos/buffawhat/4091023101,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/buffawhat/,Sean-Franc Strang,0.0,eval3
+c7bb25f234ea0848,test,negative,sculpture,https://www.flickr.com/photos/fanega/13942676829,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/fanega/,Pedro,0.0,eval3
+9548978fd1d5a969,test,negative,toy,https://www.flickr.com/photos/diego440/6875613083,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/diego440/,durdaneta,0.0,eval3
+eef125b33737d19a,test,negative,packaging,https://www.flickr.com/photos/harry/14740240791,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/harry/,Brian Lamb,0.0,eval3
+ba80252f997e0ed7,test,negative,poster,https://www.flickr.com/photos/54383933@N03/12981984844,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/54383933@N03/,monoprixgourmet,0.0,eval3
+9e5a46db2634a63e,test,background,fridge,https://www.flickr.com/photos/masayun/4804432674,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/masayun/,Masayuki Igawa,0.0,eval3
+bd81ced89073ff3a,test,background,kitchen_appliance,https://www.flickr.com/photos/decor8/9100897664,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/decor8/,decor8 holly,0.0,eval3
+c1b3592b60e7adb7,test,background,mirror,https://www.flickr.com/photos/appservproj/6344369805,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/appservproj/,Appalachia Service Project,0.0,eval3
+b4712091a42c8ea4,test,background,oven,https://www.flickr.com/photos/54131547@N00/11706671064,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/54131547@N00/,alangraham999,0.0,eval3
+a6b245401170b5fa,test,background,sink,https://www.flickr.com/photos/amywindsor/7474179218,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/amywindsor/,Amy Spreitzer Windsor,,eval3
+126b61892259c81b,test,background,fridge,https://www.flickr.com/photos/andydr/2825314462,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/andydr/,Andrew Ratto,0.0,eval3
+be942f488e335be6,test,background,kitchen_appliance,https://www.flickr.com/photos/mrbill/5378577155,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/mrbill/,Bill Bradford,0.0,eval3
+de8c01dedc8d7e05,test,background,mirror,https://www.flickr.com/photos/sackerman519/5274731004,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/sackerman519/,Sarah_Ackerman,,eval3
+60b3c35003cfb3d9,test,background,oven,https://www.flickr.com/photos/brosner/10179300,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/brosner/,Brian Rosner,0.0,eval3
+77525ddb3b77cc02,test,background,sink,https://www.flickr.com/photos/vivilia/8246459883,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/vivilia/,Vivilia .com,0.0,eval3
+eecaa3204a44fcd6,test,background,fridge,https://www.flickr.com/photos/melissaclark/4272391329,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/melissaclark/,Melissa Clark,0.0,eval3
+d8e0c7825be12b2c,test,background,kitchen_appliance,https://www.flickr.com/photos/22748341@N00/3725890007/,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/22748341@N00/,Linda N.,0.0,eval3
+e46af147d6b826f6,test,background,mirror,https://www.flickr.com/photos/slgc/7714498724,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/slgc/,slgckgc,0.0,eval3
+445fa31c34b2126f,test,background,oven,https://www.flickr.com/photos/anguillahouse/5826251913,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/anguillahouse/,Anguilla House,0.0,eval3
+aa8c0dc927176fdc,test,background,sink,https://www.flickr.com/photos/109249103@N05/11065804413,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/109249103@N05/,outreachr.com,0.0,eval3
+398259f32f14d105,test,background,fridge,https://www.flickr.com/photos/vsmoothe/401608623,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/vsmoothe/,V Smoothe,0.0,eval3
+7977f07ba0cba1f9,test,background,kitchen_appliance,https://www.flickr.com/photos/nickwebb/17651249554,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/nickwebb/,Nick Webb,0.0,eval3
+4cb38c99d8b18b2f,test,background,mirror,https://www.flickr.com/photos/20after4/256098570,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/20after4/,20after4,0.0,eval3
+a579d986081ced1e,test,background,oven,https://www.flickr.com/photos/seph_swain/4284586634,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/seph_swain/,Seph Swain,0.0,eval3
+ac085b153d9f86f3,test,background,sink,https://www.flickr.com/photos/jesseyvette/12090800726,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/jesseyvette/,yvetteSoler,0.0,eval3
+6d8001ea79c02334,test,background,fridge,https://www.flickr.com/photos/43190831@N07/4018115238/,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/43190831@N07/,Lewis  Kelly,0.0,eval3
+06d3e8dbaa8580a9,test,background,kitchen_appliance,https://www.flickr.com/photos/tolbxela/7018963371,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/tolbxela/,Tolbxela,0.0,eval3
+63f368fb384f608d,test,background,mirror,https://www.flickr.com/photos/juliejordanscott/4706377744,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/juliejordanscott/,Julie Jordan Scott,0.0,eval3
+d0c6adfe060294ed,test,background,oven,https://www.flickr.com/photos/wavemaiden/9296066464,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/wavemaiden/,Sharon Harper,0.0,eval3
+0b60b0c918ad6879,test,background,sink,https://www.flickr.com/photos/andydr/2623698483,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/andydr/,Andrew Ratto,0.0,eval3
+a6e7bab3bd55558e,test,background,fridge,https://www.flickr.com/photos/robandstephanielevy/213851653,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/robandstephanielevy/,Rob and Stephanie Levy,0.0,eval3
+8051e086d86a7ea7,test,background,kitchen_appliance,https://www.flickr.com/photos/prettylittleme/15319356998,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/prettylittleme/,Caraline Mellor,0.0,eval3
+3e7de50ec8b70f64,test,background,mirror,https://www.flickr.com/photos/dnigh/66982390,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/dnigh/,Mike Roberts,0.0,eval3
+86b12a1ce788541d,test,background,oven,https://www.flickr.com/photos/this_could_be_my_house/2885931873,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/this_could_be_my_house/,Tim Crowe,,eval3
+f57bb9c762710434,test,background,sink,https://www.flickr.com/photos/edisellstulsa/7404301130,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/edisellstulsa/,Edi Hargett,0.0,eval3
+6c57df42d6f0e545,test,background,fridge,https://www.flickr.com/photos/steelmore/55422506,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/steelmore/,Ste Elmore,0.0,eval3
+4b3251ab56e2511a,test,background,kitchen_appliance,https://www.flickr.com/photos/yto/16951934788,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/yto/,Tatsuo Yamashita,0.0,eval3
+f14c49d50bc63ac9,test,background,mirror,https://www.flickr.com/photos/molinaz/2396664809,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/molinaz/,Moises.on,0.0,eval3
+82af8ecf17d42a78,test,background,oven,https://www.flickr.com/photos/jimmiehomeschoolmom/3306434014,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/jimmiehomeschoolmom/,Jimmie,0.0,eval3
+d82df52f6c107c77,test,background,sink,https://www.flickr.com/photos/zahperv/3526416687,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/zahperv/,Ómar Smith,0.0,eval3
+6b28eb14694415df,test,background,fridge,https://www.flickr.com/photos/brentdpayne/3495577574,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/brentdpayne/,Brent Payne,,eval3
+471c62c6ff2321de,test,background,kitchen_appliance,https://www.flickr.com/photos/runder/9842625,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/runder/,Elizabeth,0.0,eval3
+f4848b3aaa36e581,test,background,mirror,https://www.flickr.com/photos/borkurdotnet/2186735163,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/borkurdotnet/,Börkur Sigurbjörnsson,0.0,eval3
+ff51b642c4427f6b,test,background,oven,https://www.flickr.com/photos/silkeremmery/16214014655/,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/silkeremmery/,Silke Remmery,0.0,eval3
+292d5999e9a35f9f,test,background,sink,https://www.flickr.com/photos/picsoflife/5555423012,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/picsoflife/,Ari Helminen,,eval3
+1458ece265475557,test,background,fridge,https://www.flickr.com/photos/pittaya/3149877408,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/pittaya/,Pittaya Sroilong,0.0,eval3
+6bfc0e774a5266d3,test,background,kitchen_appliance,https://www.flickr.com/photos/billknock/21276571220,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/billknock/,billknock,0.0,eval3
+595572be0513fb52,test,background,mirror,https://www.flickr.com/photos/z0/5544304008,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/z0/,Aranami,0.0,eval3
+6ad78bbc4b44e3c6,test,background,oven,https://www.flickr.com/photos/littledebbie11/4348660594,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/littledebbie11/,Debs (ò‿ó)♪,0.0,eval3
+a12ad8a06226a6dd,test,background,sink,https://www.flickr.com/photos/totalco/8158126272/,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/totalco/,Total Construction,0.0,eval3
+92126929ec397b15,test,background,fridge,https://www.flickr.com/photos/26141366@N05/5388057172,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/26141366@N05/,amulhervestidadesol,,eval3
+c81c3208bcd52721,test,background,kitchen_appliance,https://www.flickr.com/photos/curtiskennington/3626183460,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/curtiskennington/,curtis.kennington,0.0,eval3
+1203cfff1c5b2e02,test,background,mirror,https://www.flickr.com/photos/joc67/239000701,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/joc67/,Jimmy_Joe,0.0,eval3
+ca6d51ce769782ab,test,background,oven,https://www.flickr.com/photos/essenstweet/9510325300,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/essenstweet/,Markus Jakobs,0.0,eval3
+2d5f9aa6ce25ce46,test,background,sink,https://www.flickr.com/photos/sackerman519/4040442718,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/sackerman519/,Sarah_Ackerman,0.0,eval3
+5c59b76bcaef7d8a,test,background,fridge,https://www.flickr.com/photos/bettyx1138/15677506181,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/bettyx1138/,bettyx1138,0.0,eval3
+8ac3ede68f5bb624,test,background,kitchen_appliance,https://www.flickr.com/photos/rexroof/4643006903,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/rexroof/,Rex Roof,0.0,eval3
+bf5a51111dc499b7,test,background,mirror,https://www.flickr.com/photos/alexbrn/4782670095,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/alexbrn/,Alex Brown,0.0,eval3
+bc438c4531cb9933,test,background,oven,https://www.flickr.com/photos/ullkika/6148201722,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/ullkika/,AnnaKika,0.0,eval3
+bb561fb5cebe8415,test,background,sink,https://www.flickr.com/photos/blineconstruction/5451026289,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/blineconstruction/,Chris Lattuada,0.0,eval3
+f75738e3d26b35f2,test,background,fridge,https://www.flickr.com/photos/yorickr/5973358059,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/yorickr/,Yorick_R,0.0,eval3
+156a326e8e32f770,test,background,kitchen_appliance,https://www.flickr.com/photos/gipuzkoakultura/7879597742,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/gipuzkoakultura/,GipuzkoaKultura,0.0,eval3
+ec411105110b2c56,test,background,oven,https://www.flickr.com/photos/goedekers/13068901523,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/goedekers/,Goedeker&#x27;s,,eval3
+4afe952d531fb84a,test,background,sink,https://www.flickr.com/photos/johnclarkemills/3695456521,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/johnclarkemills/,John Mills,0.0,eval3
+6117a89f809f434d,test,background,fridge,https://www.flickr.com/photos/pasa/4959134840,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/pasa/,Paul Sableman,0.0,eval3
+e87c8aa1d1d90dfb,test,background,kitchen_appliance,https://www.flickr.com/photos/44085838@N03/4706352169,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/44085838@N03/,Solar Decathlon,,eval3
+4b7918450259fc1c,test,background,oven,https://www.flickr.com/photos/tifis/4482929963,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/tifis/,Diana Reyes,0.0,eval3
+eb860406ae9b661b,test,background,sink,https://www.flickr.com/photos/aubreyj87/4907158819,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/aubreyj87/,Aubrey,0.0,eval3
+775e077de67c6250,test,background,fridge,https://www.flickr.com/photos/dariusdunlap/15923541901,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/dariusdunlap/,Darius Dunlap,0.0,eval3
+24b9c31b668037b1,test,background,kitchen_appliance,https://www.flickr.com/photos/stp/5631601780,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/stp/,Shannon Prickett,,eval3
+6660ead275b92c0b,test,background,oven,https://www.flickr.com/photos/robbie1/266593380,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/robbie1/,Robbie Sproule,0.0,eval3
+bdc4fdbed2bd2000,test,background,sink,https://www.flickr.com/photos/punktoad/15847907531,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/punktoad/,PunkToad,0.0,eval3
+c063f06ed94237f2,test,background,fridge,https://www.flickr.com/photos/russelljsmith/7105644,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/russelljsmith/,Russell James Smith,0.0,eval3
+1e33e9c312d92a84,test,background,kitchen_appliance,https://www.flickr.com/photos/bethness/4230682694,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/bethness/,beth h,,eval3
+13241bc2b53bcddd,test,background,oven,https://www.flickr.com/photos/egizu/6441013107,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/egizu/,EGIZU Getxo Euskaldun Elkartea,0.0,eval3
+6d7433b4c9a6b24a,test,background,sink,https://www.flickr.com/photos/togawanderings/7735017196,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/togawanderings/,Thomas Galvez,0.0,eval3
+512e763b23503a34,test,background,fridge,https://www.flickr.com/photos/tseedmund/4499163477,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/tseedmund/,Edmund Tse,0.0,eval3
+5d7f0899f5da216e,test,background,kitchen_appliance,https://www.flickr.com/photos/kalvis/6931454159,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/kalvis/,Kalvis Kincis,0.0,eval3
+5f2675ea5a0b89ba,test,background,oven,https://www.flickr.com/photos/dwhartwig/15356201835,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/dwhartwig/,Daniel Hartwig,0.0,eval3
+fe5956b82ea1360d,test,background,sink,https://www.flickr.com/photos/redmoonsanctuary/11478676803,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/redmoonsanctuary/,Brett and Sue Coulstock,0.0,eval3
+5c9147ef37dd25d6,test,background,fridge,https://www.flickr.com/photos/morticide/4816877791,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/morticide/,morticide,0.0,eval3
+e06acf9ca667e61a,test,background,kitchen_appliance,https://www.flickr.com/photos/purple_mecha/4141948902,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/purple_mecha/,Nathaniel Homier,,eval3
+89d9811d8adcefd1,test,background,oven,https://www.flickr.com/photos/calgaryreviews/5842705998,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/calgaryreviews/,Calgary Reviews,0.0,eval3
+784bcad5a8866352,test,background,sink,https://www.flickr.com/photos/vivilia/8247519948,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/vivilia/,Vivilia .com,0.0,eval3
+46dccf0478d760a5,test,background,fridge,https://www.flickr.com/photos/paranoidnotandroid/2484737765,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/paranoidnotandroid/,paranoidnotandroid,0.0,eval3
+ed47757457c3b029,test,background,kitchen_appliance,https://www.flickr.com/photos/shoshanah/3261718906,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/shoshanah/,Shoshanah,0.0,eval3
+d04ba7bf3b56b1ba,test,background,oven,https://www.flickr.com/photos/97493971@N04/13990124999/,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/97493971@N04/,jibunkaiwai,0.0,eval3
+6f54a0595482a2da,test,background,sink,https://www.flickr.com/photos/contentmentonthecove/5554114139,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/contentmentonthecove/,John &amp; Jan Woodward,0.0,eval3
+b97486b4cc0ceee4,test,background,fridge,https://www.flickr.com/photos/notahipster/6222399522,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/notahipster/,Stacy Spensley,0.0,eval3
+b83eed6a7adfef83,test,background,kitchen_appliance,https://www.flickr.com/photos/aegidian/15599015525,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/aegidian/,Giles Williams,0.0,eval3
+57107968b00b7433,test,background,oven,https://www.flickr.com/photos/runytry/5187867296,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/runytry/,PATRICK JONAS,0.0,eval3
+00abaabafe892423,test,background,sink,https://www.flickr.com/photos/7853799@N03/4793138843,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/7853799@N03/,jjkadaba69,0.0,eval3
+288e1b6c95a3fafb,test,background,kitchen_appliance,https://www.flickr.com/photos/rhonlynn/9261201511,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/rhonlynn/,Rhonda,0.0,eval3
+5798482b01040286,test,background,oven,https://www.flickr.com/photos/carlwwycoff/9187288681,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/carlwwycoff/,Carl Wycoff,0.0,eval3
+22a1de85a0d41b96,test,background,kitchen_appliance,https://www.flickr.com/photos/jennifrog/1332846971,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/jennifrog/,Jenny Mealing,0.0,eval3
+c54b73f2c89e39ae,test,background,kitchen_appliance,https://www.flickr.com/photos/fictures/14854747841,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/fictures/,fictures,0.0,eval3
+944bff4dc849544b,test,background,kitchen_appliance,https://www.flickr.com/photos/jason-riedy/4329234984,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/jason-riedy/,Jason Riedy,,eval3
+2d3aec9d04146bbb,test,background,kitchen_appliance,https://www.flickr.com/photos/hemflock/11353840183,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/hemflock/,C Henrik Anderson,,eval3
+74b1b1bf427d5bff,test,background,kitchen_appliance,https://www.flickr.com/photos/creative_tools/5238031183,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/creative_tools/,Creative Tools,0.0,eval3
+d7e2e43b470a6cc8,test,background,kitchen_appliance,https://www.flickr.com/photos/boblinsdell/9467356394,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/boblinsdell/,Robert Linsdell,,eval3
+937abeb5b48a881f,test,background,kitchen_appliance,https://www.flickr.com/photos/jking89/4573300620/,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/jking89/,Joe King,0.0,eval3
+b6748985e452473a,test,background,kitchen_appliance,https://www.flickr.com/photos/124705972@N06/14248796927,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/124705972@N06/,Steve Larkin,0.0,eval3
+2d280b735153949e,test,background,kitchen_appliance,https://www.flickr.com/photos/jvh33/5592010217,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/jvh33/,John VanderHaagen,,eval3
+6ee4f0408749f539,test,background,kitchen_appliance,https://www.flickr.com/photos/prayitnophotography/8506147042,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/prayitnophotography/,Prayitno / Thank you for (9 millions +) views,0.0,eval3
+a7229e77c66fa1c1,test,background,kitchen_appliance,https://www.flickr.com/photos/joebeone/525217070,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/joebeone/,Joe Hall,,eval3
+1505228d03b21e0a,test,background,kitchen_appliance,https://www.flickr.com/photos/bpende/632924779,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/bpende/,Brad P.,0.0,eval3
+0987719a9310005b,test,background,kitchen_appliance,https://www.flickr.com/photos/nickwade/4124652768,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/nickwade/,NICK WADE,0.0,eval3
+3d2c267704c3dfbf,test,background,kitchen_appliance,https://www.flickr.com/photos/basykes/5168565300,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/basykes/,Bev Sykes,0.0,eval3
+7040933852035b8e,test,background,kitchen_appliance,https://www.flickr.com/photos/amslerpix/8313448334,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/amslerpix/,David Amsler,0.0,eval3
+641bb4b2ff9611ff,test,background,kitchen_appliance,https://www.flickr.com/photos/egfocus/9089723477,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/egfocus/,EG Focus,0.0,eval3
+7d4f411e3c4ce293,test,background,kitchen_appliance,https://www.flickr.com/photos/eben-frostey/7238749108,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/eben-frostey/,Eben Selker,0.0,eval3
+6ab96a2a6eed5f67,test,background,kitchen_appliance,https://www.flickr.com/photos/noeffred/3557309824,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/noeffred/,Christian Herzog,0.0,eval3
+da3be0e35e4c6ed9,test,background,kitchen_appliance,https://www.flickr.com/photos/paj/3753284148,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/paj/,Paul Jerry,0.0,eval3
+a8a873fec78927e6,test,background,kitchen_appliance,https://www.flickr.com/photos/jimmytst/19355033680,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/jimmytst/,Jimmy Tan,0.0,eval3
+68c2b7fa454da837,test,background,kitchen_appliance,https://www.flickr.com/photos/empracht/3179267871,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/empracht/,Emily Allen,0.0,eval3
+24e3ee52ac1821a9,test,background,kitchen_appliance,https://www.flickr.com/photos/jbach/5353947380,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/jbach/,James Bachleda,,eval3
+50aebdba4b02c513,test,background,kitchen_appliance,https://www.flickr.com/photos/cristiano_betta/388240300,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/cristiano_betta/,Cristiano Betta,0.0,eval3
+3150b45dbe882b1e,test,background,kitchen_appliance,https://www.flickr.com/photos/markdoliner/14707436407/,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/markdoliner/,Mark Doliner,0.0,eval3
+987d6a2d7793e1e8,test,background,kitchen_appliance,https://www.flickr.com/photos/28600623@N03/5842840879/,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/28600623@N03/,Jess Brown,0.0,eval3
+ed834024da05b628,test,background,kitchen_appliance,https://www.flickr.com/photos/matthieu/3334451761,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/matthieu/,Matthieu Guyonnet-Duluc,0.0,eval3
+99e6b2e3c3cfda19,test,background,kitchen_appliance,https://www.flickr.com/photos/cbroders/7169701719,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/cbroders/,Counse,0.0,eval3
+a3df3fb46ba8d5f2,test,background,kitchen_appliance,https://www.flickr.com/photos/62274237@N06/5663134617,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/62274237@N06/,cmun_Project,0.0,eval3
+57f99c59d98ccc97,test,background,kitchen_appliance,https://www.flickr.com/photos/joeshlabotnik/3007974681,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/joeshlabotnik/,Joe Shlabotnik,0.0,eval3
+68e544cf109dfd86,test,background,kitchen_appliance,https://www.flickr.com/photos/mishimoto/4090612292,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/mishimoto/,Mishimoto,0.0,eval3
+8f7df4c72ad19955,test,background,kitchen_appliance,https://www.flickr.com/photos/mjtmail/14794047114,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/mjtmail/,mjtmail (tiggy),0.0,eval3
+e28993f8e28d4ceb,test,background,kitchen_appliance,https://www.flickr.com/photos/blmurch/140697350,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/blmurch/,Beatrice Murch,0.0,eval3
+885235573d32bcff,test,background,kitchen_appliance,https://www.flickr.com/photos/64636759@N07/8649757495,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/64636759@N07/,thedabblist,0.0,eval3
+42dc8f1598e5fb16,test,background,kitchen_appliance,https://www.flickr.com/photos/morten812/15247130911/,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/morten812/,Morten Jensen,0.0,eval3
+78b7234edfefd36e,test,background,kitchen_appliance,https://www.flickr.com/photos/bbaunach/319187002,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/bbaunach/,Brandon Baunach,0.0,eval3
+c7c71b8189908011,test,background,kitchen_appliance,https://www.flickr.com/photos/jackson3/4726246308,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/jackson3/,Steven Jackson,0.0,eval3
+a8836bdcd384bb7c,test,background,kitchen_appliance,https://www.flickr.com/photos/danielthornton/8692973692,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/danielthornton/,Daniel Thornton,0.0,eval3
+28816c97add28a00,test,background,kitchen_appliance,https://flickr.com/129544501@N02/16518872105,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/theheinrichteam/,Ben Heinrich,0.0,eval3
+4d055f3b130bd514,test,background,kitchen_appliance,https://www.flickr.com/photos/achome4/7787730590,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/achome4/,William Sherman,,eval3
+5ec5448c6bc4e86d,test,background,kitchen_appliance,https://www.flickr.com/photos/jimmytst/19356463639,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/jimmytst/,Jimmy Tan,0.0,eval3
+b567f64f682fbebb,test,background,kitchen_appliance,https://www.flickr.com/photos/finnsnaps/6412244137,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/finnsnaps/,Finn Mac Ginty,0.0,eval3
+363ca9571e4863dc,test,background,kitchen_appliance,https://www.flickr.com/photos/81837064@N02/14957486008,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/81837064@N02/,satellite98,0.0,eval3
+06f62b0d01414fb5,test,background,kitchen_appliance,https://www.flickr.com/photos/perrygoh/11186838955,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/perrygoh/,Perry Goh,0.0,eval3
+dccec911c0627657,test,background,kitchen_appliance,https://www.flickr.com/photos/jasonsandeman/5662786448,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/jasonsandeman/,Jason Sandeman,0.0,eval3
+faf895256729d41b,test,background,kitchen_appliance,https://www.flickr.com/photos/pixel_addict/553880247,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/pixel_addict/,Pixel Addict,0.0,eval3
+37172175625ba0f5,test,background,kitchen_appliance,https://www.flickr.com/photos/musaship/2657833362,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/musaship/,Pablo Mera,0.0,eval3
+0027ad8c5fcf4eb1,test,background,kitchen_appliance,https://www.flickr.com/photos/100269740@N07/9514931856,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/100269740@N07/,5coffees,0.0,eval3
+36d96475a9b13a97,test,background,kitchen_appliance,https://www.flickr.com/photos/perkovich/3084171055/,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/perkovich/,Per Åström,,eval3
+f8f59fe104acea22,test,background,kitchen_appliance,https://flickr.com/97719890@N00/2507123635,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/sadsnaps/,Steven Damron,0.0,eval3
+0945605f06f55b8b,test,background,kitchen_appliance,https://www.flickr.com/photos/glamourschatz/438693337,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/glamourschatz/,Angel Schatz,0.0,eval3
+9b4bde655182d630,test,background,kitchen_appliance,https://www.flickr.com/photos/feserc/2605696376,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/feserc/,Chris Feser,0.0,eval3
+4b0019f97cfa3cd2,test,background,kitchen_appliance,https://www.flickr.com/photos/gipuzkoakultura/7885710588,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/gipuzkoakultura/,GipuzkoaKultura,0.0,eval3
+59fb348b5f6cc11b,test,background,kitchen_appliance,https://www.flickr.com/photos/photofarmer/6397513431,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/photofarmer/,Dwight Sipler,0.0,eval3
+a829cdb32c9e602d,test,background,kitchen_appliance,https://www.flickr.com/photos/nilswoxholt/2994485353,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/nilswoxholt/,Nils.Woxholt,0.0,eval3
+29e78aee706861b1,test,background,kitchen_appliance,https://www.flickr.com/photos/graemenewcomb/1411998044,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/graemenewcomb/,Graeme Newcomb,,eval3
+8926f7f6295f09b0,test,background,kitchen_appliance,https://www.flickr.com/photos/kristinnador/7696009292,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/kristinnador/,Kristin Nador,0.0,eval3
+6407819cab78794e,test,background,kitchen_appliance,https://www.flickr.com/photos/106447493@N05/15222214164,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/106447493@N05/,Leon Yaakov,,eval3
+9e88730f29b1944b,test,background,kitchen_appliance,https://www.flickr.com/photos/charkes/4691631935,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/charkes/,Charles Willgren,0.0,eval3
+5d3ec3531dffa3d4,test,background,kitchen_appliance,https://www.flickr.com/photos/camerondmitchell/7937550928,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/camerondmitchell/,Cameron Mitchell,,eval3
+10496727ba69cf8b,test,background,kitchen_appliance,https://www.flickr.com/photos/brucehh/228866314,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/brucehh/,Bruce Harlick,0.0,eval3
+291d1b1c5ebffba7,test,background,kitchen_appliance,https://www.flickr.com/photos/moxieg/2168700259/,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/moxieg/,Moxieg,0.0,eval3
+1cf3197242e16924,test,background,kitchen_appliance,https://www.flickr.com/photos/sue_elias/17138010997,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/sue_elias/,Sue,0.0,eval3
+e9b9c0ed5a3e7ad0,test,background,kitchen_appliance,https://www.flickr.com/photos/hannahdonovan/5313613870,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/hannahdonovan/,Hannah Donovan,0.0,eval3
+229c76d717fdac34,test,background,kitchen_appliance,https://www.flickr.com/photos/98810558@N02/9274166458,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/98810558@N02/,Chan ka Wing,0.0,eval3
+bf32fb9d9bfb20a7,test,background,kitchen_appliance,https://www.flickr.com/photos/collinanderson/2193263123,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/collinanderson/,Collin Anderson,0.0,eval3
+a846e08191ce97dc,test,background,kitchen_appliance,https://www.flickr.com/photos/jasonsandeman/3722947246,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/jasonsandeman/,Jason Sandeman,,eval3
+c0f22c479493ca26,test,background,kitchen_appliance,https://www.flickr.com/photos/medea_material/3075921371,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/medea_material/,medea_material,0.0,eval3
+c143ff1de653d168,test,background,kitchen_appliance,https://www.flickr.com/photos/feelingmyage/9102017750,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/feelingmyage/,Feeling My Age,0.0,eval3
+7c0d91a4e4a3218f,test,background,kitchen_appliance,https://www.flickr.com/photos/iluvcocacola/1315294881,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/iluvcocacola/,Bill &amp; Vicki T,,eval3
+02c221b14cbcc489,test,background,kitchen_appliance,https://www.flickr.com/photos/limaoscarjuliet/15657181832,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/limaoscarjuliet/,Pawel Loj,0.0,eval3
+f4628fe8312bf533,test,background,kitchen_appliance,https://www.flickr.com/photos/harry/5270726498,https://creativecommons.org/licenses/by/2.0/,https://www.flickr.com/people/harry/,Brian Lamb,0.0,eval3

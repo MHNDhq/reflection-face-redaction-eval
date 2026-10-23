@@ -27,7 +27,7 @@ def main():
     pool, split = args[0], args[1]
     n_face, n_neg, n_bg = (int(x) for x in args[2:5])
     strict = "--strict" in sys.argv
-    seed = {"eval2": 31, "tune3": 32, "train_hn": 33}.get(pool, 34)
+    seed = {"eval2": 31, "tune3": 32, "train_hn": 33, "eval3": 35}.get(pool, 34)
     src_path, fb_path = ROOT / "data" / "sources.csv", ROOT / "data" / "source_boxes.csv"
     src0, fb0 = pd.read_csv(src_path), pd.read_csv(fb_path)
     if "pool" in src0.columns and (src0["pool"] == pool).any():

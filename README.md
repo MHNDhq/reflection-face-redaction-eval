@@ -24,6 +24,20 @@ Written before any detector was run on tune2 and before eval was read again:
 - Model: ft_B (500 steps) vs ft_B_long (1,500 steps, same data): the one with the higher tune recall at
   its own rule cutoff is reported as "after". Eval is read once, after that choice.
 
+## Pre-registration, round 4 (2026-10-23T20:03Z, committed before the step it governs)
+
+Round 3 read (eval2, once): ft_HN, chosen on tune, 68.0% recall at 93.7% precision, 1.3 points under 95%;
+the false alarms concentrate on mirror-backed no-face frames (13.7% of them). Round 4, written before
+training ft_HN2 and before any detector runs on eval3:
+- train_hn2: the 179 training-only validation negatives (data/train_hn) re-composited 6 times each on
+  mirror and appliance backgrounds mostly (1,074 images). Validation negatives are otherwise used up.
+- ft_HN2: ft_A + plain + reflection composites + train_hn + train_hn2, 2,000 steps.
+- eval3: a FOURTH, fresh test-split set (1,120 composites: 300 face photos, 260 negatives incl. 48
+  sculptures, 160 new backgrounds; 46% no-face frames). Same negative rule as eval2.
+- Tune set, rule and grid: unchanged from round 3.
+- Model: ft_HN vs ft_HN2, the higher tune recall at its rule cutoff is "after". eval3 is read once.
+  eval and eval2 are reported for continuity; eval2 has been read once, eval three times.
+
 ## Pre-registration, round 3 (2026-10-23T19:31Z, committed before the step it governs)
 
 Round 2 read: ft_B_long, chosen on tune, gave 71.6% recall at 87.6% precision on eval, below 95%.

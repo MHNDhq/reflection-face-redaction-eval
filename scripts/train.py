@@ -43,7 +43,7 @@ def to_target(boxes, flip, w, dev):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--stage", required=True, choices=["A", "B", "control", "HN"])
+    ap.add_argument("--stage", required=True, choices=["A", "B", "control", "HN", "HN2"])
     ap.add_argument("--steps", type=int, default=None)
     ap.add_argument("--bs", type=int, default=8)
     ap.add_argument("--tag", default="", help="suffix for the saved weights and log, e.g. _long")
@@ -59,10 +59,12 @@ def main():
         model = D.build_frcnn(pretrained=False)
         model.load_state_dict(torch.load(ROOT / "models" / "ft_A.pt", map_location="cpu", weights_only=True))
         items = load_set("train_plain")
-        if a.stage in ("B", "HN"):
+        if a.stage in ("B", "HN", "HN2"):
             items += load_set("train_comp")
-        if a.stage == "HN":  # round 3: + hard negatives from a disjoint validation pool (data/train_hn)
+        if a.stage in ("HN", "HN2"):  # round 3: + hard negatives from a disjoint validation pool (data/train_hn)
             items += load_set("train_hn")
+        if a.stage == "HN2":  # round 4: + the same negatives re-composited, mirror/appliance-weighted
+            items += load_set("train_hn2")
         steps, lr = a.steps or 500, 0.005
     model.to(dev).train()
     params = [p for p in model.parameters() if p.requires_grad]
