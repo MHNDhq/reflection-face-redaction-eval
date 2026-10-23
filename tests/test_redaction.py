@@ -27,6 +27,12 @@ mask = R.redaction_mask(frame.shape, boxes)
 check("outside boxes byte-identical", np.array_equal(out[~mask], frame[~mask]))
 check("inside boxes all fill colour", np.all(out[mask] == np.array(R.FILL, np.uint8)))
 check("source frame not mutated", not np.shares_memory(out, frame))
+src_copy = frame.copy()
+_ = R.redact(frame, boxes)
+check("source frame bytes unchanged after redact", np.array_equal(frame, src_copy))
+# Oracle independent of expand(): a box fully off-frame must change zero pixels.
+off = R.redact(frame, [(-60, 10, -20, 50), (1000, 600, 1100, 700)])
+check("box fully off-frame changes no pixels", np.array_equal(off, frame))
 print(f"     changed pixels {int(mask.sum())} of {H * W} ({100 * mask.mean():.2f}%)")
 
 # 2. Irreversibility: two different faces under the same boxes give byte-identical outputs in the boxes.

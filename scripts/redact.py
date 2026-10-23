@@ -16,8 +16,13 @@ FILL = (128, 128, 128)
 def expand(box, margin, w, h):
     x0, y0, x1, y1 = box[:4]
     mw, mh = (x1 - x0) * margin, (y1 - y0) * margin
-    return (max(0, int(np.floor(x0 - mw))), max(0, int(np.floor(y0 - mh))),
-            min(w, int(np.ceil(x1 + mw))), min(h, int(np.ceil(y1 + mh))))
+    # Clamp all four edges into the frame. A box fully off-frame used to give a NEGATIVE x1/y1,
+    # which numpy reads as "all but the last N" and filled a band across the frame (review 2026-10-23).
+    cx = lambda v: max(0, min(w, v))
+    cy = lambda v: max(0, min(h, v))
+    ex0, ey0 = cx(int(np.floor(x0 - mw))), cy(int(np.floor(y0 - mh)))
+    ex1, ey1 = cx(int(np.ceil(x1 + mw))), cy(int(np.ceil(y1 + mh)))
+    return (ex0, ey0, max(ex0, ex1), max(ey0, ey1))
 
 
 def _iou(a, b):

@@ -160,6 +160,19 @@ See `LICENCES.md` for the audit with source URLs. Short version:
   answer key's hold-out, not from this set.
 - "Mirror" backgrounds in Open Images include car mirrors; they are not all domestic.
 
+## Known method limits (found in a code review on 2026-10-23, not yet fixed)
+
+Every number above was measured under these rules. They are listed so you can weigh the numbers.
+
+- Ground-truth boxes are clipped to the 960x540 canvas, not to the composite panel. In the eval set, 125 of 501 scoring boxes in panel families extend past the panel edge, 39 of them by more than 20% of their area. A detector that boxes only the visible face scores lower than it should.
+- Faces 5% to 60% visible are "ignore" regions in scoring, but `train.py` trains ignore regions 8 px or wider as faces. That is label noise and may explain part of the fine-tune's higher false-alarm rate.
+- Matching pairs each detection with its single best ground truth, not with the best unmatched one (the VOC/COCO rule). With two adjacent faces this can undercount recall.
+- `interpolate_gaps` bridges a miss only when the face box after the gap still overlaps the box before it. A face that moves far during a long miss is not bridged; padding (8 frames each side) still applies.
+- The `ignore` column that `select_sources.py` writes for very small faces is not read by `composite.py`.
+- `download_sources.py` does not retry a throttled download, so one image can go missing and shift the training draws.
+
+Fixed in the same review: `expand()` now clamps all four box edges into the frame (a box fully off-frame used to fill a band of the frame; no stored detection was off-frame, so no metric changed), and training and inference pick MPS, then CUDA, then CPU.
+
 ## Reproduce
 
 `./reproduce.sh` rebuilds everything from public downloads. Single commands are listed inside it.

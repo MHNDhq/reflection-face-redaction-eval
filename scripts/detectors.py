@@ -57,10 +57,12 @@ def build_frcnn(num_classes=2, pretrained=True, min_size=540, max_size=960):
 
 
 class FRCNN:
-    def __init__(self, ckpt, device="mps"):
+    def __init__(self, ckpt, device=None):
         import torch
         self.torch = torch
         self.name = Path(ckpt).stem
+        if device is None:
+            device = "mps" if torch.backends.mps.is_available() else "cuda" if torch.cuda.is_available() else "cpu"
         self.dev = torch.device(device)
         self.m = build_frcnn(pretrained=False)
         self.m.load_state_dict(torch.load(ckpt, map_location="cpu", weights_only=True))

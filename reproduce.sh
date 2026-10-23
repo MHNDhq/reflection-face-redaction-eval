@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Rebuild every number in README.md from scratch. Needs Python 3.12, ffmpeg, and about 2 GB of disk.
-# Training uses Apple MPS; on another machine change device="mps" in scripts/train.py and scripts/detectors.py.
+# Training picks Apple MPS, then CUDA, then CPU. throughput.py uses hevc_videotoolbox, so that step needs macOS.
 set -euo pipefail
 cd "$(dirname "$0")"
 [ -x .venv/bin/python ] || { python3.12 -m venv .venv && .venv/bin/pip install -r requirements.txt; }

@@ -49,7 +49,7 @@ def main():
     a = ap.parse_args()
     random.seed(0)
     torch.manual_seed(0)
-    dev = torch.device("mps")
+    dev = torch.device("mps" if torch.backends.mps.is_available() else "cuda" if torch.cuda.is_available() else "cpu")
     if a.stage == "A":
         items = load_set("train_plain", positives_only=True)
         model = D.build_frcnn(pretrained=True)
