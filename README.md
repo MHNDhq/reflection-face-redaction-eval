@@ -13,6 +13,52 @@ faces (toys, dolls, sculptures, cartoon prints, packaging, screens without peopl
 Built in October 2026 by Muhannad Ahmad for an application to a face-redaction trial. It's the first
 face detector he has fine-tuned.
 
+## Result (eval3: fresh, pre-registered, read once)
+
+eval3: 1,120 synthetic composites from Open Images TEST-split photos never used before (300 face photos,
+260 hard negatives incl. 48 sculptures, 160 new backgrounds; 46% no-face frames). Every cutoff was picked
+on the tune sets (2,550 images) by the rule committed before this read: highest tune recall among cutoffs
+whose tune precision has a cluster-bootstrap 5th percentile of at least 95%. The "after" model was also
+chosen on tune. Confidence intervals: 95%, bootstrap over source photos.
+
+| detector | cutoff | redaction recall | redaction precision | false-alarm frames |
+|---|---|---|---|---|
+| YuNet 2023mar at 0.9 (the client's current setting) | 0.9 | 26.1% | 99.0% | 0.4% |
+| YuNet 2023mar, cutoff from tune | 0.8 | 45.9% (41.1 to 50.5) | 95.7% (92.5 to 98.1) | 1.7% |
+| Faster R-CNN ft_A, plain faces (before) | 0.94 | 43.8% (39.4 to 48.3) | 96.5% (94.4 to 98.2) | 1.5% |
+| Faster R-CNN ft_control, + plain photos and hard negatives | 0.75 | 47.4% | 94.5% | 1.3% |
+| Faster R-CNN ft_HN2, + reflection composites + hard negatives (after) | 0.6 | 65.1% (60.6 to 69.8) | 95.4% (93.6 to 97.1) | 2.3% |
+
+Read honestly:
+- On this clean read the fine-tuned model clears a 95% precision bar at its tune-picked cutoff, and covers
+  about 19 points more faces than YuNet with its own tuned cutoff, at about the same precision. The
+  precision interval (93.6 to 97.1%) includes values below 95%, so "at the bar", not "safely above it".
+- Not robust yet: the SAME model and cutoff give 94.1% precision on eval2 and 89.6% on the original eval
+  set, which has more verified hard negatives (82 sculptures, 80 toys). Those two sets were read before
+  this model existed (eval three times, eval2 once), so they are reported, not used to choose anything.
+- Shower glass, never in training: YuNet at 0.9 0.7%, ft_A 18.5%, ft_HN2 26.7%. Screens with people:
+  YuNet at 0.9 0.0%, ft_HN2 60.2%.
+- One training seed per stage; run-to-run noise is not measured.
+- No detector is near 99% recall.
+
+`results/sample_redactions.jpg` shows four eval3 frames, picked by position (the fourth face frame of each
+family), not by result, before and after ft_HN2 at 0.6 plus the fill: 2 of their 5 scoring faces are
+covered (mirror 1 of 1, appliance 1 of 2, shower 0 of 1, screen 0 of 1). Full tables:
+`results/metrics_eval3.md`, `results/metrics_eval2.md`, `results/metrics.md` (the original eval).
+
+## How it got here (four rounds, every rule committed before the read it governs)
+
+| round | eval set (reads) | rule | "after" model | recall | precision |
+|---|---|---|---|---|---|
+| 1 | eval (1st) | point precision >= 95% on a 240-image tune split | ft_B | 65.8% | 90.2% |
+| 2 | eval (3rd) | cluster bootstrap on tune + tune2 (6.5% no-face, no sculptures) | ft_B_long | 71.6% | 87.6% |
+| 3 | eval2 (1st) | same, tune + tune2 + tune3 (34% no-face) | ft_HN | 68.0% | 93.7% |
+| 4 | eval3 (1st) | same | ft_HN2 | 65.1% | 95.4% |
+
+A per-box Wilson-bound rule was also tried between rounds 1 and 2, chosen after the first eval read; it is
+superseded and not counted as a round. What moved the result: a tune set whose no-face share matches the
+eval sets (precision depends on that share), and hard-negative training aimed at mirror-backed false alarms.
+
 ## Pre-registration (2026-10-23T18:22Z, committed before the step it governs)
 
 Written before any detector was run on tune2 and before eval was read again:
@@ -23,20 +69,6 @@ Written before any detector was run on tune2 and before eval was read again:
 - Grid: unchanged from the previous commit.
 - Model: ft_B (500 steps) vs ft_B_long (1,500 steps, same data): the one with the higher tune recall at
   its own rule cutoff is reported as "after". Eval is read once, after that choice.
-
-## Pre-registration, round 4 (2026-10-23T20:03Z, committed before the step it governs)
-
-Round 3 read (eval2, once): ft_HN, chosen on tune, 68.0% recall at 93.7% precision, 1.3 points under 95%;
-the false alarms concentrate on mirror-backed no-face frames (13.7% of them). Round 4, written before
-training ft_HN2 and before any detector runs on eval3:
-- train_hn2: the 179 training-only validation negatives (data/train_hn) re-composited 6 times each on
-  mirror and appliance backgrounds mostly (1,074 images). Validation negatives are otherwise used up.
-- ft_HN2: ft_A + plain + reflection composites + train_hn + train_hn2, 2,000 steps.
-- eval3: a FOURTH, fresh test-split set (1,120 composites: 300 face photos, 260 negatives incl. 48
-  sculptures, 160 new backgrounds; 46% no-face frames). Same negative rule as eval2.
-- Tune set, rule and grid: unchanged from round 3.
-- Model: ft_HN vs ft_HN2, the higher tune recall at its rule cutoff is "after". eval3 is read once.
-  eval and eval2 are reported for continuity; eval2 has been read once, eval three times.
 
 ## Pre-registration, round 3 (2026-10-23T19:31Z, committed before the step it governs)
 
@@ -55,47 +87,19 @@ and no sculptures; eval has 40%. Round 3, written before any detector runs on th
 - Rule and grid: unchanged (cluster-bootstrap 5th percentile of tune precision >= 95%).
 - Model: ft_B_long vs ft_B_hn, the higher tune recall at its rule cutoff is "after". eval2 is read once.
 
-## What was measured
+## Pre-registration, round 4 (2026-10-23T20:03Z, committed before the step it governs)
 
-Eval set: 860 synthetic images (596 scoring faces in 427 face frames, 340 hard-negative frames), all
-from Open Images TEST-split photos. Command: `.venv/bin/python scripts/report.py` (after `scripts/evaluate.py`).
-
-Cutoff rule: for each detector, the highest redaction recall on the TUNE split among cutoffs where the
-lower end of the two-sided 95% confidence interval (Wilson) for tune precision is at least 95%, applied
-unchanged to eval. My first rule used the point precision on tune; the 240-image tune split flattered it
-(95 to 96% on tune became 88 to 91% on eval). This rule, and a finer cutoff grid, were chosen AFTER eval
-had been read under the first rule, so treat the result as a second look, not a clean hold-out. It is also
-fragile: ft_B's lower bound is 95.5% at 0.9 and 94.9% at 0.85, so one tune box decides between 55% and
-about 60% recall. A larger tune split is the real fix.
-
-| detector | cutoff | redaction recall | redaction precision | false-alarm frames |
-|---|---|---|---|---|
-| YuNet 2023mar at 0.9 (the client's current setting) | 0.9 | 30.7% | 99.5% | 0.0% |
-| BlazeFace full-range, cutoff from tune split | 0.65 | 37.1% | 99.6% | 0.3% |
-| Faster R-CNN ft_A, plain faces (before) | 0.99 | 36.6% | 97.9% | 1.2% |
-| Faster R-CNN ft_control, + plain photos and hard negatives | 0.99 | 32.4% | 99.5% | 0.0% |
-| Faster R-CNN ft_B, + reflection composites (after) | 0.9 | 55.2% | 96.9% | 1.8% |
-
-What moved, read honestly:
-- Before to after (ft_A to ft_B, each at its tune-split cutoff): redaction recall 36.6% to 55.2%, at 97.9%
-  and 96.9% precision, both above a 95% bar.
-- At matched precision (about 96%, cutoffs chosen on eval, comparison only): ft_A 40.8%, ft_control 47.1%,
-  ft_B 55.2%. So about 8 of the 14 points came with the reflection composites; about 6 came without them
-  (extra steps and hard negatives).
-- YuNet has no cutoff that meets the rule on the tune split: it is 61 of 61 correct at 0.9 on tune, and
-  61 boxes is too few for the bound. For comparison only: at 0.8 it reaches 49.7% at 96.5% on eval.
-- Shower glass, never in training: YuNet at 0.9 10.6%, ft_A 16.3%, ft_B 32.7%.
-- Screens with people: YuNet at 0.9 0.0%, ft_B 32.1%.
-- No detector is near 99% recall. Precision and recall trade against each other here: at its lower cutoff
-  of 0.65, ft_B covers 65.8% of faces but at 90.2% precision, below the bar.
-
-
-Full tables: `results/metrics.md`. Raw detections: `results/eval_*.json`. Curve: `results/pr_curve.png`.
-
-`results/sample_redactions.jpg` shows four eval frames before and after ft_B at its 0.9 cutoff plus the fill.
-They were picked by position (the fourth face frame of each family), not by result. At 0.9, none of their
-faces is redacted. Overall recall at 0.9 is 55.2%; this sample is worse than average. `results/contact_eval_positive.jpg` and
-`results/contact_eval_negative.jpg` show the ground truth (green = scoring face, yellow = ignore).
+Round 3 read (eval2, once): ft_HN, chosen on tune, 68.0% recall at 93.7% precision, 1.3 points under 95%;
+the false alarms concentrate on mirror-backed no-face frames (13.7% of them). Round 4, written before
+training ft_HN2 and before any detector runs on eval3:
+- train_hn2: the 179 training-only validation negatives (data/train_hn) re-composited 6 times each on
+  mirror and appliance backgrounds mostly (1,074 images). Validation negatives are otherwise used up.
+- ft_HN2: ft_A + plain + reflection composites + train_hn + train_hn2, 2,000 steps.
+- eval3: a FOURTH, fresh test-split set (1,120 composites: 300 face photos, 260 negatives incl. 48
+  sculptures, 160 new backgrounds; 46% no-face frames). Same negative rule as eval2.
+- Tune set, rule and grid: unchanged from round 3.
+- Model: ft_HN vs ft_HN2, the higher tune recall at its rule cutoff is "after". eval3 is read once.
+  eval and eval2 are reported for continuity; eval2 has been read once, eval three times.
 
 ### How the numbers are scored
 
@@ -117,9 +121,13 @@ faces is redacted. Overall recall at 0.9 is 55.2%; this sample is worse than ave
   are used. `data/sources.csv` lists every source image with its licence, author, author page and Flickr page.
 - Faces: Open Images human-drawn "Human face" boxes; images with group or depiction face boxes are
   skipped, so every positive is a real person's face.
-- Hard negatives (eval): doll, teddy bear, toy, sculpture, snowman, screen, packaging and poster images
-  with no person boxes and a human-verified "no face" label. Training negatives only need no person
-  boxes or labels.
+- Hard negatives: doll, teddy bear, toy, sculpture, snowman, screen, packaging and poster images with no
+  person boxes. The original eval set also needs a human-verified "no face" label; eval2 and eval3 do not
+  (the test split ran out of verified ones), so an unlabeled face there counts as a false alarm and
+  lowers precision. Training and tune negatives only need no person boxes or labels.
+- Pools added after round 1 (`scripts/select_tune2.py`, `scripts/select_pool.py`, `pool` column in
+  `data/sources.csv`): tune2 and tune3 (validation, tune only), train_hn (validation, training only),
+  eval2 and eval3 (test, with their own backgrounds). No photo is in two pools.
 - Backgrounds: fridge, microwave, oven, mirror, shower, bath and sink photos with no person boxes. Any
   background where YuNet or BlazeFace fired at 0.5 was dropped (45 of 339). Detectors never filtered the
   hard negatives, so the hard ones stayed in.
@@ -141,6 +149,9 @@ faces is redacted. Overall recall at 0.9 is 55.2%; this sample is worse than ave
 - Control: A, then plain photos + hard negatives, no composites, same steps and learning rate as B. The
   gap between B and the control is what the reflection composites added; the gap between A and the
   control is what the hard negatives and extra steps added.
+- B_long: stage B for 1,500 steps. HN: B data + train_hn hard negatives, 1,500 steps. HN2 (the reported
+  "after"): HN data + train_hn2 (the same negatives re-composited on mirror and appliance backgrounds),
+  2,000 steps. Each was chosen against the previous one on tune only.
 - Training logs with loss, steps and seconds: `models/ft_*_trainlog.json`.
 - The fine-tuned weight files (`models/ft_*.pt`) are NOT in this repo; they are available on request. The reason is
   the licence: the base model's lineage (torchvision COCO weights on an ImageNet backbone) is unresolved, see
@@ -172,7 +183,7 @@ Measured on an Apple M5 (10-core GPU, 24 GB) with `.venv/bin/python scripts/thro
 
 | step | input | frames per second |
 |---|---|---|
-| ft_B Faster R-CNN, MPS GPU, batch 8 | 960x540 | 28.2 |
+| ft_B Faster R-CNN, MPS GPU, batch 8 (same architecture as ft_HN2) | 960x540 | 28.2 |
 | ft_B Faster R-CNN, MPS GPU, batch 8 | 1920x1080 (the model resizes to 960x540 inside) | 18.8 |
 | YuNet, CPU (OpenCV) | 960x540 | 155.9 |
 | YuNet, CPU (OpenCV) | 1920x1080 | 19.7 |

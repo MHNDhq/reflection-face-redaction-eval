@@ -13,6 +13,7 @@ eval2: 1040 composite images (test-split sources). Tune: 240 images (validation-
 | Faster R-CNN, +reflection composites (500 steps) | 0.65 | 61.7% | 93.9% | 61.3% | 4.3% | 57.9% | 88.8% |
 | Faster R-CNN, +reflection composites, 1,500 steps | 0.75 | 64.6% | 95.0% | 64.4% | 3.9% | 60.2% | 89.4% |
 | Faster R-CNN, +reflection composites + hard negatives, 1,500 steps | 0.65 | 68.0% | 93.7% | 66.9% | 5.0% | 63.6% | 87.5% |
+| Faster R-CNN, + hard negatives x2, mirror-weighted, 2,000 steps | 0.6 | 67.3% | 94.1% | 65.2% | 4.1% | 62.6% | 87.9% |
 
 ## Comparison at equal precision (cutoff chosen on EVAL itself; for comparison only, not a deployable number)
 
@@ -26,6 +27,7 @@ eval2: 1040 composite images (test-split sources). Tune: 240 images (validation-
 | Faster R-CNN, +reflection composites (500 steps) | 0.75 | 58.0% | 96.0% |
 | Faster R-CNN, +reflection composites, 1,500 steps | 0.8 | 63.3% | 95.8% |
 | Faster R-CNN, +reflection composites + hard negatives, 1,500 steps | 0.7 | 66.5% | 95.5% |
+| Faster R-CNN, + hard negatives x2, mirror-weighted, 2,000 steps | 0.7 | 64.5% | 95.3% |
 
 ## Redaction recall by family (shower = held out of training)
 
@@ -40,6 +42,7 @@ eval2: 1040 composite images (test-split sources). Tune: 240 images (validation-
 | Faster R-CNN, +reflection composites (500 steps) at 0.65 | 81.7% | 58.4% | 28.2% | 72.3% | 51.8% | 89.2% |
 | Faster R-CNN, +reflection composites, 1,500 steps at 0.75 | 81.7% | 68.0% | 31.3% | 73.9% | 52.7% | 90.3% |
 | Faster R-CNN, +reflection composites + hard negatives, 1,500 steps at 0.65 | 84.6% | 72.0% | 32.1% | 77.3% | 61.6% | 90.3% |
+| Faster R-CNN, + hard negatives x2, mirror-weighted, 2,000 steps at 0.6 | 83.7% | 72.0% | 27.5% | 77.3% | 62.5% | 91.4% |
 
 ## False-alarm frames on hard negatives by family
 
@@ -53,3 +56,4 @@ eval2: 1040 composite images (test-split sources). Tune: 240 images (validation-
 | Faster R-CNN, +reflection composites (500 steps) at 0.65 | 9.6% | 8.1% | 0.0% | 4.1% | 1.4% | 2.8% |
 | Faster R-CNN, +reflection composites, 1,500 steps at 0.75 | 8.2% | 4.1% | 2.7% | 4.1% | 1.4% | 2.8% |
 | Faster R-CNN, +reflection composites + hard negatives, 1,500 steps at 0.65 | 13.7% | 5.4% | 4.1% | 2.7% | 1.4% | 2.8% |
+| Faster R-CNN, + hard negatives x2, mirror-weighted, 2,000 steps at 0.6 | 11.0% | 6.8% | 2.7% | 2.7% | 1.4% | 0.0% |
