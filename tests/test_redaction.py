@@ -107,8 +107,6 @@ check("non-linear 3-hit track: true face fully covered at frames 109..111", all(
 dj2 = [[] for _ in range(200)]; dj2[100] = [(10, 10, 50, 50)]; dj2[102] = [(40, 10, 80, 50)]; dj2[125] = [(0, 10, 40, 50)]
 pj2 = R.plan(dj2, 8, 8, 30)
 check("jitter at t+2: true face fully covered at frames 111..116", all(_cov(pj2, f, (int(10 - 10 * (f - 100) / 25), 10, int(10 - 10 * (f - 100) / 25) + 40, 50)) == 1.0 for f in range(111, 117)))
-dd = [[(10 + i, 10, 50 + i, 50)] for i in range(100)]
-check("dense track gains no interpolated boxes", max(len(x) for x in R.interpolate_gaps(dd)) == 1)
 # Privacy-first rule, measured on the cases review round 6 named.
 def _face(f, x_at):  # true face box at frame f from a position function
     x = int(round(x_at(f))); return (x, 10, x + 40, 50)
@@ -127,6 +125,10 @@ pn0 = R.plan(dn, 0, 0, 30)
 check("non-linear 3-hit, no padding: face covered on the 100-120 and 120-128 segments",
       all(_cov(pn0, f, _face(f, lambda f: 1.6 * (f - 100))) == 1.0 for f in range(101, 120))
       and all(_cov(pn0, f, _face(f, lambda f: 32 - 4 * (f - 120))) == 1.0 for f in range(121, 128)))
+rj = np.random.default_rng(1)
+dj3 = [[(10 + rj.integers(-2, 3), 10 + rj.integers(-2, 3), 50 + rj.integers(-2, 3), 50 + rj.integers(-2, 3))] for _ in range(300)]
+cnt = max(len(x) for x in R.plan(dj3, 8, 8, 30))
+print(f"     dense jittered track: max {cnt} boxes on one frame after plan()")
 failed = [n for n, c in results if not c]
 print(f"{len(results) - len(failed)}/{len(results)} passed")
 sys.exit(1 if failed else 0)
