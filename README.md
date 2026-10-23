@@ -114,7 +114,8 @@ YuNet still found 75 after a light Gaussian blur (sigma 3), 39 after an 8-pixel 
   how close the output stays to the source.
 - Time: every box found at frame t is also applied from t-8 to t+8, and a face found at t and again at
   t+g (g up to 30, so up to 29 missed frames, overlapping boxes) is bridged with interpolated boxes. Tested: a hit at frame 100
-  keeps 92 to 108 filled; hits at 100 and 125 keep 100 to 125 filled.
+  keeps 92 to 108 filled; hits at 100 and 125 keep 100 to 125 filled; a 29-frame miss is bridged and a
+  30-frame miss is not; a jittered box one frame after the hit does not cancel the bridge.
 
 ## Throughput and cost
 
@@ -171,7 +172,7 @@ Every number above was measured under these rules. They are listed so you can we
 - The `ignore` column that `select_sources.py` writes for very small faces is not read by `composite.py`.
 - `download_sources.py` does not retry a throttled download, so one image can go missing and shift the training draws.
 
-Fixed in the same review: `expand()` now clamps all four box edges into the frame (a box fully off-frame used to fill a band of the frame; no stored detection was off-frame, so no metric changed), and training and inference pick MPS, then CUDA, then CPU.
+Fixed in the same review: a jittered or neighbouring box one frame after a hit no longer cancels the gap bridge (it used to leave mid-gap frames unredacted; now tested, with the 29-bridged / 30-not boundary). `expand()` now clamps all four box edges into the frame (a box fully off-frame used to fill a band of the frame; no stored detection was off-frame, so no metric changed), and training and inference pick MPS, then CUDA, then CPU.
 
 ## Reproduce
 

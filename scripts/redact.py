@@ -35,7 +35,10 @@ def _iou(a, b):
 
 def interpolate_gaps(dets, max_gap=30, min_iou=0.1):
     """dets: list (per frame) of boxes. Where a box at frame t and a box at t+g (1<g<=max_gap) overlap
-    (IoU >= min_iou) and no detection links them in between, add linearly interpolated boxes."""
+    (IoU >= min_iou), add linearly interpolated boxes for the frames in between. Boxes in between do
+    NOT cancel the bridge: a jittered or neighbouring box at t+1 used to stop it and left mid-gap frames
+    unredacted (review 2026-10-23). An extra interpolated box only adds redaction, and recall is the
+    safety requirement."""
     out = [list(d) for d in dets]
     n = len(dets)
     for t in range(n):
@@ -47,8 +50,6 @@ def interpolate_gaps(dets, max_gap=30, min_iou=0.1):
                 if not cand:
                     continue
                 b = max(cand, key=lambda c: _iou(a, c))
-                if any(_iou(a, c) >= min_iou for k in range(1, g) for c in dets[t + k]):
-                    break  # already linked frame to frame
                 for k in range(1, g):
                     f = k / g
                     out[t + k].append(tuple(a[i] * (1 - f) + b[i] * f for i in range(4)))

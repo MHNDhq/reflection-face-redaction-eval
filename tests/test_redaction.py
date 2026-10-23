@@ -25,13 +25,13 @@ boxes = [(100.3, 50.7, 180.2, 150.9), (700, 300, 760, 380), (940, 520, 990, 560)
 src_copy = frame.copy()  # snapshot BEFORE the first redact(), so in-place writes are caught
 out = R.redact(frame, boxes)
 mask = R.redaction_mask(frame.shape, boxes)
-check("outside boxes byte-identical", np.array_equal(out[~mask], frame[~mask]))
+check("outside boxes byte-identical to the original source", np.array_equal(out[~mask], src_copy[~mask]))
 check("inside boxes all fill colour", np.all(out[mask] == np.array(R.FILL, np.uint8)))
-check("source frame not mutated", not np.shares_memory(out, frame))
+check("output is a separate buffer", not np.shares_memory(out, frame))
 check("source frame bytes unchanged after redact", np.array_equal(frame, src_copy))
 # Oracle independent of expand(): a box fully off-frame must change zero pixels.
 off = R.redact(frame, [(-60, 10, -20, 50), (1000, 600, 1100, 700)])
-check("box fully off-frame changes no pixels", np.array_equal(off, frame))
+check("box fully off-frame changes no pixels", np.array_equal(off, src_copy))
 print(f"     changed pixels {int(mask.sum())} of {H * W} ({100 * mask.mean():.2f}%)")
 
 # 2. Irreversibility: two different faces under the same boxes give byte-identical outputs in the boxes.
@@ -74,5 +74,19 @@ ok = all(np.array_equal(d[~R.redaction_mask(d.shape, b)], s[~R.redaction_mask(d.
 check("FFV1 decode: outside boxes equals SOURCE byte for byte", ok)
 
 failed = [n for n, c in results if not c]
+# Gap boundary: a 29-frame miss is bridged, a 30-frame miss is not (pad 8 covers only the edges).
+def _filled(pl, f):
+    return len(pl[f]) > 0
+d29 = [[] for _ in range(200)]; d29[100] = [(10, 10, 50, 50)]; d29[130] = [(12, 10, 52, 50)]
+p29 = R.plan(d29, 8, 8, 30)
+check("29-frame miss bridged (frames 101..129 all filled)", all(_filled(p29, f) for f in range(101, 130)))
+d30 = [[] for _ in range(200)]; d30[100] = [(10, 10, 50, 50)]; d30[131] = [(12, 10, 52, 50)]
+p30 = R.plan(d30, 8, 8, 30)
+check("30-frame miss NOT bridged (frames 109..122 unfilled)", not any(_filled(p30, f) for f in range(109, 123)))
+# A jittered box at t+1 must not cancel the bridge (review 2026-10-23 repro).
+dj = [[] for _ in range(200)]; dj[100] = [(10, 10, 50, 50)]; dj[101] = [(40, 10, 80, 50)]; dj[125] = [(0, 10, 40, 50)]
+pj = R.plan(dj, 8, 8, 30)
+check("jittered t+1 box does not cancel the bridge (frames 102..124 filled)", all(_filled(pj, f) for f in range(102, 125)))
+
 print(f"{len(results) - len(failed)}/{len(results)} passed")
 sys.exit(1 if failed else 0)
