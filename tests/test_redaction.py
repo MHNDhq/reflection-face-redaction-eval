@@ -129,6 +129,9 @@ rj = np.random.default_rng(1)
 dj3 = [[(10 + rj.integers(-2, 3), 10 + rj.integers(-2, 3), 50 + rj.integers(-2, 3), 50 + rj.integers(-2, 3))] for _ in range(300)]
 cnt = max(len(x) for x in R.plan(dj3, 8, 8, 30))
 print(f"     dense jittered track: max {cnt} boxes on one frame after plan()")
+pl = R.plan([[[10, 10, 50, 50, 0.9]], [], [np.array([12, 10, 52, 50, 0.8])]], 1, 1, 30)
+check("plan() accepts list, ndarray and scored boxes (stored detections)", all(len(b) == 4 for fr in pl for b in fr))
+check("a static face seen on every frame keeps one box per frame", max(len(x) for x in R.interpolate_gaps([[(10, 10, 50, 50)] for _ in range(100)])) == 1)
 failed = [n for n, c in results if not c]
 print(f"{len(results) - len(failed)}/{len(results)} passed")
 sys.exit(1 if failed else 0)

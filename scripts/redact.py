@@ -53,6 +53,7 @@ def interpolate_gaps(dets, max_gap=30, min_iou=0.1):
     Boxes in between never cancel a bridge (review 2026-10-23: a jittered box at t+1, then t+2,
     used to leave mid-gap frames unredacted), and nothing is merged or dropped, so the redacted
     area can only grow. The cost is some over-redaction when a face moves non-linearly."""
+    dets = [[tuple(float(v) for v in b[:4]) for b in fr] for fr in dets]   # lists, arrays, scored 5-tuples
     out = [list(d) for d in dets]
     n = len(dets)
     for t in range(n):
@@ -63,7 +64,7 @@ def interpolate_gaps(dets, max_gap=30, min_iou=0.1):
                         continue
                     for k in range(1, g):
                         f = k / g
-                        box = tuple(a[i] * (1 - f) + b[i] * f for i in range(4))
+                        box = tuple(a[i] + (b[i] - a[i]) * f for i in range(4))   # exact when a == b
                         if not any(_covers(c, box) for c in dets[t + k]):
                             out[t + k].append(box)
     # Exact copies from overlapping pairs add no area; drop them (order kept).
@@ -75,6 +76,7 @@ def pad(dets, before=8, after=8):
     n = len(dets)
     out = [[] for _ in range(n)]
     for t, boxes in enumerate(dets):
+        boxes = [tuple(float(v) for v in b[:4]) for b in boxes]
         for k in range(max(0, t - before), min(n, t + after + 1)):
             out[k].extend(boxes)
     return [list(dict.fromkeys(fr)) for fr in out]   # exact copies add no area
