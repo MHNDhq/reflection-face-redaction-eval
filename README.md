@@ -19,8 +19,8 @@ eval3: 1,120 synthetic composites from Open Images TEST-split photos never used 
 260 hard negatives incl. 48 sculptures, 160 new backgrounds; 46% no-face frames). Every cutoff was picked
 on the tune sets (2,550 images) by the rule committed before this read: highest tune recall among cutoffs
 whose tune precision has a cluster-bootstrap 5th percentile of at least 95%. The "after" model was also
-chosen on tune. Confidence intervals: 95%, the wider of a bootstrap over source photos and one over
-background photos (`scripts/intervals.py` -> `results/intervals.json`).
+chosen on tune. Confidence intervals: 95%, the union of two bootstraps, one over source photos and one over background
+photos (lowest lower end, highest upper end; `scripts/intervals.py` -> `results/intervals.json`).
 
 | detector | cutoff | redaction recall | redaction precision | false-alarm frames |
 |---|---|---|---|---|
@@ -239,6 +239,12 @@ Every number above was measured under these rules. They are listed so you can we
 - `download_sources.py` does not retry a throttled download, so one image can go missing and shift the training draws.
 
 Fixed in the same review: a box between two hits no longer cancels the gap bridge (a jittered box at t+1, then at t+2, used to leave mid-gap frames unredacted). The bridge is now a PROTOTYPE that favours privacy over cost: each hit bridges to every overlapping hit within 30 frames, and an interpolated box is skipped only when an original detection on that frame covers its whole filled area, so skipping never loses a pixel. Exact copies are removed. Boxes may be lists, arrays or scored 5-tuples; only the first four values are used. The no-loss rule assumes the default 0.25 fill margin. Tests check face-pixel coverage: jitter at every offset and a 3-hit track with no padding, a second face beside the gap with padding; curved motion between hits is not yet tested. Cost, measured (max boxes on one frame after padding): a static face 1 when seen on every frame or on every 3rd; a face seen on every frame with 2 px detector jitter about 7,000 (6,977 on 600 frames); on a sine path 6,146. `interpolate_gaps` on 10 static faces over 600 frames takes 37.9 s in pure Python. That is too slow for production: a track linker that bridges only real gaps is the trial-grade replacement. The per-video-hour estimate in the throughput section counts the detector only. `plan()` is a tested library function; no script in this repo runs it over a video yet. `expand()` now clamps all four box edges into the frame (a box fully off-frame used to fill a band of the frame; no stored detection was off-frame, so no metric changed), and training and inference pick MPS, then CUDA, then CPU.
+
+Logged from the final review (not fixed): `intervals.py` scores a resample with no kept boxes as 0%
+precision where `report.py` scores it 100%, and uses a different seed and draw count; `download_sources.py`
+exits 0 on failed downloads, so `reproduce.sh` can build on a missing photo; a photo with both a negative
+and a background box can be picked twice in `select_pool.py` (no pool hit this); the `select_tune2.py`
+docstring still describes the old pool filter; tune sets are listed in two places.
 
 Logged from review round 8 (not fixed): the 0.25 margin in the no-loss check is fixed while `redact()` takes a margin argument (pass the default); `plan()` applies no score threshold, so filter stored detections by score first, as `evaluate.py` does; malformed or NaN boxes fail late, not at input; the cost figures have no script that reproduces them.
 
