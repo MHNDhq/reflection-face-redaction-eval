@@ -25,7 +25,8 @@ ROOT = Path(__file__).resolve().parents[1]
 DETS = [("yunet", "YuNet 2023mar (OpenCV)"), ("blazeface_short", "BlazeFace short-range"),
         ("blazeface_full", "BlazeFace full-range"), ("ft_A", "Faster R-CNN, plain faces (before)"),
         ("ft_control", "Faster R-CNN, control: +plain & negatives"),
-        ("ft_B", "Faster R-CNN, +reflection composites (after)")]
+        ("ft_B", "Faster R-CNN, +reflection composites (500 steps)"),
+        ("ft_B_long", "Faster R-CNN, +reflection composites, 1,500 steps (after; chosen on tune)")]
 GRID = sorted(set([round(0.05 * i, 2) for i in range(1, 20)] + [0.92, 0.94, 0.96, 0.97, 0.98, 0.99]))
 FAMS = ["mirror", "appliance", "shower", "photo", "screen", "plain"]
 KEYS = ["redaction_recall", "redaction_precision", "redaction_frames_fully_covered",
