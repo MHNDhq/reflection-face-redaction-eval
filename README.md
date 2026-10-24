@@ -35,11 +35,12 @@ Read honestly:
   about 19 points more faces than YuNet with its own tuned cutoff, at about the same precision. The
   precision interval (93.5 to 97.1%) includes values below 95%, so "at the bar", not "safely above it".
 - Not robust yet: the SAME model and cutoff give 94.1% precision on eval2 and 89.6% on the original eval
-  set. Why eval reads lower is not settled. The category mix does not explain it: at cutoff 0.6 the share of
-  negative frames with a false alarm is higher on eval than on eval3 within most categories (sculptures 12 of
-  82 against 2 of 96, toys 8 of 80 against 3 of 96, teddy bears 5 of 26 against 1 of 36). Unlabeled faces do
-  not explain it either: eval's negatives carry a human-verified "no face" label, eval3's do not, and an
-  unlabeled face would lower eval3, not eval. eval did not pick this model or its cutoff, but earlier looks at eval shaped the cutoff rule and
+  set. Why eval reads lower is not settled. It has more false-alarm frames
+  (9.1% of negative frames against 2.3% on eval3, results/metrics*.md), and more false boxes on face frames
+  too. A one-off check by negative category (not one of the scripts here) found the higher rate within most
+  categories, so the category mix alone does not explain it. Unlabeled faces do not explain it either:
+  eval's negatives carry a human-verified "no face" label, eval3's do not, and an unlabeled face would lower
+  eval3, not eval. eval did not pick this model or its cutoff, but earlier looks at eval shaped the cutoff rule and
   the tune3 pool (round 3 below), so 89.6% is not a fully independent check either. eval2's false alarms (mirror-backed no-face frames) DID shape
   train_hn2, so its 94.1% is optimistic, not an independent check.
 - Shower glass, never in training: YuNet at 0.9 0.7%, ft_A 18.5%, ft_HN2 26.7%. Screens with people:
@@ -92,7 +93,7 @@ and no sculptures; eval has 40%. Round 3, written before any detector runs on th
   reported for continuity only.
 - tune3: 250 new validation negatives (750 composites). Tune = tune + tune2 + tune3 = 2,550 images, 34%
   no-face frames.
-- ft_B_hn: ft_A + plain + reflection composites + 179 new validation hard negatives (data/train_hn),
+- ft_B_hn (saved and reported as ft_HN): ft_A + plain + reflection composites + 179 new validation hard negatives (data/train_hn),
   1,500 steps, disjoint from tune3 and eval2.
 - Rule and grid: unchanged (cluster-bootstrap 5th percentile of tune precision >= 95%).
 - Model: ft_B_long vs ft_B_hn, the higher tune recall at its rule cutoff is "after". eval2 is read once.
@@ -144,7 +145,7 @@ training ft_HN2 and before any detector runs on eval3:
 - Composite families (`scripts/composite.py`): mirror (flipped, dimmed, sheen, frame); appliance door
   (flipped, 25 to 60% opacity over a dark panel, tint, blur, optional microwave mesh); shower glass
   (fog, haze, droplets, ghost double image); photo (a print stuck on a surface); screen (bezel, blue
-  cast, scanlines, glare); plain (the photo cropped and resized to 960x540, mirrored half the time, no effect). Random occluders on 30% of composites.
+  cast, scanlines, glare); plain (the photo resized to cover 960x540 and centre-cropped, mirrored half the time, no effect). Random occluders on 30% of composites (never on plain frames).
 - Per the client's definition, a real person in a photo or on a screen IS a face; a toy, doll,
   cartoon or artwork is NOT. Photo and screen composites of real faces are therefore positives, and of
   toys and prints are negatives.
@@ -174,7 +175,7 @@ training ft_HN2 and before any detector runs on eval3:
 - Solid fill, not blur. The pixels inside a filled box are one constant colour, so the output carries no
   information about the face: a test redacts two different random frames under the same boxes and checks
   the boxes come out byte-identical.
-- Why not blur: `scripts/blur_vs_fill.py` re-runs YuNet on faces after each redaction. On 78 faces that YuNet at 0.5 found (IoU 0.5) in "plain" eval frames, which are the source photo cropped and resized to 960x540, mirrored half the time, with no composite or effect (`.venv/bin/python scripts/blur_vs_fill.py`):
+- Why not blur: `scripts/blur_vs_fill.py` re-runs YuNet on faces after each redaction. On 78 faces that YuNet at 0.5 found (IoU 0.5) in "plain" eval frames, which are the source photo resized to cover 960x540 and centre-cropped, mirrored half the time, with no composite or effect (`.venv/bin/python scripts/blur_vs_fill.py`):
 YuNet still found 75 after a light Gaussian blur (sigma 3), 39 after an 8-pixel mosaic, 2 after a heavy blur
 (sigma = padded box width / 6, at least 4; the box is padded by 25% per side first, as for the fill), and 0 after the solid fill. A face a detector can still find is a face that is still there.
 - Rest of the frame untouched: a test checks that every pixel outside the filled boxes is byte-identical
