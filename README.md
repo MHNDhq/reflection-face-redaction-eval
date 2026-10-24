@@ -35,10 +35,11 @@ Read honestly:
   about 19 points more faces than YuNet with its own tuned cutoff, at about the same precision. The
   precision interval (93.5 to 97.1%) includes values below 95%, so "at the bar", not "safely above it".
 - Not robust yet: the SAME model and cutoff give 94.1% precision on eval2 and 89.6% on the original eval
-  set. Why eval reads lower is not settled: its negatives differ in mix (as a share of negative frames: sculptures
-  24% against 18%, packaging 24% against 19%, posters 6% against 19%, screens 12% against 18%, plus snowmen
-  and dolls) and it has more false-alarm frames (9.1% against 2.3% on
-  eval3). eval did not pick this model or its cutoff, but earlier looks at eval shaped the cutoff rule and
+  set. Why eval reads lower is not settled. The category mix does not explain it: at cutoff 0.6 the share of
+  negative frames with a false alarm is higher on eval than on eval3 within most categories (sculptures 12 of
+  82 against 2 of 96, toys 8 of 80 against 3 of 96, teddy bears 5 of 26 against 1 of 36). Unlabeled faces do
+  not explain it either: eval's negatives carry a human-verified "no face" label, eval3's do not, and an
+  unlabeled face would lower eval3, not eval. eval did not pick this model or its cutoff, but earlier looks at eval shaped the cutoff rule and
   the tune3 pool (round 3 below), so 89.6% is not a fully independent check either. eval2's false alarms (mirror-backed no-face frames) DID shape
   train_hn2, so its 94.1% is optimistic, not an independent check.
 - Shower glass, never in training: YuNet at 0.9 0.7%, ft_A 18.5%, ft_HN2 26.7%. Screens with people:
@@ -143,7 +144,7 @@ training ft_HN2 and before any detector runs on eval3:
 - Composite families (`scripts/composite.py`): mirror (flipped, dimmed, sheen, frame); appliance door
   (flipped, 25 to 60% opacity over a dark panel, tint, blur, optional microwave mesh); shower glass
   (fog, haze, droplets, ghost double image); photo (a print stuck on a surface); screen (bezel, blue
-  cast, scanlines, glare); plain (the photo itself). Random occluders on 30% of composites.
+  cast, scanlines, glare); plain (the photo cropped and resized to 960x540, mirrored half the time, no effect). Random occluders on 30% of composites.
 - Per the client's definition, a real person in a photo or on a screen IS a face; a toy, doll,
   cartoon or artwork is NOT. Photo and screen composites of real faces are therefore positives, and of
   toys and prints are negatives.

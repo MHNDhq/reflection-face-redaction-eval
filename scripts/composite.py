@@ -9,7 +9,7 @@ Families
   shower     flipped, fogged (heavy blur + haze), droplets, ghost double image   <- HELD OUT of training
   photo      unflipped print stuck on a surface (white border), full opacity, small
   screen     unflipped, inside a black bezel, blue cast, scanlines, glare
-  plain      the source image resized to the canvas (no composite)
+  plain      the source image cropped and resized to the canvas, mirrored half the time (no composite)
 
 Ground truth: real-person face boxes are mapped through the same resize / flip / offset as the
 pixels. A face becomes an IGNORE region (neither hit nor miss) when its visible area after
