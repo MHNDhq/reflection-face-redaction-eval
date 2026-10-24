@@ -36,9 +36,7 @@ Read honestly:
   precision interval (93.5 to 97.1%) includes values below 95%, so "at the bar", not "safely above it".
 - Not robust yet: the SAME model and cutoff give 94.1% precision on eval2 and 89.6% on the original eval
   set. Why eval reads lower is not settled. It has more false-alarm frames
-  (9.1% of negative frames against 2.3% on eval3, results/metrics*.md), and more false boxes on face frames
-  too. A one-off check by negative category (not one of the scripts here) found the higher rate within most
-  categories, so the category mix alone does not explain it. Unlabeled faces do not explain it either:
+  (9.1% of negative frames against 2.3% on eval3, results/metrics*.md). Unlabeled faces do not explain it:
   eval's negatives carry a human-verified "no face" label, eval3's do not, and an unlabeled face would lower
   eval3, not eval. eval did not pick this model or its cutoff, but earlier looks at eval shaped the cutoff rule and
   the tune3 pool (round 3 below), so 89.6% is not a fully independent check either. eval2's false alarms (mirror-backed no-face frames) DID shape
@@ -145,7 +143,7 @@ training ft_HN2 and before any detector runs on eval3:
 - Composite families (`scripts/composite.py`): mirror (flipped, dimmed, sheen, frame); appliance door
   (flipped, 25 to 60% opacity over a dark panel, tint, blur, optional microwave mesh); shower glass
   (fog, haze, droplets, ghost double image); photo (a print stuck on a surface); screen (bezel, blue
-  cast, scanlines, glare); plain (the photo resized to cover 960x540 and centre-cropped, mirrored half the time, no effect). Random occluders on 30% of composites (never on plain frames).
+  cast, scanlines, glare); plain (the photo resized to cover 960x540 and center-cropped, mirrored half the time, no effect). Random occluders on 30% of non-plain composites (plain frames never get one).
 - Per the client's definition, a real person in a photo or on a screen IS a face; a toy, doll,
   cartoon or artwork is NOT. Photo and screen composites of real faces are therefore positives, and of
   toys and prints are negatives.
@@ -175,7 +173,7 @@ training ft_HN2 and before any detector runs on eval3:
 - Solid fill, not blur. The pixels inside a filled box are one constant colour, so the output carries no
   information about the face: a test redacts two different random frames under the same boxes and checks
   the boxes come out byte-identical.
-- Why not blur: `scripts/blur_vs_fill.py` re-runs YuNet on faces after each redaction. On 78 faces that YuNet at 0.5 found (IoU 0.5) in "plain" eval frames, which are the source photo resized to cover 960x540 and centre-cropped, mirrored half the time, with no composite or effect (`.venv/bin/python scripts/blur_vs_fill.py`):
+- Why not blur: `scripts/blur_vs_fill.py` re-runs YuNet on faces after each redaction. On 78 faces that YuNet at 0.5 found (IoU 0.5) in "plain" eval frames, which are the source photo resized to cover 960x540 and center-cropped, mirrored half the time, with no composite or effect (`.venv/bin/python scripts/blur_vs_fill.py`):
 YuNet still found 75 after a light Gaussian blur (sigma 3), 39 after an 8-pixel mosaic, 2 after a heavy blur
 (sigma = padded box width / 6, at least 4; the box is padded by 25% per side first, as for the fill), and 0 after the solid fill. A face a detector can still find is a face that is still there.
 - Rest of the frame untouched: a test checks that every pixel outside the filled boxes is byte-identical
