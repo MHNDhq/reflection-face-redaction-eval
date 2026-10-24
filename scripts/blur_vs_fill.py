@@ -58,7 +58,8 @@ def main():
                     still[m] += 1
     res = {"faces_tested": n, "still_detected_after": still,
            "rate": {m: round(still[m] / n, 3) if n else None for m in modes},
-           "note": "SYNTHETIC eval set, plain family; YuNet at 0.5, re-detection counted at IoU >= 0.3"}
+           "note": ("eval set, plain family: the unedited Open Images photo resized, no composite; faces kept where "
+                    "YuNet at 0.5 finds them at IoU >= 0.5, re-detection after redaction counted at IoU >= 0.3")}
     json.dump(res, open(ROOT / "results" / "blur_vs_fill.json", "w"), indent=1)
     print(json.dumps(res, indent=1))
 
