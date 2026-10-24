@@ -1,6 +1,6 @@
 """Rebuild the README's headline figures that report.py does not print: the tune recall behind each
 pre-registered model choice, and the eval3 95% intervals (bootstrap over source photos and, separately,
-over background photos; the README quotes the wider of the two).
+over background photos; the README quotes their union: the lower of the two lower bounds and the higher of the two upper bounds).
 
 Usage: .venv/bin/python scripts/intervals.py        -> results/intervals.json (+ printed)
 """

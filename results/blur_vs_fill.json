@@ -12,5 +12,5 @@
   "pixelate_8": 0.5,
   "fill": 0.0
  },
- "note": "eval set, plain family: the unedited Open Images photo resized, no composite; faces kept where YuNet at 0.5 finds them at IoU >= 0.5, re-detection after redaction counted at IoU >= 0.3"
+ "note": "eval set, plain family: the source photo cropped and resized, mirrored half the time, no composite; faces kept where YuNet at 0.5 finds them at IoU >= 0.5, re-detection after redaction counted at IoU >= 0.3"
 }

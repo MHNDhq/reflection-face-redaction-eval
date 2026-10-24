@@ -35,9 +35,11 @@ Read honestly:
   about 19 points more faces than YuNet with its own tuned cutoff, at about the same precision. The
   precision interval (93.5 to 97.1%) includes values below 95%, so "at the bar", not "safely above it".
 - Not robust yet: the SAME model and cutoff give 94.1% precision on eval2 and 89.6% on the original eval
-  set, whose hard negatives all carry a human-verified "no face" label (eval2 and eval3 negatives only
-  need no person box or label). eval was read three times before
-  this model existed and chose nothing for it. eval2's false alarms (mirror-backed no-face frames) DID shape
+  set. Why eval reads lower is not settled: its negatives differ in mix (as a share of negative frames: sculptures
+  24% against 18%, packaging 24% against 19%, posters 6% against 19%, screens 12% against 18%, plus snowmen
+  and dolls) and it has more false-alarm frames (9.1% against 2.3% on
+  eval3). eval did not pick this model or its cutoff, but earlier looks at eval shaped the cutoff rule and
+  the tune3 pool (round 3 below), so 89.6% is not a fully independent check either. eval2's false alarms (mirror-backed no-face frames) DID shape
   train_hn2, so its 94.1% is optimistic, not an independent check.
 - Shower glass, never in training: YuNet at 0.9 0.7%, ft_A 18.5%, ft_HN2 26.7%. Screens with people:
   YuNet at 0.9 0.0%, ft_HN2 60.2%.
@@ -171,9 +173,9 @@ training ft_HN2 and before any detector runs on eval3:
 - Solid fill, not blur. The pixels inside a filled box are one constant colour, so the output carries no
   information about the face: a test redacts two different random frames under the same boxes and checks
   the boxes come out byte-identical.
-- Why not blur: `scripts/blur_vs_fill.py` re-runs YuNet on faces after each redaction. On 78 faces that YuNet found in clean "plain" eval frames (`.venv/bin/python scripts/blur_vs_fill.py`):
+- Why not blur: `scripts/blur_vs_fill.py` re-runs YuNet on faces after each redaction. On 78 faces that YuNet at 0.5 found (IoU 0.5) in "plain" eval frames, which are the source photo cropped and resized to 960x540, mirrored half the time, with no composite or effect (`.venv/bin/python scripts/blur_vs_fill.py`):
 YuNet still found 75 after a light Gaussian blur (sigma 3), 39 after an 8-pixel mosaic, 2 after a heavy blur
-(sigma = box width / 6), and 0 after the solid fill. A face a detector can still find is a face that is still there.
+(sigma = padded box width / 6, at least 4; the box is padded by 25% per side first, as for the fill), and 0 after the solid fill. A face a detector can still find is a face that is still there.
 - Rest of the frame untouched: a test checks that every pixel outside the filled boxes is byte-identical
   to the source, then encodes the frames with FFV1 (lossless), decodes them, and checks again. This proves
   the redaction step changes only pixels inside the padded face boxes. It does not hold after a lossy
@@ -191,7 +193,7 @@ Measured on an Apple M5 (10-core GPU, 24 GB) with `.venv/bin/python scripts/thro
 | step | input | frames per second |
 |---|---|---|
 | ft_B Faster R-CNN, MPS GPU, batch 8 (same architecture as ft_HN2; ft_HN2 itself not timed) | 960x540 | 28.2 |
-| ft_B Faster R-CNN, MPS GPU, batch 8 | 1920x1080 (the model resizes to 960x540 inside) | 18.8 |
+| ft_B Faster R-CNN, MPS GPU, batch 8 (ft_HN2 itself not timed) | 1920x1080 (the model resizes to 960x540 inside) | 18.8 |
 | YuNet, CPU (OpenCV) | 960x540 | 155.9 |
 | YuNet, CPU (OpenCV) | 1920x1080 | 19.7 |
 | BlazeFace full-range, CPU (MediaPipe, 128x128 inside) | 960x540 | 660.1 |

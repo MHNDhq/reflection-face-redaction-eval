@@ -11,8 +11,10 @@ SYNTHETIC-DATA EXPERIMENT. Not validated on real head-mounted footage. Not for p
 - Initialised from torchvision COCO weights (`FasterRCNN_MobileNet_V3_Large_FPN_Weights.COCO_V1`).
 - ft_A: fine-tuned on plain Open Images face photos. ft_B: ft_A fine-tuned on reflection composites, plain
   photos and hard negatives. ft_control: ft_A fine-tuned on plain photos and hard negatives only.
-- ft_B_long: ft_B's data, 1,500 steps. ft_HN: + train_hn hard negatives. ft_HN2 (reported "after"): + train_hn2
-  (the same negatives re-composited with mostly mirror and appliance effects), 2,000 steps.
+- Every stage after ft_A starts from ft_A's weights (scripts/train.py), not from the stage before it.
+  ft_B_long: ft_B's data, 1,500 steps. ft_HN: ft_B's data + train_hn hard negatives, 1,500 steps.
+  ft_HN2 (reported "after"): ft_HN's data + train_hn2 (the same negatives re-composited with mostly mirror
+  and appliance effects), 2,000 steps.
 - Training settings and logs: `models/ft_*_trainlog.json` (SGD, momentum 0.9, weight decay 1e-4, batch 8,
   cosine schedule, horizontal flip and brightness jitter). One seed per stage.
 - Hardware: Apple M5 (10-core GPU, 24 GB), PyTorch MPS backend.
